@@ -1,0 +1,3330 @@
+====================================================================================================
+Arguments =
+Namespace(batch_size_test=64, batch_size_train=64, gpm_thro=0.97, lr=0.1, lr_factor=3, lr_min=0.001, lr_patience=5, mixup_alpha=1, mixup_weight=0.01, momentum=0.9, n_epochs=100, pc_valid=0.05, savename='./log/DFROGO/', seed=1, weight=5)
+====================================================================================================
+****************************************************************************************************
+Task  0 (cifar10)
+****************************************************************************************************
+----------------------------------------
+Task ID :0 | Learning Rate : 0.1
+----------------------------------------
+Model parameters ---
+0	conv1.weight	torch.Size([20, 3, 3, 3])
+1	conv1.scale	torch.Size([27, 27])
+2	bn1.weight	torch.Size([20])
+3	bn1.bias	torch.Size([20])
+4	layer1.0.conv1.weight	torch.Size([20, 20, 3, 3])
+5	layer1.0.conv1.scale	torch.Size([180, 180])
+6	layer1.0.bn1.weight	torch.Size([20])
+7	layer1.0.bn1.bias	torch.Size([20])
+8	layer1.0.conv2.weight	torch.Size([20, 20, 3, 3])
+9	layer1.0.conv2.scale	torch.Size([180, 180])
+10	layer1.0.bn2.weight	torch.Size([20])
+11	layer1.0.bn2.bias	torch.Size([20])
+12	layer1.1.conv1.weight	torch.Size([20, 20, 3, 3])
+13	layer1.1.conv1.scale	torch.Size([180, 180])
+14	layer1.1.bn1.weight	torch.Size([20])
+15	layer1.1.bn1.bias	torch.Size([20])
+16	layer1.1.conv2.weight	torch.Size([20, 20, 3, 3])
+17	layer1.1.conv2.scale	torch.Size([180, 180])
+18	layer1.1.bn2.weight	torch.Size([20])
+19	layer1.1.bn2.bias	torch.Size([20])
+20	layer2.0.conv1.weight	torch.Size([40, 20, 3, 3])
+21	layer2.0.conv1.scale	torch.Size([180, 180])
+22	layer2.0.bn1.weight	torch.Size([40])
+23	layer2.0.bn1.bias	torch.Size([40])
+24	layer2.0.conv2.weight	torch.Size([40, 40, 3, 3])
+25	layer2.0.conv2.scale	torch.Size([360, 360])
+26	layer2.0.bn2.weight	torch.Size([40])
+27	layer2.0.bn2.bias	torch.Size([40])
+28	layer2.0.shortcut.0.weight	torch.Size([40, 20, 1, 1])
+29	layer2.0.shortcut.1.weight	torch.Size([40])
+30	layer2.0.shortcut.1.bias	torch.Size([40])
+31	layer2.1.conv1.weight	torch.Size([40, 40, 3, 3])
+32	layer2.1.conv1.scale	torch.Size([360, 360])
+33	layer2.1.bn1.weight	torch.Size([40])
+34	layer2.1.bn1.bias	torch.Size([40])
+35	layer2.1.conv2.weight	torch.Size([40, 40, 3, 3])
+36	layer2.1.conv2.scale	torch.Size([360, 360])
+37	layer2.1.bn2.weight	torch.Size([40])
+38	layer2.1.bn2.bias	torch.Size([40])
+39	layer3.0.conv1.weight	torch.Size([80, 40, 3, 3])
+40	layer3.0.conv1.scale	torch.Size([360, 360])
+41	layer3.0.bn1.weight	torch.Size([80])
+42	layer3.0.bn1.bias	torch.Size([80])
+43	layer3.0.conv2.weight	torch.Size([80, 80, 3, 3])
+44	layer3.0.conv2.scale	torch.Size([720, 720])
+45	layer3.0.bn2.weight	torch.Size([80])
+46	layer3.0.bn2.bias	torch.Size([80])
+47	layer3.0.shortcut.0.weight	torch.Size([80, 40, 1, 1])
+48	layer3.0.shortcut.1.weight	torch.Size([80])
+49	layer3.0.shortcut.1.bias	torch.Size([80])
+50	layer3.1.conv1.weight	torch.Size([80, 80, 3, 3])
+51	layer3.1.conv1.scale	torch.Size([720, 720])
+52	layer3.1.bn1.weight	torch.Size([80])
+53	layer3.1.bn1.bias	torch.Size([80])
+54	layer3.1.conv2.weight	torch.Size([80, 80, 3, 3])
+55	layer3.1.conv2.scale	torch.Size([720, 720])
+56	layer3.1.bn2.weight	torch.Size([80])
+57	layer3.1.bn2.bias	torch.Size([80])
+58	layer4.0.conv1.weight	torch.Size([160, 80, 3, 3])
+59	layer4.0.conv1.scale	torch.Size([720, 720])
+60	layer4.0.bn1.weight	torch.Size([160])
+61	layer4.0.bn1.bias	torch.Size([160])
+62	layer4.0.conv2.weight	torch.Size([160, 160, 3, 3])
+63	layer4.0.conv2.scale	torch.Size([1440, 1440])
+64	layer4.0.bn2.weight	torch.Size([160])
+65	layer4.0.bn2.bias	torch.Size([160])
+66	layer4.0.shortcut.0.weight	torch.Size([160, 80, 1, 1])
+67	layer4.0.shortcut.1.weight	torch.Size([160])
+68	layer4.0.shortcut.1.bias	torch.Size([160])
+69	layer4.1.conv1.weight	torch.Size([160, 160, 3, 3])
+70	layer4.1.conv1.scale	torch.Size([1440, 1440])
+71	layer4.1.bn1.weight	torch.Size([160])
+72	layer4.1.bn1.bias	torch.Size([160])
+73	layer4.1.conv2.weight	torch.Size([160, 160, 3, 3])
+74	layer4.1.conv2.scale	torch.Size([1440, 1440])
+75	layer4.1.bn2.weight	torch.Size([160])
+76	layer4.1.bn2.bias	torch.Size([160])
+77	linear.0.weight	torch.Size([10, 640])
+78	linear.1.weight	torch.Size([10, 640])
+79	linear.2.weight	torch.Size([10, 640])
+80	linear.3.weight	torch.Size([10, 640])
+81	linear.4.weight	torch.Size([10, 640])
+----------------------------------------
+Epoch   1 | Train: loss=1.517, acc= 46.5% | time=58394.8ms |
+ Valid: loss=1.554, acc= 45.2% |
+ *
+Epoch   2 | Train: loss=1.051, acc= 63.1% | time=48247.2ms |
+ Valid: loss=1.070, acc= 63.2% |
+ *
+Epoch   3 | Train: loss=1.009, acc= 64.7% | time=38179.3ms |
+ Valid: loss=1.072, acc= 63.4% |
+Epoch   4 | Train: loss=0.715, acc= 75.2% | time=45798.1ms |
+ Valid: loss=0.796, acc= 72.5% |
+ *
+Epoch   5 | Train: loss=0.629, acc= 77.4% | time=41653.9ms |
+ Valid: loss=0.766, acc= 72.8% |
+ *
+Epoch   6 | Train: loss=0.513, acc= 82.7% | time=40182.2ms |
+ Valid: loss=0.707, acc= 75.5% |
+ *
+Epoch   7 | Train: loss=0.438, acc= 84.7% | time=47224.5ms |
+ Valid: loss=0.673, acc= 77.0% |
+ *
+Epoch   8 | Train: loss=0.463, acc= 84.2% | time=44722.8ms |
+ Valid: loss=0.737, acc= 74.3% |
+Epoch   9 | Train: loss=0.270, acc= 91.1% | time=42266.2ms |
+ Valid: loss=0.620, acc= 78.7% |
+ *
+Epoch  10 | Train: loss=0.416, acc= 86.5% | time=44511.6ms |
+ Valid: loss=0.856, acc= 73.6% |
+Epoch  11 | Train: loss=0.237, acc= 92.5% | time=47339.2ms |
+ Valid: loss=0.743, acc= 77.0% |
+Epoch  12 | Train: loss=0.130, acc= 96.8% | time=48588.9ms |
+ Valid: loss=0.629, acc= 80.2% |
+Epoch  13 | Train: loss=0.093, acc= 97.7% | time=41315.7ms |
+ Valid: loss=0.644, acc= 79.9% |
+Epoch  14 | Train: loss=0.216, acc= 93.7% | time=45106.1ms |
+ Valid: loss=0.828, acc= 76.3% |
+ lr=3.3e-02
+Epoch  15 | Train: loss=0.015, acc=100.0% | time=41174.6ms |
+ Valid: loss=0.578, acc= 82.6% |
+ *
+Epoch  16 | Train: loss=0.009, acc=100.0% | time=40871.2ms |
+ Valid: loss=0.577, acc= 82.7% |
+ *
+Epoch  17 | Train: loss=0.010, acc=100.0% | time=48693.2ms |
+ Valid: loss=0.593, acc= 82.1% |
+Epoch  18 | Train: loss=0.005, acc=100.0% | time=39502.9ms |
+ Valid: loss=0.582, acc= 83.0% |
+Epoch  19 | Train: loss=0.005, acc=100.0% | time=47593.9ms |
+ Valid: loss=0.583, acc= 82.7% |
+Epoch  20 | Train: loss=0.007, acc=100.0% | time=38588.8ms |
+ Valid: loss=0.602, acc= 82.3% |
+Epoch  21 | Train: loss=0.007, acc=100.0% | time=44746.1ms |
+ Valid: loss=0.616, acc= 82.3% |
+ lr=1.1e-02
+Epoch  22 | Train: loss=0.004, acc=100.0% | time=48157.6ms |
+ Valid: loss=0.585, acc= 83.2% |
+Epoch  23 | Train: loss=0.004, acc=100.0% | time=46099.4ms |
+ Valid: loss=0.586, acc= 82.8% |
+Epoch  24 | Train: loss=0.004, acc=100.0% | time=49184.5ms |
+ Valid: loss=0.582, acc= 82.8% |
+Epoch  25 | Train: loss=0.004, acc=100.0% | time=51737.9ms |
+ Valid: loss=0.579, acc= 83.0% |
+Epoch  26 | Train: loss=0.004, acc=100.0% | time=48648.6ms |
+ Valid: loss=0.584, acc= 82.7% |
+ lr=3.7e-03
+Epoch  27 | Train: loss=0.004, acc=100.0% | time=46440.0ms |
+ Valid: loss=0.591, acc= 83.0% |
+Epoch  28 | Train: loss=0.004, acc=100.0% | time=56461.1ms |
+ Valid: loss=0.583, acc= 82.8% |
+Epoch  29 | Train: loss=0.004, acc=100.0% | time=46197.9ms |
+ Valid: loss=0.583, acc= 82.5% |
+Epoch  30 | Train: loss=0.004, acc=100.0% | time=42424.5ms |
+ Valid: loss=0.584, acc= 83.6% |
+Epoch  31 | Train: loss=0.004, acc=100.0% | time=48690.7ms |
+ Valid: loss=0.580, acc= 82.8% |
+ lr=1.2e-03
+Epoch  32 | Train: loss=0.004, acc=100.0% | time=41750.3ms |
+ Valid: loss=0.579, acc= 83.2% |
+Epoch  33 | Train: loss=0.004, acc=100.0% | time=48034.0ms |
+ Valid: loss=0.584, acc= 82.4% |
+Epoch  34 | Train: loss=0.004, acc=100.0% | time=42920.0ms |
+ Valid: loss=0.586, acc= 83.4% |
+Epoch  35 | Train: loss=0.004, acc=100.0% | time=40292.6ms |
+ Valid: loss=0.565, acc= 83.3% |
+ *
+Epoch  36 | Train: loss=0.004, acc=100.0% | time=48524.9ms |
+ Valid: loss=0.570, acc= 83.2% |
+Epoch  37 | Train: loss=0.004, acc=100.0% | time=41881.3ms |
+ Valid: loss=0.586, acc= 83.2% |
+Epoch  38 | Train: loss=0.004, acc=100.0% | time=39884.8ms |
+ Valid: loss=0.586, acc= 82.4% |
+Epoch  39 | Train: loss=0.004, acc=100.0% | time=41779.7ms |
+ Valid: loss=0.583, acc= 82.9% |
+Epoch  40 | Train: loss=0.004, acc=100.0% | time=44305.8ms |
+ Valid: loss=0.575, acc= 83.0% |
+ lr=4.1e-04
+
+----------------------------------------
+Test: loss=0.620 , acc= 82.7%
+Threshold: [0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97
+ 0.97 0.97 0.97 0.97 0.97 0.97]
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 4/27
+Layer 2 : 13/180
+Layer 3 : 15/180
+Layer 4 : 14/180
+Layer 5 : 16/180
+Layer 6 : 27/180
+Layer 7 : 32/360
+Layer 8 : 13/20
+Layer 9 : 30/360
+Layer 10 : 30/360
+Layer 11 : 56/360
+Layer 12 : 63/720
+Layer 13 : 27/40
+Layer 14 : 63/720
+Layer 15 : 59/720
+Layer 16 : 87/720
+Layer 17 : 102/1440
+Layer 18 : 45/80
+Layer 19 : 98/1440
+Layer 20 : 93/1440
+----------------------------------------
+Accuracies =
+ 82.5%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  1 (mnist)
+****************************************************************************************************
+----------------------------------------
+Task ID :1 | Learning Rate : 0.1
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([27, 27])
+Layer 2 - Projection Matrix shape: torch.Size([180, 180])
+Layer 3 - Projection Matrix shape: torch.Size([180, 180])
+Layer 4 - Projection Matrix shape: torch.Size([180, 180])
+Layer 5 - Projection Matrix shape: torch.Size([180, 180])
+Layer 6 - Projection Matrix shape: torch.Size([180, 180])
+Layer 7 - Projection Matrix shape: torch.Size([360, 360])
+Layer 8 - Projection Matrix shape: torch.Size([20, 20])
+Layer 9 - Projection Matrix shape: torch.Size([360, 360])
+Layer 10 - Projection Matrix shape: torch.Size([360, 360])
+Layer 11 - Projection Matrix shape: torch.Size([360, 360])
+Layer 12 - Projection Matrix shape: torch.Size([720, 720])
+Layer 13 - Projection Matrix shape: torch.Size([40, 40])
+Layer 14 - Projection Matrix shape: torch.Size([720, 720])
+Layer 15 - Projection Matrix shape: torch.Size([720, 720])
+Layer 16 - Projection Matrix shape: torch.Size([720, 720])
+Layer 17 - Projection Matrix shape: torch.Size([1440, 1440])
+Layer 18 - Projection Matrix shape: torch.Size([80, 80])
+Layer 19 - Projection Matrix shape: torch.Size([1440, 1440])
+Layer 20 - Projection Matrix shape: torch.Size([1440, 1440])
+----------------------------------------
+Epoch   1 | Train: loss=0.030, acc= 99.4% | time=62813.9ms |
+ Valid: loss=0.043, acc= 99.0% |
+ *
+
+Epoch   2 | Train: loss=0.018, acc= 99.7% | time=65164.5ms |
+ Valid: loss=0.034, acc= 99.0% |
+ *
+
+Epoch   3 | Train: loss=0.014, acc= 99.8% | time=72839.1ms |
+ Valid: loss=0.034, acc= 99.1% |
+ *
+
+Epoch   4 | Train: loss=0.009, acc= 99.9% | time=63086.6ms |
+ Valid: loss=0.026, acc= 99.2% |
+ *
+
+Epoch   5 | Train: loss=0.006, acc= 99.9% | time=64620.4ms |
+ Valid: loss=0.025, acc= 99.3% |
+ *
+
+Epoch   6 | Train: loss=0.004, acc=100.0% | time=68207.4ms |
+ Valid: loss=0.021, acc= 99.3% |
+ *
+
+Epoch   7 | Train: loss=0.003, acc=100.0% | time=56446.6ms |
+ Valid: loss=0.027, acc= 99.1% |
+
+Epoch   8 | Train: loss=0.002, acc=100.0% | time=69157.8ms |
+ Valid: loss=0.024, acc= 99.1% |
+
+Epoch   9 | Train: loss=0.002, acc=100.0% | time=63233.6ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  10 | Train: loss=0.001, acc=100.0% | time=58974.1ms |
+ Valid: loss=0.023, acc= 99.2% |
+
+Epoch  11 | Train: loss=0.001, acc=100.0% | time=56003.1ms |
+ Valid: loss=0.021, acc= 99.3% |
+ *
+
+Epoch  12 | Train: loss=0.001, acc=100.0% | time=73375.2ms |
+ Valid: loss=0.020, acc= 99.3% |
+ *
+
+Epoch  13 | Train: loss=0.001, acc=100.0% | time=62152.9ms |
+ Valid: loss=0.020, acc= 99.3% |
+
+Epoch  14 | Train: loss=0.000, acc=100.0% | time=52204.6ms |
+ Valid: loss=0.020, acc= 99.3% |
+
+Epoch  15 | Train: loss=0.000, acc=100.0% | time=50949.9ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  16 | Train: loss=0.000, acc=100.0% | time=56865.7ms |
+ Valid: loss=0.020, acc= 99.3% |
+
+Epoch  17 | Train: loss=0.000, acc=100.0% | time=55727.6ms |
+ Valid: loss=0.022, acc= 99.2% |
+ lr=3.3e-02
+
+Epoch  18 | Train: loss=0.000, acc=100.0% | time=56152.1ms |
+ Valid: loss=0.021, acc= 99.3% |
+
+Epoch  19 | Train: loss=0.000, acc=100.0% | time=71381.1ms |
+ Valid: loss=0.024, acc= 99.2% |
+
+Epoch  20 | Train: loss=0.000, acc=100.0% | time=54036.2ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  21 | Train: loss=0.000, acc=100.0% | time=57129.6ms |
+ Valid: loss=0.022, acc= 99.2% |
+
+Epoch  22 | Train: loss=0.000, acc=100.0% | time=54720.9ms |
+ Valid: loss=0.022, acc= 99.3% |
+ lr=1.1e-02
+
+Epoch  23 | Train: loss=0.000, acc=100.0% | time=55733.7ms |
+ Valid: loss=0.021, acc= 99.3% |
+
+Epoch  24 | Train: loss=0.000, acc=100.0% | time=55767.3ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  25 | Train: loss=0.000, acc=100.0% | time=58830.8ms |
+ Valid: loss=0.021, acc= 99.3% |
+
+Epoch  26 | Train: loss=0.000, acc=100.0% | time=50801.3ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  27 | Train: loss=0.000, acc=100.0% | time=48350.3ms |
+ Valid: loss=0.022, acc= 99.3% |
+ lr=3.7e-03
+Frozen Space Size : 27, 4
+Compress Representation Size (27, 20) to (27, 4)
+Initiate Relaxing Space as (27, 1)
+Frozen Space Size : 180, 13
+Compress Representation Size (180, 20) to (180, 10)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 15
+Compress Representation Size (180, 20) to (180, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 14
+Compress Representation Size (180, 20) to (180, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 16
+Compress Representation Size (180, 20) to (180, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 27
+Compress Representation Size (180, 40) to (180, 21)
+Initiate Relaxing Space as (180, 1)
+Frozen Space Size : 360, 32
+Compress Representation Size (360, 40) to (360, 28)
+Keep Relaxing Space as None
+Frozen Space Size : 20, 13
+Compress Representation Size (20, 40) to (20, 11)
+Initiate Relaxing Space as (20, 6)
+Frozen Space Size : 360, 30
+Compress Representation Size (360, 40) to (360, 24)
+Keep Relaxing Space as None
+Frozen Space Size : 360, 30
+Compress Representation Size (360, 40) to (360, 25)
+Keep Relaxing Space as None
+Frozen Space Size : 360, 56
+Compress Representation Size (360, 80) to (360, 40)
+Initiate Relaxing Space as (360, 1)
+Frozen Space Size : 720, 63
+Compress Representation Size (720, 80) to (720, 56)
+Keep Relaxing Space as None
+Frozen Space Size : 40, 27
+Compress Representation Size (40, 80) to (40, 22)
+Initiate Relaxing Space as (40, 11)
+Frozen Space Size : 720, 63
+Compress Representation Size (720, 80) to (720, 55)
+Keep Relaxing Space as None
+Frozen Space Size : 720, 59
+Compress Representation Size (720, 80) to (720, 55)
+Keep Relaxing Space as None
+Frozen Space Size : 720, 87
+Compress Representation Size (720, 160) to (720, 75)
+Initiate Relaxing Space as (720, 1)
+Frozen Space Size : 1440, 102
+Compress Representation Size (1440, 160) to (1440, 95)
+Keep Relaxing Space as None
+Frozen Space Size : 80, 45
+Compress Representation Size (80, 160) to (80, 42)
+Initiate Relaxing Space as (80, 15)
+Frozen Space Size : 1440, 98
+Compress Representation Size (1440, 160) to (1440, 98)
+Keep Relaxing Space as None
+Frozen Space Size : 1440, 93
+Compress Representation Size (1440, 160) to (1440, 85)
+Keep Relaxing Space as None
+
+Epoch  28 | Train: loss=0.000, acc=100.0% | time=68376.3ms |
+ Valid: loss=0.023, acc= 99.2% |
+
+Epoch  29 | Train: loss=0.000, acc=100.0% | time=75135.3ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  30 | Train: loss=0.000, acc=100.0% | time=69918.0ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  31 | Train: loss=0.000, acc=100.0% | time=85566.2ms |
+ Valid: loss=0.022, acc= 99.4% |
+
+Epoch  32 | Train: loss=0.000, acc=100.0% | time=73293.9ms |
+ Valid: loss=0.023, acc= 99.3% |
+ lr=3.3e-02
+
+Epoch  33 | Train: loss=0.000, acc=100.0% | time=84595.5ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  34 | Train: loss=0.000, acc=100.0% | time=67706.6ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  35 | Train: loss=0.000, acc=100.0% | time=79038.7ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  36 | Train: loss=0.000, acc=100.0% | time=70361.1ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  37 | Train: loss=0.000, acc=100.0% | time=71636.6ms |
+ Valid: loss=0.023, acc= 99.2% |
+ lr=1.1e-02
+
+Epoch  38 | Train: loss=0.000, acc=100.0% | time=74915.3ms |
+ Valid: loss=0.023, acc= 99.2% |
+
+Epoch  39 | Train: loss=0.000, acc=100.0% | time=72980.3ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  40 | Train: loss=0.000, acc=100.0% | time=67724.3ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  41 | Train: loss=0.000, acc=100.0% | time=70602.2ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  42 | Train: loss=0.000, acc=100.0% | time=73646.3ms |
+ Valid: loss=0.023, acc= 99.3% |
+ lr=3.7e-03
+Frozen Space Size : 27, 3
+Compress Representation Size (27, 20) to (27, 4)
+Keep Relaxing Space as Previous (27, 1)
+Frozen Space Size : 180, 13
+Compress Representation Size (180, 20) to (180, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 15
+Compress Representation Size (180, 20) to (180, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 14
+Compress Representation Size (180, 20) to (180, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 16
+Compress Representation Size (180, 20) to (180, 15)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 26
+Compress Representation Size (180, 40) to (180, 22)
+Keep Relaxing Space as Previous (180, 1)
+Frozen Space Size : 360, 32
+Compress Representation Size (360, 40) to (360, 27)
+Keep Relaxing Space as None
+Frozen Space Size : 20, 7
+Compress Representation Size (20, 40) to (20, 11)
+Keep Relaxing Space as Previous (20, 6)
+Frozen Space Size : 360, 30
+Compress Representation Size (360, 40) to (360, 22)
+Keep Relaxing Space as None
+Frozen Space Size : 360, 30
+Compress Representation Size (360, 40) to (360, 26)
+Keep Relaxing Space as None
+Frozen Space Size : 360, 55
+Compress Representation Size (360, 80) to (360, 40)
+Keep Relaxing Space as Previous (360, 1)
+Frozen Space Size : 720, 63
+Compress Representation Size (720, 80) to (720, 55)
+Keep Relaxing Space as None
+Frozen Space Size : 40, 16
+Compress Representation Size (40, 80) to (40, 22)
+Expand Relaxing Space from (40, 11) to (40, 15)
+Frozen Space Size : 720, 63
+Compress Representation Size (720, 80) to (720, 55)
+Keep Relaxing Space as None
+Frozen Space Size : 720, 59
+Compress Representation Size (720, 80) to (720, 55)
+Keep Relaxing Space as None
+Frozen Space Size : 720, 86
+Compress Representation Size (720, 160) to (720, 74)
+Keep Relaxing Space as Previous (720, 1)
+Frozen Space Size : 1440, 102
+Compress Representation Size (1440, 160) to (1440, 93)
+Keep Relaxing Space as None
+Frozen Space Size : 80, 30
+Compress Representation Size (80, 160) to (80, 40)
+Keep Relaxing Space as Previous (80, 15)
+Frozen Space Size : 1440, 98
+Compress Representation Size (1440, 160) to (1440, 95)
+Keep Relaxing Space as None
+Frozen Space Size : 1440, 93
+Compress Representation Size (1440, 160) to (1440, 86)
+Keep Relaxing Space as None
+
+Epoch  43 | Train: loss=0.000, acc=100.0% | time=73508.4ms |
+ Valid: loss=0.024, acc= 99.2% |
+
+Epoch  44 | Train: loss=0.000, acc=100.0% | time=72510.8ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  45 | Train: loss=0.000, acc=100.0% | time=73290.5ms |
+ Valid: loss=0.023, acc= 99.4% |
+
+Epoch  46 | Train: loss=0.000, acc=100.0% | time=73833.9ms |
+ Valid: loss=0.023, acc= 99.4% |
+
+Epoch  47 | Train: loss=0.000, acc=100.0% | time=72779.2ms |
+ Valid: loss=0.023, acc= 99.3% |
+ lr=3.3e-02
+
+Epoch  48 | Train: loss=0.000, acc=100.0% | time=70861.5ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  49 | Train: loss=0.000, acc=100.0% | time=72914.1ms |
+ Valid: loss=0.024, acc= 99.3% |
+
+Epoch  50 | Train: loss=0.000, acc=100.0% | time=72561.0ms |
+ Valid: loss=0.024, acc= 99.4% |
+
+Epoch  51 | Train: loss=0.000, acc=100.0% | time=68045.7ms |
+ Valid: loss=0.024, acc= 99.3% |
+
+Epoch  52 | Train: loss=0.000, acc=100.0% | time=74182.0ms |
+ Valid: loss=0.024, acc= 99.4% |
+ lr=1.1e-02
+
+Epoch  53 | Train: loss=0.000, acc=100.0% | time=70673.6ms |
+ Valid: loss=0.024, acc= 99.2% |
+
+Epoch  54 | Train: loss=0.000, acc=100.0% | time=69517.6ms |
+ Valid: loss=0.023, acc= 99.2% |
+
+Epoch  55 | Train: loss=0.000, acc=100.0% | time=72509.9ms |
+ Valid: loss=0.025, acc= 99.3% |
+
+Epoch  56 | Train: loss=0.000, acc=100.0% | time=74951.6ms |
+ Valid: loss=0.026, acc= 99.2% |
+
+Epoch  57 | Train: loss=0.000, acc=100.0% | time=72922.6ms |
+ Valid: loss=0.024, acc= 99.4% |
+ lr=3.7e-03
+
+Epoch  58 | Train: loss=0.000, acc=100.0% | time=72771.9ms |
+ Valid: loss=0.025, acc= 99.2% |
+
+Epoch  59 | Train: loss=0.000, acc=100.0% | time=72346.0ms |
+ Valid: loss=0.024, acc= 99.3% |
+
+Epoch  60 | Train: loss=0.000, acc=100.0% | time=70228.4ms |
+ Valid: loss=0.024, acc= 99.3% |
+
+Epoch  61 | Train: loss=0.000, acc=100.0% | time=75638.8ms |
+ Valid: loss=0.024, acc= 99.3% |
+
+Epoch  62 | Train: loss=0.000, acc=100.0% | time=71656.2ms |
+ Valid: loss=0.024, acc= 99.3% |
+ lr=1.2e-03
+
+Epoch  63 | Train: loss=0.000, acc=100.0% | time=75094.7ms |
+ Valid: loss=0.024, acc= 99.2% |
+
+Epoch  64 | Train: loss=0.000, acc=100.0% | time=73237.5ms |
+ Valid: loss=0.025, acc= 99.3% |
+
+Epoch  65 | Train: loss=0.000, acc=100.0% | time=72890.2ms |
+ Valid: loss=0.024, acc= 99.3% |
+
+Epoch  66 | Train: loss=0.000, acc=100.0% | time=73863.0ms |
+ Valid: loss=0.024, acc= 99.3% |
+
+Epoch  67 | Train: loss=0.000, acc=100.0% | time=71418.6ms |
+ Valid: loss=0.025, acc= 99.2% |
+ lr=4.1e-04
+
+Test: loss=0.015 , acc= 99.5%
+Threshold: [0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97
+ 0.97 0.97 0.97 0.97 0.97 0.97]
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/27
+Layer 2 : 24/180
+Layer 3 : 29/180
+Layer 4 : 28/180
+Layer 5 : 30/180
+Layer 6 : 46/180
+Layer 7 : 58/360
+Layer 8 : 17/20
+Layer 9 : 53/360
+Layer 10 : 55/360
+Layer 11 : 89/360
+Layer 12 : 111/720
+Layer 13 : 33/40
+Layer 14 : 111/720
+Layer 15 : 108/720
+Layer 16 : 134/720
+Layer 17 : 165/1440
+Layer 18 : 60/80
+Layer 19 : 167/1440
+Layer 20 : 151/1440
+----------------------------------------
+Accuracies =
+ 82.5%   0.0%   0.0%   0.0%   0.0%
+ 73.2%  99.5%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  2 (svhn)
+****************************************************************************************************
+----------------------------------------
+Task ID :2 | Learning Rate : 0.1
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([27, 27])
+Layer 2 - Projection Matrix shape: torch.Size([180, 180])
+Layer 3 - Projection Matrix shape: torch.Size([180, 180])
+Layer 4 - Projection Matrix shape: torch.Size([180, 180])
+Layer 5 - Projection Matrix shape: torch.Size([180, 180])
+Layer 6 - Projection Matrix shape: torch.Size([180, 180])
+Layer 7 - Projection Matrix shape: torch.Size([360, 360])
+Layer 8 - Projection Matrix shape: torch.Size([20, 20])
+Layer 9 - Projection Matrix shape: torch.Size([360, 360])
+Layer 10 - Projection Matrix shape: torch.Size([360, 360])
+Layer 11 - Projection Matrix shape: torch.Size([360, 360])
+Layer 12 - Projection Matrix shape: torch.Size([720, 720])
+Layer 13 - Projection Matrix shape: torch.Size([40, 40])
+Layer 14 - Projection Matrix shape: torch.Size([720, 720])
+Layer 15 - Projection Matrix shape: torch.Size([720, 720])
+Layer 16 - Projection Matrix shape: torch.Size([720, 720])
+Layer 17 - Projection Matrix shape: torch.Size([1440, 1440])
+Layer 18 - Projection Matrix shape: torch.Size([80, 80])
+Layer 19 - Projection Matrix shape: torch.Size([1440, 1440])
+Layer 20 - Projection Matrix shape: torch.Size([1440, 1440])
+----------------------------------------
+Epoch   1 | Train: loss=0.250, acc= 93.3% | time=68828.9ms |
+ Valid: loss=0.316, acc= 91.2% |
+ *
+
+Epoch   2 | Train: loss=0.197, acc= 94.6% | time=69101.6ms |
+ Valid: loss=0.298, acc= 91.1% |
+ *
+
+Epoch   3 | Train: loss=0.134, acc= 96.9% | time=67750.9ms |
+ Valid: loss=0.258, acc= 93.0% |
+ *
+
+Epoch   4 | Train: loss=0.096, acc= 98.1% | time=68309.6ms |
+ Valid: loss=0.246, acc= 92.9% |
+ *
+
+Epoch   5 | Train: loss=0.064, acc= 99.0% | time=68343.3ms |
+ Valid: loss=0.239, acc= 93.7% |
+ *
+
+Epoch   6 | Train: loss=0.042, acc= 99.4% | time=65181.8ms |
+ Valid: loss=0.247, acc= 93.4% |
+
+Epoch   7 | Train: loss=0.029, acc= 99.7% | time=65682.3ms |
+ Valid: loss=0.252, acc= 93.2% |
+
+Epoch   8 | Train: loss=0.017, acc= 99.9% | time=70841.2ms |
+ Valid: loss=0.253, acc= 93.4% |
+
+Epoch   9 | Train: loss=0.012, acc= 99.9% | time=68442.3ms |
+ Valid: loss=0.256, acc= 93.5% |
+
+Epoch  10 | Train: loss=0.009, acc=100.0% | time=68568.6ms |
+ Valid: loss=0.265, acc= 93.5% |
+ lr=3.3e-02
+
+Epoch  11 | Train: loss=0.006, acc=100.0% | time=70577.4ms |
+ Valid: loss=0.256, acc= 93.6% |
+
+Epoch  12 | Train: loss=0.005, acc=100.0% | time=70328.6ms |
+ Valid: loss=0.256, acc= 93.6% |
+
+Epoch  13 | Train: loss=0.005, acc=100.0% | time=66934.9ms |
+ Valid: loss=0.256, acc= 93.6% |
+
+Epoch  14 | Train: loss=0.004, acc=100.0% | time=68349.7ms |
+ Valid: loss=0.255, acc= 93.7% |
+
+Epoch  15 | Train: loss=0.004, acc=100.0% | time=68541.9ms |
+ Valid: loss=0.257, acc= 93.8% |
+ lr=1.1e-02
+
+Epoch  16 | Train: loss=0.004, acc=100.0% | time=71097.0ms |
+ Valid: loss=0.257, acc= 93.8% |
+
+Epoch  17 | Train: loss=0.004, acc=100.0% | time=67765.9ms |
+ Valid: loss=0.256, acc= 93.6% |
+
+Epoch  18 | Train: loss=0.004, acc=100.0% | time=66608.0ms |
+ Valid: loss=0.255, acc= 93.6% |
+
+Epoch  19 | Train: loss=0.004, acc=100.0% | time=65724.9ms |
+ Valid: loss=0.258, acc= 93.5% |
+
+Epoch  20 | Train: loss=0.004, acc=100.0% | time=68634.4ms |
+ Valid: loss=0.256, acc= 93.7% |
+ lr=3.7e-03
+Frozen Space Size : 27, 8
+Compress Representation Size (27, 20) to (27, 2)
+Initiate Relaxing Space as (27, 1)
+Frozen Space Size : 180, 24
+Compress Representation Size (180, 20) to (180, 11)
+Initiate Relaxing Space as (180, 2)
+Frozen Space Size : 180, 29
+Compress Representation Size (180, 20) to (180, 14)
+Initiate Relaxing Space as (180, 1)
+Frozen Space Size : 180, 28
+Compress Representation Size (180, 20) to (180, 14)
+Initiate Relaxing Space as (180, 1)
+Frozen Space Size : 180, 30
+Compress Representation Size (180, 20) to (180, 15)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 46
+Compress Representation Size (180, 40) to (180, 23)
+Initiate Relaxing Space as (180, 4)
+Frozen Space Size : 360, 58
+Compress Representation Size (360, 40) to (360, 31)
+Keep Relaxing Space as None
+Frozen Space Size : 20, 17
+Compress Representation Size (20, 40) to (20, 14)
+Initiate Relaxing Space as (20, 11)
+Frozen Space Size : 360, 53
+Compress Representation Size (360, 40) to (360, 28)
+Initiate Relaxing Space as (360, 1)
+Frozen Space Size : 360, 55
+Compress Representation Size (360, 40) to (360, 30)
+Initiate Relaxing Space as (360, 1)
+Frozen Space Size : 360, 89
+Compress Representation Size (360, 80) to (360, 53)
+Initiate Relaxing Space as (360, 3)
+Frozen Space Size : 720, 111
+Compress Representation Size (720, 80) to (720, 62)
+Initiate Relaxing Space as (720, 1)
+Frozen Space Size : 40, 33
+Compress Representation Size (40, 80) to (40, 25)
+Initiate Relaxing Space as (40, 18)
+Frozen Space Size : 720, 111
+Compress Representation Size (720, 80) to (720, 60)
+Initiate Relaxing Space as (720, 1)
+Frozen Space Size : 720, 108
+Compress Representation Size (720, 80) to (720, 61)
+Initiate Relaxing Space as (720, 1)
+Frozen Space Size : 720, 134
+Compress Representation Size (720, 160) to (720, 87)
+Initiate Relaxing Space as (720, 2)
+Frozen Space Size : 1440, 165
+Compress Representation Size (1440, 160) to (1440, 105)
+Initiate Relaxing Space as (1440, 1)
+Frozen Space Size : 80, 60
+Compress Representation Size (80, 160) to (80, 42)
+Initiate Relaxing Space as (80, 24)
+Frozen Space Size : 1440, 167
+Compress Representation Size (1440, 160) to (1440, 101)
+Initiate Relaxing Space as (1440, 1)
+Frozen Space Size : 1440, 151
+Compress Representation Size (1440, 160) to (1440, 90)
+Keep Relaxing Space as None
+
+Epoch  21 | Train: loss=0.005, acc=100.0% | time=142190.2ms |
+ Valid: loss=0.276, acc= 93.1% |
+
+Epoch  22 | Train: loss=0.003, acc=100.0% | time=136624.6ms |
+ Valid: loss=0.259, acc= 93.8% |
+
+Epoch  23 | Train: loss=0.003, acc=100.0% | time=143862.0ms |
+ Valid: loss=0.258, acc= 93.9% |
+
+Epoch  24 | Train: loss=0.003, acc=100.0% | time=139414.9ms |
+ Valid: loss=0.261, acc= 93.6% |
+
+Epoch  25 | Train: loss=0.003, acc=100.0% | time=143067.6ms |
+ Valid: loss=0.259, acc= 93.9% |
+ lr=3.3e-02
+
+Epoch  26 | Train: loss=0.003, acc=100.0% | time=139647.7ms |
+ Valid: loss=0.256, acc= 93.8% |
+
+Epoch  27 | Train: loss=0.003, acc=100.0% | time=144274.7ms |
+ Valid: loss=0.253, acc= 93.7% |
+
+Epoch  28 | Train: loss=0.003, acc=100.0% | time=141057.4ms |
+ Valid: loss=0.253, acc= 94.0% |
+
+Epoch  29 | Train: loss=0.003, acc=100.0% | time=139425.1ms |
+ Valid: loss=0.253, acc= 93.6% |
+
+Epoch  30 | Train: loss=0.003, acc=100.0% | time=143957.4ms |
+ Valid: loss=0.252, acc= 93.7% |
+ lr=1.1e-02
+
+Epoch  31 | Train: loss=0.003, acc=100.0% | time=142189.5ms |
+ Valid: loss=0.249, acc= 93.6% |
+
+Epoch  32 | Train: loss=0.003, acc=100.0% | time=132692.8ms |
+ Valid: loss=0.252, acc= 93.5% |
+
+Epoch  33 | Train: loss=0.003, acc=100.0% | time=140182.3ms |
+ Valid: loss=0.251, acc= 93.6% |
+
+Epoch  34 | Train: loss=0.003, acc=100.0% | time=143069.3ms |
+ Valid: loss=0.252, acc= 93.7% |
+
+Epoch  35 | Train: loss=0.003, acc=100.0% | time=143593.4ms |
+ Valid: loss=0.248, acc= 93.8% |
+ lr=3.7e-03
+Frozen Space Size : 27, 7
+Compress Representation Size (27, 20) to (27, 3)
+Expand Relaxing Space from (27, 1) to (27, 2)
+Frozen Space Size : 180, 22
+Compress Representation Size (180, 20) to (180, 10)
+Keep Relaxing Space as Previous (180, 2)
+Frozen Space Size : 180, 28
+Compress Representation Size (180, 20) to (180, 14)
+Keep Relaxing Space as Previous (180, 1)
+Frozen Space Size : 180, 27
+Compress Representation Size (180, 20) to (180, 13)
+Keep Relaxing Space as Previous (180, 1)
+Frozen Space Size : 180, 30
+Compress Representation Size (180, 20) to (180, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 42
+Compress Representation Size (180, 40) to (180, 22)
+Keep Relaxing Space as Previous (180, 4)
+Frozen Space Size : 360, 58
+Compress Representation Size (360, 40) to (360, 29)
+Keep Relaxing Space as None
+Frozen Space Size : 20, 6
+Compress Representation Size (20, 40) to (20, 13)
+Keep Relaxing Space as Previous (20, 11)
+Frozen Space Size : 360, 52
+Compress Representation Size (360, 40) to (360, 26)
+Keep Relaxing Space as Previous (360, 1)
+Frozen Space Size : 360, 54
+Compress Representation Size (360, 40) to (360, 28)
+Keep Relaxing Space as Previous (360, 1)
+Frozen Space Size : 360, 86
+Compress Representation Size (360, 80) to (360, 49)
+Keep Relaxing Space as Previous (360, 3)
+Frozen Space Size : 720, 110
+Compress Representation Size (720, 80) to (720, 59)
+Keep Relaxing Space as Previous (720, 1)
+Frozen Space Size : 40, 15
+Compress Representation Size (40, 80) to (40, 25)
+Keep Relaxing Space as Previous (40, 18)
+Frozen Space Size : 720, 110
+Compress Representation Size (720, 80) to (720, 54)
+Keep Relaxing Space as Previous (720, 1)
+Frozen Space Size : 720, 107
+Compress Representation Size (720, 80) to (720, 57)
+Keep Relaxing Space as Previous (720, 1)
+Frozen Space Size : 720, 132
+Compress Representation Size (720, 160) to (720, 77)
+Keep Relaxing Space as Previous (720, 2)
+Frozen Space Size : 1440, 164
+Compress Representation Size (1440, 160) to (1440, 100)
+Keep Relaxing Space as Previous (1440, 1)
+Frozen Space Size : 80, 36
+Compress Representation Size (80, 160) to (80, 38)
+Keep Relaxing Space as Previous (80, 24)
+Frozen Space Size : 1440, 166
+Compress Representation Size (1440, 160) to (1440, 92)
+Keep Relaxing Space as Previous (1440, 1)
+Frozen Space Size : 1440, 151
+Compress Representation Size (1440, 160) to (1440, 83)
+Keep Relaxing Space as None
+
+Epoch  36 | Train: loss=0.004, acc=100.0% | time=142097.7ms |
+ Valid: loss=0.257, acc= 93.7% |
+
+Epoch  37 | Train: loss=0.004, acc=100.0% | time=141379.7ms |
+ Valid: loss=0.255, acc= 93.5% |
+
+Epoch  38 | Train: loss=0.003, acc=100.0% | time=139950.2ms |
+ Valid: loss=0.255, acc= 93.6% |
+
+Epoch  39 | Train: loss=0.003, acc=100.0% | time=143979.6ms |
+ Valid: loss=0.254, acc= 94.0% |
+
+Epoch  40 | Train: loss=0.003, acc=100.0% | time=141473.7ms |
+ Valid: loss=0.254, acc= 93.6% |
+ lr=3.3e-02
+
+Epoch  41 | Train: loss=0.003, acc=100.0% | time=141614.8ms |
+ Valid: loss=0.248, acc= 93.7% |
+
+Epoch  42 | Train: loss=0.003, acc=100.0% | time=137963.0ms |
+ Valid: loss=0.249, acc= 93.8% |
+
+Epoch  43 | Train: loss=0.003, acc=100.0% | time=144860.5ms |
+ Valid: loss=0.250, acc= 94.0% |
+
+Epoch  44 | Train: loss=0.003, acc=100.0% | time=140418.6ms |
+ Valid: loss=0.252, acc= 93.8% |
+
+Epoch  45 | Train: loss=0.003, acc=100.0% | time=143236.0ms |
+ Valid: loss=0.252, acc= 93.5% |
+ lr=1.1e-02
+
+Epoch  46 | Train: loss=0.003, acc=100.0% | time=137026.0ms |
+ Valid: loss=0.248, acc= 93.7% |
+
+Epoch  47 | Train: loss=0.003, acc=100.0% | time=128162.9ms |
+ Valid: loss=0.247, acc= 93.9% |
+
+Epoch  48 | Train: loss=0.003, acc=100.0% | time=123446.0ms |
+ Valid: loss=0.249, acc= 93.6% |
+
+Epoch  49 | Train: loss=0.003, acc=100.0% | time=132484.2ms |
+ Valid: loss=0.251, acc= 93.6% |
+
+Epoch  50 | Train: loss=0.003, acc=100.0% | time=132070.8ms |
+ Valid: loss=0.247, acc= 93.9% |
+ lr=3.7e-03
+
+Epoch  51 | Train: loss=0.003, acc=100.0% | time=133999.2ms |
+ Valid: loss=0.251, acc= 93.7% |
+
+Epoch  52 | Train: loss=0.003, acc=100.0% | time=138256.1ms |
+ Valid: loss=0.248, acc= 93.7% |
+
+Epoch  53 | Train: loss=0.003, acc=100.0% | time=133878.6ms |
+ Valid: loss=0.247, acc= 93.7% |
+
+Epoch  54 | Train: loss=0.003, acc=100.0% | time=136480.1ms |
+ Valid: loss=0.249, acc= 93.8% |
+
+Epoch  55 | Train: loss=0.003, acc=100.0% | time=134000.8ms |
+ Valid: loss=0.247, acc= 93.6% |
+ lr=1.2e-03
+
+Epoch  56 | Train: loss=0.003, acc=100.0% | time=133316.7ms |
+ Valid: loss=0.245, acc= 93.7% |
+
+Epoch  57 | Train: loss=0.003, acc=100.0% | time=138622.4ms |
+ Valid: loss=0.249, acc= 93.7% |
+
+Epoch  58 | Train: loss=0.003, acc=100.0% | time=131325.4ms |
+ Valid: loss=0.248, acc= 93.7% |
+
+Epoch  59 | Train: loss=0.003, acc=100.0% | time=127445.1ms |
+ Valid: loss=0.248, acc= 93.7% |
+
+Epoch  60 | Train: loss=0.003, acc=100.0% | time=132336.0ms |
+ Valid: loss=0.250, acc= 93.6% |
+ lr=4.1e-04
+
+Test: loss=0.220 , acc= 93.7%
+Threshold: [0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97
+ 0.97 0.97 0.97 0.97 0.97 0.97]
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 9/27
+Layer 2 : 30/180
+Layer 3 : 39/180
+Layer 4 : 37/180
+Layer 5 : 41/180
+Layer 6 : 57/180
+Layer 7 : 82/360
+Layer 8 : 18/20
+Layer 9 : 73/360
+Layer 10 : 77/360
+Layer 11 : 123/360
+Layer 12 : 161/720
+Layer 13 : 37/40
+Layer 14 : 161/720
+Layer 15 : 159/720
+Layer 16 : 188/720
+Layer 17 : 227/1440
+Layer 18 : 68/80
+Layer 19 : 228/1440
+Layer 20 : 208/1440
+----------------------------------------
+Accuracies =
+ 82.5%   0.0%   0.0%   0.0%   0.0%
+ 73.2%  99.5%   0.0%   0.0%   0.0%
+ 56.6%  98.6%  93.6%   0.0%   0.0%
+****************************************************************************************************
+Task  3 (fashion-mnist)
+****************************************************************************************************
+----------------------------------------
+Task ID :3 | Learning Rate : 0.1
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([27, 27])
+Layer 2 - Projection Matrix shape: torch.Size([180, 180])
+Layer 3 - Projection Matrix shape: torch.Size([180, 180])
+Layer 4 - Projection Matrix shape: torch.Size([180, 180])
+Layer 5 - Projection Matrix shape: torch.Size([180, 180])
+Layer 6 - Projection Matrix shape: torch.Size([180, 180])
+Layer 7 - Projection Matrix shape: torch.Size([360, 360])
+Layer 8 - Projection Matrix shape: torch.Size([20, 20])
+Layer 9 - Projection Matrix shape: torch.Size([360, 360])
+Layer 10 - Projection Matrix shape: torch.Size([360, 360])
+Layer 11 - Projection Matrix shape: torch.Size([360, 360])
+Layer 12 - Projection Matrix shape: torch.Size([720, 720])
+Layer 13 - Projection Matrix shape: torch.Size([40, 40])
+Layer 14 - Projection Matrix shape: torch.Size([720, 720])
+Layer 15 - Projection Matrix shape: torch.Size([720, 720])
+Layer 16 - Projection Matrix shape: torch.Size([720, 720])
+Layer 17 - Projection Matrix shape: torch.Size([1440, 1440])
+Layer 18 - Projection Matrix shape: torch.Size([80, 80])
+Layer 19 - Projection Matrix shape: torch.Size([1440, 1440])
+Layer 20 - Projection Matrix shape: torch.Size([1440, 1440])
+----------------------------------------
+Epoch   1 | Train: loss=0.007, acc= 99.9% | time=51345.0ms |
+ Valid: loss=0.022, acc= 99.4% |
+ *
+
+Epoch   2 | Train: loss=0.004, acc=100.0% | time=57336.5ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch   3 | Train: loss=0.002, acc=100.0% | time=55491.9ms |
+ Valid: loss=0.018, acc= 99.5% |
+ *
+
+Epoch   4 | Train: loss=0.002, acc=100.0% | time=50416.3ms |
+ Valid: loss=0.020, acc= 99.4% |
+
+Epoch   5 | Train: loss=0.001, acc=100.0% | time=52588.1ms |
+ Valid: loss=0.019, acc= 99.3% |
+
+Epoch   6 | Train: loss=0.001, acc=100.0% | time=54769.8ms |
+ Valid: loss=0.020, acc= 99.3% |
+
+Epoch   7 | Train: loss=0.001, acc=100.0% | time=53457.2ms |
+ Valid: loss=0.020, acc= 99.4% |
+
+Epoch   8 | Train: loss=0.001, acc=100.0% | time=58369.8ms |
+ Valid: loss=0.019, acc= 99.3% |
+ lr=3.3e-02
+
+Epoch   9 | Train: loss=0.001, acc=100.0% | time=58019.3ms |
+ Valid: loss=0.019, acc= 99.3% |
+
+Epoch  10 | Train: loss=0.001, acc=100.0% | time=58173.8ms |
+ Valid: loss=0.019, acc= 99.5% |
+
+Epoch  11 | Train: loss=0.001, acc=100.0% | time=56737.5ms |
+ Valid: loss=0.019, acc= 99.3% |
+
+Epoch  12 | Train: loss=0.001, acc=100.0% | time=57547.8ms |
+ Valid: loss=0.020, acc= 99.3% |
+
+Epoch  13 | Train: loss=0.000, acc=100.0% | time=52000.0ms |
+ Valid: loss=0.020, acc= 99.4% |
+ lr=1.1e-02
+
+Epoch  14 | Train: loss=0.000, acc=100.0% | time=57577.3ms |
+ Valid: loss=0.019, acc= 99.4% |
+
+Epoch  15 | Train: loss=0.000, acc=100.0% | time=57435.9ms |
+ Valid: loss=0.020, acc= 99.3% |
+
+Epoch  16 | Train: loss=0.000, acc=100.0% | time=54343.5ms |
+ Valid: loss=0.019, acc= 99.5% |
+
+Epoch  17 | Train: loss=0.000, acc=100.0% | time=55279.7ms |
+ Valid: loss=0.020, acc= 99.2% |
+
+Epoch  18 | Train: loss=0.000, acc=100.0% | time=55953.6ms |
+ Valid: loss=0.021, acc= 99.3% |
+ lr=3.7e-03
+Frozen Space Size : 27, 9
+Compress Representation Size (27, 20) to (27, 4)
+Initiate Relaxing Space as (27, 2)
+Frozen Space Size : 180, 30
+Compress Representation Size (180, 20) to (180, 11)
+Initiate Relaxing Space as (180, 3)
+Frozen Space Size : 180, 39
+Compress Representation Size (180, 20) to (180, 13)
+Initiate Relaxing Space as (180, 1)
+Frozen Space Size : 180, 37
+Compress Representation Size (180, 20) to (180, 15)
+Initiate Relaxing Space as (180, 2)
+Frozen Space Size : 180, 41
+Compress Representation Size (180, 20) to (180, 14)
+Initiate Relaxing Space as (180, 1)
+Frozen Space Size : 180, 57
+Compress Representation Size (180, 40) to (180, 20)
+Initiate Relaxing Space as (180, 7)
+Frozen Space Size : 360, 82
+Compress Representation Size (360, 40) to (360, 24)
+Initiate Relaxing Space as (360, 2)
+Frozen Space Size : 20, 18
+Compress Representation Size (20, 40) to (20, 10)
+Initiate Relaxing Space as (20, 9)
+Frozen Space Size : 360, 73
+Compress Representation Size (360, 40) to (360, 21)
+Initiate Relaxing Space as (360, 4)
+Frozen Space Size : 360, 77
+Compress Representation Size (360, 40) to (360, 22)
+Initiate Relaxing Space as (360, 3)
+Frozen Space Size : 360, 123
+Compress Representation Size (360, 80) to (360, 32)
+Initiate Relaxing Space as (360, 8)
+Frozen Space Size : 720, 161
+Compress Representation Size (720, 80) to (720, 48)
+Initiate Relaxing Space as (720, 3)
+Frozen Space Size : 40, 37
+Compress Representation Size (40, 80) to (40, 18)
+Initiate Relaxing Space as (40, 16)
+Frozen Space Size : 720, 161
+Compress Representation Size (720, 80) to (720, 45)
+Initiate Relaxing Space as (720, 4)
+Frozen Space Size : 720, 159
+Compress Representation Size (720, 80) to (720, 48)
+Initiate Relaxing Space as (720, 3)
+Frozen Space Size : 720, 188
+Compress Representation Size (720, 160) to (720, 66)
+Initiate Relaxing Space as (720, 7)
+Frozen Space Size : 1440, 227
+Compress Representation Size (1440, 160) to (1440, 85)
+Initiate Relaxing Space as (1440, 3)
+Frozen Space Size : 80, 68
+Compress Representation Size (80, 160) to (80, 37)
+Initiate Relaxing Space as (80, 26)
+Frozen Space Size : 1440, 228
+Compress Representation Size (1440, 160) to (1440, 91)
+Initiate Relaxing Space as (1440, 3)
+Frozen Space Size : 1440, 208
+Compress Representation Size (1440, 160) to (1440, 75)
+Initiate Relaxing Space as (1440, 4)
+
+Epoch  19 | Train: loss=0.000, acc=100.0% | time=127074.2ms |
+ Valid: loss=0.019, acc= 99.4% |
+
+Epoch  20 | Train: loss=0.000, acc=100.0% | time=126802.8ms |
+ Valid: loss=0.020, acc= 99.4% |
+
+Epoch  21 | Train: loss=0.000, acc=100.0% | time=129412.3ms |
+ Valid: loss=0.020, acc= 99.4% |
+
+Epoch  22 | Train: loss=0.000, acc=100.0% | time=130216.3ms |
+ Valid: loss=0.021, acc= 99.3% |
+
+Epoch  23 | Train: loss=0.000, acc=100.0% | time=126124.6ms |
+ Valid: loss=0.020, acc= 99.4% |
+ lr=3.3e-02
+
+Epoch  24 | Train: loss=0.000, acc=100.0% | time=129376.8ms |
+ Valid: loss=0.019, acc= 99.5% |
+
+Epoch  25 | Train: loss=0.000, acc=100.0% | time=123650.2ms |
+ Valid: loss=0.020, acc= 99.3% |
+
+Epoch  26 | Train: loss=0.000, acc=100.0% | time=124418.6ms |
+ Valid: loss=0.020, acc= 99.4% |
+
+Epoch  27 | Train: loss=0.000, acc=100.0% | time=127458.9ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  28 | Train: loss=0.000, acc=100.0% | time=124873.6ms |
+ Valid: loss=0.022, acc= 99.4% |
+ lr=1.1e-02
+
+Epoch  29 | Train: loss=0.000, acc=100.0% | time=124048.4ms |
+ Valid: loss=0.020, acc= 99.4% |
+
+Epoch  30 | Train: loss=0.000, acc=100.0% | time=126877.2ms |
+ Valid: loss=0.020, acc= 99.4% |
+
+Epoch  31 | Train: loss=0.000, acc=100.0% | time=137338.3ms |
+ Valid: loss=0.020, acc= 99.4% |
+
+Epoch  32 | Train: loss=0.000, acc=100.0% | time=125784.3ms |
+ Valid: loss=0.020, acc= 99.3% |
+
+Epoch  33 | Train: loss=0.000, acc=100.0% | time=121418.0ms |
+ Valid: loss=0.020, acc= 99.4% |
+ lr=3.7e-03
+Frozen Space Size : 27, 7
+Compress Representation Size (27, 20) to (27, 5)
+Keep Relaxing Space as Previous (27, 2)
+Frozen Space Size : 180, 27
+Compress Representation Size (180, 20) to (180, 12)
+Keep Relaxing Space as Previous (180, 3)
+Frozen Space Size : 180, 38
+Compress Representation Size (180, 20) to (180, 15)
+Keep Relaxing Space as Previous (180, 1)
+Frozen Space Size : 180, 35
+Compress Representation Size (180, 20) to (180, 14)
+Keep Relaxing Space as Previous (180, 2)
+Frozen Space Size : 180, 40
+Compress Representation Size (180, 20) to (180, 14)
+Keep Relaxing Space as Previous (180, 1)
+Frozen Space Size : 180, 50
+Compress Representation Size (180, 40) to (180, 21)
+Keep Relaxing Space as Previous (180, 7)
+Frozen Space Size : 360, 80
+Compress Representation Size (360, 40) to (360, 26)
+Keep Relaxing Space as Previous (360, 2)
+Frozen Space Size : 20, 9
+Compress Representation Size (20, 40) to (20, 11)
+Keep Relaxing Space as Previous (20, 9)
+Frozen Space Size : 360, 69
+Compress Representation Size (360, 40) to (360, 24)
+Keep Relaxing Space as Previous (360, 4)
+Frozen Space Size : 360, 74
+Compress Representation Size (360, 40) to (360, 26)
+Keep Relaxing Space as Previous (360, 3)
+Frozen Space Size : 360, 115
+Compress Representation Size (360, 80) to (360, 36)
+Keep Relaxing Space as Previous (360, 8)
+Frozen Space Size : 720, 158
+Compress Representation Size (720, 80) to (720, 50)
+Keep Relaxing Space as Previous (720, 3)
+Frozen Space Size : 40, 21
+Compress Representation Size (40, 80) to (40, 21)
+Keep Relaxing Space as Previous (40, 16)
+Frozen Space Size : 720, 157
+Compress Representation Size (720, 80) to (720, 53)
+Keep Relaxing Space as Previous (720, 4)
+Frozen Space Size : 720, 156
+Compress Representation Size (720, 80) to (720, 50)
+Keep Relaxing Space as Previous (720, 3)
+Frozen Space Size : 720, 181
+Compress Representation Size (720, 160) to (720, 60)
+Keep Relaxing Space as Previous (720, 7)
+Frozen Space Size : 1440, 224
+Compress Representation Size (1440, 160) to (1440, 84)
+Keep Relaxing Space as Previous (1440, 3)
+Frozen Space Size : 80, 42
+Compress Representation Size (80, 160) to (80, 35)
+Keep Relaxing Space as Previous (80, 26)
+Frozen Space Size : 1440, 225
+Compress Representation Size (1440, 160) to (1440, 87)
+Keep Relaxing Space as Previous (1440, 3)
+Frozen Space Size : 1440, 204
+Compress Representation Size (1440, 160) to (1440, 74)
+Keep Relaxing Space as Previous (1440, 4)
+
+Epoch  34 | Train: loss=0.000, acc=100.0% | time=127017.3ms |
+ Valid: loss=0.020, acc= 99.4% |
+
+Epoch  35 | Train: loss=0.000, acc=100.0% | time=126307.2ms |
+ Valid: loss=0.019, acc= 99.4% |
+
+Epoch  36 | Train: loss=0.000, acc=100.0% | time=127240.4ms |
+ Valid: loss=0.020, acc= 99.4% |
+
+Epoch  37 | Train: loss=0.000, acc=100.0% | time=124009.8ms |
+ Valid: loss=0.020, acc= 99.4% |
+
+Epoch  38 | Train: loss=0.000, acc=100.0% | time=126051.9ms |
+ Valid: loss=0.020, acc= 99.4% |
+ lr=1.2e-03
+
+Epoch  39 | Train: loss=0.000, acc=100.0% | time=125514.3ms |
+ Valid: loss=0.020, acc= 99.4% |
+
+Epoch  40 | Train: loss=0.000, acc=100.0% | time=128513.4ms |
+ Valid: loss=0.020, acc= 99.3% |
+
+Epoch  41 | Train: loss=0.000, acc=100.0% | time=124248.8ms |
+ Valid: loss=0.021, acc= 99.5% |
+
+Epoch  42 | Train: loss=0.000, acc=100.0% | time=128226.4ms |
+ Valid: loss=0.021, acc= 99.4% |
+
+Epoch  43 | Train: loss=0.000, acc=100.0% | time=130263.1ms |
+ Valid: loss=0.021, acc= 99.3% |
+ lr=4.1e-04
+
+Test: loss=0.015 , acc= 99.5%
+Threshold: [0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97
+ 0.97 0.97 0.97 0.97 0.97 0.97]
+Skip Updating GPM for layer: 8
+Skip Updating GPM for layer: 13
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 10/27
+Layer 2 : 38/180
+Layer 3 : 50/180
+Layer 4 : 48/180
+Layer 5 : 53/180
+Layer 6 : 69/180
+Layer 7 : 105/360
+Layer 8 : 18/20
+Layer 9 : 91/360
+Layer 10 : 97/360
+Layer 11 : 147/360
+Layer 12 : 201/720
+Layer 13 : 37/40
+Layer 14 : 200/720
+Layer 15 : 198/720
+Layer 16 : 221/720
+Layer 17 : 276/1440
+Layer 18 : 71/80
+Layer 19 : 283/1440
+Layer 20 : 253/1440
+----------------------------------------
+Accuracies =
+ 82.5%   0.0%   0.0%   0.0%   0.0%
+ 73.2%  99.5%   0.0%   0.0%   0.0%
+ 56.6%  98.6%  93.6%   0.0%   0.0%
+ 59.6%  99.6%  93.0%  99.5%   0.0%
+****************************************************************************************************
+Task  4 (notmnist)
+****************************************************************************************************
+----------------------------------------
+Task ID :4 | Learning Rate : 0.1
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([27, 27])
+Layer 2 - Projection Matrix shape: torch.Size([180, 180])
+Layer 3 - Projection Matrix shape: torch.Size([180, 180])
+Layer 4 - Projection Matrix shape: torch.Size([180, 180])
+Layer 5 - Projection Matrix shape: torch.Size([180, 180])
+Layer 6 - Projection Matrix shape: torch.Size([180, 180])
+Layer 7 - Projection Matrix shape: torch.Size([360, 360])
+Layer 8 - Projection Matrix shape: torch.Size([20, 20])
+Layer 9 - Projection Matrix shape: torch.Size([360, 360])
+Layer 10 - Projection Matrix shape: torch.Size([360, 360])
+Layer 11 - Projection Matrix shape: torch.Size([360, 360])
+Layer 12 - Projection Matrix shape: torch.Size([720, 720])
+Layer 13 - Projection Matrix shape: torch.Size([40, 40])
+Layer 14 - Projection Matrix shape: torch.Size([720, 720])
+Layer 15 - Projection Matrix shape: torch.Size([720, 720])
+Layer 16 - Projection Matrix shape: torch.Size([720, 720])
+Layer 17 - Projection Matrix shape: torch.Size([1440, 1440])
+Layer 18 - Projection Matrix shape: torch.Size([80, 80])
+Layer 19 - Projection Matrix shape: torch.Size([1440, 1440])
+Layer 20 - Projection Matrix shape: torch.Size([1440, 1440])
+----------------------------------------
+Epoch   1 | Train: loss=0.283, acc= 90.6% | time=16773.5ms |
+ Valid: loss=0.326, acc= 89.0% |
+ *
+
+Epoch   2 | Train: loss=0.120, acc= 96.8% | time=18417.9ms |
+ Valid: loss=0.191, acc= 94.4% |
+ *
+
+Epoch   3 | Train: loss=0.087, acc= 97.9% | time=16018.7ms |
+ Valid: loss=0.172, acc= 94.4% |
+ *
+
+Epoch   4 | Train: loss=0.089, acc= 97.5% | time=15278.6ms |
+ Valid: loss=0.189, acc= 94.4% |
+
+Epoch   5 | Train: loss=0.041, acc= 99.3% | time=17661.8ms |
+ Valid: loss=0.141, acc= 96.2% |
+ *
+
+Epoch   6 | Train: loss=0.029, acc= 99.6% | time=16289.7ms |
+ Valid: loss=0.146, acc= 95.6% |
+
+Epoch   7 | Train: loss=0.020, acc= 99.8% | time=13936.3ms |
+ Valid: loss=0.139, acc= 96.0% |
+ *
+
+Epoch   8 | Train: loss=0.021, acc= 99.7% | time=16480.9ms |
+ Valid: loss=0.153, acc= 94.9% |
+
+Epoch   9 | Train: loss=0.014, acc= 99.9% | time=16731.5ms |
+ Valid: loss=0.144, acc= 96.2% |
+
+Epoch  10 | Train: loss=0.011, acc= 99.9% | time=16607.7ms |
+ Valid: loss=0.138, acc= 95.8% |
+ *
+
+Epoch  11 | Train: loss=0.008, acc=100.0% | time=15088.3ms |
+ Valid: loss=0.133, acc= 96.2% |
+ *
+
+Epoch  12 | Train: loss=0.008, acc= 99.9% | time=17178.2ms |
+ Valid: loss=0.133, acc= 96.1% |
+
+Epoch  13 | Train: loss=0.007, acc= 99.9% | time=16793.0ms |
+ Valid: loss=0.147, acc= 95.6% |
+
+Epoch  14 | Train: loss=0.005, acc=100.0% | time=16410.4ms |
+ Valid: loss=0.144, acc= 95.5% |
+
+Epoch  15 | Train: loss=0.008, acc= 99.9% | time=14999.5ms |
+ Valid: loss=0.153, acc= 95.5% |
+
+Epoch  16 | Train: loss=0.038, acc= 98.9% | time=15650.2ms |
+ Valid: loss=0.195, acc= 94.5% |
+ lr=3.3e-02
+
+Epoch  17 | Train: loss=0.005, acc=100.0% | time=14826.1ms |
+ Valid: loss=0.144, acc= 95.8% |
+
+Epoch  18 | Train: loss=0.005, acc=100.0% | time=15726.4ms |
+ Valid: loss=0.135, acc= 96.1% |
+
+Epoch  19 | Train: loss=0.004, acc=100.0% | time=16598.7ms |
+ Valid: loss=0.135, acc= 96.2% |
+
+Epoch  20 | Train: loss=0.005, acc=100.0% | time=16626.0ms |
+ Valid: loss=0.136, acc= 95.8% |
+
+Epoch  21 | Train: loss=0.004, acc=100.0% | time=16972.2ms |
+ Valid: loss=0.141, acc= 95.6% |
+ lr=1.1e-02
+
+Epoch  22 | Train: loss=0.004, acc=100.0% | time=17161.9ms |
+ Valid: loss=0.136, acc= 96.1% |
+
+Epoch  23 | Train: loss=0.004, acc=100.0% | time=17032.1ms |
+ Valid: loss=0.137, acc= 96.1% |
+
+Epoch  24 | Train: loss=0.004, acc=100.0% | time=15539.4ms |
+ Valid: loss=0.137, acc= 96.1% |
+
+Epoch  25 | Train: loss=0.004, acc=100.0% | time=15840.1ms |
+ Valid: loss=0.139, acc= 96.1% |
+
+Epoch  26 | Train: loss=0.004, acc=100.0% | time=15032.9ms |
+ Valid: loss=0.139, acc= 95.8% |
+ lr=3.7e-03
+Frozen Space Size : 27, 10
+Compress Representation Size (27, 20) to (27, 3)
+Initiate Relaxing Space as (27, 3)
+Frozen Space Size : 180, 38
+Compress Representation Size (180, 20) to (180, 13)
+Initiate Relaxing Space as (180, 4)
+Frozen Space Size : 180, 50
+Compress Representation Size (180, 20) to (180, 15)
+Initiate Relaxing Space as (180, 3)
+Frozen Space Size : 180, 48
+Compress Representation Size (180, 20) to (180, 13)
+Initiate Relaxing Space as (180, 4)
+Frozen Space Size : 180, 53
+Compress Representation Size (180, 20) to (180, 15)
+Initiate Relaxing Space as (180, 4)
+Frozen Space Size : 180, 69
+Compress Representation Size (180, 40) to (180, 20)
+Initiate Relaxing Space as (180, 9)
+Frozen Space Size : 360, 105
+Compress Representation Size (360, 40) to (360, 29)
+Initiate Relaxing Space as (360, 5)
+Frozen Space Size : 20, 18
+Compress Representation Size (20, 40) to (20, 11)
+Initiate Relaxing Space as (20, 9)
+Frozen Space Size : 360, 91
+Compress Representation Size (360, 40) to (360, 24)
+Initiate Relaxing Space as (360, 5)
+Frozen Space Size : 360, 97
+Compress Representation Size (360, 40) to (360, 26)
+Initiate Relaxing Space as (360, 3)
+Frozen Space Size : 360, 147
+Compress Representation Size (360, 80) to (360, 45)
+Initiate Relaxing Space as (360, 13)
+Frozen Space Size : 720, 201
+Compress Representation Size (720, 80) to (720, 56)
+Initiate Relaxing Space as (720, 4)
+Frozen Space Size : 40, 37
+Compress Representation Size (40, 80) to (40, 22)
+Initiate Relaxing Space as (40, 19)
+Frozen Space Size : 720, 200
+Compress Representation Size (720, 80) to (720, 54)
+Initiate Relaxing Space as (720, 5)
+Frozen Space Size : 720, 198
+Compress Representation Size (720, 80) to (720, 56)
+Initiate Relaxing Space as (720, 2)
+Frozen Space Size : 720, 221
+Compress Representation Size (720, 160) to (720, 71)
+Initiate Relaxing Space as (720, 8)
+Frozen Space Size : 1440, 276
+Compress Representation Size (1440, 160) to (1440, 98)
+Initiate Relaxing Space as (1440, 3)
+Frozen Space Size : 80, 71
+Compress Representation Size (80, 160) to (80, 39)
+Initiate Relaxing Space as (80, 30)
+Frozen Space Size : 1440, 283
+Compress Representation Size (1440, 160) to (1440, 99)
+Initiate Relaxing Space as (1440, 2)
+Frozen Space Size : 1440, 253
+Compress Representation Size (1440, 160) to (1440, 92)
+Initiate Relaxing Space as (1440, 2)
+
+Epoch  27 | Train: loss=0.005, acc= 99.9% | time=36202.7ms |
+ Valid: loss=0.139, acc= 96.1% |
+
+Epoch  28 | Train: loss=0.006, acc=100.0% | time=35994.0ms |
+ Valid: loss=0.156, acc= 95.4% |
+
+Epoch  29 | Train: loss=0.004, acc=100.0% | time=34070.9ms |
+ Valid: loss=0.142, acc= 95.7% |
+
+Epoch  30 | Train: loss=0.009, acc= 99.9% | time=34882.6ms |
+ Valid: loss=0.152, acc= 95.2% |
+
+Epoch  31 | Train: loss=0.004, acc=100.0% | time=36690.2ms |
+ Valid: loss=0.140, acc= 96.2% |
+ lr=3.3e-02
+
+Epoch  32 | Train: loss=0.004, acc=100.0% | time=34209.9ms |
+ Valid: loss=0.146, acc= 95.7% |
+
+Epoch  33 | Train: loss=0.004, acc=100.0% | time=36508.9ms |
+ Valid: loss=0.138, acc= 95.8% |
+
+Epoch  34 | Train: loss=0.003, acc=100.0% | time=38426.5ms |
+ Valid: loss=0.140, acc= 95.7% |
+
+Epoch  35 | Train: loss=0.003, acc=100.0% | time=35358.5ms |
+ Valid: loss=0.137, acc= 96.1% |
+
+Epoch  36 | Train: loss=0.003, acc=100.0% | time=33736.9ms |
+ Valid: loss=0.143, acc= 95.8% |
+ lr=1.1e-02
+
+Epoch  37 | Train: loss=0.003, acc=100.0% | time=34316.6ms |
+ Valid: loss=0.141, acc= 95.8% |
+
+Epoch  38 | Train: loss=0.003, acc=100.0% | time=35850.1ms |
+ Valid: loss=0.138, acc= 96.1% |
+
+Epoch  39 | Train: loss=0.003, acc=100.0% | time=36009.0ms |
+ Valid: loss=0.137, acc= 96.0% |
+
+Epoch  40 | Train: loss=0.003, acc=100.0% | time=36401.0ms |
+ Valid: loss=0.142, acc= 96.2% |
+
+Epoch  41 | Train: loss=0.003, acc=100.0% | time=36202.7ms |
+ Valid: loss=0.137, acc= 96.2% |
+ lr=3.7e-03
+Frozen Space Size : 27, 7
+Compress Representation Size (27, 20) to (27, 4)
+Keep Relaxing Space as Previous (27, 3)
+Frozen Space Size : 180, 34
+Compress Representation Size (180, 20) to (180, 12)
+Keep Relaxing Space as Previous (180, 4)
+Frozen Space Size : 180, 47
+Compress Representation Size (180, 20) to (180, 16)
+Keep Relaxing Space as Previous (180, 3)
+Frozen Space Size : 180, 44
+Compress Representation Size (180, 20) to (180, 15)
+Keep Relaxing Space as Previous (180, 4)
+Frozen Space Size : 180, 49
+Compress Representation Size (180, 20) to (180, 16)
+Keep Relaxing Space as Previous (180, 4)
+Frozen Space Size : 180, 60
+Compress Representation Size (180, 40) to (180, 22)
+Keep Relaxing Space as Previous (180, 9)
+Frozen Space Size : 360, 100
+Compress Representation Size (360, 40) to (360, 30)
+Keep Relaxing Space as Previous (360, 5)
+Frozen Space Size : 20, 9
+Compress Representation Size (20, 40) to (20, 13)
+Keep Relaxing Space as Previous (20, 9)
+Frozen Space Size : 360, 86
+Compress Representation Size (360, 40) to (360, 26)
+Keep Relaxing Space as Previous (360, 5)
+Frozen Space Size : 360, 94
+Compress Representation Size (360, 40) to (360, 28)
+Keep Relaxing Space as Previous (360, 3)
+Frozen Space Size : 360, 134
+Compress Representation Size (360, 80) to (360, 37)
+Keep Relaxing Space as Previous (360, 13)
+Frozen Space Size : 720, 197
+Compress Representation Size (720, 80) to (720, 42)
+Keep Relaxing Space as Previous (720, 4)
+Frozen Space Size : 40, 18
+Compress Representation Size (40, 80) to (40, 21)
+Keep Relaxing Space as Previous (40, 19)
+Frozen Space Size : 720, 195
+Compress Representation Size (720, 80) to (720, 41)
+Keep Relaxing Space as Previous (720, 5)
+Frozen Space Size : 720, 196
+Compress Representation Size (720, 80) to (720, 41)
+Keep Relaxing Space as Previous (720, 2)
+Frozen Space Size : 720, 213
+Compress Representation Size (720, 160) to (720, 29)
+Keep Relaxing Space as Previous (720, 8)
+Frozen Space Size : 1440, 273
+Compress Representation Size (1440, 160) to (1440, 31)
+Keep Relaxing Space as Previous (1440, 3)
+Frozen Space Size : 80, 41
+Compress Representation Size (80, 160) to (80, 20)
+Keep Relaxing Space as Previous (80, 30)
+Frozen Space Size : 1440, 281
+Compress Representation Size (1440, 160) to (1440, 30)
+Keep Relaxing Space as Previous (1440, 2)
+Frozen Space Size : 1440, 251
+Compress Representation Size (1440, 160) to (1440, 15)
+Keep Relaxing Space as Previous (1440, 2)
+
+Epoch  42 | Train: loss=0.003, acc=100.0% | time=37265.0ms |
+ Valid: loss=0.138, acc= 96.0% |
+
+Epoch  43 | Train: loss=0.003, acc=100.0% | time=37259.7ms |
+ Valid: loss=0.135, acc= 96.0% |
+
+Epoch  44 | Train: loss=0.003, acc=100.0% | time=34687.1ms |
+ Valid: loss=0.139, acc= 95.8% |
+
+Epoch  45 | Train: loss=0.003, acc=100.0% | time=36077.2ms |
+ Valid: loss=0.142, acc= 96.1% |
+
+Epoch  46 | Train: loss=0.003, acc=100.0% | time=34161.0ms |
+ Valid: loss=0.140, acc= 96.0% |
+ lr=1.2e-03
+
+Epoch  47 | Train: loss=0.003, acc=100.0% | time=36975.2ms |
+ Valid: loss=0.138, acc= 95.7% |
+
+Epoch  48 | Train: loss=0.003, acc=100.0% | time=35618.4ms |
+ Valid: loss=0.139, acc= 96.1% |
+
+Epoch  49 | Train: loss=0.003, acc=100.0% | time=35897.9ms |
+ Valid: loss=0.141, acc= 95.6% |
+
+Epoch  50 | Train: loss=0.003, acc=100.0% | time=37256.8ms |
+ Valid: loss=0.139, acc= 96.2% |
+
+Epoch  51 | Train: loss=0.003, acc=100.0% | time=35909.8ms |
+ Valid: loss=0.139, acc= 96.3% |
+ lr=4.1e-04
+
+Test: loss=0.160 , acc= 95.5%
+Threshold: [0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97
+ 0.97 0.97 0.97 0.97 0.97 0.97]
+Skip Updating GPM for layer: 1
+Skip Updating GPM for layer: 8
+Skip Updating GPM for layer: 13
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 10/27
+Layer 2 : 43/180
+Layer 3 : 59/180
+Layer 4 : 57/180
+Layer 5 : 63/180
+Layer 6 : 77/180
+Layer 7 : 122/360
+Layer 8 : 18/20
+Layer 9 : 107/360
+Layer 10 : 116/360
+Layer 11 : 163/360
+Layer 12 : 229/720
+Layer 13 : 37/40
+Layer 14 : 230/720
+Layer 15 : 226/720
+Layer 16 : 235/720
+Layer 17 : 294/1440
+Layer 18 : 73/80
+Layer 19 : 302/1440
+Layer 20 : 268/1440
+----------------------------------------
+Accuracies =
+ 82.5%   0.0%   0.0%   0.0%   0.0%
+ 73.2%  99.5%   0.0%   0.0%   0.0%
+ 56.6%  98.6%  93.6%   0.0%   0.0%
+ 59.6%  99.6%  93.0%  99.5%   0.0%
+ 57.2%  99.4%  91.6%  99.5%  95.5%
+--------------------------------------------------
+Task Order : [0 1 2 3 4]
+Final Avg Accuracy: 88.63%
+Backward transfer: -6.86%
+[Elapsed time = 21010185.7 ms]
+--------------------------------------------------
+====================================================================================================
+Arguments =
+Namespace(batch_size_test=64, batch_size_train=64, gpm_thro=0.97, lr=0.1, lr_factor=3, lr_min=0.001, lr_patience=5, mixup_alpha=1, mixup_weight=0.01, momentum=0.9, n_epochs=100, pc_valid=0.05, savename='./log/DFROGO/', seed=2, weight=5)
+====================================================================================================
+****************************************************************************************************
+Task  0 (cifar10)
+****************************************************************************************************
+----------------------------------------
+Task ID :0 | Learning Rate : 0.1
+----------------------------------------
+Model parameters ---
+0	conv1.weight	torch.Size([20, 3, 3, 3])
+1	conv1.scale	torch.Size([27, 27])
+2	bn1.weight	torch.Size([20])
+3	bn1.bias	torch.Size([20])
+4	layer1.0.conv1.weight	torch.Size([20, 20, 3, 3])
+5	layer1.0.conv1.scale	torch.Size([180, 180])
+6	layer1.0.bn1.weight	torch.Size([20])
+7	layer1.0.bn1.bias	torch.Size([20])
+8	layer1.0.conv2.weight	torch.Size([20, 20, 3, 3])
+9	layer1.0.conv2.scale	torch.Size([180, 180])
+10	layer1.0.bn2.weight	torch.Size([20])
+11	layer1.0.bn2.bias	torch.Size([20])
+12	layer1.1.conv1.weight	torch.Size([20, 20, 3, 3])
+13	layer1.1.conv1.scale	torch.Size([180, 180])
+14	layer1.1.bn1.weight	torch.Size([20])
+15	layer1.1.bn1.bias	torch.Size([20])
+16	layer1.1.conv2.weight	torch.Size([20, 20, 3, 3])
+17	layer1.1.conv2.scale	torch.Size([180, 180])
+18	layer1.1.bn2.weight	torch.Size([20])
+19	layer1.1.bn2.bias	torch.Size([20])
+20	layer2.0.conv1.weight	torch.Size([40, 20, 3, 3])
+21	layer2.0.conv1.scale	torch.Size([180, 180])
+22	layer2.0.bn1.weight	torch.Size([40])
+23	layer2.0.bn1.bias	torch.Size([40])
+24	layer2.0.conv2.weight	torch.Size([40, 40, 3, 3])
+25	layer2.0.conv2.scale	torch.Size([360, 360])
+26	layer2.0.bn2.weight	torch.Size([40])
+27	layer2.0.bn2.bias	torch.Size([40])
+28	layer2.0.shortcut.0.weight	torch.Size([40, 20, 1, 1])
+29	layer2.0.shortcut.1.weight	torch.Size([40])
+30	layer2.0.shortcut.1.bias	torch.Size([40])
+31	layer2.1.conv1.weight	torch.Size([40, 40, 3, 3])
+32	layer2.1.conv1.scale	torch.Size([360, 360])
+33	layer2.1.bn1.weight	torch.Size([40])
+34	layer2.1.bn1.bias	torch.Size([40])
+35	layer2.1.conv2.weight	torch.Size([40, 40, 3, 3])
+36	layer2.1.conv2.scale	torch.Size([360, 360])
+37	layer2.1.bn2.weight	torch.Size([40])
+38	layer2.1.bn2.bias	torch.Size([40])
+39	layer3.0.conv1.weight	torch.Size([80, 40, 3, 3])
+40	layer3.0.conv1.scale	torch.Size([360, 360])
+41	layer3.0.bn1.weight	torch.Size([80])
+42	layer3.0.bn1.bias	torch.Size([80])
+43	layer3.0.conv2.weight	torch.Size([80, 80, 3, 3])
+44	layer3.0.conv2.scale	torch.Size([720, 720])
+45	layer3.0.bn2.weight	torch.Size([80])
+46	layer3.0.bn2.bias	torch.Size([80])
+47	layer3.0.shortcut.0.weight	torch.Size([80, 40, 1, 1])
+48	layer3.0.shortcut.1.weight	torch.Size([80])
+49	layer3.0.shortcut.1.bias	torch.Size([80])
+50	layer3.1.conv1.weight	torch.Size([80, 80, 3, 3])
+51	layer3.1.conv1.scale	torch.Size([720, 720])
+52	layer3.1.bn1.weight	torch.Size([80])
+53	layer3.1.bn1.bias	torch.Size([80])
+54	layer3.1.conv2.weight	torch.Size([80, 80, 3, 3])
+55	layer3.1.conv2.scale	torch.Size([720, 720])
+56	layer3.1.bn2.weight	torch.Size([80])
+57	layer3.1.bn2.bias	torch.Size([80])
+58	layer4.0.conv1.weight	torch.Size([160, 80, 3, 3])
+59	layer4.0.conv1.scale	torch.Size([720, 720])
+60	layer4.0.bn1.weight	torch.Size([160])
+61	layer4.0.bn1.bias	torch.Size([160])
+62	layer4.0.conv2.weight	torch.Size([160, 160, 3, 3])
+63	layer4.0.conv2.scale	torch.Size([1440, 1440])
+64	layer4.0.bn2.weight	torch.Size([160])
+65	layer4.0.bn2.bias	torch.Size([160])
+66	layer4.0.shortcut.0.weight	torch.Size([160, 80, 1, 1])
+67	layer4.0.shortcut.1.weight	torch.Size([160])
+68	layer4.0.shortcut.1.bias	torch.Size([160])
+69	layer4.1.conv1.weight	torch.Size([160, 160, 3, 3])
+70	layer4.1.conv1.scale	torch.Size([1440, 1440])
+71	layer4.1.bn1.weight	torch.Size([160])
+72	layer4.1.bn1.bias	torch.Size([160])
+73	layer4.1.conv2.weight	torch.Size([160, 160, 3, 3])
+74	layer4.1.conv2.scale	torch.Size([1440, 1440])
+75	layer4.1.bn2.weight	torch.Size([160])
+76	layer4.1.bn2.bias	torch.Size([160])
+77	linear.0.weight	torch.Size([10, 640])
+78	linear.1.weight	torch.Size([10, 640])
+79	linear.2.weight	torch.Size([10, 640])
+80	linear.3.weight	torch.Size([10, 640])
+81	linear.4.weight	torch.Size([10, 640])
+----------------------------------------
+Epoch   1 | Train: loss=1.454, acc= 47.2% | time=43869.0ms |
+ Valid: loss=1.518, acc= 45.2% |
+ *
+Epoch   2 | Train: loss=1.560, acc= 44.1% | time=41152.5ms |
+ Valid: loss=1.616, acc= 44.2% |
+Epoch   3 | Train: loss=0.963, acc= 65.5% | time=42509.6ms |
+ Valid: loss=1.065, acc= 62.9% |
+ *
+Epoch   4 | Train: loss=0.669, acc= 76.9% | time=41582.4ms |
+ Valid: loss=0.786, acc= 71.6% |
+ *
+Epoch   5 | Train: loss=0.623, acc= 78.3% | time=41797.1ms |
+ Valid: loss=0.782, acc= 71.6% |
+ *
+Epoch   6 | Train: loss=0.638, acc= 77.4% | time=40153.9ms |
+ Valid: loss=0.854, acc= 70.2% |
+Epoch   7 | Train: loss=0.406, acc= 87.2% | time=42767.6ms |
+ Valid: loss=0.638, acc= 77.2% |
+ *
+Epoch   8 | Train: loss=0.365, acc= 88.1% | time=43753.6ms |
+ Valid: loss=0.640, acc= 77.7% |
+Epoch   9 | Train: loss=0.365, acc= 87.3% | time=41802.0ms |
+ Valid: loss=0.750, acc= 74.1% |
+Epoch  10 | Train: loss=0.470, acc= 83.1% | time=40360.1ms |
+ Valid: loss=0.910, acc= 71.6% |
+Epoch  11 | Train: loss=0.260, acc= 92.1% | time=42021.1ms |
+ Valid: loss=0.747, acc= 76.1% |
+Epoch  12 | Train: loss=0.277, acc= 91.6% | time=42862.6ms |
+ Valid: loss=0.829, acc= 75.5% |
+ lr=3.3e-02
+Epoch  13 | Train: loss=0.034, acc= 99.7% | time=40886.1ms |
+ Valid: loss=0.566, acc= 82.2% |
+ *
+Epoch  14 | Train: loss=0.020, acc= 99.9% | time=42288.2ms |
+ Valid: loss=0.562, acc= 82.8% |
+ *
+Epoch  15 | Train: loss=0.012, acc=100.0% | time=41501.2ms |
+ Valid: loss=0.550, acc= 82.7% |
+ *
+Epoch  16 | Train: loss=0.017, acc= 99.9% | time=41704.1ms |
+ Valid: loss=0.598, acc= 81.7% |
+Epoch  17 | Train: loss=0.016, acc= 99.9% | time=44120.9ms |
+ Valid: loss=0.638, acc= 81.2% |
+Epoch  18 | Train: loss=0.011, acc= 99.9% | time=43632.2ms |
+ Valid: loss=0.597, acc= 82.8% |
+Epoch  19 | Train: loss=0.006, acc=100.0% | time=41578.2ms |
+ Valid: loss=0.590, acc= 83.0% |
+Epoch  20 | Train: loss=0.008, acc=100.0% | time=41362.2ms |
+ Valid: loss=0.572, acc= 82.6% |
+ lr=1.1e-02
+Epoch  21 | Train: loss=0.005, acc=100.0% | time=39998.3ms |
+ Valid: loss=0.561, acc= 83.5% |
+Epoch  22 | Train: loss=0.005, acc=100.0% | time=41592.2ms |
+ Valid: loss=0.577, acc= 83.2% |
+Epoch  23 | Train: loss=0.005, acc=100.0% | time=39485.4ms |
+ Valid: loss=0.572, acc= 83.0% |
+Epoch  24 | Train: loss=0.005, acc=100.0% | time=42270.9ms |
+ Valid: loss=0.573, acc= 82.8% |
+Epoch  25 | Train: loss=0.005, acc=100.0% | time=43411.7ms |
+ Valid: loss=0.571, acc= 82.7% |
+ lr=3.7e-03
+Epoch  26 | Train: loss=0.004, acc=100.0% | time=39172.1ms |
+ Valid: loss=0.570, acc= 83.1% |
+Epoch  27 | Train: loss=0.004, acc=100.0% | time=44792.7ms |
+ Valid: loss=0.562, acc= 83.3% |
+Epoch  28 | Train: loss=0.004, acc=100.0% | time=42851.5ms |
+ Valid: loss=0.569, acc= 83.4% |
+Epoch  29 | Train: loss=0.004, acc=100.0% | time=41280.4ms |
+ Valid: loss=0.572, acc= 83.1% |
+Epoch  30 | Train: loss=0.004, acc=100.0% | time=42541.0ms |
+ Valid: loss=0.566, acc= 82.6% |
+ lr=1.2e-03
+Epoch  31 | Train: loss=0.004, acc=100.0% | time=40591.9ms |
+ Valid: loss=0.562, acc= 83.6% |
+Epoch  32 | Train: loss=0.004, acc=100.0% | time=42320.6ms |
+ Valid: loss=0.568, acc= 83.4% |
+Epoch  33 | Train: loss=0.004, acc=100.0% | time=42945.6ms |
+ Valid: loss=0.567, acc= 82.8% |
+Epoch  34 | Train: loss=0.004, acc=100.0% | time=41606.0ms |
+ Valid: loss=0.565, acc= 82.9% |
+Epoch  35 | Train: loss=0.004, acc=100.0% | time=41481.1ms |
+ Valid: loss=0.573, acc= 83.1% |
+ lr=4.1e-04
+
+----------------------------------------
+Test: loss=0.586 , acc= 82.2%
+Threshold: [0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97
+ 0.97 0.97 0.97 0.97 0.97 0.97]
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 4/27
+Layer 2 : 12/180
+Layer 3 : 15/180
+Layer 4 : 13/180
+Layer 5 : 13/180
+Layer 6 : 26/180
+Layer 7 : 30/360
+Layer 8 : 13/20
+Layer 9 : 28/360
+Layer 10 : 29/360
+Layer 11 : 51/360
+Layer 12 : 59/720
+Layer 13 : 25/40
+Layer 14 : 58/720
+Layer 15 : 56/720
+Layer 16 : 80/720
+Layer 17 : 89/1440
+Layer 18 : 44/80
+Layer 19 : 88/1440
+Layer 20 : 81/1440
+----------------------------------------
+Accuracies =
+ 82.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  1 (mnist)
+****************************************************************************************************
+----------------------------------------
+Task ID :1 | Learning Rate : 0.1
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([27, 27])
+Layer 2 - Projection Matrix shape: torch.Size([180, 180])
+Layer 3 - Projection Matrix shape: torch.Size([180, 180])
+Layer 4 - Projection Matrix shape: torch.Size([180, 180])
+Layer 5 - Projection Matrix shape: torch.Size([180, 180])
+Layer 6 - Projection Matrix shape: torch.Size([180, 180])
+Layer 7 - Projection Matrix shape: torch.Size([360, 360])
+Layer 8 - Projection Matrix shape: torch.Size([20, 20])
+Layer 9 - Projection Matrix shape: torch.Size([360, 360])
+Layer 10 - Projection Matrix shape: torch.Size([360, 360])
+Layer 11 - Projection Matrix shape: torch.Size([360, 360])
+Layer 12 - Projection Matrix shape: torch.Size([720, 720])
+Layer 13 - Projection Matrix shape: torch.Size([40, 40])
+Layer 14 - Projection Matrix shape: torch.Size([720, 720])
+Layer 15 - Projection Matrix shape: torch.Size([720, 720])
+Layer 16 - Projection Matrix shape: torch.Size([720, 720])
+Layer 17 - Projection Matrix shape: torch.Size([1440, 1440])
+Layer 18 - Projection Matrix shape: torch.Size([80, 80])
+Layer 19 - Projection Matrix shape: torch.Size([1440, 1440])
+Layer 20 - Projection Matrix shape: torch.Size([1440, 1440])
+----------------------------------------
+Epoch   1 | Train: loss=0.030, acc= 99.4% | time=52295.3ms |
+ Valid: loss=0.041, acc= 98.9% |
+ *
+
+Epoch   2 | Train: loss=0.018, acc= 99.7% | time=54410.8ms |
+ Valid: loss=0.031, acc= 99.2% |
+ *
+
+Epoch   3 | Train: loss=0.012, acc= 99.8% | time=51411.9ms |
+ Valid: loss=0.030, acc= 99.2% |
+ *
+
+Epoch   4 | Train: loss=0.009, acc= 99.9% | time=57073.0ms |
+ Valid: loss=0.027, acc= 99.1% |
+ *
+
+Epoch   5 | Train: loss=0.007, acc= 99.9% | time=56563.5ms |
+ Valid: loss=0.024, acc= 99.2% |
+ *
+
+Epoch   6 | Train: loss=0.005, acc=100.0% | time=52600.8ms |
+ Valid: loss=0.025, acc= 99.3% |
+
+Epoch   7 | Train: loss=0.003, acc=100.0% | time=55264.8ms |
+ Valid: loss=0.021, acc= 99.4% |
+ *
+
+Epoch   8 | Train: loss=0.002, acc=100.0% | time=54053.5ms |
+ Valid: loss=0.025, acc= 99.2% |
+
+Epoch   9 | Train: loss=0.002, acc=100.0% | time=54306.1ms |
+ Valid: loss=0.025, acc= 99.3% |
+
+Epoch  10 | Train: loss=0.001, acc=100.0% | time=50235.3ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  11 | Train: loss=0.001, acc=100.0% | time=52246.3ms |
+ Valid: loss=0.024, acc= 99.2% |
+
+Epoch  12 | Train: loss=0.001, acc=100.0% | time=52009.4ms |
+ Valid: loss=0.022, acc= 99.3% |
+ lr=3.3e-02
+
+Epoch  13 | Train: loss=0.001, acc=100.0% | time=59088.0ms |
+ Valid: loss=0.022, acc= 99.4% |
+
+Epoch  14 | Train: loss=0.001, acc=100.0% | time=55357.5ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  15 | Train: loss=0.000, acc=100.0% | time=54266.7ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  16 | Train: loss=0.000, acc=100.0% | time=55344.3ms |
+ Valid: loss=0.022, acc= 99.2% |
+
+Epoch  17 | Train: loss=0.000, acc=100.0% | time=54259.5ms |
+ Valid: loss=0.024, acc= 99.3% |
+ lr=1.1e-02
+
+Epoch  18 | Train: loss=0.000, acc=100.0% | time=52825.6ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  19 | Train: loss=0.000, acc=100.0% | time=56294.4ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  20 | Train: loss=0.000, acc=100.0% | time=57657.1ms |
+ Valid: loss=0.023, acc= 99.4% |
+
+Epoch  21 | Train: loss=0.000, acc=100.0% | time=54621.0ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  22 | Train: loss=0.000, acc=100.0% | time=54179.3ms |
+ Valid: loss=0.022, acc= 99.3% |
+ lr=3.7e-03
+Frozen Space Size : 27, 4
+Compress Representation Size (27, 20) to (27, 4)
+Initiate Relaxing Space as (27, 1)
+Frozen Space Size : 180, 12
+Compress Representation Size (180, 20) to (180, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 15
+Compress Representation Size (180, 20) to (180, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 13
+Compress Representation Size (180, 20) to (180, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 13
+Compress Representation Size (180, 20) to (180, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 26
+Compress Representation Size (180, 40) to (180, 22)
+Initiate Relaxing Space as (180, 1)
+Frozen Space Size : 360, 30
+Compress Representation Size (360, 40) to (360, 28)
+Keep Relaxing Space as None
+Frozen Space Size : 20, 13
+Compress Representation Size (20, 40) to (20, 12)
+Initiate Relaxing Space as (20, 7)
+Frozen Space Size : 360, 28
+Compress Representation Size (360, 40) to (360, 25)
+Keep Relaxing Space as None
+Frozen Space Size : 360, 29
+Compress Representation Size (360, 40) to (360, 26)
+Keep Relaxing Space as None
+Frozen Space Size : 360, 51
+Compress Representation Size (360, 80) to (360, 42)
+Initiate Relaxing Space as (360, 1)
+Frozen Space Size : 720, 59
+Compress Representation Size (720, 80) to (720, 52)
+Keep Relaxing Space as None
+Frozen Space Size : 40, 25
+Compress Representation Size (40, 80) to (40, 20)
+Initiate Relaxing Space as (40, 10)
+Frozen Space Size : 720, 58
+Compress Representation Size (720, 80) to (720, 49)
+Keep Relaxing Space as None
+Frozen Space Size : 720, 56
+Compress Representation Size (720, 80) to (720, 53)
+Keep Relaxing Space as None
+Frozen Space Size : 720, 80
+Compress Representation Size (720, 160) to (720, 64)
+Initiate Relaxing Space as (720, 1)
+Frozen Space Size : 1440, 89
+Compress Representation Size (1440, 160) to (1440, 85)
+Keep Relaxing Space as None
+Frozen Space Size : 80, 44
+Compress Representation Size (80, 160) to (80, 37)
+Initiate Relaxing Space as (80, 14)
+Frozen Space Size : 1440, 88
+Compress Representation Size (1440, 160) to (1440, 90)
+Keep Relaxing Space as None
+Frozen Space Size : 1440, 81
+Compress Representation Size (1440, 160) to (1440, 78)
+Keep Relaxing Space as None
+
+Epoch  23 | Train: loss=0.000, acc=100.0% | time=70913.8ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  24 | Train: loss=0.000, acc=100.0% | time=74180.8ms |
+ Valid: loss=0.023, acc= 99.2% |
+
+Epoch  25 | Train: loss=0.000, acc=100.0% | time=71556.5ms |
+ Valid: loss=0.025, acc= 99.3% |
+
+Epoch  26 | Train: loss=0.000, acc=100.0% | time=70013.9ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  27 | Train: loss=0.000, acc=100.0% | time=70227.9ms |
+ Valid: loss=0.023, acc= 99.4% |
+ lr=3.3e-02
+
+Epoch  28 | Train: loss=0.000, acc=100.0% | time=70929.8ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  29 | Train: loss=0.000, acc=100.0% | time=79427.9ms |
+ Valid: loss=0.024, acc= 99.3% |
+
+Epoch  30 | Train: loss=0.000, acc=100.0% | time=74261.8ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  31 | Train: loss=0.000, acc=100.0% | time=70348.5ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  32 | Train: loss=0.000, acc=100.0% | time=70967.1ms |
+ Valid: loss=0.024, acc= 99.2% |
+ lr=1.1e-02
+
+Epoch  33 | Train: loss=0.000, acc=100.0% | time=71620.5ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  34 | Train: loss=0.000, acc=100.0% | time=71143.8ms |
+ Valid: loss=0.024, acc= 99.2% |
+
+Epoch  35 | Train: loss=0.000, acc=100.0% | time=67666.4ms |
+ Valid: loss=0.023, acc= 99.4% |
+
+Epoch  36 | Train: loss=0.000, acc=100.0% | time=72202.1ms |
+ Valid: loss=0.024, acc= 99.2% |
+
+Epoch  37 | Train: loss=0.000, acc=100.0% | time=72784.2ms |
+ Valid: loss=0.024, acc= 99.4% |
+ lr=3.7e-03
+Frozen Space Size : 27, 3
+Compress Representation Size (27, 20) to (27, 4)
+Keep Relaxing Space as Previous (27, 1)
+Frozen Space Size : 180, 12
+Compress Representation Size (180, 20) to (180, 10)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 15
+Compress Representation Size (180, 20) to (180, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 13
+Compress Representation Size (180, 20) to (180, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 13
+Compress Representation Size (180, 20) to (180, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 180, 25
+Compress Representation Size (180, 40) to (180, 22)
+Keep Relaxing Space as Previous (180, 1)
+Frozen Space Size : 360, 30
+Compress Representation Size (360, 40) to (360, 28)
+Keep Relaxing Space as None
+Frozen Space Size : 20, 6
+Compress Representation Size (20, 40) to (20, 12)
+Keep Relaxing Space as Previous (20, 7)
+Frozen Space Size : 360, 28
+Compress Representation Size (360, 40) to (360, 26)
+Keep Relaxing Space as None
+Frozen Space Size : 360, 29
+Compress Representation Size (360, 40) to (360, 26)
+Keep Relaxing Space as None
+Frozen Space Size : 360, 50
+Compress Representation Size (360, 80) to (360, 44)
+Keep Relaxing Space as Previous (360, 1)
+Frozen Space Size : 720, 59
+Compress Representation Size (720, 80) to (720, 55)
+Keep Relaxing Space as None
+Frozen Space Size : 40, 15
+Compress Representation Size (40, 80) to (40, 23)
+Keep Relaxing Space as Previous (40, 10)
+Frozen Space Size : 720, 58
+Compress Representation Size (720, 80) to (720, 53)
+Keep Relaxing Space as None
+Frozen Space Size : 720, 56
+Compress Representation Size (720, 80) to (720, 56)
+Keep Relaxing Space as None
+Frozen Space Size : 720, 79
+Compress Representation Size (720, 160) to (720, 77)
+Keep Relaxing Space as Previous (720, 1)
+Frozen Space Size : 1440, 89
+Compress Representation Size (1440, 160) to (1440, 94)
+Keep Relaxing Space as None
+Frozen Space Size : 80, 30
+Compress Representation Size (80, 160) to (80, 42)
+Keep Relaxing Space as Previous (80, 14)
+Frozen Space Size : 1440, 88
+Compress Representation Size (1440, 160) to (1440, 95)
+Keep Relaxing Space as None
+Frozen Space Size : 1440, 81
+Compress Representation Size (1440, 160) to (1440, 80)
+Keep Relaxing Space as None
+
+Epoch  38 | Train: loss=0.000, acc=100.0% | time=70380.0ms |
+ Valid: loss=0.024, acc= 99.2% |
+
+Epoch  39 | Train: loss=0.000, acc=100.0% | time=71486.4ms |
+ Valid: loss=0.022, acc= 99.4% |
+
+Epoch  40 | Train: loss=0.000, acc=100.0% | time=70353.8ms |
+ Valid: loss=0.023, acc= 99.2% |
+
+Epoch  41 | Train: loss=0.000, acc=100.0% | time=71216.9ms |
+ Valid: loss=0.025, acc= 99.3% |
+
+Epoch  42 | Train: loss=0.000, acc=100.0% | time=71772.3ms |
+ Valid: loss=0.023, acc= 99.3% |
+ lr=1.2e-03
+
+Epoch  43 | Train: loss=0.000, acc=100.0% | time=68001.7ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  44 | Train: loss=0.000, acc=100.0% | time=72585.5ms |
+ Valid: loss=0.024, acc= 99.3% |
+
+Epoch  45 | Train: loss=0.000, acc=100.0% | time=72737.7ms |
+ Valid: loss=0.024, acc= 99.2% |
+
+Epoch  46 | Train: loss=0.000, acc=100.0% | time=70800.0ms |
+ Valid: loss=0.024, acc= 99.3% |
+
+Epoch  47 | Train: loss=0.000, acc=100.0% | time=69911.9ms |
+ Valid: loss=0.023, acc= 99.2% |
+ lr=4.1e-04
+
+Test: loss=0.017 , acc= 99.5%
+Threshold: [0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97
+ 0.97 0.97 0.97 0.97 0.97 0.97]
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/27
+Layer 2 : 24/180
+Layer 3 : 28/180
+Layer 4 : 26/180
+Layer 5 : 27/180
+Layer 6 : 45/180
+Layer 7 : 56/360
+Layer 8 : 17/20
+Layer 9 : 52/360
+Layer 10 : 53/360
+Layer 11 : 83/360
+Layer 12 : 101/720
+Layer 13 : 31/40
+Layer 14 : 98/720
+Layer 15 : 100/720
+Layer 16 : 112/720
+Layer 17 : 135/1440
+Layer 18 : 55/80
+Layer 19 : 138/1440
+Layer 20 : 123/1440
+----------------------------------------
+Accuracies =
+ 82.0%   0.0%   0.0%   0.0%   0.0%
+ 76.0%  99.4%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  2 (svhn)
+****************************************************************************************************
+----------------------------------------
+Task ID :2 | Learning Rate : 0.1
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([27, 27])
+Layer 2 - Projection Matrix shape: torch.Size([180, 180])
+Layer 3 - Projection Matrix shape: torch.Size([180, 180])
+Layer 4 - Projection Matrix shape: torch.Size([180, 180])
+Layer 5 - Projection Matrix shape: torch.Size([180, 180])
+Layer 6 - Projection Matrix shape: torch.Size([180, 180])
+Layer 7 - Projection Matrix shape: torch.Size([360, 360])
+Layer 8 - Projection Matrix shape: torch.Size([20, 20])
+Layer 9 - Projection Matrix shape: torch.Size([360, 360])
+Layer 10 - Projection Matrix shape: torch.Size([360, 360])
+Layer 11 - Projection Matrix shape: torch.Size([360, 360])
+Layer 12 - Projection Matrix shape: torch.Size([720, 720])
+Layer 13 - Projection Matrix shape: torch.Size([40, 40])
+Layer 14 - Projection Matrix shape: torch.Size([720, 720])
+Layer 15 - Projection Matrix shape: torch.Size([720, 720])
+Layer 16 - Projection Matrix shape: torch.Size([720, 720])
+Layer 17 - Projection Matrix shape: torch.Size([1440, 1440])
+Layer 18 - Projection Matrix shape: torch.Size([80, 80])
+Layer 19 - Projection Matrix shape: torch.Size([1440, 1440])
+Layer 20 - Projection Matrix shape: torch.Size([1440, 1440])
+----------------------------------------
+Epoch   1 | Train: loss=0.286, acc= 91.8% | time=64438.0ms |
+ Valid: loss=0.348, acc= 90.1% |
+ *
+
+Epoch   2 | Train: loss=0.186, acc= 95.1% | time=64672.7ms |
+ Valid: loss=0.277, acc= 92.2% |
+ *
+
+Epoch   3 | Train: loss=0.140, acc= 96.7% | time=70160.6ms |
+ Valid: loss=0.263, acc= 92.4% |
+ *
+
+Epoch   4 | Train: loss=0.107, acc= 97.9% | time=67670.4ms |
+ Valid: loss=0.254, acc= 92.8% |
+ *
+
+Epoch   5 | Train: loss=0.068, acc= 98.8% | time=69883.0ms |
+ Valid: loss=0.239, acc= 93.6% |
+ *
+
+Epoch   6 | Train: loss=0.048, acc= 99.3% | time=67173.2ms |
+ Valid: loss=0.250, acc= 93.4% |
+
+Epoch   7 | Train: loss=0.030, acc= 99.6% | time=66446.3ms |
+ Valid: loss=0.237, acc= 93.6% |
+ *
+
+Epoch   8 | Train: loss=0.019, acc= 99.8% | time=68819.8ms |
+ Valid: loss=0.249, acc= 93.4% |
+
+Epoch   9 | Train: loss=0.015, acc= 99.9% | time=63775.3ms |
+ Valid: loss=0.260, acc= 93.1% |
+
+Epoch  10 | Train: loss=0.010, acc=100.0% | time=68404.2ms |
+ Valid: loss=0.252, acc= 93.6% |
+
+Epoch  11 | Train: loss=0.006, acc=100.0% | time=71568.9ms |
+ Valid: loss=0.247, acc= 93.6% |
+
+Epoch  12 | Train: loss=0.005, acc=100.0% | time=69498.5ms |
+ Valid: loss=0.251, acc= 93.3% |
+ lr=3.3e-02
+
+Epoch  13 | Train: loss=0.004, acc=100.0% | time=66829.8ms |
+ Valid: loss=0.247, acc= 93.5% |
+
+Epoch  14 | Train: loss=0.004, acc=100.0% | time=65528.0ms |
+ Valid: loss=0.245, acc= 93.7% |
+
+Epoch  15 | Train: loss=0.004, acc=100.0% | time=66078.2ms |
+ Valid: loss=0.248, acc= 93.9% |
+
+Epoch  16 | Train: loss=0.004, acc=100.0% | time=66352.3ms |
+ Valid: loss=0.242, acc= 93.9% |
+
+Epoch  17 | Train: loss=0.004, acc=100.0% | time=68402.7ms |
+ Valid: loss=0.246, acc= 93.7% |
+ lr=1.1e-02
+
+Epoch  18 | Train: loss=0.004, acc=100.0% | time=71293.7ms |
+ Valid: loss=0.242, acc= 93.7% |
+
+Epoch  19 | Train: loss=0.004, acc=100.0% | time=66439.5ms |
+ Valid: loss=0.245, acc= 93.9% |
+
+Epoch  20 | Train: loss=0.004, acc=100.0% | time=71269.0ms |
+ Valid: loss=0.247, acc= 94.0% |
+
+Epoch  21 | Train: loss=0.004, acc=100.0% | time=68047.5ms |
+ Valid: loss=0.247, acc= 93.6% |
+
+Epoch  22 | Train: loss=0.004, acc=100.0% | time=65755.8ms |
+ Valid: loss=0.246, acc= 93.7% |
+ lr=3.7e-03
+Frozen Space Size : 27, 8
+Compress Representation Size (27, 20) to (27, 2)
+Initiate Relaxing Space as (27, 1)
+Frozen Space Size : 180, 24
+Compress Representation Size (180, 20) to (180, 10)
+Initiate Relaxing Space as (180, 3)
+Frozen Space Size : 180, 28
+Compress Representation Size (180, 20) to (180, 14)
+Initiate Relaxing Space as (180, 1)
+Frozen Space Size : 180, 26
+Compress Representation Size (180, 20) to (180, 11)
+Initiate Relaxing Space as (180, 1)
+Frozen Space Size : 180, 27
+Compress Representation Size (180, 20) to (180, 14)
+Initiate Relaxing Space as (180, 1)
+Frozen Space Size : 180, 45
+Compress Representation Size (180, 40) to (180, 21)
+Initiate Relaxing Space as (180, 4)
+Frozen Space Size : 360, 56
+Compress Representation Size (360, 40) to (360, 29)
+Initiate Relaxing Space as (360, 1)
+Frozen Space Size : 20, 17
+Compress Representation Size (20, 40) to (20, 13)
+Initiate Relaxing Space as (20, 10)
+Frozen Space Size : 360, 52
+Compress Representation Size (360, 40) to (360, 28)
+Initiate Relaxing Space as (360, 1)
+Frozen Space Size : 360, 53
+Compress Representation Size (360, 40) to (360, 29)
+Initiate Relaxing Space as (360, 1)
+Frozen Space Size : 360, 83
+Compress Representation Size (360, 80) to (360, 47)
+Initiate Relaxing Space as (360, 4)
+Frozen Space Size : 720, 101
+Compress Representation Size (720, 80) to (720, 59)
+Initiate Relaxing Space as (720, 1)
+Frozen Space Size : 40, 31
+Compress Representation Size (40, 80) to (40, 23)
+Initiate Relaxing Space as (40, 15)
+Frozen Space Size : 720, 98
+Compress Representation Size (720, 80) to (720, 53)
+Initiate Relaxing Space as (720, 1)
+Frozen Space Size : 720, 100
+Compress Representation Size (720, 80) to (720, 58)
+Initiate Relaxing Space as (720, 1)
+Frozen Space Size : 720, 112
+Compress Representation Size (720, 160) to (720, 86)
+Initiate Relaxing Space as (720, 2)
+Frozen Space Size : 1440, 135
+Compress Representation Size (1440, 160) to (1440, 105)
+Initiate Relaxing Space as (1440, 2)
+Frozen Space Size : 80, 55
+Compress Representation Size (80, 160) to (80, 42)
+Initiate Relaxing Space as (80, 23)
+Frozen Space Size : 1440, 138
+Compress Representation Size (1440, 160) to (1440, 98)
+Initiate Relaxing Space as (1440, 1)
+Frozen Space Size : 1440, 123
+Compress Representation Size (1440, 160) to (1440, 90)
+Keep Relaxing Space as None
+
+Epoch  23 | Train: loss=0.003, acc=100.0% | time=144428.0ms |
+ Valid: loss=0.246, acc= 94.0% |
+
+Epoch  24 | Train: loss=0.004, acc=100.0% | time=156339.6ms |
+ Valid: loss=0.243, acc= 93.7% |
+
+Epoch  25 | Train: loss=0.003, acc=100.0% | time=152279.6ms |
+ Valid: loss=0.245, acc= 93.9% |
+
+Epoch  26 | Train: loss=0.003, acc=100.0% | time=155482.1ms |
+ Valid: loss=0.244, acc= 93.8% |
+
+Epoch  27 | Train: loss=0.003, acc=100.0% | time=150078.9ms |
+ Valid: loss=0.242, acc= 93.7% |
+ lr=3.3e-02
+
+Epoch  28 | Train: loss=0.003, acc=100.0% | time=153669.7ms |
+ Valid: loss=0.243, acc= 93.8% |
+
+Epoch  29 | Train: loss=0.003, acc=100.0% | time=155366.2ms |
+ Valid: loss=0.243, acc= 93.7% |
+
+Epoch  30 | Train: loss=0.003, acc=100.0% | time=153059.8ms |
+ Valid: loss=0.239, acc= 93.8% |
+
+Epoch  31 | Train: loss=0.003, acc=100.0% | time=156354.3ms |
+ Valid: loss=0.243, acc= 93.6% |
+
+Epoch  32 | Train: loss=0.003, acc=100.0% | time=154412.7ms |
+ Valid: loss=0.239, acc= 93.7% |
+ lr=1.1e-02
+
+Epoch  33 | Train: loss=0.003, acc=100.0% | time=155420.3ms |
+ Valid: loss=0.238, acc= 93.8% |
+
+Epoch  34 | Train: loss=0.003, acc=100.0% | time=153447.8ms |
+ Valid: loss=0.236, acc= 93.7% |
+ *
+
+Epoch  35 | Train: loss=0.003, acc=100.0% | time=154953.3ms |
+ Valid: loss=0.238, acc= 93.7% |
+
+Epoch  36 | Train: loss=0.003, acc=100.0% | time=151634.2ms |
+ Valid: loss=0.240, acc= 93.7% |
+
+Epoch  37 | Train: loss=0.003, acc=100.0% | time=154251.9ms |
+ Valid: loss=0.240, acc= 93.6% |
+
+Epoch  38 | Train: loss=0.003, acc=100.0% | time=155688.8ms |
+ Valid: loss=0.238, acc= 93.8% |
+
+Epoch  39 | Train: loss=0.003, acc=100.0% | time=154428.8ms |
+ Valid: loss=0.239, acc= 93.7% |
+ lr=3.7e-03
+Frozen Space Size : 27, 7
+Compress Representation Size (27, 20) to (27, 4)
+Expand Relaxing Space from (27, 1) to (27, 4)
+Frozen Space Size : 180, 21
+Compress Representation Size (180, 20) to (180, 10)
+Keep Relaxing Space as Previous (180, 3)
+Frozen Space Size : 180, 27
+Compress Representation Size (180, 20) to (180, 13)
+Keep Relaxing Space as Previous (180, 1)
+Frozen Space Size : 180, 25
+Compress Representation Size (180, 20) to (180, 11)
+Keep Relaxing Space as Previous (180, 1)
+Frozen Space Size : 180, 26
+Compress Representation Size (180, 20) to (180, 13)
+Keep Relaxing Space as Previous (180, 1)
+Frozen Space Size : 180, 41
+Compress Representation Size (180, 40) to (180, 19)
+Keep Relaxing Space as Previous (180, 4)
+Frozen Space Size : 360, 55
+Compress Representation Size (360, 40) to (360, 27)
+Keep Relaxing Space as Previous (360, 1)
+Frozen Space Size : 20, 7
+Compress Representation Size (20, 40) to (20, 12)
+Keep Relaxing Space as Previous (20, 10)
+Frozen Space Size : 360, 51
+Compress Representation Size (360, 40) to (360, 25)
+Keep Relaxing Space as Previous (360, 1)
+Frozen Space Size : 360, 52
+Compress Representation Size (360, 40) to (360, 26)
+Keep Relaxing Space as Previous (360, 1)
+Frozen Space Size : 360, 79
+Compress Representation Size (360, 80) to (360, 43)
+Keep Relaxing Space as Previous (360, 4)
+Frozen Space Size : 720, 100
+Compress Representation Size (720, 80) to (720, 57)
+Keep Relaxing Space as Previous (720, 1)
+Frozen Space Size : 40, 16
+Compress Representation Size (40, 80) to (40, 22)
+Keep Relaxing Space as Previous (40, 15)
+Frozen Space Size : 720, 97
+Compress Representation Size (720, 80) to (720, 51)
+Keep Relaxing Space as Previous (720, 1)
+Frozen Space Size : 720, 99
+Compress Representation Size (720, 80) to (720, 55)
+Keep Relaxing Space as Previous (720, 1)
+Frozen Space Size : 720, 110
+Compress Representation Size (720, 160) to (720, 79)
+Keep Relaxing Space as Previous (720, 2)
+Frozen Space Size : 1440, 133
+Compress Representation Size (1440, 160) to (1440, 103)
+Keep Relaxing Space as Previous (1440, 2)
+Frozen Space Size : 80, 32
+Compress Representation Size (80, 160) to (80, 39)
+Keep Relaxing Space as Previous (80, 23)
+Frozen Space Size : 1440, 137
+Compress Representation Size (1440, 160) to (1440, 93)
+Keep Relaxing Space as Previous (1440, 1)
+Frozen Space Size : 1440, 123
+Compress Representation Size (1440, 160) to (1440, 83)
+Keep Relaxing Space as None
+
+Epoch  40 | Train: loss=0.003, acc=100.0% | time=151224.4ms |
+ Valid: loss=0.243, acc= 93.8% |
+
+Epoch  41 | Train: loss=0.003, acc=100.0% | time=152507.0ms |
+ Valid: loss=0.241, acc= 93.6% |
+
+Epoch  42 | Train: loss=0.004, acc=100.0% | time=154566.7ms |
+ Valid: loss=0.245, acc= 93.9% |
+
+Epoch  43 | Train: loss=0.004, acc=100.0% | time=153613.9ms |
+ Valid: loss=0.244, acc= 93.8% |
+
+Epoch  44 | Train: loss=0.003, acc=100.0% | time=149414.2ms |
+ Valid: loss=0.239, acc= 93.6% |
+ lr=3.3e-02
+
+Epoch  45 | Train: loss=0.003, acc=100.0% | time=154239.0ms |
+ Valid: loss=0.238, acc= 93.6% |
+
+Epoch  46 | Train: loss=0.003, acc=100.0% | time=155866.4ms |
+ Valid: loss=0.237, acc= 93.6% |
+
+Epoch  47 | Train: loss=0.003, acc=100.0% | time=150902.0ms |
+ Valid: loss=0.237, acc= 93.9% |
+
+Epoch  48 | Train: loss=0.003, acc=100.0% | time=150522.4ms |
+ Valid: loss=0.231, acc= 93.7% |
+ *
+
+Epoch  49 | Train: loss=0.003, acc=100.0% | time=152603.9ms |
+ Valid: loss=0.235, acc= 93.8% |
+
+Epoch  50 | Train: loss=0.003, acc=100.0% | time=156387.4ms |
+ Valid: loss=0.234, acc= 93.9% |
+
+Epoch  51 | Train: loss=0.003, acc=100.0% | time=151639.1ms |
+ Valid: loss=0.239, acc= 93.8% |
+
+Epoch  52 | Train: loss=0.003, acc=100.0% | time=152704.5ms |
+ Valid: loss=0.239, acc= 93.7% |
+
+Epoch  53 | Train: loss=0.003, acc=100.0% | time=146530.3ms |
+ Valid: loss=0.235, acc= 93.9% |
+ lr=1.1e-02
+
+Epoch  54 | Train: loss=0.003, acc=100.0% | time=159807.4ms |
+ Valid: loss=0.235, acc= 93.9% |
+
+Epoch  55 | Train: loss=0.003, acc=100.0% | time=154779.7ms |
+ Valid: loss=0.233, acc= 93.9% |
+
+Epoch  56 | Train: loss=0.003, acc=100.0% | time=153292.2ms |
+ Valid: loss=0.237, acc= 93.6% |
+
+Epoch  57 | Train: loss=0.003, acc=100.0% | time=152662.2ms |
+ Valid: loss=0.239, acc= 93.8% |
+
+Epoch  58 | Train: loss=0.003, acc=100.0% | time=153729.6ms |
+ Valid: loss=0.236, acc= 94.0% |
+ lr=3.7e-03
+
+Epoch  59 | Train: loss=0.003, acc=100.0% | time=151203.7ms |
+ Valid: loss=0.232, acc= 93.9% |
+
+Epoch  60 | Train: loss=0.003, acc=100.0% | time=145352.4ms |
+ Valid: loss=0.234, acc= 94.0% |
+
+Epoch  61 | Train: loss=0.003, acc=100.0% | time=155656.8ms |
+ Valid: loss=0.233, acc= 94.1% |
+
+Epoch  62 | Train: loss=0.003, acc=100.0% | time=156598.9ms |
+ Valid: loss=0.237, acc= 93.6% |
+
+Epoch  63 | Train: loss=0.003, acc=100.0% | time=158535.0ms |
+ Valid: loss=0.236, acc= 93.8% |
+ lr=1.2e-03
+
+Epoch  64 | Train: loss=0.003, acc=100.0% | time=153090.9ms |
+ Valid: loss=0.235, acc= 93.9% |
+
+Epoch  65 | Train: loss=0.003, acc=100.0% | time=150977.8ms |
+ Valid: loss=0.233, acc= 93.6% |
+
+Epoch  66 | Train: loss=0.003, acc=100.0% | time=153611.8ms |
+ Valid: loss=0.233, acc= 93.9% |
+
+Epoch  67 | Train: loss=0.003, acc=100.0% | time=152141.9ms |
+ Valid: loss=0.238, acc= 93.7% |
+
+Epoch  68 | Train: loss=0.003, acc=100.0% | time=152517.4ms |
+ Valid: loss=0.234, acc= 93.8% |
+ lr=4.1e-04
+
+Test: loss=0.224 , acc= 93.8%
+Threshold: [0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97
+ 0.97 0.97 0.97 0.97 0.97 0.97]
+Skip Updating GPM for layer: 1
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/27
+Layer 2 : 31/180
+Layer 3 : 40/180
+Layer 4 : 34/180
+Layer 5 : 39/180
+Layer 6 : 58/180
+Layer 7 : 80/360
+Layer 8 : 18/20
+Layer 9 : 76/360
+Layer 10 : 79/360
+Layer 11 : 121/360
+Layer 12 : 158/720
+Layer 13 : 35/40
+Layer 14 : 152/720
+Layer 15 : 157/720
+Layer 16 : 191/720
+Layer 17 : 237/1440
+Layer 18 : 67/80
+Layer 19 : 236/1440
+Layer 20 : 210/1440
+----------------------------------------
+Accuracies =
+ 82.0%   0.0%   0.0%   0.0%   0.0%
+ 76.0%  99.4%   0.0%   0.0%   0.0%
+ 51.4%  98.7%  93.9%   0.0%   0.0%
+****************************************************************************************************
+Task  3 (fashion-mnist)
+****************************************************************************************************
+----------------------------------------
+Task ID :3 | Learning Rate : 0.1
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([27, 27])
+Layer 2 - Projection Matrix shape: torch.Size([180, 180])
+Layer 3 - Projection Matrix shape: torch.Size([180, 180])
+Layer 4 - Projection Matrix shape: torch.Size([180, 180])
+Layer 5 - Projection Matrix shape: torch.Size([180, 180])
+Layer 6 - Projection Matrix shape: torch.Size([180, 180])
+Layer 7 - Projection Matrix shape: torch.Size([360, 360])
+Layer 8 - Projection Matrix shape: torch.Size([20, 20])
+Layer 9 - Projection Matrix shape: torch.Size([360, 360])
+Layer 10 - Projection Matrix shape: torch.Size([360, 360])
+Layer 11 - Projection Matrix shape: torch.Size([360, 360])
+Layer 12 - Projection Matrix shape: torch.Size([720, 720])
+Layer 13 - Projection Matrix shape: torch.Size([40, 40])
+Layer 14 - Projection Matrix shape: torch.Size([720, 720])
+Layer 15 - Projection Matrix shape: torch.Size([720, 720])
+Layer 16 - Projection Matrix shape: torch.Size([720, 720])
+Layer 17 - Projection Matrix shape: torch.Size([1440, 1440])
+Layer 18 - Projection Matrix shape: torch.Size([80, 80])
+Layer 19 - Projection Matrix shape: torch.Size([1440, 1440])
+Layer 20 - Projection Matrix shape: torch.Size([1440, 1440])
+----------------------------------------
+Epoch   1 | Train: loss=0.011, acc= 99.9% | time=60609.0ms |
+ Valid: loss=0.025, acc= 99.2% |
+ *
+
+Epoch   2 | Train: loss=0.006, acc= 99.9% | time=58873.8ms |
+ Valid: loss=0.024, acc= 99.3% |
+ *
+
+Epoch   3 | Train: loss=0.005, acc=100.0% | time=60734.7ms |
+ Valid: loss=0.021, acc= 99.4% |
+ *
+
+Epoch   4 | Train: loss=0.003, acc=100.0% | time=58444.5ms |
+ Valid: loss=0.019, acc= 99.3% |
+ *
+
+Epoch   5 | Train: loss=0.002, acc=100.0% | time=59671.8ms |
+ Valid: loss=0.021, acc= 99.3% |
+
+Epoch   6 | Train: loss=0.002, acc=100.0% | time=60796.0ms |
+ Valid: loss=0.020, acc= 99.3% |
+
+Epoch   7 | Train: loss=0.001, acc=100.0% | time=59056.9ms |
+ Valid: loss=0.021, acc= 99.3% |
+
+Epoch   8 | Train: loss=0.001, acc=100.0% | time=59064.4ms |
+ Valid: loss=0.021, acc= 99.3% |
+
+Epoch   9 | Train: loss=0.001, acc=100.0% | time=57570.1ms |
+ Valid: loss=0.021, acc= 99.3% |
+ lr=3.3e-02
+
+Epoch  10 | Train: loss=0.001, acc=100.0% | time=58416.5ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  11 | Train: loss=0.001, acc=100.0% | time=58909.2ms |
+ Valid: loss=0.020, acc= 99.3% |
+
+Epoch  12 | Train: loss=0.001, acc=100.0% | time=59137.4ms |
+ Valid: loss=0.020, acc= 99.3% |
+
+Epoch  13 | Train: loss=0.001, acc=100.0% | time=51421.2ms |
+ Valid: loss=0.021, acc= 99.2% |
+
+Epoch  14 | Train: loss=0.001, acc=100.0% | time=58279.7ms |
+ Valid: loss=0.020, acc= 99.2% |
+ lr=1.1e-02
+
+Epoch  15 | Train: loss=0.001, acc=100.0% | time=55521.2ms |
+ Valid: loss=0.020, acc= 99.2% |
+
+Epoch  16 | Train: loss=0.001, acc=100.0% | time=56017.7ms |
+ Valid: loss=0.019, acc= 99.3% |
+
+Epoch  17 | Train: loss=0.001, acc=100.0% | time=58699.8ms |
+ Valid: loss=0.020, acc= 99.4% |
+
+Epoch  18 | Train: loss=0.001, acc=100.0% | time=58565.2ms |
+ Valid: loss=0.019, acc= 99.3% |
+
+Epoch  19 | Train: loss=0.001, acc=100.0% | time=60312.9ms |
+ Valid: loss=0.020, acc= 99.4% |
+ lr=3.7e-03
+Frozen Space Size : 27, 8
+Compress Representation Size (27, 20) to (27, 3)
+Initiate Relaxing Space as (27, 3)
+Frozen Space Size : 180, 31
+Compress Representation Size (180, 20) to (180, 11)
+Initiate Relaxing Space as (180, 3)
+Frozen Space Size : 180, 40
+Compress Representation Size (180, 20) to (180, 13)
+Initiate Relaxing Space as (180, 2)
+Frozen Space Size : 180, 34
+Compress Representation Size (180, 20) to (180, 14)
+Initiate Relaxing Space as (180, 2)
+Frozen Space Size : 180, 39
+Compress Representation Size (180, 20) to (180, 14)
+Initiate Relaxing Space as (180, 2)
+Frozen Space Size : 180, 58
+Compress Representation Size (180, 40) to (180, 21)
+Initiate Relaxing Space as (180, 7)
+Frozen Space Size : 360, 80
+Compress Representation Size (360, 40) to (360, 27)
+Initiate Relaxing Space as (360, 2)
+Frozen Space Size : 20, 18
+Compress Representation Size (20, 40) to (20, 12)
+Initiate Relaxing Space as (20, 10)
+Frozen Space Size : 360, 76
+Compress Representation Size (360, 40) to (360, 25)
+Initiate Relaxing Space as (360, 3)
+Frozen Space Size : 360, 79
+Compress Representation Size (360, 40) to (360, 26)
+Initiate Relaxing Space as (360, 3)
+Frozen Space Size : 360, 121
+Compress Representation Size (360, 80) to (360, 39)
+Initiate Relaxing Space as (360, 9)
+Frozen Space Size : 720, 158
+Compress Representation Size (720, 80) to (720, 49)
+Initiate Relaxing Space as (720, 4)
+Frozen Space Size : 40, 35
+Compress Representation Size (40, 80) to (40, 19)
+Initiate Relaxing Space as (40, 16)
+Frozen Space Size : 720, 152
+Compress Representation Size (720, 80) to (720, 45)
+Initiate Relaxing Space as (720, 5)
+Frozen Space Size : 720, 157
+Compress Representation Size (720, 80) to (720, 51)
+Initiate Relaxing Space as (720, 4)
+Frozen Space Size : 720, 191
+Compress Representation Size (720, 160) to (720, 57)
+Initiate Relaxing Space as (720, 8)
+Frozen Space Size : 1440, 237
+Compress Representation Size (1440, 160) to (1440, 80)
+Initiate Relaxing Space as (1440, 3)
+Frozen Space Size : 80, 67
+Compress Representation Size (80, 160) to (80, 35)
+Initiate Relaxing Space as (80, 25)
+Frozen Space Size : 1440, 236
+Compress Representation Size (1440, 160) to (1440, 82)
+Initiate Relaxing Space as (1440, 3)
+Frozen Space Size : 1440, 210
+Compress Representation Size (1440, 160) to (1440, 73)
+Initiate Relaxing Space as (1440, 3)
+
+Epoch  20 | Train: loss=0.000, acc=100.0% | time=129761.8ms |
+ Valid: loss=0.021, acc= 99.2% |
+
+Epoch  21 | Train: loss=0.000, acc=100.0% | time=126045.2ms |
+ Valid: loss=0.021, acc= 99.4% |
+
+Epoch  22 | Train: loss=0.000, acc=100.0% | time=131686.9ms |
+ Valid: loss=0.021, acc= 99.2% |
+
+Epoch  23 | Train: loss=0.000, acc=100.0% | time=133146.7ms |
+ Valid: loss=0.019, acc= 99.4% |
+
+Epoch  24 | Train: loss=0.000, acc=100.0% | time=131334.1ms |
+ Valid: loss=0.019, acc= 99.3% |
+ lr=3.3e-02
+
+Epoch  25 | Train: loss=0.000, acc=100.0% | time=133008.0ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  26 | Train: loss=0.000, acc=100.0% | time=129225.7ms |
+ Valid: loss=0.020, acc= 99.3% |
+
+Epoch  27 | Train: loss=0.000, acc=100.0% | time=131567.3ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  28 | Train: loss=0.000, acc=100.0% | time=135403.0ms |
+ Valid: loss=0.021, acc= 99.3% |
+
+Epoch  29 | Train: loss=0.000, acc=100.0% | time=133858.5ms |
+ Valid: loss=0.021, acc= 99.3% |
+ lr=1.1e-02
+
+Epoch  30 | Train: loss=0.000, acc=100.0% | time=132328.3ms |
+ Valid: loss=0.022, acc= 99.2% |
+
+Epoch  31 | Train: loss=0.000, acc=100.0% | time=131632.9ms |
+ Valid: loss=0.021, acc= 99.3% |
+
+Epoch  32 | Train: loss=0.000, acc=100.0% | time=131191.3ms |
+ Valid: loss=0.022, acc= 99.2% |
+
+Epoch  33 | Train: loss=0.000, acc=100.0% | time=117641.9ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  34 | Train: loss=0.000, acc=100.0% | time=125718.9ms |
+ Valid: loss=0.022, acc= 99.3% |
+ lr=3.7e-03
+Frozen Space Size : 27, 5
+Compress Representation Size (27, 20) to (27, 3)
+Keep Relaxing Space as Previous (27, 3)
+Frozen Space Size : 180, 28
+Compress Representation Size (180, 20) to (180, 10)
+Keep Relaxing Space as Previous (180, 3)
+Frozen Space Size : 180, 38
+Compress Representation Size (180, 20) to (180, 13)
+Keep Relaxing Space as Previous (180, 2)
+Frozen Space Size : 180, 32
+Compress Representation Size (180, 20) to (180, 14)
+Keep Relaxing Space as Previous (180, 2)
+Frozen Space Size : 180, 37
+Compress Representation Size (180, 20) to (180, 14)
+Keep Relaxing Space as Previous (180, 2)
+Frozen Space Size : 180, 51
+Compress Representation Size (180, 40) to (180, 20)
+Keep Relaxing Space as Previous (180, 7)
+Frozen Space Size : 360, 78
+Compress Representation Size (360, 40) to (360, 27)
+Keep Relaxing Space as Previous (360, 2)
+Frozen Space Size : 20, 8
+Compress Representation Size (20, 40) to (20, 11)
+Keep Relaxing Space as Previous (20, 10)
+Frozen Space Size : 360, 73
+Compress Representation Size (360, 40) to (360, 26)
+Keep Relaxing Space as Previous (360, 3)
+Frozen Space Size : 360, 76
+Compress Representation Size (360, 40) to (360, 27)
+Keep Relaxing Space as Previous (360, 3)
+Frozen Space Size : 360, 112
+Compress Representation Size (360, 80) to (360, 41)
+Keep Relaxing Space as Previous (360, 9)
+Frozen Space Size : 720, 154
+Compress Representation Size (720, 80) to (720, 51)
+Keep Relaxing Space as Previous (720, 4)
+Frozen Space Size : 40, 19
+Compress Representation Size (40, 80) to (40, 22)
+Expand Relaxing Space from (40, 16) to (40, 19)
+Frozen Space Size : 720, 147
+Compress Representation Size (720, 80) to (720, 50)
+Keep Relaxing Space as Previous (720, 5)
+Frozen Space Size : 720, 153
+Compress Representation Size (720, 80) to (720, 54)
+Keep Relaxing Space as Previous (720, 4)
+Frozen Space Size : 720, 183
+Compress Representation Size (720, 160) to (720, 64)
+Keep Relaxing Space as Previous (720, 8)
+Frozen Space Size : 1440, 234
+Compress Representation Size (1440, 160) to (1440, 88)
+Keep Relaxing Space as Previous (1440, 3)
+Frozen Space Size : 80, 42
+Compress Representation Size (80, 160) to (80, 37)
+Keep Relaxing Space as Previous (80, 25)
+Frozen Space Size : 1440, 233
+Compress Representation Size (1440, 160) to (1440, 91)
+Keep Relaxing Space as Previous (1440, 3)
+Frozen Space Size : 1440, 207
+Compress Representation Size (1440, 160) to (1440, 74)
+Keep Relaxing Space as Previous (1440, 3)
+
+Epoch  35 | Train: loss=0.000, acc=100.0% | time=125803.1ms |
+ Valid: loss=0.021, acc= 99.3% |
+
+Epoch  36 | Train: loss=0.000, acc=100.0% | time=127299.3ms |
+ Valid: loss=0.021, acc= 99.3% |
+
+Epoch  37 | Train: loss=0.000, acc=100.0% | time=124370.6ms |
+ Valid: loss=0.022, acc= 99.2% |
+
+Epoch  38 | Train: loss=0.000, acc=100.0% | time=129095.4ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  39 | Train: loss=0.000, acc=100.0% | time=130342.7ms |
+ Valid: loss=0.022, acc= 99.3% |
+ lr=3.3e-02
+
+Epoch  40 | Train: loss=0.000, acc=100.0% | time=123304.7ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  41 | Train: loss=0.000, acc=100.0% | time=126623.4ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  42 | Train: loss=0.000, acc=100.0% | time=123326.0ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  43 | Train: loss=0.000, acc=100.0% | time=127827.8ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  44 | Train: loss=0.000, acc=100.0% | time=129038.7ms |
+ Valid: loss=0.022, acc= 99.2% |
+ lr=1.1e-02
+
+Epoch  45 | Train: loss=0.000, acc=100.0% | time=125890.5ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  46 | Train: loss=0.000, acc=100.0% | time=125036.3ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  47 | Train: loss=0.000, acc=100.0% | time=122064.8ms |
+ Valid: loss=0.023, acc= 99.3% |
+
+Epoch  48 | Train: loss=0.000, acc=100.0% | time=124915.9ms |
+ Valid: loss=0.022, acc= 99.3% |
+
+Epoch  49 | Train: loss=0.000, acc=100.0% | time=125307.1ms |
+ Valid: loss=0.023, acc= 99.3% |
+ lr=3.7e-03
+
+Epoch  50 | Train: loss=0.000, acc=100.0% | time=125288.1ms |
+ Valid: loss=0.022, acc= 99.2% |
+
+Epoch  51 | Train: loss=0.000, acc=100.0% | time=125398.5ms |
+ Valid: loss=0.024, acc= 99.3% |
+
+Epoch  52 | Train: loss=0.000, acc=100.0% | time=129339.9ms |
+ Valid: loss=0.024, acc= 99.2% |
+
+Epoch  53 | Train: loss=0.000, acc=100.0% | time=126323.7ms |
+ Valid: loss=0.023, acc= 99.2% |
+
+Epoch  54 | Train: loss=0.000, acc=100.0% | time=133460.5ms |
+ Valid: loss=0.023, acc= 99.2% |
+ lr=1.2e-03
+
+Epoch  55 | Train: loss=0.000, acc=100.0% | time=127030.7ms |
+ Valid: loss=0.023, acc= 99.4% |
+
+Epoch  56 | Train: loss=0.000, acc=100.0% | time=124273.9ms |
+ Valid: loss=0.023, acc= 99.2% |
+
+Epoch  57 | Train: loss=0.000, acc=100.0% | time=125691.9ms |
+ Valid: loss=0.021, acc= 99.3% |
+
+Epoch  58 | Train: loss=0.000, acc=100.0% | time=126910.4ms |
+ Valid: loss=0.022, acc= 99.2% |
+
+Epoch  59 | Train: loss=0.000, acc=100.0% | time=124142.4ms |
+ Valid: loss=0.022, acc= 99.3% |
+ lr=4.1e-04
+
+Test: loss=0.015 , acc= 99.4%
+Threshold: [0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97
+ 0.97 0.97 0.97 0.97 0.97 0.97]
+Skip Updating GPM for layer: 1
+Skip Updating GPM for layer: 8
+Skip Updating GPM for layer: 13
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/27
+Layer 2 : 40/180
+Layer 3 : 50/180
+Layer 4 : 44/180
+Layer 5 : 51/180
+Layer 6 : 72/180
+Layer 7 : 104/360
+Layer 8 : 18/20
+Layer 9 : 97/360
+Layer 10 : 101/360
+Layer 11 : 145/360
+Layer 12 : 196/720
+Layer 13 : 35/40
+Layer 14 : 191/720
+Layer 15 : 200/720
+Layer 16 : 220/720
+Layer 17 : 282/1440
+Layer 18 : 70/80
+Layer 19 : 282/1440
+Layer 20 : 248/1440
+----------------------------------------
+Accuracies =
+ 82.0%   0.0%   0.0%   0.0%   0.0%
+ 76.0%  99.4%   0.0%   0.0%   0.0%
+ 51.4%  98.7%  93.9%   0.0%   0.0%
+ 54.8%  99.4%  93.2%  99.5%   0.0%
+****************************************************************************************************
+Task  4 (notmnist)
+****************************************************************************************************
+----------------------------------------
+Task ID :4 | Learning Rate : 0.1
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([27, 27])
+Layer 2 - Projection Matrix shape: torch.Size([180, 180])
+Layer 3 - Projection Matrix shape: torch.Size([180, 180])
+Layer 4 - Projection Matrix shape: torch.Size([180, 180])
+Layer 5 - Projection Matrix shape: torch.Size([180, 180])
+Layer 6 - Projection Matrix shape: torch.Size([180, 180])
+Layer 7 - Projection Matrix shape: torch.Size([360, 360])
+Layer 8 - Projection Matrix shape: torch.Size([20, 20])
+Layer 9 - Projection Matrix shape: torch.Size([360, 360])
+Layer 10 - Projection Matrix shape: torch.Size([360, 360])
+Layer 11 - Projection Matrix shape: torch.Size([360, 360])
+Layer 12 - Projection Matrix shape: torch.Size([720, 720])
+Layer 13 - Projection Matrix shape: torch.Size([40, 40])
+Layer 14 - Projection Matrix shape: torch.Size([720, 720])
+Layer 15 - Projection Matrix shape: torch.Size([720, 720])
+Layer 16 - Projection Matrix shape: torch.Size([720, 720])
+Layer 17 - Projection Matrix shape: torch.Size([1440, 1440])
+Layer 18 - Projection Matrix shape: torch.Size([80, 80])
+Layer 19 - Projection Matrix shape: torch.Size([1440, 1440])
+Layer 20 - Projection Matrix shape: torch.Size([1440, 1440])
+----------------------------------------
+Epoch   1 | Train: loss=0.171, acc= 95.3% | time=16900.1ms |
+ Valid: loss=0.232, acc= 92.6% |
+ *
+
+Epoch   2 | Train: loss=0.118, acc= 96.9% | time=16398.8ms |
+ Valid: loss=0.202, acc= 93.9% |
+ *
+
+Epoch   3 | Train: loss=0.074, acc= 98.5% | time=15845.4ms |
+ Valid: loss=0.165, acc= 94.8% |
+ *
+
+Epoch   4 | Train: loss=0.056, acc= 99.0% | time=16782.4ms |
+ Valid: loss=0.162, acc= 95.8% |
+ *
+
+Epoch   5 | Train: loss=0.037, acc= 99.5% | time=17491.0ms |
+ Valid: loss=0.146, acc= 95.4% |
+ *
+
+Epoch   6 | Train: loss=0.028, acc= 99.5% | time=17229.7ms |
+ Valid: loss=0.157, acc= 95.1% |
+
+Epoch   7 | Train: loss=0.017, acc= 99.8% | time=15590.6ms |
+ Valid: loss=0.141, acc= 95.8% |
+ *
+
+Epoch   8 | Train: loss=0.012, acc= 99.9% | time=16579.8ms |
+ Valid: loss=0.140, acc= 95.7% |
+ *
+
+Epoch   9 | Train: loss=0.010, acc= 99.9% | time=15226.0ms |
+ Valid: loss=0.143, acc= 96.0% |
+
+Epoch  10 | Train: loss=0.008, acc= 99.9% | time=16677.6ms |
+ Valid: loss=0.146, acc= 96.2% |
+
+Epoch  11 | Train: loss=0.015, acc= 99.8% | time=17655.0ms |
+ Valid: loss=0.172, acc= 94.8% |
+
+Epoch  12 | Train: loss=0.006, acc=100.0% | time=15736.2ms |
+ Valid: loss=0.143, acc= 96.1% |
+
+Epoch  13 | Train: loss=0.006, acc=100.0% | time=15625.4ms |
+ Valid: loss=0.156, acc= 95.6% |
+ lr=3.3e-02
+
+Epoch  14 | Train: loss=0.005, acc=100.0% | time=15349.6ms |
+ Valid: loss=0.145, acc= 96.2% |
+
+Epoch  15 | Train: loss=0.005, acc=100.0% | time=15385.9ms |
+ Valid: loss=0.143, acc= 95.8% |
+
+Epoch  16 | Train: loss=0.005, acc=100.0% | time=16509.2ms |
+ Valid: loss=0.147, acc= 96.2% |
+
+Epoch  17 | Train: loss=0.005, acc=100.0% | time=16273.9ms |
+ Valid: loss=0.151, acc= 96.1% |
+
+Epoch  18 | Train: loss=0.005, acc=100.0% | time=15417.9ms |
+ Valid: loss=0.149, acc= 96.1% |
+ lr=1.1e-02
+
+Epoch  19 | Train: loss=0.005, acc=100.0% | time=16121.7ms |
+ Valid: loss=0.155, acc= 96.2% |
+
+Epoch  20 | Train: loss=0.004, acc=100.0% | time=16030.1ms |
+ Valid: loss=0.148, acc= 96.2% |
+
+Epoch  21 | Train: loss=0.004, acc=100.0% | time=16771.5ms |
+ Valid: loss=0.149, acc= 95.8% |
+
+Epoch  22 | Train: loss=0.004, acc=100.0% | time=16398.9ms |
+ Valid: loss=0.150, acc= 96.0% |
+
+Epoch  23 | Train: loss=0.004, acc=100.0% | time=15749.8ms |
+ Valid: loss=0.152, acc= 96.1% |
+ lr=3.7e-03
+Frozen Space Size : 27, 8
+Compress Representation Size (27, 20) to (27, 2)
+Initiate Relaxing Space as (27, 2)
+Frozen Space Size : 180, 40
+Compress Representation Size (180, 20) to (180, 11)
+Initiate Relaxing Space as (180, 5)
+Frozen Space Size : 180, 50
+Compress Representation Size (180, 20) to (180, 13)
+Initiate Relaxing Space as (180, 3)
+Frozen Space Size : 180, 44
+Compress Representation Size (180, 20) to (180, 11)
+Initiate Relaxing Space as (180, 4)
+Frozen Space Size : 180, 51
+Compress Representation Size (180, 20) to (180, 14)
+Initiate Relaxing Space as (180, 5)
+Frozen Space Size : 180, 72
+Compress Representation Size (180, 40) to (180, 22)
+Initiate Relaxing Space as (180, 11)
+Frozen Space Size : 360, 104
+Compress Representation Size (360, 40) to (360, 29)
+Initiate Relaxing Space as (360, 6)
+Frozen Space Size : 20, 18
+Compress Representation Size (20, 40) to (20, 12)
+Initiate Relaxing Space as (20, 10)
+Frozen Space Size : 360, 97
+Compress Representation Size (360, 40) to (360, 25)
+Initiate Relaxing Space as (360, 6)
+Frozen Space Size : 360, 101
+Compress Representation Size (360, 40) to (360, 28)
+Initiate Relaxing Space as (360, 4)
+Frozen Space Size : 360, 145
+Compress Representation Size (360, 80) to (360, 43)
+Initiate Relaxing Space as (360, 14)
+Frozen Space Size : 720, 196
+Compress Representation Size (720, 80) to (720, 56)
+Initiate Relaxing Space as (720, 6)
+Frozen Space Size : 40, 35
+Compress Representation Size (40, 80) to (40, 23)
+Initiate Relaxing Space as (40, 19)
+Frozen Space Size : 720, 191
+Compress Representation Size (720, 80) to (720, 53)
+Initiate Relaxing Space as (720, 7)
+Frozen Space Size : 720, 200
+Compress Representation Size (720, 80) to (720, 57)
+Initiate Relaxing Space as (720, 3)
+Frozen Space Size : 720, 220
+Compress Representation Size (720, 160) to (720, 79)
+Initiate Relaxing Space as (720, 10)
+Frozen Space Size : 1440, 282
+Compress Representation Size (1440, 160) to (1440, 102)
+Initiate Relaxing Space as (1440, 3)
+Frozen Space Size : 80, 70
+Compress Representation Size (80, 160) to (80, 41)
+Initiate Relaxing Space as (80, 31)
+Frozen Space Size : 1440, 282
+Compress Representation Size (1440, 160) to (1440, 100)
+Initiate Relaxing Space as (1440, 3)
+Frozen Space Size : 1440, 248
+Compress Representation Size (1440, 160) to (1440, 91)
+Initiate Relaxing Space as (1440, 1)
+
+Epoch  24 | Train: loss=0.004, acc=100.0% | time=35028.6ms |
+ Valid: loss=0.157, acc= 95.8% |
+
+Epoch  25 | Train: loss=0.004, acc=100.0% | time=34636.3ms |
+ Valid: loss=0.151, acc= 95.7% |
+
+Epoch  26 | Train: loss=0.004, acc=100.0% | time=36411.5ms |
+ Valid: loss=0.153, acc= 96.3% |
+
+Epoch  27 | Train: loss=0.005, acc=100.0% | time=35776.5ms |
+ Valid: loss=0.153, acc= 96.0% |
+
+Epoch  28 | Train: loss=0.004, acc=100.0% | time=34095.9ms |
+ Valid: loss=0.152, acc= 96.0% |
+ lr=3.3e-02
+
+Epoch  29 | Train: loss=0.003, acc=100.0% | time=34660.6ms |
+ Valid: loss=0.150, acc= 95.7% |
+
+Epoch  30 | Train: loss=0.003, acc=100.0% | time=36640.9ms |
+ Valid: loss=0.156, acc= 95.7% |
+
+Epoch  31 | Train: loss=0.003, acc=100.0% | time=34459.5ms |
+ Valid: loss=0.155, acc= 95.7% |
+
+Epoch  32 | Train: loss=0.003, acc=100.0% | time=36049.8ms |
+ Valid: loss=0.155, acc= 95.7% |
+
+Epoch  33 | Train: loss=0.003, acc=100.0% | time=36063.2ms |
+ Valid: loss=0.157, acc= 95.7% |
+ lr=1.1e-02
+
+Epoch  34 | Train: loss=0.003, acc=100.0% | time=36049.6ms |
+ Valid: loss=0.151, acc= 96.1% |
+
+Epoch  35 | Train: loss=0.003, acc=100.0% | time=34709.2ms |
+ Valid: loss=0.153, acc= 96.2% |
+
+Epoch  36 | Train: loss=0.003, acc=100.0% | time=36006.1ms |
+ Valid: loss=0.153, acc= 95.7% |
+
+Epoch  37 | Train: loss=0.003, acc=100.0% | time=35341.7ms |
+ Valid: loss=0.151, acc= 95.8% |
+
+Epoch  38 | Train: loss=0.003, acc=100.0% | time=35369.9ms |
+ Valid: loss=0.151, acc= 95.6% |
+ lr=3.7e-03
+Frozen Space Size : 27, 6
+Compress Representation Size (27, 20) to (27, 2)
+Keep Relaxing Space as Previous (27, 2)
+Frozen Space Size : 180, 35
+Compress Representation Size (180, 20) to (180, 10)
+Keep Relaxing Space as Previous (180, 5)
+Frozen Space Size : 180, 47
+Compress Representation Size (180, 20) to (180, 13)
+Keep Relaxing Space as Previous (180, 3)
+Frozen Space Size : 180, 40
+Compress Representation Size (180, 20) to (180, 12)
+Keep Relaxing Space as Previous (180, 4)
+Frozen Space Size : 180, 46
+Compress Representation Size (180, 20) to (180, 13)
+Keep Relaxing Space as Previous (180, 5)
+Frozen Space Size : 180, 61
+Compress Representation Size (180, 40) to (180, 20)
+Keep Relaxing Space as Previous (180, 11)
+Frozen Space Size : 360, 98
+Compress Representation Size (360, 40) to (360, 27)
+Keep Relaxing Space as Previous (360, 6)
+Frozen Space Size : 20, 8
+Compress Representation Size (20, 40) to (20, 12)
+Keep Relaxing Space as Previous (20, 10)
+Frozen Space Size : 360, 91
+Compress Representation Size (360, 40) to (360, 25)
+Keep Relaxing Space as Previous (360, 6)
+Frozen Space Size : 360, 97
+Compress Representation Size (360, 40) to (360, 27)
+Keep Relaxing Space as Previous (360, 4)
+Frozen Space Size : 360, 131
+Compress Representation Size (360, 80) to (360, 41)
+Keep Relaxing Space as Previous (360, 14)
+Frozen Space Size : 720, 190
+Compress Representation Size (720, 80) to (720, 55)
+Keep Relaxing Space as Previous (720, 6)
+Frozen Space Size : 40, 16
+Compress Representation Size (40, 80) to (40, 22)
+Keep Relaxing Space as Previous (40, 19)
+Frozen Space Size : 720, 184
+Compress Representation Size (720, 80) to (720, 53)
+Keep Relaxing Space as Previous (720, 7)
+Frozen Space Size : 720, 197
+Compress Representation Size (720, 80) to (720, 56)
+Keep Relaxing Space as Previous (720, 3)
+Frozen Space Size : 720, 210
+Compress Representation Size (720, 160) to (720, 78)
+Keep Relaxing Space as Previous (720, 10)
+Frozen Space Size : 1440, 279
+Compress Representation Size (1440, 160) to (1440, 102)
+Keep Relaxing Space as Previous (1440, 3)
+Frozen Space Size : 80, 39
+Compress Representation Size (80, 160) to (80, 41)
+Keep Relaxing Space as Previous (80, 31)
+Frozen Space Size : 1440, 279
+Compress Representation Size (1440, 160) to (1440, 101)
+Keep Relaxing Space as Previous (1440, 3)
+Frozen Space Size : 1440, 247
+Compress Representation Size (1440, 160) to (1440, 90)
+Keep Relaxing Space as Previous (1440, 1)
+
+Epoch  39 | Train: loss=0.003, acc=100.0% | time=36577.7ms |
+ Valid: loss=0.152, acc= 96.0% |
+
+Epoch  40 | Train: loss=0.003, acc=100.0% | time=34698.7ms |
+ Valid: loss=0.159, acc= 96.2% |
+
+Epoch  41 | Train: loss=0.003, acc=100.0% | time=36821.1ms |
+ Valid: loss=0.151, acc= 95.7% |
+
+Epoch  42 | Train: loss=0.003, acc=100.0% | time=34567.6ms |
+ Valid: loss=0.152, acc= 96.2% |
+
+Epoch  43 | Train: loss=0.003, acc=100.0% | time=35490.1ms |
+ Valid: loss=0.158, acc= 95.7% |
+ lr=1.2e-03
+
+Epoch  44 | Train: loss=0.003, acc=100.0% | time=35939.4ms |
+ Valid: loss=0.157, acc= 95.7% |
+
+Epoch  45 | Train: loss=0.003, acc=100.0% | time=37894.9ms |
+ Valid: loss=0.154, acc= 96.0% |
+
+Epoch  46 | Train: loss=0.003, acc=100.0% | time=34424.9ms |
+ Valid: loss=0.151, acc= 95.7% |
+
+Epoch  47 | Train: loss=0.003, acc=100.0% | time=35103.1ms |
+ Valid: loss=0.158, acc= 95.6% |
+
+Epoch  48 | Train: loss=0.003, acc=100.0% | time=34794.0ms |
+ Valid: loss=0.154, acc= 95.6% |
+ lr=4.1e-04
+
+Test: loss=0.154 , acc= 95.5%
+Threshold: [0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97 0.97
+ 0.97 0.97 0.97 0.97 0.97 0.97]
+Skip Updating GPM for layer: 1
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/27
+Layer 2 : 44/180
+Layer 3 : 59/180
+Layer 4 : 50/180
+Layer 5 : 60/180
+Layer 6 : 80/180
+Layer 7 : 124/360
+Layer 8 : 19/20
+Layer 9 : 114/360
+Layer 10 : 122/360
+Layer 11 : 164/360
+Layer 12 : 230/720
+Layer 13 : 36/40
+Layer 14 : 226/720
+Layer 15 : 237/720
+Layer 16 : 247/720
+Layer 17 : 320/1440
+Layer 18 : 73/80
+Layer 19 : 320/1440
+Layer 20 : 277/1440
+----------------------------------------
+Accuracies =
+ 82.0%   0.0%   0.0%   0.0%   0.0%
+ 76.0%  99.4%   0.0%   0.0%   0.0%
+ 51.4%  98.7%  93.9%   0.0%   0.0%
+ 54.8%  99.4%  93.2%  99.5%   0.0%
+ 51.7%  99.4%  92.0%  99.5%  95.4%
+--------------------------------------------------
+Task Order : [0 1 2 3 4]
+Final Avg Accuracy: 87.57%
+Backward transfer: -8.10%
+[Elapsed time = 22852922.4 ms]
+--------------------------------------------------

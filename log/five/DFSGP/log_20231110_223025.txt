@@ -1,0 +1,2189 @@
+====================================================================================================
+Arguments =
+Namespace(batch_size_test=64, batch_size_train=64, gpm_thro=0.98, lr=0.1, lr_factor=3, lr_min=0.001, lr_patience=5, mixup_alpha=1, mixup_weight=0.01, momentum=0.9, n_epochs=100, pc_valid=0.05, savename='./log/DFSGP/', scale_coff=10, seed=1)
+====================================================================================================
+****************************************************************************************************
+Task  0 (cifar10)
+****************************************************************************************************
+----------------------------------------
+Task ID :0 | Learning Rate : 0.1
+----------------------------------------
+Epoch   1 | Train: loss=1.601, acc= 43.6% | time=120278.6ms |
+ Valid: loss=1.645, acc= 42.6% |
+Epoch   2 | Train: loss=1.115, acc= 61.1% | time=111512.8ms |
+ Valid: loss=1.154, acc= 59.7% |
+Epoch   3 | Train: loss=1.325, acc= 55.9% | time=102795.9ms |
+ Valid: loss=1.425, acc= 53.0% |
+Epoch   4 | Train: loss=0.755, acc= 73.9% | time=106325.6ms |
+ Valid: loss=0.849, acc= 70.8% |
+Epoch   5 | Train: loss=0.579, acc= 79.7% | time=103929.8ms |
+ Valid: loss=0.731, acc= 74.0% |
+Epoch   6 | Train: loss=0.498, acc= 82.6% | time=97742.3ms |
+ Valid: loss=0.697, acc= 75.3% |
+Epoch   7 | Train: loss=0.501, acc= 82.3% | time=101329.5ms |
+ Valid: loss=0.745, acc= 74.0% |
+Epoch   8 | Train: loss=0.390, acc= 87.3% | time=102574.1ms |
+ Valid: loss=0.683, acc= 76.3% |
+Epoch   9 | Train: loss=0.270, acc= 91.6% | time=101329.9ms |
+ Valid: loss=0.632, acc= 77.6% |
+Epoch  10 | Train: loss=0.367, acc= 89.2% | time=115002.5ms |
+ Valid: loss=0.867, acc= 74.2% |
+Epoch  11 | Train: loss=0.530, acc= 83.3% | time=107029.9ms |
+ Valid: loss=1.061, acc= 70.6% |
+Epoch  12 | Train: loss=0.094, acc= 98.0% | time=102236.8ms |
+ Valid: loss=0.599, acc= 80.3% |
+Epoch  13 | Train: loss=0.114, acc= 96.7% | time=102967.3ms |
+ Valid: loss=0.680, acc= 78.8% |
+Epoch  14 | Train: loss=0.301, acc= 92.1% | time=96431.5ms |
+ Valid: loss=0.940, acc= 74.2% |
+Epoch  15 | Train: loss=0.037, acc= 99.5% | time=113204.4ms |
+ Valid: loss=0.634, acc= 80.6% |
+Epoch  16 | Train: loss=0.111, acc= 96.9% | time=96325.3ms |
+ Valid: loss=0.722, acc= 79.2% |
+Epoch  17 | Train: loss=0.157, acc= 95.7% | time=120149.7ms |
+ Valid: loss=0.865, acc= 76.9% |
+ lr=3.3e-02
+Epoch  18 | Train: loss=0.007, acc=100.0% | time=94207.2ms |
+ Valid: loss=0.581, acc= 82.2% |
+Epoch  19 | Train: loss=0.008, acc=100.0% | time=86444.7ms |
+ Valid: loss=0.596, acc= 82.4% |
+Epoch  20 | Train: loss=0.010, acc=100.0% | time=93338.5ms |
+ Valid: loss=0.611, acc= 82.5% |
+Epoch  21 | Train: loss=0.006, acc=100.0% | time=99591.6ms |
+ Valid: loss=0.574, acc= 83.0% |
+Epoch  22 | Train: loss=0.005, acc=100.0% | time=107643.9ms |
+ Valid: loss=0.571, acc= 83.2% |
+Epoch  23 | Train: loss=0.006, acc=100.0% | time=100526.0ms |
+ Valid: loss=0.596, acc= 82.2% |
+Epoch  24 | Train: loss=0.004, acc=100.0% | time=102930.8ms |
+ Valid: loss=0.571, acc= 83.1% |
+Epoch  25 | Train: loss=0.004, acc=100.0% | time=108625.5ms |
+ Valid: loss=0.582, acc= 82.6% |
+Epoch  26 | Train: loss=0.004, acc=100.0% | time=105108.0ms |
+ Valid: loss=0.585, acc= 82.5% |
+Epoch  27 | Train: loss=0.004, acc=100.0% | time=94359.0ms |
+ Valid: loss=0.580, acc= 82.8% |
+Epoch  28 | Train: loss=0.006, acc=100.0% | time=91303.4ms |
+ Valid: loss=0.569, acc= 82.9% |
+Epoch  29 | Train: loss=0.004, acc=100.0% | time=94183.6ms |
+ Valid: loss=0.573, acc= 83.2% |
+Epoch  30 | Train: loss=0.007, acc=100.0% | time=94194.7ms |
+ Valid: loss=0.572, acc= 82.4% |
+Epoch  31 | Train: loss=0.004, acc=100.0% | time=88575.6ms |
+ Valid: loss=0.574, acc= 83.0% |
+Epoch  32 | Train: loss=0.004, acc=100.0% | time=93062.5ms |
+ Valid: loss=0.572, acc= 83.0% |
+Epoch  33 | Train: loss=0.004, acc=100.0% | time=94887.5ms |
+ Valid: loss=0.585, acc= 83.5% |
+ lr=1.1e-02
+Epoch  34 | Train: loss=0.003, acc=100.0% | time=97032.6ms |
+ Valid: loss=0.587, acc= 83.0% |
+Epoch  35 | Train: loss=0.004, acc=100.0% | time=100723.9ms |
+ Valid: loss=0.563, acc= 83.4% |
+Epoch  36 | Train: loss=0.004, acc=100.0% | time=88884.3ms |
+ Valid: loss=0.567, acc= 83.3% |
+Epoch  37 | Train: loss=0.004, acc=100.0% | time=79803.7ms |
+ Valid: loss=0.576, acc= 83.2% |
+Epoch  38 | Train: loss=0.004, acc=100.0% | time=87080.2ms |
+ Valid: loss=0.572, acc= 83.3% |
+Epoch  39 | Train: loss=0.004, acc=100.0% | time=79425.7ms |
+ Valid: loss=0.578, acc= 83.2% |
+Epoch  40 | Train: loss=0.003, acc=100.0% | time=83778.1ms |
+ Valid: loss=0.586, acc= 83.1% |
+ lr=3.7e-03
+Epoch  41 | Train: loss=0.003, acc=100.0% | time=76995.9ms |
+ Valid: loss=0.574, acc= 83.7% |
+Epoch  42 | Train: loss=0.003, acc=100.0% | time=79471.8ms |
+ Valid: loss=0.572, acc= 83.7% |
+Epoch  43 | Train: loss=0.003, acc=100.0% | time=83659.9ms |
+ Valid: loss=0.579, acc= 83.4% |
+Epoch  44 | Train: loss=0.003, acc=100.0% | time=76136.2ms |
+ Valid: loss=0.577, acc= 83.6% |
+Epoch  45 | Train: loss=0.003, acc=100.0% | time=75630.2ms |
+ Valid: loss=0.581, acc= 82.9% |
+ lr=1.2e-03
+Epoch  46 | Train: loss=0.003, acc=100.0% | time=80493.7ms |
+ Valid: loss=0.578, acc= 83.0% |
+Epoch  47 | Train: loss=0.003, acc=100.0% | time=71946.8ms |
+ Valid: loss=0.579, acc= 83.6% |
+Epoch  48 | Train: loss=0.003, acc=100.0% | time=78061.8ms |
+ Valid: loss=0.581, acc= 83.1% |
+Epoch  49 | Train: loss=0.003, acc=100.0% | time=79542.7ms |
+ Valid: loss=0.571, acc= 83.8% |
+Epoch  50 | Train: loss=0.003, acc=100.0% | time=74981.7ms |
+ Valid: loss=0.579, acc= 83.4% |
+ lr=4.1e-04
+----------------------------------------
+Test: loss=0.598 , acc= 82.7%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (27, 10240)
+Layer 2 : (180, 10240)
+Layer 3 : (180, 10240)
+Layer 4 : (180, 10240)
+Layer 5 : (180, 10240)
+Layer 6 : (180, 2560)
+Layer 7 : (360, 2560)
+Layer 8 : (20, 2560)
+Layer 9 : (360, 2560)
+Layer 10 : (360, 12800)
+Layer 11 : (360, 3200)
+Layer 12 : (720, 3200)
+Layer 13 : (40, 3200)
+Layer 14 : (720, 6400)
+Layer 15 : (720, 6400)
+Layer 16 : (720, 1600)
+Layer 17 : (1440, 1600)
+Layer 18 : (80, 1600)
+Layer 19 : (1440, 1600)
+Layer 20 : (1440, 1600)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/27
+Layer 2 : 53/180
+Layer 3 : 98/180
+Layer 4 : 85/180
+Layer 5 : 119/180
+Layer 6 : 94/180
+Layer 7 : 257/360
+Layer 8 : 16/20
+Layer 9 : 261/360
+Layer 10 : 274/360
+Layer 11 : 252/360
+Layer 12 : 538/720
+Layer 13 : 34/40
+Layer 14 : 562/720
+Layer 15 : 562/720
+Layer 16 : 449/720
+Layer 17 : 774/1440
+Layer 18 : 67/80
+Layer 19 : 861/1440
+Layer 20 : 830/1440
+----------------------------------------
+Accuracies =
+ 82.8%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  1 (mnist)
+****************************************************************************************************
+----------------------------------------
+Task ID :1 | Learning Rate : 0.1
+----------------------------------------
+Epoch   1 | Train: loss=0.023, acc= 99.4% | time=28506.2ms |
+ Valid: loss=0.040, acc= 99.0% |
+ *
+Epoch   2 | Train: loss=0.012, acc= 99.7% | time=33045.2ms |
+ Valid: loss=0.035, acc= 99.0% |
+ *
+Epoch   3 | Train: loss=0.006, acc= 99.9% | time=31183.7ms |
+ Valid: loss=0.033, acc= 99.1% |
+ *
+Epoch   4 | Train: loss=0.003, acc=100.0% | time=32587.3ms |
+ Valid: loss=0.030, acc= 99.0% |
+ *
+Epoch   5 | Train: loss=0.002, acc=100.0% | time=34878.9ms |
+ Valid: loss=0.030, acc= 99.0% |
+ *
+Epoch   6 | Train: loss=0.001, acc=100.0% | time=38848.3ms |
+ Valid: loss=0.029, acc= 99.3% |
+ *
+Epoch   7 | Train: loss=0.001, acc=100.0% | time=30528.0ms |
+ Valid: loss=0.031, acc= 99.1% |
+Epoch   8 | Train: loss=0.001, acc=100.0% | time=32443.8ms |
+ Valid: loss=0.030, acc= 99.2% |
+Epoch   9 | Train: loss=0.001, acc=100.0% | time=39152.4ms |
+ Valid: loss=0.031, acc= 99.1% |
+Epoch  10 | Train: loss=0.000, acc=100.0% | time=30497.7ms |
+ Valid: loss=0.029, acc= 99.3% |
+Epoch  11 | Train: loss=0.000, acc=100.0% | time=29835.3ms |
+ Valid: loss=0.031, acc= 99.2% |
+ lr=3.3e-02
+Epoch  12 | Train: loss=0.000, acc=100.0% | time=33392.6ms |
+ Valid: loss=0.032, acc= 99.1% |
+Epoch  13 | Train: loss=0.000, acc=100.0% | time=26788.5ms |
+ Valid: loss=0.032, acc= 99.2% |
+Epoch  14 | Train: loss=0.000, acc=100.0% | time=30304.7ms |
+ Valid: loss=0.030, acc= 99.3% |
+Epoch  15 | Train: loss=0.000, acc=100.0% | time=35106.2ms |
+ Valid: loss=0.032, acc= 99.1% |
+Epoch  16 | Train: loss=0.000, acc=100.0% | time=30432.3ms |
+ Valid: loss=0.029, acc= 99.2% |
+ lr=1.1e-02
+Epoch  17 | Train: loss=0.000, acc=100.0% | time=25590.0ms |
+ Valid: loss=0.031, acc= 99.2% |
+Epoch  18 | Train: loss=0.000, acc=100.0% | time=31623.4ms |
+ Valid: loss=0.032, acc= 99.2% |
+Epoch  19 | Train: loss=0.000, acc=100.0% | time=30965.2ms |
+ Valid: loss=0.031, acc= 99.2% |
+Epoch  20 | Train: loss=0.000, acc=100.0% | time=28258.5ms |
+ Valid: loss=0.032, acc= 99.2% |
+Epoch  21 | Train: loss=0.000, acc=100.0% | time=26400.3ms |
+ Valid: loss=0.030, acc= 99.2% |
+ lr=3.7e-03
+Epoch  22 | Train: loss=0.000, acc=100.0% | time=34731.0ms |
+ Valid: loss=0.029, acc= 99.3% |
+Epoch  23 | Train: loss=0.000, acc=100.0% | time=28535.1ms |
+ Valid: loss=0.031, acc= 99.1% |
+Epoch  24 | Train: loss=0.000, acc=100.0% | time=28476.9ms |
+ Valid: loss=0.029, acc= 99.3% |
+ *
+Epoch  25 | Train: loss=0.000, acc=100.0% | time=28616.8ms |
+ Valid: loss=0.028, acc= 99.3% |
+ *
+Epoch  26 | Train: loss=0.000, acc=100.0% | time=31546.5ms |
+ Valid: loss=0.029, acc= 99.4% |
+Epoch  27 | Train: loss=0.000, acc=100.0% | time=29337.7ms |
+ Valid: loss=0.031, acc= 99.1% |
+Epoch  28 | Train: loss=0.000, acc=100.0% | time=29250.2ms |
+ Valid: loss=0.034, acc= 99.1% |
+Epoch  29 | Train: loss=0.000, acc=100.0% | time=31811.8ms |
+ Valid: loss=0.030, acc= 99.2% |
+Epoch  30 | Train: loss=0.000, acc=100.0% | time=32415.9ms |
+ Valid: loss=0.029, acc= 99.3% |
+ lr=1.2e-03
+Epoch  31 | Train: loss=0.000, acc=100.0% | time=30790.1ms |
+ Valid: loss=0.031, acc= 99.2% |
+Epoch  32 | Train: loss=0.000, acc=100.0% | time=33140.4ms |
+ Valid: loss=0.030, acc= 99.1% |
+Epoch  33 | Train: loss=0.000, acc=100.0% | time=29779.7ms |
+ Valid: loss=0.032, acc= 99.2% |
+Epoch  34 | Train: loss=0.000, acc=100.0% | time=32275.2ms |
+ Valid: loss=0.031, acc= 99.2% |
+Epoch  35 | Train: loss=0.000, acc=100.0% | time=32591.4ms |
+ Valid: loss=0.031, acc= 99.2% |
+ lr=4.1e-04
+Test: loss=0.019 , acc= 99.4%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (27, 10240)
+Layer 2 : (180, 10240)
+Layer 3 : (180, 10240)
+Layer 4 : (180, 10240)
+Layer 5 : (180, 10240)
+Layer 6 : (180, 2560)
+Layer 7 : (360, 2560)
+Layer 8 : (20, 2560)
+Layer 9 : (360, 2560)
+Layer 10 : (360, 12800)
+Layer 11 : (360, 3200)
+Layer 12 : (720, 3200)
+Layer 13 : (40, 3200)
+Layer 14 : (720, 6400)
+Layer 15 : (720, 6400)
+Layer 16 : (720, 1600)
+Layer 17 : (1440, 1600)
+Layer 18 : (80, 1600)
+Layer 19 : (1440, 1600)
+Layer 20 : (1440, 1600)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/27
+Layer 2 : 65/180
+Layer 3 : 109/180
+Layer 4 : 90/180
+Layer 5 : 124/180
+Layer 6 : 99/180
+Layer 7 : 275/360
+Layer 8 : 17/20
+Layer 9 : 278/360
+Layer 10 : 279/360
+Layer 11 : 267/360
+Layer 12 : 589/720
+Layer 13 : 35/40
+Layer 14 : 595/720
+Layer 15 : 603/720
+Layer 16 : 541/720
+Layer 17 : 1050/1440
+Layer 18 : 71/80
+Layer 19 : 1126/1440
+Layer 20 : 1108/1440
+----------------------------------------
+Accuracies =
+ 82.8%   0.0%   0.0%   0.0%   0.0%
+ 80.0%  99.4%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  2 (svhn)
+****************************************************************************************************
+----------------------------------------
+Task ID :2 | Learning Rate : 0.1
+----------------------------------------
+Epoch   1 | Train: loss=0.430, acc= 86.1% | time=42800.7ms |
+ Valid: loss=0.534, acc= 83.5% |
+ *
+Epoch   2 | Train: loss=0.215, acc= 93.9% | time=41177.7ms |
+ Valid: loss=0.388, acc= 88.6% |
+ *
+Epoch   3 | Train: loss=0.130, acc= 96.7% | time=36986.0ms |
+ Valid: loss=0.378, acc= 89.2% |
+ *
+Epoch   4 | Train: loss=0.065, acc= 98.7% | time=40627.4ms |
+ Valid: loss=0.376, acc= 89.7% |
+ *
+Epoch   5 | Train: loss=0.031, acc= 99.6% | time=34651.3ms |
+ Valid: loss=0.413, acc= 89.2% |
+Epoch   6 | Train: loss=0.013, acc= 99.9% | time=34969.2ms |
+ Valid: loss=0.436, acc= 89.5% |
+Epoch   7 | Train: loss=0.007, acc=100.0% | time=37004.0ms |
+ Valid: loss=0.462, acc= 89.5% |
+Epoch   8 | Train: loss=0.005, acc=100.0% | time=36492.6ms |
+ Valid: loss=0.477, acc= 89.6% |
+Epoch   9 | Train: loss=0.003, acc=100.0% | time=34585.8ms |
+ Valid: loss=0.488, acc= 89.8% |
+ lr=3.3e-02
+Epoch  10 | Train: loss=0.003, acc=100.0% | time=37699.1ms |
+ Valid: loss=0.491, acc= 90.1% |
+Epoch  11 | Train: loss=0.003, acc=100.0% | time=32564.8ms |
+ Valid: loss=0.497, acc= 89.7% |
+Epoch  12 | Train: loss=0.002, acc=100.0% | time=33139.7ms |
+ Valid: loss=0.504, acc= 90.1% |
+Epoch  13 | Train: loss=0.002, acc=100.0% | time=30744.5ms |
+ Valid: loss=0.497, acc= 90.1% |
+Epoch  14 | Train: loss=0.002, acc=100.0% | time=31245.0ms |
+ Valid: loss=0.512, acc= 90.0% |
+ lr=1.1e-02
+Epoch  15 | Train: loss=0.002, acc=100.0% | time=35280.3ms |
+ Valid: loss=0.508, acc= 90.2% |
+Epoch  16 | Train: loss=0.002, acc=100.0% | time=32612.9ms |
+ Valid: loss=0.511, acc= 89.7% |
+Epoch  17 | Train: loss=0.002, acc=100.0% | time=36329.6ms |
+ Valid: loss=0.512, acc= 89.9% |
+Epoch  18 | Train: loss=0.002, acc=100.0% | time=36439.5ms |
+ Valid: loss=0.506, acc= 90.0% |
+Epoch  19 | Train: loss=0.002, acc=100.0% | time=34608.7ms |
+ Valid: loss=0.520, acc= 89.9% |
+ lr=3.7e-03
+Epoch  20 | Train: loss=0.002, acc=100.0% | time=41810.0ms |
+ Valid: loss=0.512, acc= 90.1% |
+Epoch  21 | Train: loss=0.002, acc=100.0% | time=36261.3ms |
+ Valid: loss=0.510, acc= 89.7% |
+Epoch  22 | Train: loss=0.002, acc=100.0% | time=34108.1ms |
+ Valid: loss=0.519, acc= 89.7% |
+Epoch  23 | Train: loss=0.002, acc=100.0% | time=32399.6ms |
+ Valid: loss=0.514, acc= 89.9% |
+Epoch  24 | Train: loss=0.002, acc=100.0% | time=37978.8ms |
+ Valid: loss=0.508, acc= 90.0% |
+ lr=1.2e-03
+Epoch  25 | Train: loss=0.002, acc=100.0% | time=36201.1ms |
+ Valid: loss=0.512, acc= 89.8% |
+Epoch  26 | Train: loss=0.002, acc=100.0% | time=39905.4ms |
+ Valid: loss=0.518, acc= 89.8% |
+Epoch  27 | Train: loss=0.002, acc=100.0% | time=37263.2ms |
+ Valid: loss=0.514, acc= 89.9% |
+Epoch  28 | Train: loss=0.002, acc=100.0% | time=38526.3ms |
+ Valid: loss=0.513, acc= 89.9% |
+Epoch  29 | Train: loss=0.002, acc=100.0% | time=34188.2ms |
+ Valid: loss=0.509, acc= 90.1% |
+ lr=4.1e-04
+Test: loss=0.392 , acc= 88.9%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (27, 10240)
+Layer 2 : (180, 10240)
+Layer 3 : (180, 10240)
+Layer 4 : (180, 10240)
+Layer 5 : (180, 10240)
+Layer 6 : (180, 2560)
+Layer 7 : (360, 2560)
+Layer 8 : (20, 2560)
+Layer 9 : (360, 2560)
+Layer 10 : (360, 12800)
+Layer 11 : (360, 3200)
+Layer 12 : (720, 3200)
+Layer 13 : (40, 3200)
+Layer 14 : (720, 6400)
+Layer 15 : (720, 6400)
+Layer 16 : (720, 1600)
+Layer 17 : (1440, 1600)
+Layer 18 : (80, 1600)
+Layer 19 : (1440, 1600)
+Layer 20 : (1440, 1600)
+------------------------------
+Skip Updating GPM for layer: 1
+Skip Updating GPM for layer: 2
+Skip Updating GPM for layer: 3
+Skip Updating GPM for layer: 4
+Skip Updating GPM for layer: 5
+Skip Updating GPM for layer: 6
+Skip Updating GPM for layer: 13
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/27
+Layer 2 : 65/180
+Layer 3 : 109/180
+Layer 4 : 90/180
+Layer 5 : 124/180
+Layer 6 : 99/180
+Layer 7 : 285/360
+Layer 8 : 18/20
+Layer 9 : 284/360
+Layer 10 : 280/360
+Layer 11 : 271/360
+Layer 12 : 615/720
+Layer 13 : 35/40
+Layer 14 : 613/720
+Layer 15 : 625/720
+Layer 16 : 599/720
+Layer 17 : 1230/1440
+Layer 18 : 72/80
+Layer 19 : 1277/1440
+Layer 20 : 1266/1440
+----------------------------------------
+Accuracies =
+ 82.8%   0.0%   0.0%   0.0%   0.0%
+ 80.0%  99.4%   0.0%   0.0%   0.0%
+ 76.6%  99.1%  89.0%   0.0%   0.0%
+****************************************************************************************************
+Task  3 (fashion-mnist)
+****************************************************************************************************
+----------------------------------------
+Task ID :3 | Learning Rate : 0.1
+----------------------------------------
+Epoch   1 | Train: loss=0.007, acc= 99.9% | time=29530.1ms |
+ Valid: loss=0.029, acc= 99.1% |
+ *
+Epoch   2 | Train: loss=0.004, acc=100.0% | time=30434.5ms |
+ Valid: loss=0.029, acc= 99.2% |
+ *
+Epoch   3 | Train: loss=0.003, acc=100.0% | time=33245.8ms |
+ Valid: loss=0.027, acc= 99.2% |
+ *
+Epoch   4 | Train: loss=0.002, acc=100.0% | time=38339.6ms |
+ Valid: loss=0.030, acc= 99.1% |
+Epoch   5 | Train: loss=0.002, acc=100.0% | time=31780.5ms |
+ Valid: loss=0.030, acc= 99.0% |
+Epoch   6 | Train: loss=0.001, acc=100.0% | time=28191.2ms |
+ Valid: loss=0.027, acc= 99.2% |
+ *
+Epoch   7 | Train: loss=0.001, acc=100.0% | time=29991.9ms |
+ Valid: loss=0.031, acc= 99.1% |
+Epoch   8 | Train: loss=0.001, acc=100.0% | time=27976.1ms |
+ Valid: loss=0.030, acc= 99.1% |
+Epoch   9 | Train: loss=0.001, acc=100.0% | time=29540.4ms |
+ Valid: loss=0.026, acc= 99.2% |
+ *
+Epoch  10 | Train: loss=0.001, acc=100.0% | time=27257.9ms |
+ Valid: loss=0.029, acc= 99.4% |
+Epoch  11 | Train: loss=0.001, acc=100.0% | time=32109.6ms |
+ Valid: loss=0.028, acc= 99.3% |
+Epoch  12 | Train: loss=0.001, acc=100.0% | time=32750.4ms |
+ Valid: loss=0.029, acc= 99.0% |
+Epoch  13 | Train: loss=0.001, acc=100.0% | time=28830.1ms |
+ Valid: loss=0.030, acc= 99.2% |
+Epoch  14 | Train: loss=0.000, acc=100.0% | time=25471.6ms |
+ Valid: loss=0.031, acc= 99.0% |
+ lr=3.3e-02
+Epoch  15 | Train: loss=0.000, acc=100.0% | time=23307.6ms |
+ Valid: loss=0.030, acc= 99.2% |
+Epoch  16 | Train: loss=0.000, acc=100.0% | time=30082.7ms |
+ Valid: loss=0.031, acc= 99.2% |
+Epoch  17 | Train: loss=0.000, acc=100.0% | time=27494.3ms |
+ Valid: loss=0.033, acc= 99.1% |
+Epoch  18 | Train: loss=0.000, acc=100.0% | time=32510.0ms |
+ Valid: loss=0.031, acc= 99.2% |
+Epoch  19 | Train: loss=0.000, acc=100.0% | time=28244.0ms |
+ Valid: loss=0.029, acc= 99.2% |
+ lr=1.1e-02
+Epoch  20 | Train: loss=0.000, acc=100.0% | time=29015.1ms |
+ Valid: loss=0.029, acc= 99.2% |
+Epoch  21 | Train: loss=0.000, acc=100.0% | time=31969.5ms |
+ Valid: loss=0.029, acc= 99.3% |
+Epoch  22 | Train: loss=0.000, acc=100.0% | time=30017.8ms |
+ Valid: loss=0.029, acc= 99.3% |
+Epoch  23 | Train: loss=0.000, acc=100.0% | time=26352.0ms |
+ Valid: loss=0.030, acc= 99.2% |
+Epoch  24 | Train: loss=0.000, acc=100.0% | time=31159.0ms |
+ Valid: loss=0.031, acc= 99.1% |
+ lr=3.7e-03
+Epoch  25 | Train: loss=0.000, acc=100.0% | time=28777.7ms |
+ Valid: loss=0.030, acc= 99.2% |
+Epoch  26 | Train: loss=0.000, acc=100.0% | time=30750.7ms |
+ Valid: loss=0.032, acc= 99.1% |
+Epoch  27 | Train: loss=0.000, acc=100.0% | time=27803.4ms |
+ Valid: loss=0.029, acc= 99.3% |
+Epoch  28 | Train: loss=0.000, acc=100.0% | time=28984.0ms |
+ Valid: loss=0.031, acc= 99.2% |
+Epoch  29 | Train: loss=0.000, acc=100.0% | time=34286.0ms |
+ Valid: loss=0.031, acc= 99.2% |
+ lr=1.2e-03
+Epoch  30 | Train: loss=0.000, acc=100.0% | time=26899.3ms |
+ Valid: loss=0.030, acc= 99.3% |
+Epoch  31 | Train: loss=0.000, acc=100.0% | time=31596.3ms |
+ Valid: loss=0.034, acc= 99.1% |
+Epoch  32 | Train: loss=0.000, acc=100.0% | time=28292.2ms |
+ Valid: loss=0.029, acc= 99.3% |
+Epoch  33 | Train: loss=0.000, acc=100.0% | time=34036.7ms |
+ Valid: loss=0.029, acc= 99.2% |
+Epoch  34 | Train: loss=0.000, acc=100.0% | time=32197.8ms |
+ Valid: loss=0.032, acc= 99.2% |
+ lr=4.1e-04
+Test: loss=0.020 , acc= 99.3%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (27, 10240)
+Layer 2 : (180, 10240)
+Layer 3 : (180, 10240)
+Layer 4 : (180, 10240)
+Layer 5 : (180, 10240)
+Layer 6 : (180, 2560)
+Layer 7 : (360, 2560)
+Layer 8 : (20, 2560)
+Layer 9 : (360, 2560)
+Layer 10 : (360, 12800)
+Layer 11 : (360, 3200)
+Layer 12 : (720, 3200)
+Layer 13 : (40, 3200)
+Layer 14 : (720, 6400)
+Layer 15 : (720, 6400)
+Layer 16 : (720, 1600)
+Layer 17 : (1440, 1600)
+Layer 18 : (80, 1600)
+Layer 19 : (1440, 1600)
+Layer 20 : (1440, 1600)
+------------------------------
+Skip Updating GPM for layer: 1
+Skip Updating GPM for layer: 2
+Skip Updating GPM for layer: 3
+Skip Updating GPM for layer: 7
+Skip Updating GPM for layer: 8
+Skip Updating GPM for layer: 9
+Skip Updating GPM for layer: 10
+Skip Updating GPM for layer: 11
+Skip Updating GPM for layer: 12
+Skip Updating GPM for layer: 13
+Skip Updating GPM for layer: 14
+Skip Updating GPM for layer: 15
+Skip Updating GPM for layer: 16
+Skip Updating GPM for layer: 18
+Skip Updating GPM for layer: 19
+Skip Updating GPM for layer: 20
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/27
+Layer 2 : 65/180
+Layer 3 : 109/180
+Layer 4 : 91/180
+Layer 5 : 125/180
+Layer 6 : 100/180
+Layer 7 : 285/360
+Layer 8 : 18/20
+Layer 9 : 284/360
+Layer 10 : 280/360
+Layer 11 : 271/360
+Layer 12 : 615/720
+Layer 13 : 35/40
+Layer 14 : 613/720
+Layer 15 : 625/720
+Layer 16 : 599/720
+Layer 17 : 1231/1440
+Layer 18 : 72/80
+Layer 19 : 1277/1440
+Layer 20 : 1266/1440
+----------------------------------------
+Accuracies =
+ 82.8%   0.0%   0.0%   0.0%   0.0%
+ 80.0%  99.4%   0.0%   0.0%   0.0%
+ 76.6%  99.1%  89.0%   0.0%   0.0%
+ 76.8%  99.2%  88.8%  99.3%   0.0%
+****************************************************************************************************
+Task  4 (notmnist)
+****************************************************************************************************
+----------------------------------------
+Task ID :4 | Learning Rate : 0.1
+----------------------------------------
+Epoch   1 | Train: loss=0.297, acc= 91.7% | time=10020.7ms |
+ Valid: loss=0.338, acc= 90.5% |
+ *
+Epoch   2 | Train: loss=0.200, acc= 94.2% | time=10333.8ms |
+ Valid: loss=0.244, acc= 93.3% |
+ *
+Epoch   3 | Train: loss=0.160, acc= 95.5% | time=8789.6ms |
+ Valid: loss=0.243, acc= 92.8% |
+ *
+Epoch   4 | Train: loss=0.138, acc= 96.0% | time=8511.6ms |
+ Valid: loss=0.234, acc= 93.0% |
+ *
+Epoch   5 | Train: loss=0.102, acc= 97.3% | time=9118.6ms |
+ Valid: loss=0.210, acc= 93.8% |
+ *
+Epoch   6 | Train: loss=0.083, acc= 98.1% | time=8232.1ms |
+ Valid: loss=0.209, acc= 93.7% |
+ *
+Epoch   7 | Train: loss=0.078, acc= 98.2% | time=7461.8ms |
+ Valid: loss=0.231, acc= 93.7% |
+Epoch   8 | Train: loss=0.067, acc= 98.4% | time=8743.1ms |
+ Valid: loss=0.226, acc= 93.7% |
+Epoch   9 | Train: loss=0.046, acc= 99.3% | time=8033.0ms |
+ Valid: loss=0.211, acc= 93.7% |
+Epoch  10 | Train: loss=0.038, acc= 99.5% | time=7736.6ms |
+ Valid: loss=0.205, acc= 94.3% |
+ *
+Epoch  11 | Train: loss=0.031, acc= 99.6% | time=7438.1ms |
+ Valid: loss=0.206, acc= 94.5% |
+Epoch  12 | Train: loss=0.035, acc= 99.2% | time=8985.3ms |
+ Valid: loss=0.234, acc= 93.6% |
+Epoch  13 | Train: loss=0.021, acc= 99.8% | time=7189.2ms |
+ Valid: loss=0.201, acc= 94.8% |
+ *
+Epoch  14 | Train: loss=0.018, acc= 99.9% | time=7471.4ms |
+ Valid: loss=0.210, acc= 94.3% |
+Epoch  15 | Train: loss=0.017, acc= 99.9% | time=8624.4ms |
+ Valid: loss=0.202, acc= 94.8% |
+Epoch  16 | Train: loss=0.013, acc= 99.9% | time=9372.8ms |
+ Valid: loss=0.202, acc= 94.8% |
+Epoch  17 | Train: loss=0.012, acc= 99.9% | time=7052.9ms |
+ Valid: loss=0.205, acc= 94.3% |
+Epoch  18 | Train: loss=0.011, acc= 99.9% | time=8147.0ms |
+ Valid: loss=0.206, acc= 94.5% |
+ lr=3.3e-02
+Epoch  19 | Train: loss=0.010, acc= 99.9% | time=7696.2ms |
+ Valid: loss=0.202, acc= 94.3% |
+Epoch  20 | Train: loss=0.010, acc=100.0% | time=7354.2ms |
+ Valid: loss=0.205, acc= 94.3% |
+Epoch  21 | Train: loss=0.009, acc=100.0% | time=7954.4ms |
+ Valid: loss=0.209, acc= 94.2% |
+Epoch  22 | Train: loss=0.009, acc=100.0% | time=8171.4ms |
+ Valid: loss=0.206, acc= 95.0% |
+Epoch  23 | Train: loss=0.009, acc= 99.9% | time=9306.9ms |
+ Valid: loss=0.205, acc= 94.9% |
+ lr=1.1e-02
+Epoch  24 | Train: loss=0.009, acc=100.0% | time=8126.9ms |
+ Valid: loss=0.198, acc= 94.4% |
+ *
+Epoch  25 | Train: loss=0.009, acc= 99.9% | time=8552.2ms |
+ Valid: loss=0.212, acc= 94.4% |
+Epoch  26 | Train: loss=0.008, acc=100.0% | time=7723.7ms |
+ Valid: loss=0.205, acc= 94.7% |
+Epoch  27 | Train: loss=0.008, acc= 99.9% | time=7377.4ms |
+ Valid: loss=0.203, acc= 94.4% |
+Epoch  28 | Train: loss=0.009, acc= 99.9% | time=9253.2ms |
+ Valid: loss=0.199, acc= 94.2% |
+Epoch  29 | Train: loss=0.008, acc= 99.9% | time=9544.1ms |
+ Valid: loss=0.207, acc= 94.8% |
+ lr=3.7e-03
+Epoch  30 | Train: loss=0.008, acc= 99.9% | time=9469.2ms |
+ Valid: loss=0.209, acc= 94.5% |
+Epoch  31 | Train: loss=0.009, acc=100.0% | time=9853.9ms |
+ Valid: loss=0.206, acc= 94.7% |
+Epoch  32 | Train: loss=0.008, acc= 99.9% | time=7105.0ms |
+ Valid: loss=0.207, acc= 94.4% |
+Epoch  33 | Train: loss=0.008, acc=100.0% | time=7627.2ms |
+ Valid: loss=0.210, acc= 94.4% |
+Epoch  34 | Train: loss=0.008, acc=100.0% | time=7088.1ms |
+ Valid: loss=0.217, acc= 94.5% |
+ lr=1.2e-03
+Epoch  35 | Train: loss=0.008, acc=100.0% | time=8060.0ms |
+ Valid: loss=0.203, acc= 94.4% |
+Epoch  36 | Train: loss=0.008, acc= 99.9% | time=6821.2ms |
+ Valid: loss=0.207, acc= 93.9% |
+Epoch  37 | Train: loss=0.008, acc= 99.9% | time=7704.1ms |
+ Valid: loss=0.209, acc= 94.7% |
+Epoch  38 | Train: loss=0.008, acc= 99.9% | time=8186.5ms |
+ Valid: loss=0.204, acc= 94.2% |
+Epoch  39 | Train: loss=0.008, acc=100.0% | time=8341.5ms |
+ Valid: loss=0.214, acc= 94.4% |
+ lr=4.1e-04
+Test: loss=0.220 , acc= 94.1%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (27, 10240)
+Layer 2 : (180, 10240)
+Layer 3 : (180, 10240)
+Layer 4 : (180, 10240)
+Layer 5 : (180, 10240)
+Layer 6 : (180, 2560)
+Layer 7 : (360, 2560)
+Layer 8 : (20, 2560)
+Layer 9 : (360, 2560)
+Layer 10 : (360, 12800)
+Layer 11 : (360, 3200)
+Layer 12 : (720, 3200)
+Layer 13 : (40, 3200)
+Layer 14 : (720, 6400)
+Layer 15 : (720, 6400)
+Layer 16 : (720, 1600)
+Layer 17 : (1440, 1600)
+Layer 18 : (80, 1600)
+Layer 19 : (1440, 1600)
+Layer 20 : (1440, 1600)
+------------------------------
+Skip Updating GPM for layer: 1
+Skip Updating GPM for layer: 2
+Skip Updating GPM for layer: 3
+Skip Updating GPM for layer: 4
+Skip Updating GPM for layer: 5
+Skip Updating GPM for layer: 6
+Skip Updating GPM for layer: 7
+Skip Updating GPM for layer: 8
+Skip Updating GPM for layer: 9
+Skip Updating GPM for layer: 10
+Skip Updating GPM for layer: 11
+Skip Updating GPM for layer: 12
+Skip Updating GPM for layer: 13
+Skip Updating GPM for layer: 14
+Skip Updating GPM for layer: 15
+Skip Updating GPM for layer: 18
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/27
+Layer 2 : 65/180
+Layer 3 : 109/180
+Layer 4 : 91/180
+Layer 5 : 125/180
+Layer 6 : 100/180
+Layer 7 : 285/360
+Layer 8 : 18/20
+Layer 9 : 284/360
+Layer 10 : 280/360
+Layer 11 : 271/360
+Layer 12 : 615/720
+Layer 13 : 35/40
+Layer 14 : 613/720
+Layer 15 : 625/720
+Layer 16 : 607/720
+Layer 17 : 1274/1440
+Layer 18 : 72/80
+Layer 19 : 1313/1440
+Layer 20 : 1304/1440
+----------------------------------------
+Accuracies =
+ 82.8%   0.0%   0.0%   0.0%   0.0%
+ 80.0%  99.4%   0.0%   0.0%   0.0%
+ 76.6%  99.1%  89.0%   0.0%   0.0%
+ 76.8%  99.2%  88.8%  99.3%   0.0%
+ 76.5%  99.2%  88.2%  99.3%  94.1%
+--------------------------------------------------
+Final Avg Accuracy: 91.47%
+Backward transfer: -1.82%
+[Elapsed time = 11691790.6 ms]
+--------------------------------------------------
+====================================================================================================
+Arguments =
+Namespace(batch_size_test=64, batch_size_train=64, gpm_thro=0.98, lr=0.1, lr_factor=3, lr_min=0.001, lr_patience=5, mixup_alpha=1, mixup_weight=0.01, momentum=0.9, n_epochs=100, pc_valid=0.05, savename='./log/DFSGP/', scale_coff=10, seed=2)
+====================================================================================================
+****************************************************************************************************
+Task  0 (cifar10)
+****************************************************************************************************
+----------------------------------------
+Task ID :0 | Learning Rate : 0.1
+----------------------------------------
+Epoch   1 | Train: loss=1.437, acc= 47.8% | time=73651.5ms |
+ Valid: loss=1.479, acc= 46.4% |
+Epoch   2 | Train: loss=1.192, acc= 56.2% | time=81859.9ms |
+ Valid: loss=1.243, acc= 55.0% |
+Epoch   3 | Train: loss=1.072, acc= 60.7% | time=80465.2ms |
+ Valid: loss=1.175, acc= 57.7% |
+Epoch   4 | Train: loss=0.890, acc= 69.1% | time=74228.9ms |
+ Valid: loss=0.991, acc= 66.5% |
+Epoch   5 | Train: loss=0.702, acc= 74.5% | time=73179.8ms |
+ Valid: loss=0.854, acc= 69.7% |
+Epoch   6 | Train: loss=0.638, acc= 77.0% | time=89501.5ms |
+ Valid: loss=0.822, acc= 70.6% |
+Epoch   7 | Train: loss=0.432, acc= 85.5% | time=73352.8ms |
+ Valid: loss=0.672, acc= 76.8% |
+Epoch   8 | Train: loss=0.356, acc= 88.0% | time=78556.8ms |
+ Valid: loss=0.619, acc= 78.7% |
+Epoch   9 | Train: loss=0.463, acc= 84.1% | time=75251.1ms |
+ Valid: loss=0.844, acc= 72.8% |
+Epoch  10 | Train: loss=0.237, acc= 91.2% | time=78438.5ms |
+ Valid: loss=0.678, acc= 76.9% |
+Epoch  11 | Train: loss=0.258, acc= 92.2% | time=81972.9ms |
+ Valid: loss=0.697, acc= 76.5% |
+Epoch  12 | Train: loss=0.325, acc= 89.8% | time=84229.1ms |
+ Valid: loss=0.882, acc= 74.3% |
+Epoch  13 | Train: loss=0.238, acc= 91.9% | time=75653.2ms |
+ Valid: loss=0.825, acc= 75.4% |
+ lr=3.3e-02
+Epoch  14 | Train: loss=0.025, acc= 99.8% | time=69609.9ms |
+ Valid: loss=0.575, acc= 82.6% |
+Epoch  15 | Train: loss=0.012, acc=100.0% | time=75068.0ms |
+ Valid: loss=0.570, acc= 82.9% |
+Epoch  16 | Train: loss=0.015, acc= 99.9% | time=69928.0ms |
+ Valid: loss=0.594, acc= 82.3% |
+Epoch  17 | Train: loss=0.017, acc= 99.8% | time=75716.6ms |
+ Valid: loss=0.614, acc= 81.4% |
+Epoch  18 | Train: loss=0.010, acc= 99.9% | time=85568.6ms |
+ Valid: loss=0.601, acc= 82.7% |
+Epoch  19 | Train: loss=0.006, acc=100.0% | time=71822.0ms |
+ Valid: loss=0.577, acc= 82.9% |
+Epoch  20 | Train: loss=0.006, acc=100.0% | time=75995.6ms |
+ Valid: loss=0.579, acc= 82.9% |
+ lr=1.1e-02
+Epoch  21 | Train: loss=0.005, acc=100.0% | time=77657.3ms |
+ Valid: loss=0.577, acc= 83.2% |
+Epoch  22 | Train: loss=0.005, acc=100.0% | time=88464.3ms |
+ Valid: loss=0.585, acc= 82.8% |
+Epoch  23 | Train: loss=0.006, acc=100.0% | time=78880.0ms |
+ Valid: loss=0.570, acc= 83.2% |
+Epoch  24 | Train: loss=0.005, acc=100.0% | time=76771.3ms |
+ Valid: loss=0.582, acc= 83.0% |
+Epoch  25 | Train: loss=0.005, acc=100.0% | time=76936.6ms |
+ Valid: loss=0.572, acc= 83.0% |
+ lr=3.7e-03
+Epoch  26 | Train: loss=0.005, acc=100.0% | time=73117.1ms |
+ Valid: loss=0.573, acc= 83.3% |
+Epoch  27 | Train: loss=0.004, acc=100.0% | time=74523.3ms |
+ Valid: loss=0.569, acc= 83.2% |
+Epoch  28 | Train: loss=0.004, acc=100.0% | time=73006.2ms |
+ Valid: loss=0.581, acc= 83.0% |
+Epoch  29 | Train: loss=0.005, acc=100.0% | time=75118.6ms |
+ Valid: loss=0.574, acc= 83.4% |
+Epoch  30 | Train: loss=0.004, acc=100.0% | time=72117.2ms |
+ Valid: loss=0.573, acc= 83.2% |
+Epoch  31 | Train: loss=0.005, acc=100.0% | time=76918.9ms |
+ Valid: loss=0.573, acc= 83.4% |
+Epoch  32 | Train: loss=0.004, acc=100.0% | time=80806.6ms |
+ Valid: loss=0.579, acc= 83.4% |
+ lr=1.2e-03
+Epoch  33 | Train: loss=0.004, acc=100.0% | time=78673.5ms |
+ Valid: loss=0.575, acc= 83.4% |
+Epoch  34 | Train: loss=0.004, acc=100.0% | time=81118.4ms |
+ Valid: loss=0.581, acc= 82.8% |
+Epoch  35 | Train: loss=0.005, acc=100.0% | time=72126.2ms |
+ Valid: loss=0.584, acc= 83.3% |
+Epoch  36 | Train: loss=0.004, acc=100.0% | time=73275.5ms |
+ Valid: loss=0.574, acc= 83.0% |
+Epoch  37 | Train: loss=0.004, acc=100.0% | time=71889.6ms |
+ Valid: loss=0.574, acc= 82.9% |
+ lr=4.1e-04
+----------------------------------------
+Test: loss=0.611 , acc= 82.7%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (27, 10240)
+Layer 2 : (180, 10240)
+Layer 3 : (180, 10240)
+Layer 4 : (180, 10240)
+Layer 5 : (180, 10240)
+Layer 6 : (180, 2560)
+Layer 7 : (360, 2560)
+Layer 8 : (20, 2560)
+Layer 9 : (360, 2560)
+Layer 10 : (360, 12800)
+Layer 11 : (360, 3200)
+Layer 12 : (720, 3200)
+Layer 13 : (40, 3200)
+Layer 14 : (720, 6400)
+Layer 15 : (720, 6400)
+Layer 16 : (720, 1600)
+Layer 17 : (1440, 1600)
+Layer 18 : (80, 1600)
+Layer 19 : (1440, 1600)
+Layer 20 : (1440, 1600)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 5/27
+Layer 2 : 53/180
+Layer 3 : 98/180
+Layer 4 : 87/180
+Layer 5 : 118/180
+Layer 6 : 95/180
+Layer 7 : 252/360
+Layer 8 : 15/20
+Layer 9 : 254/360
+Layer 10 : 275/360
+Layer 11 : 252/360
+Layer 12 : 526/720
+Layer 13 : 33/40
+Layer 14 : 551/720
+Layer 15 : 547/720
+Layer 16 : 438/720
+Layer 17 : 769/1440
+Layer 18 : 66/80
+Layer 19 : 846/1440
+Layer 20 : 823/1440
+----------------------------------------
+Accuracies =
+ 82.7%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  1 (mnist)
+****************************************************************************************************
+----------------------------------------
+Task ID :1 | Learning Rate : 0.1
+----------------------------------------
+Epoch   1 | Train: loss=0.023, acc= 99.4% | time=32285.8ms |
+ Valid: loss=0.042, acc= 98.6% |
+ *
+Epoch   2 | Train: loss=0.012, acc= 99.7% | time=28528.9ms |
+ Valid: loss=0.035, acc= 98.9% |
+ *
+Epoch   3 | Train: loss=0.005, acc= 99.9% | time=26806.7ms |
+ Valid: loss=0.031, acc= 98.9% |
+ *
+Epoch   4 | Train: loss=0.003, acc=100.0% | time=29481.7ms |
+ Valid: loss=0.030, acc= 99.2% |
+ *
+Epoch   5 | Train: loss=0.002, acc=100.0% | time=29032.9ms |
+ Valid: loss=0.031, acc= 99.3% |
+Epoch   6 | Train: loss=0.001, acc=100.0% | time=31679.9ms |
+ Valid: loss=0.031, acc= 99.2% |
+Epoch   7 | Train: loss=0.001, acc=100.0% | time=28252.9ms |
+ Valid: loss=0.032, acc= 99.0% |
+Epoch   8 | Train: loss=0.001, acc=100.0% | time=28787.6ms |
+ Valid: loss=0.032, acc= 99.1% |
+Epoch   9 | Train: loss=0.001, acc=100.0% | time=30039.7ms |
+ Valid: loss=0.030, acc= 99.2% |
+ lr=3.3e-02
+Epoch  10 | Train: loss=0.000, acc=100.0% | time=29940.0ms |
+ Valid: loss=0.032, acc= 99.1% |
+Epoch  11 | Train: loss=0.000, acc=100.0% | time=27109.8ms |
+ Valid: loss=0.030, acc= 99.2% |
+Epoch  12 | Train: loss=0.000, acc=100.0% | time=27786.6ms |
+ Valid: loss=0.031, acc= 99.3% |
+Epoch  13 | Train: loss=0.000, acc=100.0% | time=27909.8ms |
+ Valid: loss=0.032, acc= 99.3% |
+Epoch  14 | Train: loss=0.000, acc=100.0% | time=29000.4ms |
+ Valid: loss=0.029, acc= 99.3% |
+ *
+Epoch  15 | Train: loss=0.000, acc=100.0% | time=28339.0ms |
+ Valid: loss=0.033, acc= 99.2% |
+Epoch  16 | Train: loss=0.000, acc=100.0% | time=28060.6ms |
+ Valid: loss=0.029, acc= 99.3% |
+Epoch  17 | Train: loss=0.000, acc=100.0% | time=27872.1ms |
+ Valid: loss=0.032, acc= 99.2% |
+Epoch  18 | Train: loss=0.000, acc=100.0% | time=28733.8ms |
+ Valid: loss=0.030, acc= 99.3% |
+Epoch  19 | Train: loss=0.000, acc=100.0% | time=27182.0ms |
+ Valid: loss=0.031, acc= 99.3% |
+ lr=1.1e-02
+Epoch  20 | Train: loss=0.000, acc=100.0% | time=26920.2ms |
+ Valid: loss=0.031, acc= 99.2% |
+Epoch  21 | Train: loss=0.000, acc=100.0% | time=28339.2ms |
+ Valid: loss=0.031, acc= 99.1% |
+Epoch  22 | Train: loss=0.000, acc=100.0% | time=34789.3ms |
+ Valid: loss=0.030, acc= 99.1% |
+Epoch  23 | Train: loss=0.000, acc=100.0% | time=30230.8ms |
+ Valid: loss=0.031, acc= 99.2% |
+Epoch  24 | Train: loss=0.000, acc=100.0% | time=25552.9ms |
+ Valid: loss=0.028, acc= 99.3% |
+ *
+Epoch  25 | Train: loss=0.000, acc=100.0% | time=29389.1ms |
+ Valid: loss=0.029, acc= 99.2% |
+Epoch  26 | Train: loss=0.000, acc=100.0% | time=29444.4ms |
+ Valid: loss=0.030, acc= 99.3% |
+Epoch  27 | Train: loss=0.000, acc=100.0% | time=27763.3ms |
+ Valid: loss=0.032, acc= 99.2% |
+Epoch  28 | Train: loss=0.000, acc=100.0% | time=28781.2ms |
+ Valid: loss=0.032, acc= 99.2% |
+Epoch  29 | Train: loss=0.000, acc=100.0% | time=29246.7ms |
+ Valid: loss=0.031, acc= 99.2% |
+ lr=3.7e-03
+Epoch  30 | Train: loss=0.000, acc=100.0% | time=28709.2ms |
+ Valid: loss=0.031, acc= 99.2% |
+Epoch  31 | Train: loss=0.000, acc=100.0% | time=28129.7ms |
+ Valid: loss=0.029, acc= 99.2% |
+Epoch  32 | Train: loss=0.000, acc=100.0% | time=28376.0ms |
+ Valid: loss=0.030, acc= 99.1% |
+Epoch  33 | Train: loss=0.000, acc=100.0% | time=31053.1ms |
+ Valid: loss=0.031, acc= 99.2% |
+Epoch  34 | Train: loss=0.000, acc=100.0% | time=30840.1ms |
+ Valid: loss=0.032, acc= 99.1% |
+ lr=1.2e-03
+Epoch  35 | Train: loss=0.000, acc=100.0% | time=28065.1ms |
+ Valid: loss=0.032, acc= 99.2% |
+Epoch  36 | Train: loss=0.000, acc=100.0% | time=27169.2ms |
+ Valid: loss=0.031, acc= 99.2% |
+Epoch  37 | Train: loss=0.000, acc=100.0% | time=30273.0ms |
+ Valid: loss=0.030, acc= 99.3% |
+Epoch  38 | Train: loss=0.000, acc=100.0% | time=30069.6ms |
+ Valid: loss=0.033, acc= 99.1% |
+Epoch  39 | Train: loss=0.000, acc=100.0% | time=33078.5ms |
+ Valid: loss=0.030, acc= 99.1% |
+ lr=4.1e-04
+Test: loss=0.023 , acc= 99.2%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (27, 10240)
+Layer 2 : (180, 10240)
+Layer 3 : (180, 10240)
+Layer 4 : (180, 10240)
+Layer 5 : (180, 10240)
+Layer 6 : (180, 2560)
+Layer 7 : (360, 2560)
+Layer 8 : (20, 2560)
+Layer 9 : (360, 2560)
+Layer 10 : (360, 12800)
+Layer 11 : (360, 3200)
+Layer 12 : (720, 3200)
+Layer 13 : (40, 3200)
+Layer 14 : (720, 6400)
+Layer 15 : (720, 6400)
+Layer 16 : (720, 1600)
+Layer 17 : (1440, 1600)
+Layer 18 : (80, 1600)
+Layer 19 : (1440, 1600)
+Layer 20 : (1440, 1600)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/27
+Layer 2 : 65/180
+Layer 3 : 106/180
+Layer 4 : 94/180
+Layer 5 : 121/180
+Layer 6 : 102/180
+Layer 7 : 270/360
+Layer 8 : 17/20
+Layer 9 : 273/360
+Layer 10 : 282/360
+Layer 11 : 266/360
+Layer 12 : 578/720
+Layer 13 : 35/40
+Layer 14 : 581/720
+Layer 15 : 590/720
+Layer 16 : 524/720
+Layer 17 : 1028/1440
+Layer 18 : 71/80
+Layer 19 : 1105/1440
+Layer 20 : 1090/1440
+----------------------------------------
+Accuracies =
+ 82.7%   0.0%   0.0%   0.0%   0.0%
+ 79.3%  99.3%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  2 (svhn)
+****************************************************************************************************
+----------------------------------------
+Task ID :2 | Learning Rate : 0.1
+----------------------------------------
+Epoch   1 | Train: loss=0.344, acc= 89.3% | time=45867.5ms |
+ Valid: loss=0.440, acc= 86.9% |
+ *
+Epoch   2 | Train: loss=0.191, acc= 94.8% | time=36800.2ms |
+ Valid: loss=0.367, acc= 89.3% |
+ *
+Epoch   3 | Train: loss=0.109, acc= 97.5% | time=36311.5ms |
+ Valid: loss=0.360, acc= 89.7% |
+ *
+Epoch   4 | Train: loss=0.052, acc= 99.1% | time=37078.4ms |
+ Valid: loss=0.371, acc= 90.1% |
+Epoch   5 | Train: loss=0.023, acc= 99.7% | time=40521.1ms |
+ Valid: loss=0.404, acc= 90.1% |
+Epoch   6 | Train: loss=0.010, acc=100.0% | time=39915.2ms |
+ Valid: loss=0.432, acc= 90.3% |
+Epoch   7 | Train: loss=0.005, acc=100.0% | time=35994.3ms |
+ Valid: loss=0.448, acc= 90.3% |
+Epoch   8 | Train: loss=0.003, acc=100.0% | time=36471.3ms |
+ Valid: loss=0.469, acc= 90.3% |
+ lr=3.3e-02
+Epoch   9 | Train: loss=0.003, acc=100.0% | time=39102.6ms |
+ Valid: loss=0.459, acc= 90.6% |
+Epoch  10 | Train: loss=0.003, acc=100.0% | time=40074.2ms |
+ Valid: loss=0.471, acc= 90.8% |
+Epoch  11 | Train: loss=0.003, acc=100.0% | time=38057.3ms |
+ Valid: loss=0.475, acc= 90.7% |
+Epoch  12 | Train: loss=0.002, acc=100.0% | time=40460.1ms |
+ Valid: loss=0.480, acc= 90.8% |
+Epoch  13 | Train: loss=0.002, acc=100.0% | time=42533.2ms |
+ Valid: loss=0.478, acc= 90.9% |
+ lr=1.1e-02
+Epoch  14 | Train: loss=0.002, acc=100.0% | time=40205.3ms |
+ Valid: loss=0.479, acc= 90.7% |
+Epoch  15 | Train: loss=0.002, acc=100.0% | time=39123.5ms |
+ Valid: loss=0.483, acc= 90.6% |
+Epoch  16 | Train: loss=0.002, acc=100.0% | time=39873.2ms |
+ Valid: loss=0.487, acc= 90.5% |
+Epoch  17 | Train: loss=0.002, acc=100.0% | time=42413.9ms |
+ Valid: loss=0.484, acc= 90.8% |
+Epoch  18 | Train: loss=0.002, acc=100.0% | time=44756.8ms |
+ Valid: loss=0.490, acc= 90.7% |
+ lr=3.7e-03
+Epoch  19 | Train: loss=0.002, acc=100.0% | time=38593.5ms |
+ Valid: loss=0.489, acc= 90.5% |
+Epoch  20 | Train: loss=0.002, acc=100.0% | time=39229.5ms |
+ Valid: loss=0.490, acc= 90.6% |
+Epoch  21 | Train: loss=0.002, acc=100.0% | time=37367.9ms |
+ Valid: loss=0.488, acc= 90.8% |
+Epoch  22 | Train: loss=0.002, acc=100.0% | time=40136.1ms |
+ Valid: loss=0.490, acc= 90.4% |
+Epoch  23 | Train: loss=0.002, acc=100.0% | time=39863.3ms |
+ Valid: loss=0.484, acc= 90.8% |
+ lr=1.2e-03
+Epoch  24 | Train: loss=0.002, acc=100.0% | time=42172.8ms |
+ Valid: loss=0.483, acc= 90.5% |
+Epoch  25 | Train: loss=0.002, acc=100.0% | time=41936.2ms |
+ Valid: loss=0.497, acc= 90.5% |
+Epoch  26 | Train: loss=0.002, acc=100.0% | time=36660.6ms |
+ Valid: loss=0.483, acc= 90.7% |
+Epoch  27 | Train: loss=0.002, acc=100.0% | time=43018.9ms |
+ Valid: loss=0.486, acc= 90.5% |
+Epoch  28 | Train: loss=0.002, acc=100.0% | time=40639.9ms |
+ Valid: loss=0.488, acc= 90.9% |
+ lr=4.1e-04
+Test: loss=0.361 , acc= 89.3%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (27, 10240)
+Layer 2 : (180, 10240)
+Layer 3 : (180, 10240)
+Layer 4 : (180, 10240)
+Layer 5 : (180, 10240)
+Layer 6 : (180, 2560)
+Layer 7 : (360, 2560)
+Layer 8 : (20, 2560)
+Layer 9 : (360, 2560)
+Layer 10 : (360, 12800)
+Layer 11 : (360, 3200)
+Layer 12 : (720, 3200)
+Layer 13 : (40, 3200)
+Layer 14 : (720, 6400)
+Layer 15 : (720, 6400)
+Layer 16 : (720, 1600)
+Layer 17 : (1440, 1600)
+Layer 18 : (80, 1600)
+Layer 19 : (1440, 1600)
+Layer 20 : (1440, 1600)
+------------------------------
+Skip Updating GPM for layer: 1
+Skip Updating GPM for layer: 2
+Skip Updating GPM for layer: 3
+Skip Updating GPM for layer: 4
+Skip Updating GPM for layer: 5
+Skip Updating GPM for layer: 6
+Skip Updating GPM for layer: 10
+Skip Updating GPM for layer: 13
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/27
+Layer 2 : 65/180
+Layer 3 : 106/180
+Layer 4 : 94/180
+Layer 5 : 121/180
+Layer 6 : 102/180
+Layer 7 : 277/360
+Layer 8 : 18/20
+Layer 9 : 278/360
+Layer 10 : 282/360
+Layer 11 : 268/360
+Layer 12 : 602/720
+Layer 13 : 35/40
+Layer 14 : 597/720
+Layer 15 : 612/720
+Layer 16 : 584/720
+Layer 17 : 1216/1440
+Layer 18 : 72/80
+Layer 19 : 1267/1440
+Layer 20 : 1257/1440
+----------------------------------------
+Accuracies =
+ 82.7%   0.0%   0.0%   0.0%   0.0%
+ 79.3%  99.3%   0.0%   0.0%   0.0%
+ 75.4%  98.8%  89.3%   0.0%   0.0%
+****************************************************************************************************
+Task  3 (fashion-mnist)
+****************************************************************************************************
+----------------------------------------
+Task ID :3 | Learning Rate : 0.1
+----------------------------------------
+Epoch   1 | Train: loss=0.006, acc= 99.9% | time=33505.9ms |
+ Valid: loss=0.027, acc= 99.1% |
+ *
+Epoch   2 | Train: loss=0.004, acc=100.0% | time=31118.0ms |
+ Valid: loss=0.028, acc= 99.1% |
+Epoch   3 | Train: loss=0.002, acc=100.0% | time=32594.0ms |
+ Valid: loss=0.028, acc= 99.2% |
+Epoch   4 | Train: loss=0.002, acc=100.0% | time=32242.8ms |
+ Valid: loss=0.028, acc= 99.1% |
+Epoch   5 | Train: loss=0.001, acc=100.0% | time=33591.5ms |
+ Valid: loss=0.028, acc= 99.3% |
+Epoch   6 | Train: loss=0.001, acc=100.0% | time=32182.8ms |
+ Valid: loss=0.029, acc= 99.2% |
+ lr=3.3e-02
+Epoch   7 | Train: loss=0.001, acc=100.0% | time=31976.8ms |
+ Valid: loss=0.028, acc= 99.2% |
+Epoch   8 | Train: loss=0.001, acc=100.0% | time=31322.6ms |
+ Valid: loss=0.030, acc= 99.3% |
+Epoch   9 | Train: loss=0.001, acc=100.0% | time=31924.9ms |
+ Valid: loss=0.031, acc= 99.1% |
+Epoch  10 | Train: loss=0.001, acc=100.0% | time=32268.2ms |
+ Valid: loss=0.028, acc= 99.3% |
+Epoch  11 | Train: loss=0.001, acc=100.0% | time=32799.2ms |
+ Valid: loss=0.029, acc= 99.2% |
+ lr=1.1e-02
+Epoch  12 | Train: loss=0.001, acc=100.0% | time=32030.4ms |
+ Valid: loss=0.028, acc= 99.2% |
+Epoch  13 | Train: loss=0.001, acc=100.0% | time=32638.9ms |
+ Valid: loss=0.030, acc= 99.1% |
+Epoch  14 | Train: loss=0.001, acc=100.0% | time=34278.0ms |
+ Valid: loss=0.029, acc= 99.2% |
+Epoch  15 | Train: loss=0.001, acc=100.0% | time=32367.9ms |
+ Valid: loss=0.029, acc= 99.3% |
+Epoch  16 | Train: loss=0.001, acc=100.0% | time=36503.8ms |
+ Valid: loss=0.030, acc= 99.3% |
+ lr=3.7e-03
+Epoch  17 | Train: loss=0.001, acc=100.0% | time=35795.3ms |
+ Valid: loss=0.029, acc= 99.2% |
+Epoch  18 | Train: loss=0.001, acc=100.0% | time=35456.2ms |
+ Valid: loss=0.027, acc= 99.2% |
+ *
+Epoch  19 | Train: loss=0.001, acc=100.0% | time=32902.2ms |
+ Valid: loss=0.030, acc= 99.2% |
+Epoch  20 | Train: loss=0.001, acc=100.0% | time=28498.4ms |
+ Valid: loss=0.030, acc= 99.2% |
+Epoch  21 | Train: loss=0.001, acc=100.0% | time=35707.2ms |
+ Valid: loss=0.029, acc= 99.2% |
+Epoch  22 | Train: loss=0.001, acc=100.0% | time=30461.0ms |
+ Valid: loss=0.030, acc= 99.1% |
+Epoch  23 | Train: loss=0.001, acc=100.0% | time=30395.4ms |
+ Valid: loss=0.031, acc= 99.1% |
+ lr=1.2e-03
+Epoch  24 | Train: loss=0.001, acc=100.0% | time=31330.5ms |
+ Valid: loss=0.028, acc= 99.3% |
+Epoch  25 | Train: loss=0.001, acc=100.0% | time=35393.1ms |
+ Valid: loss=0.028, acc= 99.3% |
+Epoch  26 | Train: loss=0.001, acc=100.0% | time=30203.1ms |
+ Valid: loss=0.030, acc= 99.2% |
+Epoch  27 | Train: loss=0.001, acc=100.0% | time=32788.2ms |
+ Valid: loss=0.029, acc= 99.2% |
+Epoch  28 | Train: loss=0.001, acc=100.0% | time=30983.9ms |
+ Valid: loss=0.028, acc= 99.1% |
+ lr=4.1e-04
+Test: loss=0.022 , acc= 99.3%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (27, 10240)
+Layer 2 : (180, 10240)
+Layer 3 : (180, 10240)
+Layer 4 : (180, 10240)
+Layer 5 : (180, 10240)
+Layer 6 : (180, 2560)
+Layer 7 : (360, 2560)
+Layer 8 : (20, 2560)
+Layer 9 : (360, 2560)
+Layer 10 : (360, 12800)
+Layer 11 : (360, 3200)
+Layer 12 : (720, 3200)
+Layer 13 : (40, 3200)
+Layer 14 : (720, 6400)
+Layer 15 : (720, 6400)
+Layer 16 : (720, 1600)
+Layer 17 : (1440, 1600)
+Layer 18 : (80, 1600)
+Layer 19 : (1440, 1600)
+Layer 20 : (1440, 1600)
+------------------------------
+Skip Updating GPM for layer: 1
+Skip Updating GPM for layer: 5
+Skip Updating GPM for layer: 7
+Skip Updating GPM for layer: 8
+Skip Updating GPM for layer: 10
+Skip Updating GPM for layer: 11
+Skip Updating GPM for layer: 12
+Skip Updating GPM for layer: 13
+Skip Updating GPM for layer: 14
+Skip Updating GPM for layer: 15
+Skip Updating GPM for layer: 16
+Skip Updating GPM for layer: 18
+Skip Updating GPM for layer: 19
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/27
+Layer 2 : 68/180
+Layer 3 : 108/180
+Layer 4 : 96/180
+Layer 5 : 121/180
+Layer 6 : 104/180
+Layer 7 : 277/360
+Layer 8 : 18/20
+Layer 9 : 279/360
+Layer 10 : 282/360
+Layer 11 : 268/360
+Layer 12 : 602/720
+Layer 13 : 35/40
+Layer 14 : 597/720
+Layer 15 : 612/720
+Layer 16 : 584/720
+Layer 17 : 1223/1440
+Layer 18 : 72/80
+Layer 19 : 1267/1440
+Layer 20 : 1262/1440
+----------------------------------------
+Accuracies =
+ 82.7%   0.0%   0.0%   0.0%   0.0%
+ 79.3%  99.3%   0.0%   0.0%   0.0%
+ 75.4%  98.8%  89.3%   0.0%   0.0%
+ 75.5%  99.3%  89.3%  99.2%   0.0%
+****************************************************************************************************
+Task  4 (notmnist)
+****************************************************************************************************
+----------------------------------------
+Task ID :4 | Learning Rate : 0.1
+----------------------------------------
+Epoch   1 | Train: loss=0.295, acc= 91.5% | time=9390.1ms |
+ Valid: loss=0.328, acc= 90.6% |
+ *
+Epoch   2 | Train: loss=0.237, acc= 92.9% | time=10531.3ms |
+ Valid: loss=0.296, acc= 90.7% |
+ *
+Epoch   3 | Train: loss=0.237, acc= 92.5% | time=8728.4ms |
+ Valid: loss=0.320, acc= 90.1% |
+Epoch   4 | Train: loss=0.124, acc= 96.7% | time=8785.5ms |
+ Valid: loss=0.212, acc= 93.3% |
+ *
+Epoch   5 | Train: loss=0.108, acc= 97.2% | time=8420.3ms |
+ Valid: loss=0.210, acc= 93.0% |
+ *
+Epoch   6 | Train: loss=0.078, acc= 98.2% | time=9532.7ms |
+ Valid: loss=0.201, acc= 93.7% |
+ *
+Epoch   7 | Train: loss=0.063, acc= 98.8% | time=9137.5ms |
+ Valid: loss=0.197, acc= 94.1% |
+ *
+Epoch   8 | Train: loss=0.051, acc= 99.1% | time=10038.8ms |
+ Valid: loss=0.199, acc= 94.2% |
+Epoch   9 | Train: loss=0.045, acc= 99.2% | time=8481.2ms |
+ Valid: loss=0.214, acc= 94.4% |
+Epoch  10 | Train: loss=0.035, acc= 99.6% | time=8745.2ms |
+ Valid: loss=0.203, acc= 94.2% |
+Epoch  11 | Train: loss=0.028, acc= 99.7% | time=8740.2ms |
+ Valid: loss=0.208, acc= 94.5% |
+Epoch  12 | Train: loss=0.023, acc= 99.8% | time=9713.2ms |
+ Valid: loss=0.210, acc= 93.9% |
+ lr=3.3e-02
+Epoch  13 | Train: loss=0.021, acc= 99.8% | time=11083.8ms |
+ Valid: loss=0.204, acc= 94.4% |
+Epoch  14 | Train: loss=0.020, acc= 99.8% | time=9194.6ms |
+ Valid: loss=0.207, acc= 94.2% |
+Epoch  15 | Train: loss=0.019, acc= 99.8% | time=9248.4ms |
+ Valid: loss=0.209, acc= 94.4% |
+Epoch  16 | Train: loss=0.017, acc= 99.9% | time=9941.9ms |
+ Valid: loss=0.208, acc= 94.3% |
+Epoch  17 | Train: loss=0.017, acc= 99.9% | time=10508.3ms |
+ Valid: loss=0.209, acc= 93.9% |
+ lr=1.1e-02
+Epoch  18 | Train: loss=0.016, acc= 99.9% | time=9778.9ms |
+ Valid: loss=0.209, acc= 94.1% |
+Epoch  19 | Train: loss=0.016, acc= 99.9% | time=9122.2ms |
+ Valid: loss=0.209, acc= 94.2% |
+Epoch  20 | Train: loss=0.016, acc= 99.9% | time=10356.4ms |
+ Valid: loss=0.208, acc= 94.2% |
+Epoch  21 | Train: loss=0.015, acc= 99.9% | time=10690.5ms |
+ Valid: loss=0.213, acc= 94.2% |
+Epoch  22 | Train: loss=0.015, acc= 99.9% | time=9817.8ms |
+ Valid: loss=0.203, acc= 94.3% |
+ lr=3.7e-03
+Epoch  23 | Train: loss=0.015, acc= 99.9% | time=9527.9ms |
+ Valid: loss=0.210, acc= 94.3% |
+Epoch  24 | Train: loss=0.015, acc= 99.9% | time=9732.5ms |
+ Valid: loss=0.210, acc= 94.1% |
+Epoch  25 | Train: loss=0.015, acc= 99.9% | time=8058.4ms |
+ Valid: loss=0.216, acc= 94.2% |
+Epoch  26 | Train: loss=0.015, acc= 99.9% | time=9585.8ms |
+ Valid: loss=0.215, acc= 94.3% |
+Epoch  27 | Train: loss=0.014, acc= 99.9% | time=9017.7ms |
+ Valid: loss=0.203, acc= 94.4% |
+ lr=1.2e-03
+Epoch  28 | Train: loss=0.015, acc= 99.9% | time=9344.9ms |
+ Valid: loss=0.204, acc= 94.7% |
+Epoch  29 | Train: loss=0.015, acc= 99.9% | time=9002.2ms |
+ Valid: loss=0.206, acc= 94.3% |
+Epoch  30 | Train: loss=0.015, acc= 99.9% | time=9441.0ms |
+ Valid: loss=0.201, acc= 94.3% |
+Epoch  31 | Train: loss=0.015, acc= 99.9% | time=9464.1ms |
+ Valid: loss=0.207, acc= 94.3% |
+Epoch  32 | Train: loss=0.015, acc= 99.9% | time=7363.2ms |
+ Valid: loss=0.212, acc= 94.3% |
+ lr=4.1e-04
+Test: loss=0.199 , acc= 93.8%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (27, 10240)
+Layer 2 : (180, 10240)
+Layer 3 : (180, 10240)
+Layer 4 : (180, 10240)
+Layer 5 : (180, 10240)
+Layer 6 : (180, 2560)
+Layer 7 : (360, 2560)
+Layer 8 : (20, 2560)
+Layer 9 : (360, 2560)
+Layer 10 : (360, 12800)
+Layer 11 : (360, 3200)
+Layer 12 : (720, 3200)
+Layer 13 : (40, 3200)
+Layer 14 : (720, 6400)
+Layer 15 : (720, 6400)
+Layer 16 : (720, 1600)
+Layer 17 : (1440, 1600)
+Layer 18 : (80, 1600)
+Layer 19 : (1440, 1600)
+Layer 20 : (1440, 1600)
+------------------------------
+Skip Updating GPM for layer: 1
+Skip Updating GPM for layer: 2
+Skip Updating GPM for layer: 3
+Skip Updating GPM for layer: 4
+Skip Updating GPM for layer: 5
+Skip Updating GPM for layer: 6
+Skip Updating GPM for layer: 7
+Skip Updating GPM for layer: 8
+Skip Updating GPM for layer: 9
+Skip Updating GPM for layer: 10
+Skip Updating GPM for layer: 11
+Skip Updating GPM for layer: 12
+Skip Updating GPM for layer: 13
+Skip Updating GPM for layer: 14
+Skip Updating GPM for layer: 15
+Skip Updating GPM for layer: 18
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/27
+Layer 2 : 68/180
+Layer 3 : 108/180
+Layer 4 : 96/180
+Layer 5 : 121/180
+Layer 6 : 104/180
+Layer 7 : 277/360
+Layer 8 : 18/20
+Layer 9 : 279/360
+Layer 10 : 282/360
+Layer 11 : 268/360
+Layer 12 : 602/720
+Layer 13 : 35/40
+Layer 14 : 597/720
+Layer 15 : 612/720
+Layer 16 : 592/720
+Layer 17 : 1268/1440
+Layer 18 : 72/80
+Layer 19 : 1306/1440
+Layer 20 : 1300/1440
+----------------------------------------
+Accuracies =
+ 82.7%   0.0%   0.0%   0.0%   0.0%
+ 79.3%  99.3%   0.0%   0.0%   0.0%
+ 75.4%  98.8%  89.3%   0.0%   0.0%
+ 75.5%  99.3%  89.3%  99.2%   0.0%
+ 75.2%  99.2%  89.2%  99.2%  93.6%
+--------------------------------------------------
+Final Avg Accuracy: 91.28%
+Backward transfer: -1.94%
+[Elapsed time = 9432087.4 ms]
+--------------------------------------------------
+====================================================================================================
+Arguments =
+Namespace(batch_size_test=64, batch_size_train=64, gpm_thro=0.98, lr=0.1, lr_factor=3, lr_min=0.001, lr_patience=5, mixup_alpha=1, mixup_weight=0.01, momentum=0.9, n_epochs=100, pc_valid=0.05, savename='./log/DFSGP/', scale_coff=10, seed=3)
+====================================================================================================
+****************************************************************************************************
+Task  0 (cifar10)
+****************************************************************************************************
+----------------------------------------
+Task ID :0 | Learning Rate : 0.1
+----------------------------------------
+Epoch   1 | Train: loss=1.441, acc= 46.8% | time=94100.4ms |
+ Valid: loss=1.484, acc= 44.7% |
+Epoch   2 | Train: loss=1.109, acc= 59.0% | time=87405.3ms |
+ Valid: loss=1.160, acc= 58.3% |
+Epoch   3 | Train: loss=0.912, acc= 68.0% | time=89103.5ms |
+ Valid: loss=0.975, acc= 66.2% |
+Epoch   4 | Train: loss=0.662, acc= 77.5% | time=83084.2ms |
+ Valid: loss=0.767, acc= 73.2% |
+Epoch   5 | Train: loss=0.721, acc= 73.7% | time=82115.3ms |
+ Valid: loss=0.860, acc= 68.7% |
+Epoch   6 | Train: loss=0.519, acc= 81.9% | time=90330.6ms |
+ Valid: loss=0.677, acc= 76.1% |
+Epoch   7 | Train: loss=0.423, acc= 85.3% | time=86070.8ms |
+ Valid: loss=0.653, acc= 76.6% |
+Epoch   8 | Train: loss=0.321, acc= 89.2% | time=87118.6ms |
+ Valid: loss=0.622, acc= 78.1% |
+Epoch   9 | Train: loss=0.206, acc= 94.2% | time=85159.0ms |
+ Valid: loss=0.574, acc= 79.9% |
+Epoch  10 | Train: loss=0.253, acc= 91.7% | time=87886.9ms |
+ Valid: loss=0.661, acc= 77.8% |
+Epoch  11 | Train: loss=0.219, acc= 92.8% | time=72407.4ms |
+ Valid: loss=0.678, acc= 77.1% |
+Epoch  12 | Train: loss=0.199, acc= 93.8% | time=91411.0ms |
+ Valid: loss=0.720, acc= 77.4% |
+Epoch  13 | Train: loss=0.209, acc= 93.4% | time=85350.7ms |
+ Valid: loss=0.788, acc= 76.8% |
+Epoch  14 | Train: loss=0.247, acc= 92.2% | time=94177.7ms |
+ Valid: loss=0.847, acc= 74.5% |
+ lr=3.3e-02
+Epoch  15 | Train: loss=0.015, acc= 99.9% | time=86823.8ms |
+ Valid: loss=0.554, acc= 82.4% |
+Epoch  16 | Train: loss=0.008, acc= 99.9% | time=88203.8ms |
+ Valid: loss=0.540, acc= 83.8% |
+Epoch  17 | Train: loss=0.008, acc=100.0% | time=95583.0ms |
+ Valid: loss=0.555, acc= 82.8% |
+Epoch  18 | Train: loss=0.009, acc= 99.9% | time=80582.3ms |
+ Valid: loss=0.568, acc= 83.0% |
+Epoch  19 | Train: loss=0.006, acc=100.0% | time=90095.5ms |
+ Valid: loss=0.557, acc= 83.4% |
+Epoch  20 | Train: loss=0.007, acc=100.0% | time=85921.6ms |
+ Valid: loss=0.575, acc= 82.8% |
+Epoch  21 | Train: loss=0.012, acc= 99.9% | time=84926.1ms |
+ Valid: loss=0.633, acc= 82.0% |
+ lr=1.1e-02
+Epoch  22 | Train: loss=0.005, acc=100.0% | time=85963.6ms |
+ Valid: loss=0.545, acc= 83.6% |
+Epoch  23 | Train: loss=0.005, acc=100.0% | time=89634.5ms |
+ Valid: loss=0.560, acc= 83.0% |
+Epoch  24 | Train: loss=0.005, acc=100.0% | time=83568.8ms |
+ Valid: loss=0.570, acc= 82.8% |
+Epoch  25 | Train: loss=0.005, acc=100.0% | time=85116.8ms |
+ Valid: loss=0.559, acc= 83.4% |
+Epoch  26 | Train: loss=0.005, acc=100.0% | time=89004.8ms |
+ Valid: loss=0.545, acc= 83.5% |
+ lr=3.7e-03
+Epoch  27 | Train: loss=0.004, acc=100.0% | time=90451.7ms |
+ Valid: loss=0.563, acc= 83.2% |
+Epoch  28 | Train: loss=0.004, acc=100.0% | time=88213.4ms |
+ Valid: loss=0.549, acc= 83.7% |
+Epoch  29 | Train: loss=0.004, acc=100.0% | time=81961.5ms |
+ Valid: loss=0.549, acc= 83.8% |
+Epoch  30 | Train: loss=0.004, acc=100.0% | time=86579.3ms |
+ Valid: loss=0.553, acc= 83.5% |
+Epoch  31 | Train: loss=0.004, acc=100.0% | time=69381.8ms |
+ Valid: loss=0.563, acc= 83.4% |
+ lr=1.2e-03
+Epoch  32 | Train: loss=0.004, acc=100.0% | time=74122.3ms |
+ Valid: loss=0.552, acc= 83.7% |
+Epoch  33 | Train: loss=0.004, acc=100.0% | time=68156.2ms |
+ Valid: loss=0.563, acc= 83.1% |
+Epoch  34 | Train: loss=0.004, acc=100.0% | time=74851.1ms |
+ Valid: loss=0.550, acc= 83.2% |
+Epoch  35 | Train: loss=0.004, acc=100.0% | time=71715.7ms |
+ Valid: loss=0.555, acc= 83.6% |
+Epoch  36 | Train: loss=0.004, acc=100.0% | time=65874.1ms |
+ Valid: loss=0.555, acc= 83.9% |
+ lr=4.1e-04
+----------------------------------------
+Test: loss=0.629 , acc= 82.1%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (27, 10240)
+Layer 2 : (180, 10240)
+Layer 3 : (180, 10240)
+Layer 4 : (180, 10240)
+Layer 5 : (180, 10240)
+Layer 6 : (180, 2560)
+Layer 7 : (360, 2560)
+Layer 8 : (20, 2560)
+Layer 9 : (360, 2560)
+Layer 10 : (360, 12800)
+Layer 11 : (360, 3200)
+Layer 12 : (720, 3200)
+Layer 13 : (40, 3200)
+Layer 14 : (720, 6400)
+Layer 15 : (720, 6400)
+Layer 16 : (720, 1600)
+Layer 17 : (1440, 1600)
+Layer 18 : (80, 1600)
+Layer 19 : (1440, 1600)
+Layer 20 : (1440, 1600)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 7/27
+Layer 2 : 55/180
+Layer 3 : 94/180
+Layer 4 : 87/180
+Layer 5 : 118/180
+Layer 6 : 95/180
+Layer 7 : 255/360
+Layer 8 : 15/20
+Layer 9 : 254/360
+Layer 10 : 274/360
+Layer 11 : 252/360
+Layer 12 : 532/720
+Layer 13 : 33/40
+Layer 14 : 557/720
+Layer 15 : 557/720
+Layer 16 : 444/720
+Layer 17 : 763/1440
+Layer 18 : 66/80
+Layer 19 : 840/1440
+Layer 20 : 811/1440
+----------------------------------------
+Accuracies =
+ 82.5%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  1 (mnist)
+****************************************************************************************************
+----------------------------------------
+Task ID :1 | Learning Rate : 0.1
+----------------------------------------
+Epoch   1 | Train: loss=0.026, acc= 99.3% | time=31121.1ms |
+ Valid: loss=0.049, acc= 98.6% |
+ *
+Epoch   2 | Train: loss=0.011, acc= 99.8% | time=34307.2ms |
+ Valid: loss=0.038, acc= 98.9% |
+ *
+Epoch   3 | Train: loss=0.006, acc= 99.9% | time=28695.6ms |
+ Valid: loss=0.037, acc= 98.9% |
+ *
+Epoch   4 | Train: loss=0.003, acc=100.0% | time=26766.3ms |
+ Valid: loss=0.036, acc= 99.0% |
+ *
+Epoch   5 | Train: loss=0.002, acc=100.0% | time=24445.7ms |
+ Valid: loss=0.038, acc= 98.8% |
+Epoch   6 | Train: loss=0.001, acc=100.0% | time=29028.5ms |
+ Valid: loss=0.036, acc= 98.9% |
+Epoch   7 | Train: loss=0.001, acc=100.0% | time=23596.6ms |
+ Valid: loss=0.038, acc= 98.8% |
+Epoch   8 | Train: loss=0.001, acc=100.0% | time=24445.5ms |
+ Valid: loss=0.037, acc= 98.7% |
+Epoch   9 | Train: loss=0.000, acc=100.0% | time=24947.8ms |
+ Valid: loss=0.036, acc= 99.0% |
+ lr=3.3e-02
+Epoch  10 | Train: loss=0.000, acc=100.0% | time=25211.3ms |
+ Valid: loss=0.037, acc= 98.8% |
+Epoch  11 | Train: loss=0.000, acc=100.0% | time=23909.5ms |
+ Valid: loss=0.037, acc= 98.8% |
+Epoch  12 | Train: loss=0.000, acc=100.0% | time=29430.1ms |
+ Valid: loss=0.038, acc= 98.8% |
+Epoch  13 | Train: loss=0.000, acc=100.0% | time=28905.7ms |
+ Valid: loss=0.037, acc= 98.9% |
+Epoch  14 | Train: loss=0.000, acc=100.0% | time=26431.1ms |
+ Valid: loss=0.038, acc= 98.9% |
+ lr=1.1e-02
+Epoch  15 | Train: loss=0.000, acc=100.0% | time=25997.6ms |
+ Valid: loss=0.039, acc= 98.8% |
+Epoch  16 | Train: loss=0.000, acc=100.0% | time=26283.6ms |
+ Valid: loss=0.041, acc= 98.8% |
+Epoch  17 | Train: loss=0.000, acc=100.0% | time=27970.5ms |
+ Valid: loss=0.041, acc= 98.8% |
+Epoch  18 | Train: loss=0.000, acc=100.0% | time=27546.9ms |
+ Valid: loss=0.040, acc= 98.9% |
+Epoch  19 | Train: loss=0.000, acc=100.0% | time=24580.0ms |
+ Valid: loss=0.040, acc= 98.8% |
+ lr=3.7e-03
+Epoch  20 | Train: loss=0.000, acc=100.0% | time=25679.5ms |
+ Valid: loss=0.038, acc= 98.9% |
+Epoch  21 | Train: loss=0.000, acc=100.0% | time=23826.2ms |
+ Valid: loss=0.040, acc= 98.9% |
+Epoch  22 | Train: loss=0.000, acc=100.0% | time=27241.0ms |
+ Valid: loss=0.041, acc= 98.7% |
+Epoch  23 | Train: loss=0.000, acc=100.0% | time=26380.3ms |
+ Valid: loss=0.039, acc= 98.9% |
+Epoch  24 | Train: loss=0.000, acc=100.0% | time=22595.0ms |
+ Valid: loss=0.038, acc= 98.8% |
+ lr=1.2e-03
+Epoch  25 | Train: loss=0.000, acc=100.0% | time=21653.9ms |
+ Valid: loss=0.040, acc= 98.9% |
+Epoch  26 | Train: loss=0.000, acc=100.0% | time=26102.7ms |
+ Valid: loss=0.037, acc= 98.8% |
+Epoch  27 | Train: loss=0.000, acc=100.0% | time=24560.7ms |
+ Valid: loss=0.040, acc= 98.9% |
+Epoch  28 | Train: loss=0.000, acc=100.0% | time=25256.9ms |
+ Valid: loss=0.039, acc= 98.9% |
+Epoch  29 | Train: loss=0.000, acc=100.0% | time=29286.4ms |
+ Valid: loss=0.039, acc= 98.8% |
+ lr=4.1e-04
+Test: loss=0.024 , acc= 99.2%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (27, 10240)
+Layer 2 : (180, 10240)
+Layer 3 : (180, 10240)
+Layer 4 : (180, 10240)
+Layer 5 : (180, 10240)
+Layer 6 : (180, 2560)
+Layer 7 : (360, 2560)
+Layer 8 : (20, 2560)
+Layer 9 : (360, 2560)
+Layer 10 : (360, 12800)
+Layer 11 : (360, 3200)
+Layer 12 : (720, 3200)
+Layer 13 : (40, 3200)
+Layer 14 : (720, 6400)
+Layer 15 : (720, 6400)
+Layer 16 : (720, 1600)
+Layer 17 : (1440, 1600)
+Layer 18 : (80, 1600)
+Layer 19 : (1440, 1600)
+Layer 20 : (1440, 1600)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/27
+Layer 2 : 66/180
+Layer 3 : 104/180
+Layer 4 : 93/180
+Layer 5 : 119/180
+Layer 6 : 102/180
+Layer 7 : 277/360
+Layer 8 : 17/20
+Layer 9 : 271/360
+Layer 10 : 280/360
+Layer 11 : 265/360
+Layer 12 : 577/720
+Layer 13 : 35/40
+Layer 14 : 587/720
+Layer 15 : 593/720
+Layer 16 : 529/720
+Layer 17 : 1031/1440
+Layer 18 : 70/80
+Layer 19 : 1103/1440
+Layer 20 : 1093/1440
+----------------------------------------
+Accuracies =
+ 82.5%   0.0%   0.0%   0.0%   0.0%
+ 80.5%  99.3%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  2 (svhn)
+****************************************************************************************************
+----------------------------------------
+Task ID :2 | Learning Rate : 0.1
+----------------------------------------
+Epoch   1 | Train: loss=0.365, acc= 88.5% | time=31877.5ms |
+ Valid: loss=0.467, acc= 85.6% |
+ *
+Epoch   2 | Train: loss=0.218, acc= 93.8% | time=32582.7ms |
+ Valid: loss=0.391, acc= 88.5% |
+ *
+Epoch   3 | Train: loss=0.125, acc= 96.9% | time=29995.3ms |
+ Valid: loss=0.371, acc= 89.5% |
+ *
+Epoch   4 | Train: loss=0.071, acc= 98.5% | time=32752.1ms |
+ Valid: loss=0.400, acc= 89.5% |
+Epoch   5 | Train: loss=0.029, acc= 99.6% | time=31703.8ms |
+ Valid: loss=0.410, acc= 90.0% |
+Epoch   6 | Train: loss=0.014, acc= 99.9% | time=32671.3ms |
+ Valid: loss=0.436, acc= 90.1% |
+Epoch   7 | Train: loss=0.007, acc=100.0% | time=29141.7ms |
+ Valid: loss=0.459, acc= 90.1% |
+Epoch   8 | Train: loss=0.004, acc=100.0% | time=30851.4ms |
+ Valid: loss=0.478, acc= 90.1% |
+ lr=3.3e-02
+Epoch   9 | Train: loss=0.003, acc=100.0% | time=33261.1ms |
+ Valid: loss=0.484, acc= 90.3% |
+Epoch  10 | Train: loss=0.003, acc=100.0% | time=31924.0ms |
+ Valid: loss=0.486, acc= 90.3% |
+Epoch  11 | Train: loss=0.003, acc=100.0% | time=33172.2ms |
+ Valid: loss=0.487, acc= 90.5% |
+Epoch  12 | Train: loss=0.003, acc=100.0% | time=31727.2ms |
+ Valid: loss=0.489, acc= 90.3% |
+Epoch  13 | Train: loss=0.002, acc=100.0% | time=30845.2ms |
+ Valid: loss=0.500, acc= 90.0% |
+ lr=1.1e-02
+Epoch  14 | Train: loss=0.002, acc=100.0% | time=26767.2ms |
+ Valid: loss=0.501, acc= 90.1% |
+Epoch  15 | Train: loss=0.002, acc=100.0% | time=28543.5ms |
+ Valid: loss=0.501, acc= 90.7% |
+Epoch  16 | Train: loss=0.002, acc=100.0% | time=32383.0ms |
+ Valid: loss=0.505, acc= 90.5% |
+Epoch  17 | Train: loss=0.002, acc=100.0% | time=27445.6ms |
+ Valid: loss=0.504, acc= 90.0% |
+Epoch  18 | Train: loss=0.002, acc=100.0% | time=31903.3ms |
+ Valid: loss=0.500, acc= 90.5% |
+ lr=3.7e-03
+Epoch  19 | Train: loss=0.002, acc=100.0% | time=30096.9ms |
+ Valid: loss=0.501, acc= 90.5% |
+Epoch  20 | Train: loss=0.002, acc=100.0% | time=35258.7ms |
+ Valid: loss=0.506, acc= 90.5% |
+Epoch  21 | Train: loss=0.002, acc=100.0% | time=34382.8ms |
+ Valid: loss=0.496, acc= 90.5% |
+Epoch  22 | Train: loss=0.002, acc=100.0% | time=35030.6ms |
+ Valid: loss=0.497, acc= 90.5% |
+Epoch  23 | Train: loss=0.002, acc=100.0% | time=34142.9ms |
+ Valid: loss=0.507, acc= 90.4% |
+ lr=1.2e-03
+Epoch  24 | Train: loss=0.002, acc=100.0% | time=33068.3ms |
+ Valid: loss=0.494, acc= 90.7% |
+Epoch  25 | Train: loss=0.002, acc=100.0% | time=35528.9ms |
+ Valid: loss=0.508, acc= 90.4% |
+Epoch  26 | Train: loss=0.002, acc=100.0% | time=27266.2ms |
+ Valid: loss=0.496, acc= 90.6% |
+Epoch  27 | Train: loss=0.002, acc=100.0% | time=32697.3ms |
+ Valid: loss=0.502, acc= 90.4% |
+Epoch  28 | Train: loss=0.002, acc=100.0% | time=31402.2ms |
+ Valid: loss=0.506, acc= 90.4% |
+ lr=4.1e-04
+Test: loss=0.361 , acc= 89.3%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (27, 10240)
+Layer 2 : (180, 10240)
+Layer 3 : (180, 10240)
+Layer 4 : (180, 10240)
+Layer 5 : (180, 10240)
+Layer 6 : (180, 2560)
+Layer 7 : (360, 2560)
+Layer 8 : (20, 2560)
+Layer 9 : (360, 2560)
+Layer 10 : (360, 12800)
+Layer 11 : (360, 3200)
+Layer 12 : (720, 3200)
+Layer 13 : (40, 3200)
+Layer 14 : (720, 6400)
+Layer 15 : (720, 6400)
+Layer 16 : (720, 1600)
+Layer 17 : (1440, 1600)
+Layer 18 : (80, 1600)
+Layer 19 : (1440, 1600)
+Layer 20 : (1440, 1600)
+------------------------------
+Skip Updating GPM for layer: 1
+Skip Updating GPM for layer: 2
+Skip Updating GPM for layer: 3
+Skip Updating GPM for layer: 4
+Skip Updating GPM for layer: 5
+Skip Updating GPM for layer: 6
+Skip Updating GPM for layer: 8
+Skip Updating GPM for layer: 10
+Skip Updating GPM for layer: 13
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/27
+Layer 2 : 66/180
+Layer 3 : 104/180
+Layer 4 : 93/180
+Layer 5 : 119/180
+Layer 6 : 102/180
+Layer 7 : 282/360
+Layer 8 : 17/20
+Layer 9 : 274/360
+Layer 10 : 280/360
+Layer 11 : 267/360
+Layer 12 : 604/720
+Layer 13 : 35/40
+Layer 14 : 603/720
+Layer 15 : 616/720
+Layer 16 : 587/720
+Layer 17 : 1211/1440
+Layer 18 : 72/80
+Layer 19 : 1260/1440
+Layer 20 : 1256/1440
+----------------------------------------
+Accuracies =
+ 82.5%   0.0%   0.0%   0.0%   0.0%
+ 80.5%  99.3%   0.0%   0.0%   0.0%
+ 77.9%  99.0%  89.4%   0.0%   0.0%
+****************************************************************************************************
+Task  3 (fashion-mnist)
+****************************************************************************************************
+----------------------------------------
+Task ID :3 | Learning Rate : 0.1
+----------------------------------------
+Epoch   1 | Train: loss=0.010, acc= 99.8% | time=29375.2ms |
+ Valid: loss=0.039, acc= 98.9% |
+ *
+Epoch   2 | Train: loss=0.006, acc= 99.9% | time=26336.1ms |
+ Valid: loss=0.034, acc= 98.9% |
+ *
+Epoch   3 | Train: loss=0.004, acc=100.0% | time=26858.1ms |
+ Valid: loss=0.033, acc= 98.8% |
+ *
+Epoch   4 | Train: loss=0.003, acc=100.0% | time=26980.4ms |
+ Valid: loss=0.034, acc= 98.9% |
+Epoch   5 | Train: loss=0.002, acc=100.0% | time=24097.3ms |
+ Valid: loss=0.034, acc= 98.8% |
+Epoch   6 | Train: loss=0.002, acc=100.0% | time=27904.6ms |
+ Valid: loss=0.036, acc= 98.8% |
+Epoch   7 | Train: loss=0.002, acc=100.0% | time=25839.7ms |
+ Valid: loss=0.038, acc= 98.8% |
+Epoch   8 | Train: loss=0.001, acc=100.0% | time=25042.1ms |
+ Valid: loss=0.038, acc= 98.8% |
+ lr=3.3e-02
+Epoch   9 | Train: loss=0.001, acc=100.0% | time=27390.6ms |
+ Valid: loss=0.035, acc= 98.8% |
+Epoch  10 | Train: loss=0.001, acc=100.0% | time=24380.3ms |
+ Valid: loss=0.036, acc= 98.8% |
+Epoch  11 | Train: loss=0.001, acc=100.0% | time=24942.8ms |
+ Valid: loss=0.035, acc= 98.8% |
+Epoch  12 | Train: loss=0.001, acc=100.0% | time=26698.2ms |
+ Valid: loss=0.034, acc= 98.9% |
+Epoch  13 | Train: loss=0.001, acc=100.0% | time=28952.8ms |
+ Valid: loss=0.035, acc= 98.9% |
+ lr=1.1e-02
+Epoch  14 | Train: loss=0.001, acc=100.0% | time=30133.2ms |
+ Valid: loss=0.035, acc= 98.9% |
+Epoch  15 | Train: loss=0.001, acc=100.0% | time=26555.5ms |
+ Valid: loss=0.036, acc= 98.9% |
+Epoch  16 | Train: loss=0.001, acc=100.0% | time=22769.4ms |
+ Valid: loss=0.035, acc= 98.9% |
+Epoch  17 | Train: loss=0.001, acc=100.0% | time=25471.5ms |
+ Valid: loss=0.034, acc= 99.0% |
+Epoch  18 | Train: loss=0.001, acc=100.0% | time=24707.6ms |
+ Valid: loss=0.037, acc= 98.9% |
+ lr=3.7e-03
+Epoch  19 | Train: loss=0.001, acc=100.0% | time=23181.8ms |
+ Valid: loss=0.034, acc= 99.0% |
+Epoch  20 | Train: loss=0.001, acc=100.0% | time=23463.1ms |
+ Valid: loss=0.035, acc= 99.0% |
+Epoch  21 | Train: loss=0.001, acc=100.0% | time=28805.4ms |
+ Valid: loss=0.038, acc= 98.8% |
+Epoch  22 | Train: loss=0.001, acc=100.0% | time=29036.2ms |
+ Valid: loss=0.034, acc= 98.9% |
+Epoch  23 | Train: loss=0.001, acc=100.0% | time=21682.6ms |
+ Valid: loss=0.034, acc= 99.0% |
+ lr=1.2e-03
+Epoch  24 | Train: loss=0.001, acc=100.0% | time=27982.4ms |
+ Valid: loss=0.036, acc= 98.8% |
+Epoch  25 | Train: loss=0.001, acc=100.0% | time=27489.3ms |
+ Valid: loss=0.033, acc= 99.1% |
+Epoch  26 | Train: loss=0.001, acc=100.0% | time=26626.5ms |
+ Valid: loss=0.034, acc= 99.0% |
+Epoch  27 | Train: loss=0.001, acc=100.0% | time=22823.0ms |
+ Valid: loss=0.036, acc= 98.9% |
+Epoch  28 | Train: loss=0.001, acc=100.0% | time=27910.0ms |
+ Valid: loss=0.037, acc= 99.0% |
+ lr=4.1e-04
+Test: loss=0.022 , acc= 99.3%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (27, 10240)
+Layer 2 : (180, 10240)
+Layer 3 : (180, 10240)
+Layer 4 : (180, 10240)
+Layer 5 : (180, 10240)
+Layer 6 : (180, 2560)
+Layer 7 : (360, 2560)
+Layer 8 : (20, 2560)
+Layer 9 : (360, 2560)
+Layer 10 : (360, 12800)
+Layer 11 : (360, 3200)
+Layer 12 : (720, 3200)
+Layer 13 : (40, 3200)
+Layer 14 : (720, 6400)
+Layer 15 : (720, 6400)
+Layer 16 : (720, 1600)
+Layer 17 : (1440, 1600)
+Layer 18 : (80, 1600)
+Layer 19 : (1440, 1600)
+Layer 20 : (1440, 1600)
+------------------------------
+Skip Updating GPM for layer: 1
+Skip Updating GPM for layer: 2
+Skip Updating GPM for layer: 3
+Skip Updating GPM for layer: 4
+Skip Updating GPM for layer: 5
+Skip Updating GPM for layer: 6
+Skip Updating GPM for layer: 7
+Skip Updating GPM for layer: 8
+Skip Updating GPM for layer: 9
+Skip Updating GPM for layer: 10
+Skip Updating GPM for layer: 11
+Skip Updating GPM for layer: 12
+Skip Updating GPM for layer: 13
+Skip Updating GPM for layer: 14
+Skip Updating GPM for layer: 15
+Skip Updating GPM for layer: 16
+Skip Updating GPM for layer: 18
+Skip Updating GPM for layer: 19
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/27
+Layer 2 : 66/180
+Layer 3 : 104/180
+Layer 4 : 93/180
+Layer 5 : 119/180
+Layer 6 : 102/180
+Layer 7 : 282/360
+Layer 8 : 17/20
+Layer 9 : 274/360
+Layer 10 : 280/360
+Layer 11 : 267/360
+Layer 12 : 604/720
+Layer 13 : 35/40
+Layer 14 : 603/720
+Layer 15 : 616/720
+Layer 16 : 587/720
+Layer 17 : 1218/1440
+Layer 18 : 72/80
+Layer 19 : 1260/1440
+Layer 20 : 1261/1440
+----------------------------------------
+Accuracies =
+ 82.5%   0.0%   0.0%   0.0%   0.0%
+ 80.5%  99.3%   0.0%   0.0%   0.0%
+ 77.9%  99.0%  89.4%   0.0%   0.0%
+ 78.0%  99.2%  89.3%  99.3%   0.0%
+****************************************************************************************************
+Task  4 (notmnist)
+****************************************************************************************************
+----------------------------------------
+Task ID :4 | Learning Rate : 0.1
+----------------------------------------
+Epoch   1 | Train: loss=0.279, acc= 91.8% | time=6697.3ms |
+ Valid: loss=0.315, acc= 91.2% |
+ *
+Epoch   2 | Train: loss=0.244, acc= 92.3% | time=7367.0ms |
+ Valid: loss=0.306, acc= 91.7% |
+ *
+Epoch   3 | Train: loss=0.164, acc= 95.3% | time=7510.2ms |
+ Valid: loss=0.242, acc= 92.8% |
+ *
+Epoch   4 | Train: loss=0.169, acc= 94.8% | time=7784.5ms |
+ Valid: loss=0.243, acc= 91.7% |
+Epoch   5 | Train: loss=0.104, acc= 97.3% | time=7484.3ms |
+ Valid: loss=0.205, acc= 93.3% |
+ *
+Epoch   6 | Train: loss=0.086, acc= 97.9% | time=8139.6ms |
+ Valid: loss=0.206, acc= 93.5% |
+Epoch   7 | Train: loss=0.082, acc= 97.9% | time=6865.5ms |
+ Valid: loss=0.214, acc= 93.7% |
+Epoch   8 | Train: loss=0.074, acc= 98.2% | time=8486.7ms |
+ Valid: loss=0.239, acc= 92.4% |
+Epoch   9 | Train: loss=0.080, acc= 97.7% | time=7717.2ms |
+ Valid: loss=0.246, acc= 92.5% |
+Epoch  10 | Train: loss=0.040, acc= 99.4% | time=7533.8ms |
+ Valid: loss=0.198, acc= 93.6% |
+ *
+Epoch  11 | Train: loss=0.033, acc= 99.6% | time=6498.5ms |
+ Valid: loss=0.195, acc= 94.2% |
+ *
+Epoch  12 | Train: loss=0.027, acc= 99.7% | time=7097.8ms |
+ Valid: loss=0.199, acc= 94.2% |
+Epoch  13 | Train: loss=0.024, acc= 99.8% | time=7065.1ms |
+ Valid: loss=0.196, acc= 94.4% |
+Epoch  14 | Train: loss=0.020, acc= 99.8% | time=6974.1ms |
+ Valid: loss=0.197, acc= 94.4% |
+Epoch  15 | Train: loss=0.017, acc= 99.9% | time=5969.5ms |
+ Valid: loss=0.198, acc= 94.3% |
+Epoch  16 | Train: loss=0.015, acc= 99.9% | time=7610.7ms |
+ Valid: loss=0.201, acc= 94.7% |
+ lr=3.3e-02
+Epoch  17 | Train: loss=0.014, acc= 99.9% | time=7415.7ms |
+ Valid: loss=0.201, acc= 94.3% |
+Epoch  18 | Train: loss=0.013, acc= 99.9% | time=7476.9ms |
+ Valid: loss=0.205, acc= 94.1% |
+Epoch  19 | Train: loss=0.013, acc= 99.9% | time=6272.3ms |
+ Valid: loss=0.199, acc= 94.2% |
+Epoch  20 | Train: loss=0.013, acc= 99.9% | time=8248.2ms |
+ Valid: loss=0.198, acc= 94.7% |
+Epoch  21 | Train: loss=0.012, acc= 99.9% | time=7729.5ms |
+ Valid: loss=0.198, acc= 94.3% |
+ lr=1.1e-02
+Epoch  22 | Train: loss=0.012, acc= 99.9% | time=7401.7ms |
+ Valid: loss=0.200, acc= 94.4% |
+Epoch  23 | Train: loss=0.011, acc= 99.9% | time=7638.6ms |
+ Valid: loss=0.196, acc= 94.3% |
+Epoch  24 | Train: loss=0.011, acc= 99.9% | time=6984.7ms |
+ Valid: loss=0.197, acc= 94.4% |
+Epoch  25 | Train: loss=0.011, acc= 99.9% | time=8025.3ms |
+ Valid: loss=0.206, acc= 94.1% |
+Epoch  26 | Train: loss=0.011, acc=100.0% | time=7365.2ms |
+ Valid: loss=0.197, acc= 94.5% |
+ lr=3.7e-03
+Epoch  27 | Train: loss=0.011, acc= 99.9% | time=6638.4ms |
+ Valid: loss=0.200, acc= 94.3% |
+Epoch  28 | Train: loss=0.011, acc= 99.9% | time=6626.9ms |
+ Valid: loss=0.202, acc= 94.5% |
+Epoch  29 | Train: loss=0.011, acc= 99.9% | time=7962.7ms |
+ Valid: loss=0.200, acc= 94.7% |
+Epoch  30 | Train: loss=0.011, acc= 99.9% | time=6412.0ms |
+ Valid: loss=0.203, acc= 94.3% |
+Epoch  31 | Train: loss=0.011, acc=100.0% | time=7917.9ms |
+ Valid: loss=0.196, acc= 94.7% |
+ lr=1.2e-03
+Epoch  32 | Train: loss=0.011, acc= 99.9% | time=9677.5ms |
+ Valid: loss=0.200, acc= 94.9% |
+Epoch  33 | Train: loss=0.011, acc= 99.9% | time=7233.9ms |
+ Valid: loss=0.198, acc= 94.2% |
+Epoch  34 | Train: loss=0.011, acc=100.0% | time=7953.3ms |
+ Valid: loss=0.195, acc= 94.5% |
+Epoch  35 | Train: loss=0.011, acc=100.0% | time=6737.2ms |
+ Valid: loss=0.198, acc= 94.5% |
+Epoch  36 | Train: loss=0.011, acc=100.0% | time=7137.4ms |
+ Valid: loss=0.195, acc= 94.4% |
+ lr=4.1e-04
+Test: loss=0.202 , acc= 94.4%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (27, 10240)
+Layer 2 : (180, 10240)
+Layer 3 : (180, 10240)
+Layer 4 : (180, 10240)
+Layer 5 : (180, 10240)
+Layer 6 : (180, 2560)
+Layer 7 : (360, 2560)
+Layer 8 : (20, 2560)
+Layer 9 : (360, 2560)
+Layer 10 : (360, 12800)
+Layer 11 : (360, 3200)
+Layer 12 : (720, 3200)
+Layer 13 : (40, 3200)
+Layer 14 : (720, 6400)
+Layer 15 : (720, 6400)
+Layer 16 : (720, 1600)
+Layer 17 : (1440, 1600)
+Layer 18 : (80, 1600)
+Layer 19 : (1440, 1600)
+Layer 20 : (1440, 1600)
+------------------------------
+Skip Updating GPM for layer: 1
+Skip Updating GPM for layer: 2
+Skip Updating GPM for layer: 3
+Skip Updating GPM for layer: 4
+Skip Updating GPM for layer: 5
+Skip Updating GPM for layer: 6
+Skip Updating GPM for layer: 7
+Skip Updating GPM for layer: 8
+Skip Updating GPM for layer: 9
+Skip Updating GPM for layer: 10
+Skip Updating GPM for layer: 11
+Skip Updating GPM for layer: 12
+Skip Updating GPM for layer: 13
+Skip Updating GPM for layer: 14
+Skip Updating GPM for layer: 15
+Skip Updating GPM for layer: 18
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 8/27
+Layer 2 : 66/180
+Layer 3 : 104/180
+Layer 4 : 93/180
+Layer 5 : 119/180
+Layer 6 : 102/180
+Layer 7 : 282/360
+Layer 8 : 17/20
+Layer 9 : 274/360
+Layer 10 : 280/360
+Layer 11 : 267/360
+Layer 12 : 604/720
+Layer 13 : 35/40
+Layer 14 : 603/720
+Layer 15 : 616/720
+Layer 16 : 596/720
+Layer 17 : 1261/1440
+Layer 18 : 72/80
+Layer 19 : 1300/1440
+Layer 20 : 1300/1440
+----------------------------------------
+Accuracies =
+ 82.5%   0.0%   0.0%   0.0%   0.0%
+ 80.5%  99.3%   0.0%   0.0%   0.0%
+ 77.9%  99.0%  89.4%   0.0%   0.0%
+ 78.0%  99.2%  89.3%  99.3%   0.0%
+ 77.7%  99.2%  89.1%  99.2%  94.5%
+--------------------------------------------------
+Final Avg Accuracy: 91.96%
+Backward transfer: -1.27%
+[Elapsed time = 8016391.2 ms]
+--------------------------------------------------
+gpm_thro: 0.98
+Accuracy: [91.47378304446686, 91.2796616033952, 91.96114480514515]
+Backward transfer: [-1.8161109403810691, -1.938627842655194, -1.2680024585126013]
+Final Avg Accuracy: 91.57%, std: 0.29
+Final Avg Backward transfer: -1.67%, std: 0.29

@@ -1,0 +1,3071 @@
+====================================================================================================
+Arguments =
+Namespace(batch_size_test=64, batch_size_train=10, gpm_thro=0.94, lr=0.01, lr_factor=2, lr_min=1e-05, lr_patience=6, mixup_alpha=20, mixup_weight=0.01, momentum=0.9, n_epochs=5, n_hidden=100, n_outputs=10, n_tasks=10, pc_valid=0.1, savename='./log/DFTRGP/', seed=1)
+====================================================================================================
+****************************************************************************************************
+Task  0 (pmnist-0)
+****************************************************************************************************
+----------------------------------------
+Task ID :0 | Learning Rate : 0.01
+----------------------------------------
+Model parameters ---
+----------------------------------------
+Epoch   1 | Train: loss=0.188, acc= 94.5% | time=50100.9ms |
+ Valid: loss=0.179, acc= 94.9% |
+Epoch   2 | Train: loss=0.124, acc= 96.5% | time=50630.5ms |
+ Valid: loss=0.127, acc= 96.4% |
+Epoch   3 | Train: loss=0.095, acc= 97.5% | time=43941.7ms |
+ Valid: loss=0.108, acc= 97.0% |
+Epoch   4 | Train: loss=0.073, acc= 98.1% | time=48976.5ms |
+ Valid: loss=0.088, acc= 97.4% |
+Epoch   5 | Train: loss=0.062, acc= 98.4% | time=52753.5ms |
+ Valid: loss=0.083, acc= 97.5% |
+----------------------------------------
+Test: loss=0.083 , acc= 97.7%
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  1 (pmnist-1)
+****************************************************************************************************
+----------------------------------------
+Task ID :1 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 69)
+Task:0, Layer:0, project_norm:1.4657588005065918, threshold for regime 1:0.8575354576110841
+Task:0, layer:1, space shape:(100, 61)
+Task:0, Layer:1, project_norm:1.268933653831482, threshold for regime 1:0.26626119613647464
+Task:0, layer:2, space shape:(100, 52)
+Task:0, Layer:2, project_norm:0.6401142477989197, threshold for regime 1:0.1327374219894409
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+----------------------------------------
+space1 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.137, acc= 96.2% | time=118306.6ms |
+ Valid: loss=0.136, acc= 96.2% |
+Epoch   2 | Train: loss=0.094, acc= 97.3% | time=113451.2ms |
+ Valid: loss=0.105, acc= 96.8% |
+Epoch   3 | Train: loss=0.080, acc= 98.0% | time=102891.8ms |
+ Valid: loss=0.097, acc= 97.0% |
+Epoch   4 | Train: loss=0.066, acc= 98.2% | time=101161.3ms |
+ Valid: loss=0.086, acc= 97.4% |
+Epoch   5 | Train: loss=0.055, acc= 98.6% | time=104287.5ms |
+ Valid: loss=0.080, acc= 97.5% |
+Test: loss=0.080 , acc= 97.6%
+activation shape:(784, 300)
+space shape:(784, 69)
+threshold for selecting:210470.18283067737
+total ranking r = 129
+the number of space for current task:129
+the new increased space:78, the threshold for new space:69
+activation shape:(100, 300)
+space shape:(100, 61)
+threshold for selecting:19609.588574770838
+total ranking r = 86
+the number of space for current task:86
+the new increased space:24, the threshold for new space:61
+activation shape:(100, 300)
+space shape:(100, 52)
+threshold for selecting:2249.5293003879633
+total ranking r = 76
+the number of space for current task:76
+the new increased space:23, the threshold for new space:52
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  2 (pmnist-2)
+****************************************************************************************************
+----------------------------------------
+Task ID :2 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 69)
+Task:0, Layer:0, project_norm:1.4460471868515015, threshold for regime 1:0.9744751930236817
+Task:0, layer:1, space shape:(100, 61)
+Task:0, Layer:1, project_norm:1.807052731513977, threshold for regime 1:0.3793751478195191
+Task:0, layer:2, space shape:(100, 52)
+Task:0, Layer:2, project_norm:1.0563042163848877, threshold for regime 1:0.21638827323913576
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 129)
+Task:1, Layer:0, project_norm:2.0455191135406494, threshold for regime 1:0.9744751930236817
+Task:1, layer:1, space shape:(100, 86)
+Task:1, Layer:1, project_norm:1.8740994930267334, threshold for regime 1:0.3793751478195191
+Task:1, layer:2, space shape:(100, 76)
+Task:1, Layer:2, project_norm:1.0701349973678589, threshold for regime 1:0.21638827323913576
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[1]
+Layer:1, selected task ID:[1]
+Layer:2, selected task ID:[1]
+----------------------------------------
+space1 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.133, acc= 96.3% | time=103330.5ms |
+ Valid: loss=0.133, acc= 96.6% |
+Epoch   2 | Train: loss=0.094, acc= 97.4% | time=105774.2ms |
+ Valid: loss=0.103, acc= 97.1% |
+Epoch   3 | Train: loss=0.077, acc= 98.0% | time=103690.3ms |
+ Valid: loss=0.092, acc= 97.4% |
+Epoch   4 | Train: loss=0.062, acc= 98.4% | time=105312.4ms |
+ Valid: loss=0.083, acc= 97.6% |
+Epoch   5 | Train: loss=0.055, acc= 98.6% | time=113470.0ms |
+ Valid: loss=0.081, acc= 97.8% |
+Test: loss=0.080 , acc= 97.5%
+activation shape:(784, 300)
+space shape:(784, 147)
+threshold for selecting:185749.583305303
+total ranking r = 198
+the number of space for current task:198
+the new increased space:76, the threshold for new space:147
+activation shape:(100, 300)
+space shape:(100, 85)
+threshold for selecting:7124.686796395632
+total ranking r = 94
+the number of space for current task:94
+the new increased space:8, the threshold for new space:85
+activation shape:(100, 300)
+space shape:(100, 75)
+threshold for selecting:849.3142062009756
+total ranking r = 83
+the number of space for current task:83
+the new increased space:8, the threshold for new space:75
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.5%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  3 (pmnist-3)
+****************************************************************************************************
+----------------------------------------
+Task ID :3 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 69)
+Task:0, Layer:0, project_norm:1.4595696926116943, threshold for regime 1:0.9012929916381837
+Task:0, layer:1, space shape:(100, 61)
+Task:0, Layer:1, project_norm:1.740132212638855, threshold for regime 1:0.36761527061462407
+Task:0, layer:2, space shape:(100, 52)
+Task:0, Layer:2, project_norm:0.9062156677246094, threshold for regime 1:0.18751569986343386
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 129)
+Task:1, Layer:0, project_norm:1.9620447158813477, threshold for regime 1:0.9012929916381837
+Task:1, layer:1, space shape:(100, 86)
+Task:1, Layer:1, project_norm:1.811772346496582, threshold for regime 1:0.36761527061462407
+Task:1, layer:2, space shape:(100, 76)
+Task:1, Layer:2, project_norm:0.9250260591506958, threshold for regime 1:0.18751569986343386
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:2.235628366470337, threshold for regime 1:0.9012929916381837
+Task:2, layer:1, space shape:(100, 94)
+Task:2, Layer:1, project_norm:1.8287913799285889, threshold for regime 1:0.36761527061462407
+Task:2, layer:2, space shape:(100, 83)
+Task:2, Layer:2, project_norm:0.928764283657074, threshold for regime 1:0.18751569986343386
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[1 2]
+Layer:1, selected task ID:[1 2]
+Layer:2, selected task ID:[1 2]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.138, acc= 96.2% | time=158181.8ms |
+ Valid: loss=0.143, acc= 96.0% |
+Epoch   2 | Train: loss=0.105, acc= 97.0% | time=145820.0ms |
+ Valid: loss=0.119, acc= 96.4% |
+Epoch   3 | Train: loss=0.085, acc= 97.7% | time=153443.1ms |
+ Valid: loss=0.103, acc= 97.1% |
+Epoch   4 | Train: loss=0.070, acc= 98.1% | time=138942.9ms |
+ Valid: loss=0.091, acc= 97.2% |
+Epoch   5 | Train: loss=0.063, acc= 98.3% | time=156909.8ms |
+ Valid: loss=0.092, acc= 97.4% |
+Test: loss=0.091 , acc= 97.4%
+activation shape:(784, 300)
+space shape:(784, 223)
+threshold for selecting:163129.7570011355
+total ranking r = 265
+the number of space for current task:265
+the new increased space:76, the threshold for new space:223
+activation shape:(100, 300)
+space shape:(100, 93)
+threshold for selecting:1715.5467269280925
+total ranking r = 97
+the number of space for current task:97
+the new increased space:3, the threshold for new space:93
+activation shape:(100, 300)
+space shape:(100, 83)
+threshold for selecting:310.5028105080273
+total ranking r = 89
+the number of space for current task:89
+the new increased space:6, the threshold for new space:83
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.5%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  97.5%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  4 (pmnist-4)
+****************************************************************************************************
+----------------------------------------
+Task ID :4 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 69)
+Task:0, Layer:0, project_norm:2.2769861221313477, threshold for regime 1:1.437820339202881
+Task:0, layer:1, space shape:(100, 61)
+Task:0, Layer:1, project_norm:3.747610330581665, threshold for regime 1:0.8107145309448243
+Task:0, layer:2, space shape:(100, 52)
+Task:0, Layer:2, project_norm:1.7509934902191162, threshold for regime 1:0.36189692020416264
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 129)
+Task:1, Layer:0, project_norm:2.8923983573913574, threshold for regime 1:1.437820339202881
+Task:1, layer:1, space shape:(100, 86)
+Task:1, Layer:1, project_norm:4.014678478240967, threshold for regime 1:0.8107145309448243
+Task:1, layer:2, space shape:(100, 76)
+Task:1, Layer:2, project_norm:1.783403992652893, threshold for regime 1:0.36189692020416264
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:3.571436643600464, threshold for regime 1:1.437820339202881
+Task:2, layer:1, space shape:(100, 94)
+Task:2, Layer:1, project_norm:4.04307746887207, threshold for regime 1:0.8107145309448243
+Task:2, layer:2, space shape:(100, 83)
+Task:2, Layer:2, project_norm:1.796107530593872, threshold for regime 1:0.36189692020416264
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 265)
+Task:3, Layer:0, project_norm:4.102723598480225, threshold for regime 1:1.437820339202881
+Task:3, layer:1, space shape:(100, 97)
+Task:3, Layer:1, project_norm:4.051180839538574, threshold for regime 1:0.8107145309448243
+Task:3, layer:2, space shape:(100, 89)
+Task:3, Layer:2, project_norm:1.7977455854415894, threshold for regime 1:0.36189692020416264
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[2 3]
+Layer:1, selected task ID:[2 3]
+Layer:2, selected task ID:[2 3]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.142, acc= 96.2% | time=145314.3ms |
+ Valid: loss=0.150, acc= 95.8% |
+Epoch   2 | Train: loss=0.101, acc= 97.4% | time=145568.2ms |
+ Valid: loss=0.113, acc= 96.9% |
+Epoch   3 | Train: loss=0.079, acc= 97.7% | time=149021.6ms |
+ Valid: loss=0.099, acc= 97.2% |
+Epoch   4 | Train: loss=0.067, acc= 98.2% | time=158103.4ms |
+ Valid: loss=0.089, acc= 97.4% |
+Epoch   5 | Train: loss=0.059, acc= 98.4% | time=156801.7ms |
+ Valid: loss=0.083, acc= 97.5% |
+Test: loss=0.084 , acc= 97.5%
+activation shape:(784, 300)
+space shape:(784, 299)
+threshold for selecting:142104.63318557385
+total ranking r = 331
+the number of space for current task:331
+the new increased space:72, the threshold for new space:299
+activation shape:(100, 300)
+space shape:(100, 96)
+threshold for selecting:596.140421905442
+total ranking r = 96
+the number of space for current task:96
+the new increased space:1, the threshold for new space:96
+activation shape:(100, 300)
+space shape:(100, 89)
+threshold for selecting:183.16557860227567
+total ranking r = 90
+the number of space for current task:90
+the new increased space:2, the threshold for new space:89
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.5%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  97.5%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  97.4%  97.3%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  5 (pmnist-5)
+****************************************************************************************************
+----------------------------------------
+Task ID :5 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 69)
+Task:0, Layer:0, project_norm:1.9333839416503906, threshold for regime 1:1.3213861465454102
+Task:0, layer:1, space shape:(100, 61)
+Task:0, Layer:1, project_norm:2.8901593685150146, threshold for regime 1:0.6300264358520509
+Task:0, layer:2, space shape:(100, 52)
+Task:0, Layer:2, project_norm:1.941781997680664, threshold for regime 1:0.3976021766662598
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 129)
+Task:1, Layer:0, project_norm:2.8511157035827637, threshold for regime 1:1.3213861465454102
+Task:1, layer:1, space shape:(100, 86)
+Task:1, Layer:1, project_norm:3.0783915519714355, threshold for regime 1:0.6300264358520509
+Task:1, layer:2, space shape:(100, 76)
+Task:1, Layer:2, project_norm:1.9692565202713013, threshold for regime 1:0.3976021766662598
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:3.3380353450775146, threshold for regime 1:1.3213861465454102
+Task:2, layer:1, space shape:(100, 94)
+Task:2, Layer:1, project_norm:3.1042845249176025, threshold for regime 1:0.6300264358520509
+Task:2, layer:2, space shape:(100, 83)
+Task:2, Layer:2, project_norm:1.9750257730484009, threshold for regime 1:0.3976021766662598
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 265)
+Task:3, Layer:0, project_norm:3.850831985473633, threshold for regime 1:1.3213861465454102
+Task:3, layer:1, space shape:(100, 97)
+Task:3, Layer:1, project_norm:3.144908905029297, threshold for regime 1:0.6300264358520509
+Task:3, layer:2, space shape:(100, 89)
+Task:3, Layer:2, project_norm:1.9808084964752197, threshold for regime 1:0.3976021766662598
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:4, layer:0, space shape:(784, 331)
+Task:4, Layer:0, project_norm:4.332169055938721, threshold for regime 1:1.3213861465454102
+Task:4, layer:1, space shape:(100, 96)
+Task:4, Layer:1, project_norm:3.1318724155426025, threshold for regime 1:0.6300264358520509
+Task:4, layer:2, space shape:(100, 90)
+Task:4, Layer:2, project_norm:1.9816482067108154, threshold for regime 1:0.3976021766662598
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[3 4]
+Layer:1, selected task ID:[4 3]
+Layer:2, selected task ID:[3 4]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.145, acc= 96.2% | time=160388.4ms |
+ Valid: loss=0.148, acc= 96.3% |
+Epoch   2 | Train: loss=0.099, acc= 97.3% | time=145346.7ms |
+ Valid: loss=0.114, acc= 96.8% |
+Epoch   3 | Train: loss=0.085, acc= 97.7% | time=147099.6ms |
+ Valid: loss=0.107, acc= 96.8% |
+Epoch   4 | Train: loss=0.068, acc= 98.2% | time=153812.1ms |
+ Valid: loss=0.091, acc= 97.3% |
+Epoch   5 | Train: loss=0.058, acc= 98.4% | time=154615.2ms |
+ Valid: loss=0.086, acc= 97.5% |
+Test: loss=0.086 , acc= 97.5%
+activation shape:(784, 300)
+space shape:(784, 371)
+threshold for selecting:118717.76443868876
+total ranking r = 393
+the number of space for current task:393
+the new increased space:64, the threshold for new space:371
+activation shape:(100, 300)
+space shape:(100, 97)
+threshold for selecting:1599.8126275563263
+total ranking r = 97
+the number of space for current task:97
+the new increased space:2, the threshold for new space:97
+activation shape:(100, 300)
+space shape:(100, 91)
+threshold for selecting:142.3161241144735
+total ranking r = 91
+the number of space for current task:91
+the new increased space:2, the threshold for new space:91
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+current testing task:pmnist-5
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.5%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  97.5%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  97.4%  97.3%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.0%  97.2%  97.3%  97.5%  97.5%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  6 (pmnist-6)
+****************************************************************************************************
+----------------------------------------
+Task ID :6 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 69)
+Task:0, Layer:0, project_norm:1.7022900581359863, threshold for regime 1:1.0476573944091798
+Task:0, layer:1, space shape:(100, 61)
+Task:0, Layer:1, project_norm:2.277597188949585, threshold for regime 1:0.5006088733673096
+Task:0, layer:2, space shape:(100, 52)
+Task:0, Layer:2, project_norm:1.4559813737869263, threshold for regime 1:0.3052290439605713
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 129)
+Task:1, Layer:0, project_norm:2.2205159664154053, threshold for regime 1:1.0476573944091798
+Task:1, layer:1, space shape:(100, 86)
+Task:1, Layer:1, project_norm:2.426923990249634, threshold for regime 1:0.5006088733673096
+Task:1, layer:2, space shape:(100, 76)
+Task:1, Layer:2, project_norm:1.5030232667922974, threshold for regime 1:0.3052290439605713
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:2.7787885665893555, threshold for regime 1:1.0476573944091798
+Task:2, layer:1, space shape:(100, 94)
+Task:2, Layer:1, project_norm:2.4849371910095215, threshold for regime 1:0.5006088733673096
+Task:2, layer:2, space shape:(100, 83)
+Task:2, Layer:2, project_norm:1.5145059823989868, threshold for regime 1:0.3052290439605713
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 265)
+Task:3, Layer:0, project_norm:3.1024861335754395, threshold for regime 1:1.0476573944091798
+Task:3, layer:1, space shape:(100, 97)
+Task:3, Layer:1, project_norm:2.489582061767578, threshold for regime 1:0.5006088733673096
+Task:3, layer:2, space shape:(100, 89)
+Task:3, Layer:2, project_norm:1.52089524269104, threshold for regime 1:0.3052290439605713
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:4, layer:0, space shape:(784, 331)
+Task:4, Layer:0, project_norm:3.362353801727295, threshold for regime 1:1.0476573944091798
+Task:4, layer:1, space shape:(100, 96)
+Task:4, Layer:1, project_norm:2.4812848567962646, threshold for regime 1:0.5006088733673096
+Task:4, layer:2, space shape:(100, 90)
+Task:4, Layer:2, project_norm:1.5188961029052734, threshold for regime 1:0.3052290439605713
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:5, layer:0, space shape:(784, 393)
+Task:5, Layer:0, project_norm:3.71166729927063, threshold for regime 1:1.0476573944091798
+Task:5, layer:1, space shape:(100, 97)
+Task:5, Layer:1, project_norm:2.4563705921173096, threshold for regime 1:0.5006088733673096
+Task:5, layer:2, space shape:(100, 91)
+Task:5, Layer:2, project_norm:1.520336389541626, threshold for regime 1:0.3052290439605713
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[4 5]
+Layer:1, selected task ID:[2 3]
+Layer:2, selected task ID:[5 3]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.135, acc= 96.2% | time=143188.1ms |
+ Valid: loss=0.135, acc= 96.5% |
+Epoch   2 | Train: loss=0.097, acc= 97.3% | time=151515.8ms |
+ Valid: loss=0.110, acc= 96.9% |
+Epoch   3 | Train: loss=0.081, acc= 97.8% | time=150237.6ms |
+ Valid: loss=0.102, acc= 97.0% |
+Epoch   4 | Train: loss=0.064, acc= 98.2% | time=140475.2ms |
+ Valid: loss=0.088, acc= 97.3% |
+Epoch   5 | Train: loss=0.061, acc= 98.3% | time=146744.5ms |
+ Valid: loss=0.093, acc= 97.3% |
+Test: loss=0.093 , acc= 97.2%
+activation shape:(784, 300)
+space shape:(784, 435)
+threshold for selecting:106102.88305664062
+total ranking r = 449
+the number of space for current task:449
+the new increased space:61, the threshold for new space:435
+activation shape:(100, 300)
+space shape:(100, 99)
+threshold for selecting:281.04557118480807
+total ranking r = 98
+the number of space for current task:98
+the new increased space:0, the threshold for new space:99
+activation shape:(100, 300)
+space shape:(100, 93)
+threshold for selecting:89.04990046208786
+total ranking r = 91
+the number of space for current task:91
+the new increased space:1, the threshold for new space:93
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+current testing task:pmnist-5
+current testing task:pmnist-6
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.5%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  97.5%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  97.4%  97.3%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.0%  97.2%  97.3%  97.5%  97.5%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.0%  97.2%  97.3%  97.4%  97.5%  97.2%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  7 (pmnist-7)
+****************************************************************************************************
+----------------------------------------
+Task ID :7 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 69)
+Task:0, Layer:0, project_norm:2.039376974105835, threshold for regime 1:1.113117504119873
+Task:0, layer:1, space shape:(100, 61)
+Task:0, Layer:1, project_norm:2.5662436485290527, threshold for regime 1:0.5522010803222657
+Task:0, layer:2, space shape:(100, 52)
+Task:0, Layer:2, project_norm:1.2163665294647217, threshold for regime 1:0.252246618270874
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 129)
+Task:1, Layer:0, project_norm:2.4757277965545654, threshold for regime 1:1.113117504119873
+Task:1, layer:1, space shape:(100, 86)
+Task:1, Layer:1, project_norm:2.712308645248413, threshold for regime 1:0.5522010803222657
+Task:1, layer:2, space shape:(100, 76)
+Task:1, Layer:2, project_norm:1.2422541379928589, threshold for regime 1:0.252246618270874
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:3.001561403274536, threshold for regime 1:1.113117504119873
+Task:2, layer:1, space shape:(100, 94)
+Task:2, Layer:1, project_norm:2.7448017597198486, threshold for regime 1:0.5522010803222657
+Task:2, layer:2, space shape:(100, 83)
+Task:2, Layer:2, project_norm:1.251548409461975, threshold for regime 1:0.252246618270874
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 265)
+Task:3, Layer:0, project_norm:3.3734419345855713, threshold for regime 1:1.113117504119873
+Task:3, layer:1, space shape:(100, 97)
+Task:3, Layer:1, project_norm:2.7504494190216064, threshold for regime 1:0.5522010803222657
+Task:3, layer:2, space shape:(100, 89)
+Task:3, Layer:2, project_norm:1.2554229497909546, threshold for regime 1:0.252246618270874
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:4, layer:0, space shape:(784, 331)
+Task:4, Layer:0, project_norm:3.8086702823638916, threshold for regime 1:1.113117504119873
+Task:4, layer:1, space shape:(100, 96)
+Task:4, Layer:1, project_norm:2.7443087100982666, threshold for regime 1:0.5522010803222657
+Task:4, layer:2, space shape:(100, 90)
+Task:4, Layer:2, project_norm:1.2568213939666748, threshold for regime 1:0.252246618270874
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:5, layer:0, space shape:(784, 393)
+Task:5, Layer:0, project_norm:4.150392055511475, threshold for regime 1:1.113117504119873
+Task:5, layer:1, space shape:(100, 97)
+Task:5, Layer:1, project_norm:2.7380635738372803, threshold for regime 1:0.5522010803222657
+Task:5, layer:2, space shape:(100, 91)
+Task:5, Layer:2, project_norm:1.256603717803955, threshold for regime 1:0.252246618270874
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:6, layer:0, space shape:(784, 449)
+Task:6, Layer:0, project_norm:4.273134231567383, threshold for regime 1:1.113117504119873
+Task:6, layer:1, space shape:(100, 98)
+Task:6, Layer:1, project_norm:2.7503490447998047, threshold for regime 1:0.5522010803222657
+Task:6, layer:2, space shape:(100, 91)
+Task:6, Layer:2, project_norm:1.2575087547302246, threshold for regime 1:0.252246618270874
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[5 6]
+Layer:1, selected task ID:[6 3]
+Layer:2, selected task ID:[4 6]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.131, acc= 96.3% | time=152533.8ms |
+ Valid: loss=0.137, acc= 96.2% |
+Epoch   2 | Train: loss=0.097, acc= 97.4% | time=155827.6ms |
+ Valid: loss=0.110, acc= 97.1% |
+Epoch   3 | Train: loss=0.077, acc= 97.9% | time=150621.7ms |
+ Valid: loss=0.095, acc= 97.3% |
+Epoch   4 | Train: loss=0.066, acc= 98.2% | time=162771.9ms |
+ Valid: loss=0.091, acc= 97.4% |
+Epoch   5 | Train: loss=0.061, acc= 98.4% | time=156099.7ms |
+ Valid: loss=0.087, acc= 97.5% |
+Test: loss=0.090 , acc= 97.3%
+activation shape:(784, 300)
+space shape:(784, 496)
+threshold for selecting:83283.35812399164
+total ranking r = 497
+the number of space for current task:497
+the new increased space:52, the threshold for new space:496
+activation shape:(100, 300)
+space shape:(100, 99)
+threshold for selecting:98.96803494050346
+total ranking r = 97
+the number of space for current task:97
+the new increased space:0, the threshold for new space:99
+activation shape:(100, 300)
+space shape:(100, 94)
+threshold for selecting:50.02967575774528
+total ranking r = 92
+the number of space for current task:92
+the new increased space:0, the threshold for new space:94
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+current testing task:pmnist-5
+current testing task:pmnist-6
+current testing task:pmnist-7
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.5%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  97.5%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  97.4%  97.3%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.0%  97.2%  97.3%  97.5%  97.5%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.0%  97.2%  97.3%  97.4%  97.5%  97.2%   0.0%   0.0%   0.0%
+ 97.2%  96.8%  97.1%  97.3%  97.3%  97.4%  97.2%  97.3%   0.0%   0.0%
+****************************************************************************************************
+Task  8 (pmnist-8)
+****************************************************************************************************
+----------------------------------------
+Task ID :8 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 69)
+Task:0, Layer:0, project_norm:1.6490135192871094, threshold for regime 1:1.1028195381164552
+Task:0, layer:1, space shape:(100, 61)
+Task:0, Layer:1, project_norm:2.8734302520751953, threshold for regime 1:0.6525375843048096
+Task:0, layer:2, space shape:(100, 52)
+Task:0, Layer:2, project_norm:1.7093251943588257, threshold for regime 1:0.3591183185577393
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 129)
+Task:1, Layer:0, project_norm:2.3721301555633545, threshold for regime 1:1.1028195381164552
+Task:1, layer:1, space shape:(100, 86)
+Task:1, Layer:1, project_norm:3.0477490425109863, threshold for regime 1:0.6525375843048096
+Task:1, layer:2, space shape:(100, 76)
+Task:1, Layer:2, project_norm:1.768893837928772, threshold for regime 1:0.3591183185577393
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:2.900585174560547, threshold for regime 1:1.1028195381164552
+Task:2, layer:1, space shape:(100, 94)
+Task:2, Layer:1, project_norm:3.1894824504852295, threshold for regime 1:0.6525375843048096
+Task:2, layer:2, space shape:(100, 83)
+Task:2, Layer:2, project_norm:1.7793982028961182, threshold for regime 1:0.3591183185577393
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 265)
+Task:3, Layer:0, project_norm:3.2650437355041504, threshold for regime 1:1.1028195381164552
+Task:3, layer:1, space shape:(100, 97)
+Task:3, Layer:1, project_norm:3.216287136077881, threshold for regime 1:0.6525375843048096
+Task:3, layer:2, space shape:(100, 89)
+Task:3, Layer:2, project_norm:1.7920267581939697, threshold for regime 1:0.3591183185577393
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:4, layer:0, space shape:(784, 331)
+Task:4, Layer:0, project_norm:3.5673203468322754, threshold for regime 1:1.1028195381164552
+Task:4, layer:1, space shape:(100, 96)
+Task:4, Layer:1, project_norm:3.2093825340270996, threshold for regime 1:0.6525375843048096
+Task:4, layer:2, space shape:(100, 90)
+Task:4, Layer:2, project_norm:1.788174033164978, threshold for regime 1:0.3591183185577393
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:5, layer:0, space shape:(784, 393)
+Task:5, Layer:0, project_norm:3.9171550273895264, threshold for regime 1:1.1028195381164552
+Task:5, layer:1, space shape:(100, 97)
+Task:5, Layer:1, project_norm:3.256420612335205, threshold for regime 1:0.6525375843048096
+Task:5, layer:2, space shape:(100, 91)
+Task:5, Layer:2, project_norm:1.7925922870635986, threshold for regime 1:0.3591183185577393
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:6, layer:0, space shape:(784, 449)
+Task:6, Layer:0, project_norm:4.178226470947266, threshold for regime 1:1.1028195381164552
+Task:6, layer:1, space shape:(100, 98)
+Task:6, Layer:1, project_norm:3.2535510063171387, threshold for regime 1:0.6525375843048096
+Task:6, layer:2, space shape:(100, 91)
+Task:6, Layer:2, project_norm:1.7894798517227173, threshold for regime 1:0.3591183185577393
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:7, layer:0, space shape:(784, 497)
+Task:7, Layer:0, project_norm:4.324378967285156, threshold for regime 1:1.1028195381164552
+Task:7, layer:1, space shape:(100, 97)
+Task:7, Layer:1, project_norm:3.2420456409454346, threshold for regime 1:0.6525375843048096
+Task:7, layer:2, space shape:(100, 92)
+Task:7, Layer:2, project_norm:1.7884489297866821, threshold for regime 1:0.3591183185577393
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[6 7]
+Layer:1, selected task ID:[6 5]
+Layer:2, selected task ID:[3 5]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.148, acc= 95.9% | time=162756.7ms |
+ Valid: loss=0.150, acc= 95.7% |
+Epoch   2 | Train: loss=0.103, acc= 97.1% | time=165664.3ms |
+ Valid: loss=0.112, acc= 96.9% |
+Epoch   3 | Train: loss=0.083, acc= 97.8% | time=159810.7ms |
+ Valid: loss=0.100, acc= 97.2% |
+Epoch   4 | Train: loss=0.073, acc= 97.9% | time=156070.8ms |
+ Valid: loss=0.098, acc= 97.0% |
+Epoch   5 | Train: loss=0.065, acc= 98.3% | time=159517.2ms |
+ Valid: loss=0.092, acc= 97.5% |
+Test: loss=0.093 , acc= 97.3%
+activation shape:(784, 300)
+space shape:(784, 548)
+threshold for selecting:69591.5606392771
+total ranking r = 542
+the number of space for current task:542
+the new increased space:48, the threshold for new space:548
+activation shape:(100, 300)
+space shape:(100, 99)
+threshold for selecting:384.53716284036636
+total ranking r = 98
+the number of space for current task:98
+the new increased space:0, the threshold for new space:99
+activation shape:(100, 300)
+space shape:(100, 94)
+threshold for selecting:78.93641660340654
+total ranking r = 91
+the number of space for current task:91
+the new increased space:1, the threshold for new space:94
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+current testing task:pmnist-5
+current testing task:pmnist-6
+current testing task:pmnist-7
+current testing task:pmnist-8
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.5%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  97.5%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  97.4%  97.3%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.0%  97.2%  97.3%  97.5%  97.5%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.0%  97.2%  97.3%  97.4%  97.5%  97.2%   0.0%   0.0%   0.0%
+ 97.2%  96.8%  97.1%  97.3%  97.3%  97.4%  97.2%  97.3%   0.0%   0.0%
+ 97.1%  96.8%  97.1%  97.3%  97.4%  97.3%  97.2%  97.3%  97.3%   0.0%
+****************************************************************************************************
+Task  9 (pmnist-9)
+****************************************************************************************************
+----------------------------------------
+Task ID :9 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 69)
+Task:0, Layer:0, project_norm:1.4900456666946411, threshold for regime 1:0.9161931991577149
+Task:0, layer:1, space shape:(100, 61)
+Task:0, Layer:1, project_norm:2.0049960613250732, threshold for regime 1:0.43329920768737795
+Task:0, layer:2, space shape:(100, 52)
+Task:0, Layer:2, project_norm:1.1172115802764893, threshold for regime 1:0.23146038055419924
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 129)
+Task:1, Layer:0, project_norm:1.966749906539917, threshold for regime 1:0.9161931991577149
+Task:1, layer:1, space shape:(100, 86)
+Task:1, Layer:1, project_norm:2.1051461696624756, threshold for regime 1:0.43329920768737795
+Task:1, layer:2, space shape:(100, 76)
+Task:1, Layer:2, project_norm:1.140952706336975, threshold for regime 1:0.23146038055419924
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:2.392001152038574, threshold for regime 1:0.9161931991577149
+Task:2, layer:1, space shape:(100, 94)
+Task:2, Layer:1, project_norm:2.1516129970550537, threshold for regime 1:0.43329920768737795
+Task:2, layer:2, space shape:(100, 83)
+Task:2, Layer:2, project_norm:1.1464279890060425, threshold for regime 1:0.23146038055419924
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 265)
+Task:3, Layer:0, project_norm:2.718965530395508, threshold for regime 1:0.9161931991577149
+Task:3, layer:1, space shape:(100, 97)
+Task:3, Layer:1, project_norm:2.158217668533325, threshold for regime 1:0.43329920768737795
+Task:3, layer:2, space shape:(100, 89)
+Task:3, Layer:2, project_norm:1.1507090330123901, threshold for regime 1:0.23146038055419924
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:4, layer:0, space shape:(784, 331)
+Task:4, Layer:0, project_norm:3.0421640872955322, threshold for regime 1:0.9161931991577149
+Task:4, layer:1, space shape:(100, 96)
+Task:4, Layer:1, project_norm:2.15071702003479, threshold for regime 1:0.43329920768737795
+Task:4, layer:2, space shape:(100, 90)
+Task:4, Layer:2, project_norm:1.1513463258743286, threshold for regime 1:0.23146038055419924
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:5, layer:0, space shape:(784, 393)
+Task:5, Layer:0, project_norm:3.3436126708984375, threshold for regime 1:0.9161931991577149
+Task:5, layer:1, space shape:(100, 97)
+Task:5, Layer:1, project_norm:2.1394143104553223, threshold for regime 1:0.43329920768737795
+Task:5, layer:2, space shape:(100, 91)
+Task:5, Layer:2, project_norm:1.1533249616622925, threshold for regime 1:0.23146038055419924
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:6, layer:0, space shape:(784, 449)
+Task:6, Layer:0, project_norm:3.5593507289886475, threshold for regime 1:0.9161931991577149
+Task:6, layer:1, space shape:(100, 98)
+Task:6, Layer:1, project_norm:2.163908004760742, threshold for regime 1:0.43329920768737795
+Task:6, layer:2, space shape:(100, 91)
+Task:6, Layer:2, project_norm:1.1536966562271118, threshold for regime 1:0.23146038055419924
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:7, layer:0, space shape:(784, 497)
+Task:7, Layer:0, project_norm:3.683411121368408, threshold for regime 1:0.9161931991577149
+Task:7, layer:1, space shape:(100, 97)
+Task:7, Layer:1, project_norm:2.159283399581909, threshold for regime 1:0.43329920768737795
+Task:7, layer:2, space shape:(100, 92)
+Task:7, Layer:2, project_norm:1.1536823511123657, threshold for regime 1:0.23146038055419924
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:8, layer:0, space shape:(784, 542)
+Task:8, Layer:0, project_norm:3.8189964294433594, threshold for regime 1:0.9161931991577149
+Task:8, layer:1, space shape:(100, 98)
+Task:8, Layer:1, project_norm:2.15317964553833, threshold for regime 1:0.43329920768737795
+Task:8, layer:2, space shape:(100, 91)
+Task:8, Layer:2, project_norm:1.153732180595398, threshold for regime 1:0.23146038055419924
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[7 8]
+Layer:1, selected task ID:[7 6]
+Layer:2, selected task ID:[6 8]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.126, acc= 96.5% | time=156287.5ms |
+ Valid: loss=0.131, acc= 96.4% |
+Epoch   2 | Train: loss=0.093, acc= 97.4% | time=151547.5ms |
+ Valid: loss=0.107, acc= 97.2% |
+Epoch   3 | Train: loss=0.076, acc= 97.8% | time=142945.4ms |
+ Valid: loss=0.096, acc= 97.3% |
+Epoch   4 | Train: loss=0.071, acc= 98.1% | time=146246.7ms |
+ Valid: loss=0.094, acc= 97.4% |
+Epoch   5 | Train: loss=0.063, acc= 98.3% | time=160723.1ms |
+ Valid: loss=0.089, acc= 97.6% |
+Test: loss=0.092 , acc= 97.4%
+activation shape:(784, 300)
+space shape:(784, 596)
+threshold for selecting:53183.82267147396
+total ranking r = 578
+the number of space for current task:578
+the new increased space:41, the threshold for new space:596
+activation shape:(100, 300)
+space shape:(100, 99)
+threshold for selecting:368.3852637484997
+total ranking r = 97
+the number of space for current task:97
+the new increased space:0, the threshold for new space:99
+activation shape:(100, 300)
+space shape:(100, 95)
+threshold for selecting:39.93997323632448
+total ranking r = 91
+the number of space for current task:91
+the new increased space:0, the threshold for new space:95
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+current testing task:pmnist-5
+current testing task:pmnist-6
+current testing task:pmnist-7
+current testing task:pmnist-8
+current testing task:pmnist-9
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.5%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  97.5%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  97.4%  97.3%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.0%  97.2%  97.3%  97.5%  97.5%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.0%  97.2%  97.3%  97.4%  97.5%  97.2%   0.0%   0.0%   0.0%
+ 97.2%  96.8%  97.1%  97.3%  97.3%  97.4%  97.2%  97.3%   0.0%   0.0%
+ 97.1%  96.8%  97.1%  97.3%  97.4%  97.3%  97.2%  97.3%  97.3%   0.0%
+ 97.2%  96.9%  97.0%  97.2%  97.3%  97.2%  97.1%  97.3%  97.3%  97.4%
+--------------------------------------------------
+Task Order : [0 1 2 3 4 5 6 7 8 9]
+Final Avg Accuracy: 97.19%
+Backward transfer: -0.27%
+[Elapsed time = 6941350.9 ms]
+--------------------------------------------------
+====================================================================================================
+Arguments =
+Namespace(batch_size_test=64, batch_size_train=10, gpm_thro=0.94, lr=0.01, lr_factor=2, lr_min=1e-05, lr_patience=6, mixup_alpha=20, mixup_weight=0.01, momentum=0.9, n_epochs=5, n_hidden=100, n_outputs=10, n_tasks=10, pc_valid=0.1, savename='./log/DFTRGP/', seed=2)
+====================================================================================================
+****************************************************************************************************
+Task  0 (pmnist-0)
+****************************************************************************************************
+----------------------------------------
+Task ID :0 | Learning Rate : 0.01
+----------------------------------------
+Model parameters ---
+----------------------------------------
+Epoch   1 | Train: loss=0.185, acc= 94.9% | time=51577.8ms |
+ Valid: loss=0.177, acc= 95.1% |
+Epoch   2 | Train: loss=0.124, acc= 96.7% | time=48562.9ms |
+ Valid: loss=0.127, acc= 96.7% |
+Epoch   3 | Train: loss=0.091, acc= 97.5% | time=46432.5ms |
+ Valid: loss=0.104, acc= 97.1% |
+Epoch   4 | Train: loss=0.075, acc= 98.0% | time=47311.0ms |
+ Valid: loss=0.091, acc= 97.5% |
+Epoch   5 | Train: loss=0.062, acc= 98.4% | time=48691.9ms |
+ Valid: loss=0.083, acc= 97.8% |
+----------------------------------------
+Test: loss=0.082 , acc= 97.6%
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  1 (pmnist-1)
+****************************************************************************************************
+----------------------------------------
+Task ID :1 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:1.8319789171218872, threshold for regime 1:0.9878254890441895
+Task:0, layer:1, space shape:(100, 65)
+Task:0, Layer:1, project_norm:1.47365140914917, threshold for regime 1:0.31356449127197267
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:0.9246969223022461, threshold for regime 1:0.18884165287017823
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+----------------------------------------
+space1 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.140, acc= 96.0% | time=109967.7ms |
+ Valid: loss=0.141, acc= 96.1% |
+Epoch   2 | Train: loss=0.097, acc= 97.4% | time=107082.4ms |
+ Valid: loss=0.108, acc= 97.0% |
+Epoch   3 | Train: loss=0.076, acc= 97.9% | time=105606.4ms |
+ Valid: loss=0.094, acc= 97.2% |
+Epoch   4 | Train: loss=0.066, acc= 98.2% | time=101688.3ms |
+ Valid: loss=0.086, acc= 97.4% |
+Epoch   5 | Train: loss=0.059, acc= 98.5% | time=109629.3ms |
+ Valid: loss=0.081, acc= 97.6% |
+Test: loss=0.084 , acc= 97.4%
+activation shape:(784, 300)
+space shape:(784, 70)
+threshold for selecting:216554.57617527246
+total ranking r = 129
+the number of space for current task:129
+the new increased space:77, the threshold for new space:70
+activation shape:(100, 300)
+space shape:(100, 65)
+threshold for selecting:21174.939224481583
+total ranking r = 88
+the number of space for current task:88
+the new increased space:22, the threshold for new space:65
+activation shape:(100, 300)
+space shape:(100, 51)
+threshold for selecting:2395.04468251043
+total ranking r = 73
+the number of space for current task:73
+the new increased space:21, the threshold for new space:51
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  2 (pmnist-2)
+****************************************************************************************************
+----------------------------------------
+Task ID :2 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:1.549207329750061, threshold for regime 1:0.9027611732482911
+Task:0, layer:1, space shape:(100, 65)
+Task:0, Layer:1, project_norm:1.6746835708618164, threshold for regime 1:0.3546067476272583
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:1.130977988243103, threshold for regime 1:0.23099231719970703
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 129)
+Task:1, Layer:0, project_norm:2.0572659969329834, threshold for regime 1:0.9027611732482911
+Task:1, layer:1, space shape:(100, 88)
+Task:1, Layer:1, project_norm:1.7548483610153198, threshold for regime 1:0.3546067476272583
+Task:1, layer:2, space shape:(100, 73)
+Task:1, Layer:2, project_norm:1.1474933624267578, threshold for regime 1:0.23099231719970703
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[1]
+Layer:1, selected task ID:[1]
+Layer:2, selected task ID:[1]
+----------------------------------------
+space1 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.133, acc= 96.3% | time=111245.4ms |
+ Valid: loss=0.130, acc= 96.5% |
+Epoch   2 | Train: loss=0.099, acc= 97.2% | time=102323.6ms |
+ Valid: loss=0.106, acc= 97.1% |
+Epoch   3 | Train: loss=0.077, acc= 97.9% | time=104926.6ms |
+ Valid: loss=0.091, acc= 97.6% |
+Epoch   4 | Train: loss=0.065, acc= 98.3% | time=104156.7ms |
+ Valid: loss=0.082, acc= 97.7% |
+Epoch   5 | Train: loss=0.057, acc= 98.6% | time=100494.6ms |
+ Valid: loss=0.080, acc= 97.7% |
+Test: loss=0.079 , acc= 97.6%
+activation shape:(784, 300)
+space shape:(784, 147)
+threshold for selecting:183460.95665470138
+total ranking r = 198
+the number of space for current task:198
+the new increased space:74, the threshold for new space:147
+activation shape:(100, 300)
+space shape:(100, 87)
+threshold for selecting:6724.24148776388
+total ranking r = 96
+the number of space for current task:96
+the new increased space:8, the threshold for new space:87
+activation shape:(100, 300)
+space shape:(100, 72)
+threshold for selecting:887.1976868600213
+total ranking r = 81
+the number of space for current task:81
+the new increased space:8, the threshold for new space:72
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  3 (pmnist-3)
+****************************************************************************************************
+----------------------------------------
+Task ID :3 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:2.385793447494507, threshold for regime 1:1.5318759918212892
+Task:0, layer:1, space shape:(100, 65)
+Task:0, Layer:1, project_norm:3.1148407459259033, threshold for regime 1:0.675288724899292
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:1.930703043937683, threshold for regime 1:0.3964465141296387
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 129)
+Task:1, Layer:0, project_norm:2.9719276428222656, threshold for regime 1:1.5318759918212892
+Task:1, layer:1, space shape:(100, 88)
+Task:1, Layer:1, project_norm:3.307131767272949, threshold for regime 1:0.675288724899292
+Task:1, layer:2, space shape:(100, 73)
+Task:1, Layer:2, project_norm:1.9624425172805786, threshold for regime 1:0.3964465141296387
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:3.8738083839416504, threshold for regime 1:1.5318759918212892
+Task:2, layer:1, space shape:(100, 96)
+Task:2, Layer:1, project_norm:3.3377161026000977, threshold for regime 1:0.675288724899292
+Task:2, layer:2, space shape:(100, 81)
+Task:2, Layer:2, project_norm:1.9725145101547241, threshold for regime 1:0.3964465141296387
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[1 2]
+Layer:1, selected task ID:[1 2]
+Layer:2, selected task ID:[1 2]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.139, acc= 96.2% | time=147090.3ms |
+ Valid: loss=0.140, acc= 96.4% |
+Epoch   2 | Train: loss=0.102, acc= 97.3% | time=147751.8ms |
+ Valid: loss=0.114, acc= 96.9% |
+Epoch   3 | Train: loss=0.079, acc= 97.8% | time=143947.8ms |
+ Valid: loss=0.096, acc= 97.2% |
+Epoch   4 | Train: loss=0.069, acc= 98.1% | time=142186.3ms |
+ Valid: loss=0.088, acc= 97.5% |
+Epoch   5 | Train: loss=0.059, acc= 98.4% | time=143247.2ms |
+ Valid: loss=0.083, acc= 97.6% |
+Test: loss=0.083 , acc= 97.5%
+activation shape:(784, 300)
+space shape:(784, 221)
+threshold for selecting:162620.13687493745
+total ranking r = 267
+the number of space for current task:267
+the new increased space:77, the threshold for new space:221
+activation shape:(100, 300)
+space shape:(100, 95)
+threshold for selecting:3154.969701625072
+total ranking r = 98
+the number of space for current task:98
+the new increased space:3, the threshold for new space:95
+activation shape:(100, 300)
+space shape:(100, 80)
+threshold for selecting:527.4640338794597
+total ranking r = 87
+the number of space for current task:87
+the new increased space:7, the threshold for new space:80
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.1%  97.4%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  4 (pmnist-4)
+****************************************************************************************************
+----------------------------------------
+Task ID :4 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:1.3602972030639648, threshold for regime 1:0.790620517730713
+Task:0, layer:1, space shape:(100, 65)
+Task:0, Layer:1, project_norm:1.3943194150924683, threshold for regime 1:0.30184221267700195
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:0.7103060483932495, threshold for regime 1:0.1470331907272339
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 129)
+Task:1, Layer:0, project_norm:1.7026299238204956, threshold for regime 1:0.790620517730713
+Task:1, layer:1, space shape:(100, 88)
+Task:1, Layer:1, project_norm:1.485854148864746, threshold for regime 1:0.30184221267700195
+Task:1, layer:2, space shape:(100, 73)
+Task:1, Layer:2, project_norm:0.7260501384735107, threshold for regime 1:0.1470331907272339
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:2.066133499145508, threshold for regime 1:0.790620517730713
+Task:2, layer:1, space shape:(100, 96)
+Task:2, Layer:1, project_norm:1.4970296621322632, threshold for regime 1:0.30184221267700195
+Task:2, layer:2, space shape:(100, 81)
+Task:2, Layer:2, project_norm:0.7297589778900146, threshold for regime 1:0.1470331907272339
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 267)
+Task:3, Layer:0, project_norm:2.3541979789733887, threshold for regime 1:0.790620517730713
+Task:3, layer:1, space shape:(100, 98)
+Task:3, Layer:1, project_norm:1.5036070346832275, threshold for regime 1:0.30184221267700195
+Task:3, layer:2, space shape:(100, 87)
+Task:3, Layer:2, project_norm:0.7304876446723938, threshold for regime 1:0.1470331907272339
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[2 3]
+Layer:1, selected task ID:[2 3]
+Layer:2, selected task ID:[2 3]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.136, acc= 96.1% | time=141315.5ms |
+ Valid: loss=0.144, acc= 95.8% |
+Epoch   2 | Train: loss=0.092, acc= 97.5% | time=148805.9ms |
+ Valid: loss=0.105, acc= 97.1% |
+Epoch   3 | Train: loss=0.081, acc= 97.9% | time=147626.6ms |
+ Valid: loss=0.098, acc= 97.4% |
+Epoch   4 | Train: loss=0.069, acc= 98.1% | time=145124.2ms |
+ Valid: loss=0.093, acc= 97.3% |
+Epoch   5 | Train: loss=0.061, acc= 98.4% | time=145924.7ms |
+ Valid: loss=0.086, acc= 97.4% |
+Test: loss=0.086 , acc= 97.5%
+activation shape:(784, 300)
+space shape:(784, 298)
+threshold for selecting:148574.81735885516
+total ranking r = 330
+the number of space for current task:330
+the new increased space:69, the threshold for new space:298
+activation shape:(100, 300)
+space shape:(100, 98)
+threshold for selecting:1859.9998929360881
+total ranking r = 98
+the number of space for current task:98
+the new increased space:1, the threshold for new space:98
+activation shape:(100, 300)
+space shape:(100, 87)
+threshold for selecting:128.53429160922042
+total ranking r = 89
+the number of space for current task:89
+the new increased space:1, the threshold for new space:87
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.1%  97.4%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  97.2%  97.4%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  5 (pmnist-5)
+****************************************************************************************************
+----------------------------------------
+Task ID :5 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:1.5268265008926392, threshold for regime 1:1.0410595893859864
+Task:0, layer:1, space shape:(100, 65)
+Task:0, Layer:1, project_norm:2.0733604431152344, threshold for regime 1:0.45509934425354004
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:1.145169973373413, threshold for regime 1:0.23618097305297853
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 129)
+Task:1, Layer:0, project_norm:2.2540981769561768, threshold for regime 1:1.0410595893859864
+Task:1, layer:1, space shape:(100, 88)
+Task:1, Layer:1, project_norm:2.1982457637786865, threshold for regime 1:0.45509934425354004
+Task:1, layer:2, space shape:(100, 73)
+Task:1, Layer:2, project_norm:1.1672464609146118, threshold for regime 1:0.23618097305297853
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:2.6929001808166504, threshold for regime 1:1.0410595893859864
+Task:2, layer:1, space shape:(100, 96)
+Task:2, Layer:1, project_norm:2.2598090171813965, threshold for regime 1:0.45509934425354004
+Task:2, layer:2, space shape:(100, 81)
+Task:2, Layer:2, project_norm:1.1731846332550049, threshold for regime 1:0.23618097305297853
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 267)
+Task:3, Layer:0, project_norm:3.009568691253662, threshold for regime 1:1.0410595893859864
+Task:3, layer:1, space shape:(100, 98)
+Task:3, Layer:1, project_norm:2.257441282272339, threshold for regime 1:0.45509934425354004
+Task:3, layer:2, space shape:(100, 87)
+Task:3, Layer:2, project_norm:1.1781879663467407, threshold for regime 1:0.23618097305297853
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:4, layer:0, space shape:(784, 330)
+Task:4, Layer:0, project_norm:3.3417632579803467, threshold for regime 1:1.0410595893859864
+Task:4, layer:1, space shape:(100, 98)
+Task:4, Layer:1, project_norm:2.24607515335083, threshold for regime 1:0.45509934425354004
+Task:4, layer:2, space shape:(100, 89)
+Task:4, Layer:2, project_norm:1.1780683994293213, threshold for regime 1:0.23618097305297853
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[3 4]
+Layer:1, selected task ID:[3 2]
+Layer:2, selected task ID:[4 3]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.131, acc= 96.4% | time=147314.6ms |
+ Valid: loss=0.132, acc= 96.2% |
+Epoch   2 | Train: loss=0.097, acc= 97.3% | time=151208.0ms |
+ Valid: loss=0.109, acc= 97.0% |
+Epoch   3 | Train: loss=0.079, acc= 97.8% | time=158311.6ms |
+ Valid: loss=0.094, acc= 97.1% |
+Epoch   4 | Train: loss=0.066, acc= 98.1% | time=158365.9ms |
+ Valid: loss=0.088, acc= 97.4% |
+Epoch   5 | Train: loss=0.065, acc= 98.3% | time=161464.0ms |
+ Valid: loss=0.089, acc= 97.4% |
+Test: loss=0.088 , acc= 97.6%
+activation shape:(784, 300)
+space shape:(784, 367)
+threshold for selecting:123792.43528113142
+total ranking r = 391
+the number of space for current task:391
+the new increased space:65, the threshold for new space:367
+activation shape:(100, 300)
+space shape:(100, 99)
+threshold for selecting:248.6328204487254
+total ranking r = 98
+the number of space for current task:98
+the new increased space:0, the threshold for new space:99
+activation shape:(100, 300)
+space shape:(100, 88)
+threshold for selecting:140.48804012020355
+total ranking r = 89
+the number of space for current task:89
+the new increased space:3, the threshold for new space:88
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+current testing task:pmnist-5
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.1%  97.4%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  97.2%  97.4%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.4%  97.1%  97.3%  97.5%  97.6%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  6 (pmnist-6)
+****************************************************************************************************
+----------------------------------------
+Task ID :6 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:2.0084621906280518, threshold for regime 1:1.1875536918640137
+Task:0, layer:1, space shape:(100, 65)
+Task:0, Layer:1, project_norm:3.0828003883361816, threshold for regime 1:0.6476830005645753
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:2.140622615814209, threshold for regime 1:0.43464102745056155
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 129)
+Task:1, Layer:0, project_norm:2.572629690170288, threshold for regime 1:1.1875536918640137
+Task:1, layer:1, space shape:(100, 88)
+Task:1, Layer:1, project_norm:3.1732099056243896, threshold for regime 1:0.6476830005645753
+Task:1, layer:2, space shape:(100, 73)
+Task:1, Layer:2, project_norm:2.1579196453094482, threshold for regime 1:0.43464102745056155
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:3.2267873287200928, threshold for regime 1:1.1875536918640137
+Task:2, layer:1, space shape:(100, 96)
+Task:2, Layer:1, project_norm:3.2226314544677734, threshold for regime 1:0.6476830005645753
+Task:2, layer:2, space shape:(100, 81)
+Task:2, Layer:2, project_norm:2.1667327880859375, threshold for regime 1:0.43464102745056155
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 267)
+Task:3, Layer:0, project_norm:3.581228733062744, threshold for regime 1:1.1875536918640137
+Task:3, layer:1, space shape:(100, 98)
+Task:3, Layer:1, project_norm:3.1614222526550293, threshold for regime 1:0.6476830005645753
+Task:3, layer:2, space shape:(100, 87)
+Task:3, Layer:2, project_norm:2.1689372062683105, threshold for regime 1:0.43464102745056155
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:4, layer:0, space shape:(784, 330)
+Task:4, Layer:0, project_norm:3.928961753845215, threshold for regime 1:1.1875536918640137
+Task:4, layer:1, space shape:(100, 98)
+Task:4, Layer:1, project_norm:3.2161834239959717, threshold for regime 1:0.6476830005645753
+Task:4, layer:2, space shape:(100, 89)
+Task:4, Layer:2, project_norm:2.169196844100952, threshold for regime 1:0.43464102745056155
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:5, layer:0, space shape:(784, 391)
+Task:5, Layer:0, project_norm:4.270952224731445, threshold for regime 1:1.1875536918640137
+Task:5, layer:1, space shape:(100, 98)
+Task:5, Layer:1, project_norm:3.224228620529175, threshold for regime 1:0.6476830005645753
+Task:5, layer:2, space shape:(100, 89)
+Task:5, Layer:2, project_norm:2.1686184406280518, threshold for regime 1:0.43464102745056155
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[4 5]
+Layer:1, selected task ID:[2 5]
+Layer:2, selected task ID:[3 4]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.137, acc= 96.2% | time=165723.2ms |
+ Valid: loss=0.141, acc= 96.3% |
+Epoch   2 | Train: loss=0.095, acc= 97.4% | time=150277.5ms |
+ Valid: loss=0.108, acc= 96.9% |
+Epoch   3 | Train: loss=0.083, acc= 97.8% | time=148107.0ms |
+ Valid: loss=0.101, acc= 97.0% |
+Epoch   4 | Train: loss=0.068, acc= 98.1% | time=151876.3ms |
+ Valid: loss=0.093, acc= 97.4% |
+Epoch   5 | Train: loss=0.060, acc= 98.4% | time=149106.1ms |
+ Valid: loss=0.088, acc= 97.6% |
+Test: loss=0.087 , acc= 97.5%
+activation shape:(784, 300)
+space shape:(784, 432)
+threshold for selecting:101580.7273103306
+total ranking r = 445
+the number of space for current task:445
+the new increased space:58, the threshold for new space:432
+activation shape:(100, 300)
+space shape:(100, 99)
+threshold for selecting:652.9253708095384
+total ranking r = 97
+the number of space for current task:97
+the new increased space:0, the threshold for new space:99
+activation shape:(100, 300)
+space shape:(100, 91)
+threshold for selecting:50.43460778064605
+total ranking r = 89
+the number of space for current task:89
+the new increased space:1, the threshold for new space:91
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+current testing task:pmnist-5
+current testing task:pmnist-6
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.1%  97.4%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  97.2%  97.4%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.4%  97.1%  97.3%  97.5%  97.6%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.5%  97.1%  97.2%  97.5%  97.4%  97.5%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  7 (pmnist-7)
+****************************************************************************************************
+----------------------------------------
+Task ID :7 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:1.3237390518188477, threshold for regime 1:0.8676139831542969
+Task:0, layer:1, space shape:(100, 65)
+Task:0, Layer:1, project_norm:2.044922113418579, threshold for regime 1:0.4432273387908936
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:1.1361918449401855, threshold for regime 1:0.23541500568389895
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 129)
+Task:1, Layer:0, project_norm:1.8926985263824463, threshold for regime 1:0.8676139831542969
+Task:1, layer:1, space shape:(100, 88)
+Task:1, Layer:1, project_norm:2.1609137058258057, threshold for regime 1:0.4432273387908936
+Task:1, layer:2, space shape:(100, 73)
+Task:1, Layer:2, project_norm:1.1615321636199951, threshold for regime 1:0.23541500568389895
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:2.332730531692505, threshold for regime 1:0.8676139831542969
+Task:2, layer:1, space shape:(100, 96)
+Task:2, Layer:1, project_norm:2.1849265098571777, threshold for regime 1:0.4432273387908936
+Task:2, layer:2, space shape:(100, 81)
+Task:2, Layer:2, project_norm:1.1685231924057007, threshold for regime 1:0.23541500568389895
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 267)
+Task:3, Layer:0, project_norm:2.701944589614868, threshold for regime 1:0.8676139831542969
+Task:3, layer:1, space shape:(100, 98)
+Task:3, Layer:1, project_norm:2.2101001739501953, threshold for regime 1:0.4432273387908936
+Task:3, layer:2, space shape:(100, 87)
+Task:3, Layer:2, project_norm:1.1705251932144165, threshold for regime 1:0.23541500568389895
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:4, layer:0, space shape:(784, 330)
+Task:4, Layer:0, project_norm:2.8664445877075195, threshold for regime 1:0.8676139831542969
+Task:4, layer:1, space shape:(100, 98)
+Task:4, Layer:1, project_norm:2.2082748413085938, threshold for regime 1:0.4432273387908936
+Task:4, layer:2, space shape:(100, 89)
+Task:4, Layer:2, project_norm:1.1735817193984985, threshold for regime 1:0.23541500568389895
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:5, layer:0, space shape:(784, 391)
+Task:5, Layer:0, project_norm:3.1269021034240723, threshold for regime 1:0.8676139831542969
+Task:5, layer:1, space shape:(100, 98)
+Task:5, Layer:1, project_norm:2.2118804454803467, threshold for regime 1:0.4432273387908936
+Task:5, layer:2, space shape:(100, 89)
+Task:5, Layer:2, project_norm:1.1746612787246704, threshold for regime 1:0.23541500568389895
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:6, layer:0, space shape:(784, 445)
+Task:6, Layer:0, project_norm:3.3405728340148926, threshold for regime 1:0.8676139831542969
+Task:6, layer:1, space shape:(100, 97)
+Task:6, Layer:1, project_norm:2.2038733959198, threshold for regime 1:0.4432273387908936
+Task:6, layer:2, space shape:(100, 89)
+Task:6, Layer:2, project_norm:1.174807071685791, threshold for regime 1:0.23541500568389895
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[5 6]
+Layer:1, selected task ID:[3 5]
+Layer:2, selected task ID:[5 6]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.153, acc= 95.7% | time=149391.6ms |
+ Valid: loss=0.151, acc= 95.8% |
+Epoch   2 | Train: loss=0.116, acc= 96.7% | time=129258.1ms |
+ Valid: loss=0.122, acc= 96.5% |
+Epoch   3 | Train: loss=0.099, acc= 97.2% | time=119105.1ms |
+ Valid: loss=0.109, acc= 96.9% |
+Epoch   4 | Train: loss=0.075, acc= 97.9% | time=122271.6ms |
+ Valid: loss=0.091, acc= 97.3% |
+Epoch   5 | Train: loss=0.066, acc= 98.2% | time=124462.1ms |
+ Valid: loss=0.087, acc= 97.5% |
+Test: loss=0.092 , acc= 97.3%
+activation shape:(784, 300)
+space shape:(784, 490)
+threshold for selecting:83649.14469588175
+total ranking r = 494
+the number of space for current task:494
+the new increased space:53, the threshold for new space:490
+activation shape:(100, 300)
+space shape:(100, 99)
+threshold for selecting:731.7006013501086
+total ranking r = 97
+the number of space for current task:97
+the new increased space:0, the threshold for new space:99
+activation shape:(100, 300)
+space shape:(100, 92)
+threshold for selecting:45.378765460560544
+total ranking r = 90
+the number of space for current task:90
+the new increased space:1, the threshold for new space:92
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+current testing task:pmnist-5
+current testing task:pmnist-6
+current testing task:pmnist-7
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.1%  97.4%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  97.2%  97.4%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.4%  97.1%  97.3%  97.5%  97.6%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.5%  97.1%  97.2%  97.5%  97.4%  97.5%   0.0%   0.0%   0.0%
+ 97.2%  96.5%  97.0%  97.1%  97.4%  97.3%  97.5%  97.3%   0.0%   0.0%
+****************************************************************************************************
+Task  8 (pmnist-8)
+****************************************************************************************************
+----------------------------------------
+Task ID :8 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:2.0000357627868652, threshold for regime 1:1.2231418609619142
+Task:0, layer:1, space shape:(100, 65)
+Task:0, Layer:1, project_norm:2.5034146308898926, threshold for regime 1:0.5680909633636475
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:1.1014986038208008, threshold for regime 1:0.23274106979370118
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 129)
+Task:1, Layer:0, project_norm:2.5922510623931885, threshold for regime 1:1.2231418609619142
+Task:1, layer:1, space shape:(100, 88)
+Task:1, Layer:1, project_norm:2.7225170135498047, threshold for regime 1:0.5680909633636475
+Task:1, layer:2, space shape:(100, 73)
+Task:1, Layer:2, project_norm:1.1393557786941528, threshold for regime 1:0.23274106979370118
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:3.138007640838623, threshold for regime 1:1.2231418609619142
+Task:2, layer:1, space shape:(100, 96)
+Task:2, Layer:1, project_norm:2.80570650100708, threshold for regime 1:0.5680909633636475
+Task:2, layer:2, space shape:(100, 81)
+Task:2, Layer:2, project_norm:1.1531732082366943, threshold for regime 1:0.23274106979370118
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 267)
+Task:3, Layer:0, project_norm:3.625415325164795, threshold for regime 1:1.2231418609619142
+Task:3, layer:1, space shape:(100, 98)
+Task:3, Layer:1, project_norm:2.8317911624908447, threshold for regime 1:0.5680909633636475
+Task:3, layer:2, space shape:(100, 87)
+Task:3, Layer:2, project_norm:1.1596534252166748, threshold for regime 1:0.23274106979370118
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:4, layer:0, space shape:(784, 330)
+Task:4, Layer:0, project_norm:3.974830150604248, threshold for regime 1:1.2231418609619142
+Task:4, layer:1, space shape:(100, 98)
+Task:4, Layer:1, project_norm:2.8348639011383057, threshold for regime 1:0.5680909633636475
+Task:4, layer:2, space shape:(100, 89)
+Task:4, Layer:2, project_norm:1.1596986055374146, threshold for regime 1:0.23274106979370118
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:5, layer:0, space shape:(784, 391)
+Task:5, Layer:0, project_norm:4.290914535522461, threshold for regime 1:1.2231418609619142
+Task:5, layer:1, space shape:(100, 98)
+Task:5, Layer:1, project_norm:2.8314359188079834, threshold for regime 1:0.5680909633636475
+Task:5, layer:2, space shape:(100, 89)
+Task:5, Layer:2, project_norm:1.1595839262008667, threshold for regime 1:0.23274106979370118
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:6, layer:0, space shape:(784, 445)
+Task:6, Layer:0, project_norm:4.638559341430664, threshold for regime 1:1.2231418609619142
+Task:6, layer:1, space shape:(100, 97)
+Task:6, Layer:1, project_norm:2.809054374694824, threshold for regime 1:0.5680909633636475
+Task:6, layer:2, space shape:(100, 89)
+Task:6, Layer:2, project_norm:1.1585432291030884, threshold for regime 1:0.23274106979370118
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:7, layer:0, space shape:(784, 494)
+Task:7, Layer:0, project_norm:4.84590482711792, threshold for regime 1:1.2231418609619142
+Task:7, layer:1, space shape:(100, 97)
+Task:7, Layer:1, project_norm:2.8324146270751953, threshold for regime 1:0.5680909633636475
+Task:7, layer:2, space shape:(100, 90)
+Task:7, Layer:2, project_norm:1.160218358039856, threshold for regime 1:0.23274106979370118
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[6 7]
+Layer:1, selected task ID:[7 4]
+Layer:2, selected task ID:[4 7]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.143, acc= 96.1% | time=127135.2ms |
+ Valid: loss=0.142, acc= 95.9% |
+Epoch   2 | Train: loss=0.103, acc= 97.2% | time=134289.7ms |
+ Valid: loss=0.116, acc= 96.8% |
+Epoch   3 | Train: loss=0.079, acc= 97.8% | time=130966.3ms |
+ Valid: loss=0.097, acc= 97.5% |
+Epoch   4 | Train: loss=0.071, acc= 98.1% | time=122889.1ms |
+ Valid: loss=0.093, acc= 97.3% |
+Epoch   5 | Train: loss=0.064, acc= 98.3% | time=132841.8ms |
+ Valid: loss=0.089, acc= 97.4% |
+Test: loss=0.091 , acc= 97.3%
+activation shape:(784, 300)
+space shape:(784, 543)
+threshold for selecting:69994.09149384499
+total ranking r = 537
+the number of space for current task:537
+the new increased space:47, the threshold for new space:543
+activation shape:(100, 300)
+space shape:(100, 99)
+threshold for selecting:629.8597980770865
+total ranking r = 97
+the number of space for current task:97
+the new increased space:0, the threshold for new space:99
+activation shape:(100, 300)
+space shape:(100, 93)
+threshold for selecting:69.3227718562639
+total ranking r = 91
+the number of space for current task:91
+the new increased space:1, the threshold for new space:93
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+current testing task:pmnist-5
+current testing task:pmnist-6
+current testing task:pmnist-7
+current testing task:pmnist-8
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.1%  97.4%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  97.2%  97.4%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.4%  97.1%  97.3%  97.5%  97.6%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.5%  97.1%  97.2%  97.5%  97.4%  97.5%   0.0%   0.0%   0.0%
+ 97.2%  96.5%  97.0%  97.1%  97.4%  97.3%  97.5%  97.3%   0.0%   0.0%
+ 97.2%  96.5%  97.0%  97.1%  97.3%  97.4%  97.4%  97.3%  97.3%   0.0%
+****************************************************************************************************
+Task  9 (pmnist-9)
+****************************************************************************************************
+----------------------------------------
+Task ID :9 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:1.5171688795089722, threshold for regime 1:0.9249439239501953
+Task:0, layer:1, space shape:(100, 65)
+Task:0, Layer:1, project_norm:1.8326301574707031, threshold for regime 1:0.407665491104126
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:0.8951773047447205, threshold for regime 1:0.18464037179946902
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 129)
+Task:1, Layer:0, project_norm:2.042963981628418, threshold for regime 1:0.9249439239501953
+Task:1, layer:1, space shape:(100, 88)
+Task:1, Layer:1, project_norm:1.9902985095977783, threshold for regime 1:0.407665491104126
+Task:1, layer:2, space shape:(100, 73)
+Task:1, Layer:2, project_norm:0.9135480523109436, threshold for regime 1:0.18464037179946902
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:2.521742105484009, threshold for regime 1:0.9249439239501953
+Task:2, layer:1, space shape:(100, 96)
+Task:2, Layer:1, project_norm:2.0198934078216553, threshold for regime 1:0.407665491104126
+Task:2, layer:2, space shape:(100, 81)
+Task:2, Layer:2, project_norm:0.9180501103401184, threshold for regime 1:0.18464037179946902
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 267)
+Task:3, Layer:0, project_norm:2.694007396697998, threshold for regime 1:0.9249439239501953
+Task:3, layer:1, space shape:(100, 98)
+Task:3, Layer:1, project_norm:2.02475905418396, threshold for regime 1:0.407665491104126
+Task:3, layer:2, space shape:(100, 87)
+Task:3, Layer:2, project_norm:0.9191811680793762, threshold for regime 1:0.18464037179946902
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:4, layer:0, space shape:(784, 330)
+Task:4, Layer:0, project_norm:3.015599012374878, threshold for regime 1:0.9249439239501953
+Task:4, layer:1, space shape:(100, 98)
+Task:4, Layer:1, project_norm:2.034691333770752, threshold for regime 1:0.407665491104126
+Task:4, layer:2, space shape:(100, 89)
+Task:4, Layer:2, project_norm:0.9202365875244141, threshold for regime 1:0.18464037179946902
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:5, layer:0, space shape:(784, 391)
+Task:5, Layer:0, project_norm:3.304954767227173, threshold for regime 1:0.9249439239501953
+Task:5, layer:1, space shape:(100, 98)
+Task:5, Layer:1, project_norm:2.021606683731079, threshold for regime 1:0.407665491104126
+Task:5, layer:2, space shape:(100, 89)
+Task:5, Layer:2, project_norm:0.9203159809112549, threshold for regime 1:0.18464037179946902
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:6, layer:0, space shape:(784, 445)
+Task:6, Layer:0, project_norm:3.49832820892334, threshold for regime 1:0.9249439239501953
+Task:6, layer:1, space shape:(100, 97)
+Task:6, Layer:1, project_norm:2.025934934616089, threshold for regime 1:0.407665491104126
+Task:6, layer:2, space shape:(100, 89)
+Task:6, Layer:2, project_norm:0.9203223586082458, threshold for regime 1:0.18464037179946902
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:7, layer:0, space shape:(784, 494)
+Task:7, Layer:0, project_norm:3.7323577404022217, threshold for regime 1:0.9249439239501953
+Task:7, layer:1, space shape:(100, 97)
+Task:7, Layer:1, project_norm:2.0322444438934326, threshold for regime 1:0.407665491104126
+Task:7, layer:2, space shape:(100, 90)
+Task:7, Layer:2, project_norm:0.920341432094574, threshold for regime 1:0.18464037179946902
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:8, layer:0, space shape:(784, 537)
+Task:8, Layer:0, project_norm:3.8776180744171143, threshold for regime 1:0.9249439239501953
+Task:8, layer:1, space shape:(100, 97)
+Task:8, Layer:1, project_norm:2.0072543621063232, threshold for regime 1:0.407665491104126
+Task:8, layer:2, space shape:(100, 91)
+Task:8, Layer:2, project_norm:0.9206136465072632, threshold for regime 1:0.18464037179946902
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[7 8]
+Layer:1, selected task ID:[7 4]
+Layer:2, selected task ID:[7 8]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.134, acc= 96.1% | time=124136.8ms |
+ Valid: loss=0.137, acc= 96.2% |
+Epoch   2 | Train: loss=0.110, acc= 97.0% | time=121722.4ms |
+ Valid: loss=0.120, acc= 96.6% |
+Epoch   3 | Train: loss=0.084, acc= 97.6% | time=120392.3ms |
+ Valid: loss=0.103, acc= 96.9% |
+Epoch   4 | Train: loss=0.072, acc= 98.0% | time=134848.9ms |
+ Valid: loss=0.096, acc= 96.9% |
+Epoch   5 | Train: loss=0.065, acc= 98.2% | time=128060.1ms |
+ Valid: loss=0.091, acc= 97.2% |
+Test: loss=0.090 , acc= 97.3%
+activation shape:(784, 300)
+space shape:(784, 590)
+threshold for selecting:56505.40891234414
+total ranking r = 573
+the number of space for current task:573
+the new increased space:41, the threshold for new space:590
+activation shape:(100, 300)
+space shape:(100, 99)
+threshold for selecting:1107.790147277774
+total ranking r = 98
+the number of space for current task:98
+the new increased space:0, the threshold for new space:99
+activation shape:(100, 300)
+space shape:(100, 94)
+threshold for selecting:41.408150314056
+total ranking r = 91
+the number of space for current task:91
+the new increased space:0, the threshold for new space:94
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+current testing task:pmnist-5
+current testing task:pmnist-6
+current testing task:pmnist-7
+current testing task:pmnist-8
+current testing task:pmnist-9
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.4%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.1%  97.4%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  97.2%  97.4%  97.5%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.4%  97.1%  97.3%  97.5%  97.6%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.5%  97.1%  97.2%  97.5%  97.4%  97.5%   0.0%   0.0%   0.0%
+ 97.2%  96.5%  97.0%  97.1%  97.4%  97.3%  97.5%  97.3%   0.0%   0.0%
+ 97.2%  96.5%  97.0%  97.1%  97.3%  97.4%  97.4%  97.3%  97.3%   0.0%
+ 97.2%  96.3%  96.9%  97.0%  97.3%  97.3%  97.4%  97.3%  97.3%  97.3%
+--------------------------------------------------
+Task Order : [0 1 2 3 4 5 6 7 8 9]
+Final Avg Accuracy: 97.15%
+Backward transfer: -0.35%
+[Elapsed time = 6454562.9 ms]
+--------------------------------------------------
+====================================================================================================
+Arguments =
+Namespace(batch_size_test=64, batch_size_train=10, gpm_thro=0.94, lr=0.01, lr_factor=2, lr_min=1e-05, lr_patience=6, mixup_alpha=20, mixup_weight=0.01, momentum=0.9, n_epochs=5, n_hidden=100, n_outputs=10, n_tasks=10, pc_valid=0.1, savename='./log/DFTRGP/', seed=3)
+====================================================================================================
+****************************************************************************************************
+Task  0 (pmnist-0)
+****************************************************************************************************
+----------------------------------------
+Task ID :0 | Learning Rate : 0.01
+----------------------------------------
+Model parameters ---
+----------------------------------------
+Epoch   1 | Train: loss=0.169, acc= 95.3% | time=35778.8ms |
+ Valid: loss=0.164, acc= 95.6% |
+Epoch   2 | Train: loss=0.119, acc= 96.8% | time=36620.4ms |
+ Valid: loss=0.123, acc= 96.6% |
+Epoch   3 | Train: loss=0.090, acc= 97.6% | time=34331.0ms |
+ Valid: loss=0.102, acc= 97.1% |
+Epoch   4 | Train: loss=0.073, acc= 98.1% | time=34937.4ms |
+ Valid: loss=0.094, acc= 97.3% |
+Epoch   5 | Train: loss=0.060, acc= 98.4% | time=40076.8ms |
+ Valid: loss=0.082, acc= 97.7% |
+----------------------------------------
+Test: loss=0.080 , acc= 97.7%
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  1 (pmnist-1)
+****************************************************************************************************
+----------------------------------------
+Task ID :1 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:1.5958298444747925, threshold for regime 1:0.9329819679260254
+Task:0, layer:1, space shape:(100, 64)
+Task:0, Layer:1, project_norm:1.2825864553451538, threshold for regime 1:0.2769182682037354
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:0.766099214553833, threshold for regime 1:0.15702840089797976
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+----------------------------------------
+space1 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.132, acc= 96.4% | time=85561.5ms |
+ Valid: loss=0.134, acc= 96.3% |
+Epoch   2 | Train: loss=0.099, acc= 97.3% | time=85430.9ms |
+ Valid: loss=0.107, acc= 97.0% |
+Epoch   3 | Train: loss=0.082, acc= 97.8% | time=83356.0ms |
+ Valid: loss=0.098, acc= 97.3% |
+Epoch   4 | Train: loss=0.066, acc= 98.3% | time=84959.5ms |
+ Valid: loss=0.085, acc= 97.7% |
+Epoch   5 | Train: loss=0.055, acc= 98.6% | time=95064.9ms |
+ Valid: loss=0.077, acc= 97.8% |
+Test: loss=0.078 , acc= 97.6%
+activation shape:(784, 300)
+space shape:(784, 70)
+threshold for selecting:209301.69848055486
+total ranking r = 131
+the number of space for current task:131
+the new increased space:79, the threshold for new space:70
+activation shape:(100, 300)
+space shape:(100, 64)
+threshold for selecting:16122.940861520416
+total ranking r = 88
+the number of space for current task:88
+the new increased space:23, the threshold for new space:64
+activation shape:(100, 300)
+space shape:(100, 51)
+threshold for selecting:2178.1549574649544
+total ranking r = 75
+the number of space for current task:75
+the new increased space:23, the threshold for new space:51
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  2 (pmnist-2)
+****************************************************************************************************
+----------------------------------------
+Task ID :2 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:1.717037320137024, threshold for regime 1:0.9509594917297364
+Task:0, layer:1, space shape:(100, 64)
+Task:0, Layer:1, project_norm:1.675102710723877, threshold for regime 1:0.3512467384338379
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:0.888327419757843, threshold for regime 1:0.18291512727737427
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 131)
+Task:1, Layer:0, project_norm:2.0849125385284424, threshold for regime 1:0.9509594917297364
+Task:1, layer:1, space shape:(100, 88)
+Task:1, Layer:1, project_norm:1.737565040588379, threshold for regime 1:0.3512467384338379
+Task:1, layer:2, space shape:(100, 75)
+Task:1, Layer:2, project_norm:0.9074872732162476, threshold for regime 1:0.18291512727737427
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[1]
+Layer:1, selected task ID:[1]
+Layer:2, selected task ID:[1]
+----------------------------------------
+space1 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.130, acc= 96.5% | time=89329.5ms |
+ Valid: loss=0.131, acc= 96.4% |
+Epoch   2 | Train: loss=0.097, acc= 97.3% | time=98717.1ms |
+ Valid: loss=0.104, acc= 96.9% |
+Epoch   3 | Train: loss=0.082, acc= 97.8% | time=87671.5ms |
+ Valid: loss=0.098, acc= 97.3% |
+Epoch   4 | Train: loss=0.066, acc= 98.2% | time=85063.8ms |
+ Valid: loss=0.083, acc= 97.8% |
+Epoch   5 | Train: loss=0.061, acc= 98.5% | time=91073.0ms |
+ Valid: loss=0.083, acc= 97.8% |
+Test: loss=0.081 , acc= 97.6%
+activation shape:(784, 300)
+space shape:(784, 149)
+threshold for selecting:186697.62444740534
+total ranking r = 198
+the number of space for current task:198
+the new increased space:78, the threshold for new space:149
+activation shape:(100, 300)
+space shape:(100, 87)
+threshold for selecting:6075.069746706868
+total ranking r = 96
+the number of space for current task:96
+the new increased space:9, the threshold for new space:87
+activation shape:(100, 300)
+space shape:(100, 74)
+threshold for selecting:853.095018575681
+total ranking r = 84
+the number of space for current task:84
+the new increased space:10, the threshold for new space:74
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  3 (pmnist-3)
+****************************************************************************************************
+----------------------------------------
+Task ID :3 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:2.07057785987854, threshold for regime 1:1.1872282028198242
+Task:0, layer:1, space shape:(100, 64)
+Task:0, Layer:1, project_norm:2.311253070831299, threshold for regime 1:0.499458122253418
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:1.3729864358901978, threshold for regime 1:0.28250582218170167
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 131)
+Task:1, Layer:0, project_norm:2.598078727722168, threshold for regime 1:1.1872282028198242
+Task:1, layer:1, space shape:(100, 88)
+Task:1, Layer:1, project_norm:2.464151382446289, threshold for regime 1:0.499458122253418
+Task:1, layer:2, space shape:(100, 75)
+Task:1, Layer:2, project_norm:1.4026176929473877, threshold for regime 1:0.28250582218170167
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:3.2410378456115723, threshold for regime 1:1.1872282028198242
+Task:2, layer:1, space shape:(100, 96)
+Task:2, Layer:1, project_norm:2.483224630355835, threshold for regime 1:0.499458122253418
+Task:2, layer:2, space shape:(100, 84)
+Task:2, Layer:2, project_norm:1.405350685119629, threshold for regime 1:0.28250582218170167
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[1 2]
+Layer:1, selected task ID:[1 2]
+Layer:2, selected task ID:[1 2]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.145, acc= 96.1% | time=128486.1ms |
+ Valid: loss=0.148, acc= 96.0% |
+Epoch   2 | Train: loss=0.101, acc= 97.1% | time=119538.5ms |
+ Valid: loss=0.111, acc= 96.8% |
+Epoch   3 | Train: loss=0.091, acc= 97.7% | time=124983.7ms |
+ Valid: loss=0.105, acc= 97.2% |
+Epoch   4 | Train: loss=0.067, acc= 98.1% | time=127937.1ms |
+ Valid: loss=0.089, acc= 97.5% |
+Epoch   5 | Train: loss=0.058, acc= 98.4% | time=123831.9ms |
+ Valid: loss=0.084, acc= 97.7% |
+Test: loss=0.084 , acc= 97.4%
+activation shape:(784, 300)
+space shape:(784, 227)
+threshold for selecting:165511.40773417056
+total ranking r = 269
+the number of space for current task:269
+the new increased space:72, the threshold for new space:227
+activation shape:(100, 300)
+space shape:(100, 96)
+threshold for selecting:1066.8587422720739
+total ranking r = 98
+the number of space for current task:98
+the new increased space:2, the threshold for new space:96
+activation shape:(100, 300)
+space shape:(100, 84)
+threshold for selecting:317.56822817269494
+total ranking r = 90
+the number of space for current task:90
+the new increased space:5, the threshold for new space:84
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.4%  97.3%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  4 (pmnist-4)
+****************************************************************************************************
+----------------------------------------
+Task ID :4 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:2.5595269203186035, threshold for regime 1:1.5368859291076662
+Task:0, layer:1, space shape:(100, 64)
+Task:0, Layer:1, project_norm:3.5758421421051025, threshold for regime 1:0.7599913120269776
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:2.1139495372772217, threshold for regime 1:0.4328575134277344
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 131)
+Task:1, Layer:0, project_norm:3.329707622528076, threshold for regime 1:1.5368859291076662
+Task:1, layer:1, space shape:(100, 88)
+Task:1, Layer:1, project_norm:3.7426722049713135, threshold for regime 1:0.7599913120269776
+Task:1, layer:2, space shape:(100, 75)
+Task:1, Layer:2, project_norm:2.1454877853393555, threshold for regime 1:0.4328575134277344
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:4.066335678100586, threshold for regime 1:1.5368859291076662
+Task:2, layer:1, space shape:(100, 96)
+Task:2, Layer:1, project_norm:3.772228479385376, threshold for regime 1:0.7599913120269776
+Task:2, layer:2, space shape:(100, 84)
+Task:2, Layer:2, project_norm:2.1556270122528076, threshold for regime 1:0.4328575134277344
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 269)
+Task:3, Layer:0, project_norm:4.6116533279418945, threshold for regime 1:1.5368859291076662
+Task:3, layer:1, space shape:(100, 98)
+Task:3, Layer:1, project_norm:3.79414701461792, threshold for regime 1:0.7599913120269776
+Task:3, layer:2, space shape:(100, 90)
+Task:3, Layer:2, project_norm:2.1584270000457764, threshold for regime 1:0.4328575134277344
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[2 3]
+Layer:1, selected task ID:[2 3]
+Layer:2, selected task ID:[2 3]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.131, acc= 96.3% | time=130169.3ms |
+ Valid: loss=0.134, acc= 96.3% |
+Epoch   2 | Train: loss=0.105, acc= 97.3% | time=119821.0ms |
+ Valid: loss=0.117, acc= 96.8% |
+Epoch   3 | Train: loss=0.080, acc= 97.7% | time=121856.0ms |
+ Valid: loss=0.098, acc= 97.0% |
+Epoch   4 | Train: loss=0.074, acc= 98.1% | time=120715.1ms |
+ Valid: loss=0.094, acc= 97.5% |
+Epoch   5 | Train: loss=0.059, acc= 98.5% | time=127631.4ms |
+ Valid: loss=0.083, acc= 97.7% |
+Test: loss=0.082 , acc= 97.8%
+activation shape:(784, 300)
+space shape:(784, 299)
+threshold for selecting:140438.27156156395
+total ranking r = 331
+the number of space for current task:331
+the new increased space:71, the threshold for new space:299
+activation shape:(100, 300)
+space shape:(100, 98)
+threshold for selecting:625.8105042958632
+total ranking r = 97
+the number of space for current task:97
+the new increased space:1, the threshold for new space:98
+activation shape:(100, 300)
+space shape:(100, 89)
+threshold for selecting:185.82526098762264
+total ranking r = 90
+the number of space for current task:90
+the new increased space:4, the threshold for new space:89
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.4%  97.3%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.3%  97.2%  97.3%  97.8%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  5 (pmnist-5)
+****************************************************************************************************
+----------------------------------------
+Task ID :5 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:1.6668447256088257, threshold for regime 1:0.9271503448486329
+Task:0, layer:1, space shape:(100, 64)
+Task:0, Layer:1, project_norm:2.0306835174560547, threshold for regime 1:0.44323086738586426
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:1.0585359334945679, threshold for regime 1:0.2198119401931763
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 131)
+Task:1, Layer:0, project_norm:2.0053372383117676, threshold for regime 1:0.9271503448486329
+Task:1, layer:1, space shape:(100, 88)
+Task:1, Layer:1, project_norm:2.1852056980133057, threshold for regime 1:0.44323086738586426
+Task:1, layer:2, space shape:(100, 75)
+Task:1, Layer:2, project_norm:1.0847645998001099, threshold for regime 1:0.2198119401931763
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:2.4556376934051514, threshold for regime 1:0.9271503448486329
+Task:2, layer:1, space shape:(100, 96)
+Task:2, Layer:1, project_norm:2.2042031288146973, threshold for regime 1:0.44323086738586426
+Task:2, layer:2, space shape:(100, 84)
+Task:2, Layer:2, project_norm:1.0908203125, threshold for regime 1:0.2198119401931763
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 269)
+Task:3, Layer:0, project_norm:2.796359062194824, threshold for regime 1:0.9271503448486329
+Task:3, layer:1, space shape:(100, 98)
+Task:3, Layer:1, project_norm:2.203566312789917, threshold for regime 1:0.44323086738586426
+Task:3, layer:2, space shape:(100, 90)
+Task:3, Layer:2, project_norm:1.0935800075531006, threshold for regime 1:0.2198119401931763
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:4, layer:0, space shape:(784, 331)
+Task:4, Layer:0, project_norm:3.0142505168914795, threshold for regime 1:0.9271503448486329
+Task:4, layer:1, space shape:(100, 97)
+Task:4, Layer:1, project_norm:2.193244695663452, threshold for regime 1:0.44323086738586426
+Task:4, layer:2, space shape:(100, 90)
+Task:4, Layer:2, project_norm:1.093347191810608, threshold for regime 1:0.2198119401931763
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[3 4]
+Layer:1, selected task ID:[3 2]
+Layer:2, selected task ID:[4 3]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.152, acc= 95.8% | time=130217.7ms |
+ Valid: loss=0.161, acc= 95.5% |
+Epoch   2 | Train: loss=0.110, acc= 96.9% | time=121061.4ms |
+ Valid: loss=0.124, acc= 96.6% |
+Epoch   3 | Train: loss=0.085, acc= 97.7% | time=117408.8ms |
+ Valid: loss=0.102, acc= 97.2% |
+Epoch   4 | Train: loss=0.075, acc= 98.0% | time=123899.1ms |
+ Valid: loss=0.097, acc= 97.5% |
+Epoch   5 | Train: loss=0.064, acc= 98.3% | time=124222.8ms |
+ Valid: loss=0.085, acc= 97.7% |
+Test: loss=0.089 , acc= 97.3%
+activation shape:(784, 300)
+space shape:(784, 370)
+threshold for selecting:117117.76681281626
+total ranking r = 394
+the number of space for current task:394
+the new increased space:66, the threshold for new space:370
+activation shape:(100, 300)
+space shape:(100, 99)
+threshold for selecting:217.75959089609387
+total ranking r = 98
+the number of space for current task:98
+the new increased space:0, the threshold for new space:99
+activation shape:(100, 300)
+space shape:(100, 93)
+threshold for selecting:89.94835827772567
+total ranking r = 93
+the number of space for current task:93
+the new increased space:1, the threshold for new space:93
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+current testing task:pmnist-5
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.4%  97.3%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.3%  97.2%  97.3%  97.8%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.1%  97.1%  97.2%  97.7%  97.3%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  6 (pmnist-6)
+****************************************************************************************************
+----------------------------------------
+Task ID :6 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:1.610535979270935, threshold for regime 1:0.9210795402526856
+Task:0, layer:1, space shape:(100, 64)
+Task:0, Layer:1, project_norm:2.1118950843811035, threshold for regime 1:0.46115045547485356
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:1.1304996013641357, threshold for regime 1:0.23484318256378175
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 131)
+Task:1, Layer:0, project_norm:1.958744764328003, threshold for regime 1:0.9210795402526856
+Task:1, layer:1, space shape:(100, 88)
+Task:1, Layer:1, project_norm:2.2724390029907227, threshold for regime 1:0.46115045547485356
+Task:1, layer:2, space shape:(100, 75)
+Task:1, Layer:2, project_norm:1.158840537071228, threshold for regime 1:0.23484318256378175
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:2.3815293312072754, threshold for regime 1:0.9210795402526856
+Task:2, layer:1, space shape:(100, 96)
+Task:2, Layer:1, project_norm:2.3001210689544678, threshold for regime 1:0.46115045547485356
+Task:2, layer:2, space shape:(100, 84)
+Task:2, Layer:2, project_norm:1.1653430461883545, threshold for regime 1:0.23484318256378175
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 269)
+Task:3, Layer:0, project_norm:2.712963819503784, threshold for regime 1:0.9210795402526856
+Task:3, layer:1, space shape:(100, 98)
+Task:3, Layer:1, project_norm:2.304189443588257, threshold for regime 1:0.46115045547485356
+Task:3, layer:2, space shape:(100, 90)
+Task:3, Layer:2, project_norm:1.1683225631713867, threshold for regime 1:0.23484318256378175
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:4, layer:0, space shape:(784, 331)
+Task:4, Layer:0, project_norm:3.042482614517212, threshold for regime 1:0.9210795402526856
+Task:4, layer:1, space shape:(100, 97)
+Task:4, Layer:1, project_norm:2.2865712642669678, threshold for regime 1:0.46115045547485356
+Task:4, layer:2, space shape:(100, 90)
+Task:4, Layer:2, project_norm:1.1695054769515991, threshold for regime 1:0.23484318256378175
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:5, layer:0, space shape:(784, 394)
+Task:5, Layer:0, project_norm:3.3261523246765137, threshold for regime 1:0.9210795402526856
+Task:5, layer:1, space shape:(100, 98)
+Task:5, Layer:1, project_norm:2.298182249069214, threshold for regime 1:0.46115045547485356
+Task:5, layer:2, space shape:(100, 93)
+Task:5, Layer:2, project_norm:1.1706472635269165, threshold for regime 1:0.23484318256378175
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[4 5]
+Layer:1, selected task ID:[2 3]
+Layer:2, selected task ID:[4 5]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.138, acc= 96.0% | time=115725.0ms |
+ Valid: loss=0.142, acc= 96.0% |
+Epoch   2 | Train: loss=0.097, acc= 97.3% | time=134080.0ms |
+ Valid: loss=0.108, acc= 96.8% |
+Epoch   3 | Train: loss=0.083, acc= 97.9% | time=128468.5ms |
+ Valid: loss=0.101, acc= 97.1% |
+Epoch   4 | Train: loss=0.074, acc= 98.1% | time=128662.7ms |
+ Valid: loss=0.095, acc= 97.3% |
+Epoch   5 | Train: loss=0.063, acc= 98.4% | time=132880.2ms |
+ Valid: loss=0.086, acc= 97.4% |
+Test: loss=0.089 , acc= 97.4%
+activation shape:(784, 300)
+space shape:(784, 436)
+threshold for selecting:105970.75367742777
+total ranking r = 449
+the number of space for current task:449
+the new increased space:59, the threshold for new space:436
+activation shape:(100, 300)
+space shape:(100, 99)
+threshold for selecting:246.31493450725975
+total ranking r = 98
+the number of space for current task:98
+the new increased space:0, the threshold for new space:99
+activation shape:(100, 300)
+space shape:(100, 94)
+threshold for selecting:74.74190312460996
+total ranking r = 93
+the number of space for current task:93
+the new increased space:2, the threshold for new space:94
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+current testing task:pmnist-5
+current testing task:pmnist-6
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.4%  97.3%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.3%  97.2%  97.3%  97.8%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.1%  97.1%  97.2%  97.7%  97.3%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.0%  96.9%  97.3%  97.7%  97.2%  97.4%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  7 (pmnist-7)
+****************************************************************************************************
+----------------------------------------
+Task ID :7 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:3.1079392433166504, threshold for regime 1:1.8949771881103517
+Task:0, layer:1, space shape:(100, 64)
+Task:0, Layer:1, project_norm:4.842018127441406, threshold for regime 1:1.0393227577209474
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:3.4159302711486816, threshold for regime 1:0.698453950881958
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 131)
+Task:1, Layer:0, project_norm:4.025089740753174, threshold for regime 1:1.8949771881103517
+Task:1, layer:1, space shape:(100, 88)
+Task:1, Layer:1, project_norm:5.130359172821045, threshold for regime 1:1.0393227577209474
+Task:1, layer:2, space shape:(100, 75)
+Task:1, Layer:2, project_norm:3.4678754806518555, threshold for regime 1:0.698453950881958
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:4.7381463050842285, threshold for regime 1:1.8949771881103517
+Task:2, layer:1, space shape:(100, 96)
+Task:2, Layer:1, project_norm:5.184373378753662, threshold for regime 1:1.0393227577209474
+Task:2, layer:2, space shape:(100, 84)
+Task:2, Layer:2, project_norm:3.4767630100250244, threshold for regime 1:0.698453950881958
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 269)
+Task:3, Layer:0, project_norm:5.6130523681640625, threshold for regime 1:1.8949771881103517
+Task:3, layer:1, space shape:(100, 98)
+Task:3, Layer:1, project_norm:5.194590091705322, threshold for regime 1:1.0393227577209474
+Task:3, layer:2, space shape:(100, 90)
+Task:3, Layer:2, project_norm:3.480597972869873, threshold for regime 1:0.698453950881958
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:4, layer:0, space shape:(784, 331)
+Task:4, Layer:0, project_norm:6.154480934143066, threshold for regime 1:1.8949771881103517
+Task:4, layer:1, space shape:(100, 97)
+Task:4, Layer:1, project_norm:5.157316207885742, threshold for regime 1:1.0393227577209474
+Task:4, layer:2, space shape:(100, 90)
+Task:4, Layer:2, project_norm:3.479372501373291, threshold for regime 1:0.698453950881958
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:5, layer:0, space shape:(784, 394)
+Task:5, Layer:0, project_norm:6.577711582183838, threshold for regime 1:1.8949771881103517
+Task:5, layer:1, space shape:(100, 98)
+Task:5, Layer:1, project_norm:5.180613994598389, threshold for regime 1:1.0393227577209474
+Task:5, layer:2, space shape:(100, 93)
+Task:5, Layer:2, project_norm:3.4848122596740723, threshold for regime 1:0.698453950881958
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:6, layer:0, space shape:(784, 449)
+Task:6, Layer:0, project_norm:7.000159740447998, threshold for regime 1:1.8949771881103517
+Task:6, layer:1, space shape:(100, 98)
+Task:6, Layer:1, project_norm:5.190395832061768, threshold for regime 1:1.0393227577209474
+Task:6, layer:2, space shape:(100, 93)
+Task:6, Layer:2, project_norm:3.4843051433563232, threshold for regime 1:0.698453950881958
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[5 6]
+Layer:1, selected task ID:[6 3]
+Layer:2, selected task ID:[6 5]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.138, acc= 96.3% | time=129645.6ms |
+ Valid: loss=0.142, acc= 96.3% |
+Epoch   2 | Train: loss=0.091, acc= 97.4% | time=129566.9ms |
+ Valid: loss=0.105, acc= 97.1% |
+Epoch   3 | Train: loss=0.077, acc= 97.8% | time=121969.6ms |
+ Valid: loss=0.094, acc= 97.4% |
+Epoch   4 | Train: loss=0.064, acc= 98.2% | time=127263.4ms |
+ Valid: loss=0.088, acc= 97.5% |
+Epoch   5 | Train: loss=0.060, acc= 98.5% | time=124082.0ms |
+ Valid: loss=0.088, acc= 97.6% |
+Test: loss=0.087 , acc= 97.5%
+activation shape:(784, 300)
+space shape:(784, 495)
+threshold for selecting:86673.45876270533
+total ranking r = 496
+the number of space for current task:496
+the new increased space:52, the threshold for new space:495
+activation shape:(100, 300)
+space shape:(100, 99)
+threshold for selecting:195.30292801582254
+total ranking r = 97
+the number of space for current task:97
+the new increased space:0, the threshold for new space:99
+activation shape:(100, 300)
+space shape:(100, 96)
+threshold for selecting:54.72921521955959
+total ranking r = 91
+the number of space for current task:91
+the new increased space:0, the threshold for new space:96
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+current testing task:pmnist-5
+current testing task:pmnist-6
+current testing task:pmnist-7
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.4%  97.3%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.3%  97.2%  97.3%  97.8%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.1%  97.1%  97.2%  97.7%  97.3%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.0%  96.9%  97.3%  97.7%  97.2%  97.4%   0.0%   0.0%   0.0%
+ 97.2%  96.8%  96.8%  97.2%  97.6%  97.2%  97.3%  97.5%   0.0%   0.0%
+****************************************************************************************************
+Task  8 (pmnist-8)
+****************************************************************************************************
+----------------------------------------
+Task ID :8 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:1.8806169033050537, threshold for regime 1:1.1257871627807619
+Task:0, layer:1, space shape:(100, 64)
+Task:0, Layer:1, project_norm:3.08534574508667, threshold for regime 1:0.6729159832000733
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:1.6571379899978638, threshold for regime 1:0.3447257518768311
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 131)
+Task:1, Layer:0, project_norm:2.5581023693084717, threshold for regime 1:1.1257871627807619
+Task:1, layer:1, space shape:(100, 88)
+Task:1, Layer:1, project_norm:3.3080527782440186, threshold for regime 1:0.6729159832000733
+Task:1, layer:2, space shape:(100, 75)
+Task:1, Layer:2, project_norm:1.701290488243103, threshold for regime 1:0.3447257518768311
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:2.9842517375946045, threshold for regime 1:1.1257871627807619
+Task:2, layer:1, space shape:(100, 96)
+Task:2, Layer:1, project_norm:3.3562281131744385, threshold for regime 1:0.6729159832000733
+Task:2, layer:2, space shape:(100, 84)
+Task:2, Layer:2, project_norm:1.7121624946594238, threshold for regime 1:0.3447257518768311
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 269)
+Task:3, Layer:0, project_norm:3.446390151977539, threshold for regime 1:1.1257871627807619
+Task:3, layer:1, space shape:(100, 98)
+Task:3, Layer:1, project_norm:3.3583362102508545, threshold for regime 1:0.6729159832000733
+Task:3, layer:2, space shape:(100, 90)
+Task:3, Layer:2, project_norm:1.7160077095031738, threshold for regime 1:0.3447257518768311
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:4, layer:0, space shape:(784, 331)
+Task:4, Layer:0, project_norm:3.8296444416046143, threshold for regime 1:1.1257871627807619
+Task:4, layer:1, space shape:(100, 97)
+Task:4, Layer:1, project_norm:3.3451199531555176, threshold for regime 1:0.6729159832000733
+Task:4, layer:2, space shape:(100, 90)
+Task:4, Layer:2, project_norm:1.7147150039672852, threshold for regime 1:0.3447257518768311
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:5, layer:0, space shape:(784, 394)
+Task:5, Layer:0, project_norm:4.102403163909912, threshold for regime 1:1.1257871627807619
+Task:5, layer:1, space shape:(100, 98)
+Task:5, Layer:1, project_norm:3.351994514465332, threshold for regime 1:0.6729159832000733
+Task:5, layer:2, space shape:(100, 93)
+Task:5, Layer:2, project_norm:1.7178425788879395, threshold for regime 1:0.3447257518768311
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:6, layer:0, space shape:(784, 449)
+Task:6, Layer:0, project_norm:4.306956768035889, threshold for regime 1:1.1257871627807619
+Task:6, layer:1, space shape:(100, 98)
+Task:6, Layer:1, project_norm:3.3587660789489746, threshold for regime 1:0.6729159832000733
+Task:6, layer:2, space shape:(100, 93)
+Task:6, Layer:2, project_norm:1.718756079673767, threshold for regime 1:0.3447257518768311
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:7, layer:0, space shape:(784, 496)
+Task:7, Layer:0, project_norm:4.501798629760742, threshold for regime 1:1.1257871627807619
+Task:7, layer:1, space shape:(100, 97)
+Task:7, Layer:1, project_norm:3.347053289413452, threshold for regime 1:0.6729159832000733
+Task:7, layer:2, space shape:(100, 91)
+Task:7, Layer:2, project_norm:1.7175002098083496, threshold for regime 1:0.3447257518768311
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[6 7]
+Layer:1, selected task ID:[3 6]
+Layer:2, selected task ID:[5 6]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.135, acc= 96.0% | time=129104.5ms |
+ Valid: loss=0.138, acc= 96.0% |
+Epoch   2 | Train: loss=0.104, acc= 97.2% | time=116675.3ms |
+ Valid: loss=0.114, acc= 96.7% |
+Epoch   3 | Train: loss=0.091, acc= 97.6% | time=128055.0ms |
+ Valid: loss=0.106, acc= 97.1% |
+Epoch   4 | Train: loss=0.072, acc= 98.2% | time=131400.2ms |
+ Valid: loss=0.093, acc= 97.3% |
+Epoch   5 | Train: loss=0.061, acc= 98.4% | time=131869.7ms |
+ Valid: loss=0.088, acc= 97.2% |
+Test: loss=0.085 , acc= 97.5%
+activation shape:(784, 300)
+space shape:(784, 547)
+threshold for selecting:67722.18406701088
+total ranking r = 539
+the number of space for current task:539
+the new increased space:47, the threshold for new space:547
+activation shape:(100, 300)
+space shape:(100, 99)
+threshold for selecting:285.68477532509496
+total ranking r = 97
+the number of space for current task:97
+the new increased space:0, the threshold for new space:99
+activation shape:(100, 300)
+space shape:(100, 96)
+threshold for selecting:36.78169811430507
+total ranking r = 93
+the number of space for current task:93
+the new increased space:0, the threshold for new space:96
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+current testing task:pmnist-5
+current testing task:pmnist-6
+current testing task:pmnist-7
+current testing task:pmnist-8
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.4%  97.3%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.3%  97.2%  97.3%  97.8%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.1%  97.1%  97.2%  97.7%  97.3%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.0%  96.9%  97.3%  97.7%  97.2%  97.4%   0.0%   0.0%   0.0%
+ 97.2%  96.8%  96.8%  97.2%  97.6%  97.2%  97.3%  97.5%   0.0%   0.0%
+ 97.2%  96.6%  96.8%  97.2%  97.5%  97.2%  97.3%  97.5%  97.5%   0.0%
+****************************************************************************************************
+Task  9 (pmnist-9)
+****************************************************************************************************
+----------------------------------------
+Task ID :9 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+excute gradient projection condition
+Task:0, layer:0, space shape:(784, 70)
+Task:0, Layer:0, project_norm:1.5278998613357544, threshold for regime 1:1.0835596084594727
+Task:0, layer:1, space shape:(100, 64)
+Task:0, Layer:1, project_norm:2.054978132247925, threshold for regime 1:0.4500934600830078
+Task:0, layer:2, space shape:(100, 51)
+Task:0, Layer:2, project_norm:1.4486961364746094, threshold for regime 1:0.2958066940307617
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:1, layer:0, space shape:(784, 131)
+Task:1, Layer:0, project_norm:2.1841490268707275, threshold for regime 1:1.0835596084594727
+Task:1, layer:1, space shape:(100, 88)
+Task:1, Layer:1, project_norm:2.209449291229248, threshold for regime 1:0.4500934600830078
+Task:1, layer:2, space shape:(100, 75)
+Task:1, Layer:2, project_norm:1.4729198217391968, threshold for regime 1:0.2958066940307617
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:2, layer:0, space shape:(784, 198)
+Task:2, Layer:0, project_norm:2.7586095333099365, threshold for regime 1:1.0835596084594727
+Task:2, layer:1, space shape:(100, 96)
+Task:2, Layer:1, project_norm:2.2291955947875977, threshold for regime 1:0.4500934600830078
+Task:2, layer:2, space shape:(100, 84)
+Task:2, Layer:2, project_norm:1.4756840467453003, threshold for regime 1:0.2958066940307617
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:3, layer:0, space shape:(784, 269)
+Task:3, Layer:0, project_norm:3.0735116004943848, threshold for regime 1:1.0835596084594727
+Task:3, layer:1, space shape:(100, 98)
+Task:3, Layer:1, project_norm:2.242710828781128, threshold for regime 1:0.4500934600830078
+Task:3, layer:2, space shape:(100, 90)
+Task:3, Layer:2, project_norm:1.4773656129837036, threshold for regime 1:0.2958066940307617
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:4, layer:0, space shape:(784, 331)
+Task:4, Layer:0, project_norm:3.4364285469055176, threshold for regime 1:1.0835596084594727
+Task:4, layer:1, space shape:(100, 97)
+Task:4, Layer:1, project_norm:2.2297608852386475, threshold for regime 1:0.4500934600830078
+Task:4, layer:2, space shape:(100, 90)
+Task:4, Layer:2, project_norm:1.4747791290283203, threshold for regime 1:0.2958066940307617
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:5, layer:0, space shape:(784, 394)
+Task:5, Layer:0, project_norm:3.6998043060302734, threshold for regime 1:1.0835596084594727
+Task:5, layer:1, space shape:(100, 98)
+Task:5, Layer:1, project_norm:2.246310234069824, threshold for regime 1:0.4500934600830078
+Task:5, layer:2, space shape:(100, 93)
+Task:5, Layer:2, project_norm:1.478082299232483, threshold for regime 1:0.2958066940307617
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:6, layer:0, space shape:(784, 449)
+Task:6, Layer:0, project_norm:4.063958644866943, threshold for regime 1:1.0835596084594727
+Task:6, layer:1, space shape:(100, 98)
+Task:6, Layer:1, project_norm:2.2481095790863037, threshold for regime 1:0.4500934600830078
+Task:6, layer:2, space shape:(100, 93)
+Task:6, Layer:2, project_norm:1.4779680967330933, threshold for regime 1:0.2958066940307617
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:7, layer:0, space shape:(784, 496)
+Task:7, Layer:0, project_norm:4.249252796173096, threshold for regime 1:1.0835596084594727
+Task:7, layer:1, space shape:(100, 97)
+Task:7, Layer:1, project_norm:2.2378101348876953, threshold for regime 1:0.4500934600830078
+Task:7, layer:2, space shape:(100, 91)
+Task:7, Layer:2, project_norm:1.4774410724639893, threshold for regime 1:0.2958066940307617
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+Task:8, layer:0, space shape:(784, 539)
+Task:8, Layer:0, project_norm:4.484952926635742, threshold for regime 1:1.0835596084594727
+Task:8, layer:1, space shape:(100, 97)
+Task:8, Layer:1, project_norm:2.225663900375366, threshold for regime 1:0.4500934600830078
+Task:8, layer:2, space shape:(100, 93)
+Task:8, Layer:2, project_norm:1.477918028831482, threshold for regime 1:0.2958066940307617
+Layer:0, Regime:2
+Layer:1, Regime:2
+Layer:2, Regime:2
+--------------------
+selected top-2 tasks:
+Layer:0, selected task ID:[7 8]
+Layer:1, selected task ID:[5 6]
+Layer:2, selected task ID:[6 5]
+----------------------------------------
+space1 is not None!
+space2 is not None!
+----------------------------------------
+Epoch   1 | Train: loss=0.136, acc= 96.3% | time=130283.4ms |
+ Valid: loss=0.139, acc= 96.4% |
+Epoch   2 | Train: loss=0.104, acc= 97.2% | time=125221.3ms |
+ Valid: loss=0.115, acc= 96.8% |
+Epoch   3 | Train: loss=0.086, acc= 97.6% | time=129029.0ms |
+ Valid: loss=0.103, acc= 97.1% |
+Epoch   4 | Train: loss=0.076, acc= 98.0% | time=143997.4ms |
+ Valid: loss=0.098, acc= 97.3% |
+Epoch   5 | Train: loss=0.061, acc= 98.4% | time=127327.0ms |
+ Valid: loss=0.085, acc= 97.5% |
+Test: loss=0.086 , acc= 97.5%
+activation shape:(784, 300)
+space shape:(784, 594)
+threshold for selecting:58514.07155918423
+total ranking r = 574
+the number of space for current task:574
+the new increased space:40, the threshold for new space:594
+activation shape:(100, 300)
+space shape:(100, 99)
+threshold for selecting:182.75921101071071
+total ranking r = 97
+the number of space for current task:97
+the new increased space:0, the threshold for new space:99
+activation shape:(100, 300)
+space shape:(100, 96)
+threshold for selecting:24.09649656179772
+total ranking r = 91
+the number of space for current task:91
+the new increased space:0, the threshold for new space:96
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+----------------------------------------
+current testing task:pmnist-0
+current testing task:pmnist-1
+current testing task:pmnist-2
+current testing task:pmnist-3
+current testing task:pmnist-4
+current testing task:pmnist-5
+current testing task:pmnist-6
+current testing task:pmnist-7
+current testing task:pmnist-8
+current testing task:pmnist-9
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.5%  97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.4%  97.3%  97.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.3%  97.2%  97.3%  97.8%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.1%  97.1%  97.2%  97.7%  97.3%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  97.0%  96.9%  97.3%  97.7%  97.2%  97.4%   0.0%   0.0%   0.0%
+ 97.2%  96.8%  96.8%  97.2%  97.6%  97.2%  97.3%  97.5%   0.0%   0.0%
+ 97.2%  96.6%  96.8%  97.2%  97.5%  97.2%  97.3%  97.5%  97.5%   0.0%
+ 97.2%  96.6%  96.8%  97.0%  97.6%  97.2%  97.3%  97.6%  97.5%  97.5%
+--------------------------------------------------
+Task Order : [0 1 2 3 4 5 6 7 8 9]
+Final Avg Accuracy: 97.23%
+Backward transfer: -0.34%
+[Elapsed time = 5694989.7 ms]
+--------------------------------------------------
+gpm_thro: 0.94
+Accuracy: [97.189, 97.148, 97.22500000000001]
+Backward transfer: [-0.26777777777777584, -0.34888888888888897, -0.3399999999999971]
+Final Avg Accuracy: 97.19%, std: 0.03
+Final Avg Backward transfer: -0.32%, std: 0.04

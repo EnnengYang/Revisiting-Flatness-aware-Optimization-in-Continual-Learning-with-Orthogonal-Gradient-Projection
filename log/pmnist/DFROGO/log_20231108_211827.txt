@@ -1,0 +1,2527 @@
+====================================================================================================
+Arguments =
+Namespace(batch_size_test=64, batch_size_train=10, gpm_thro=0.93, lr=0.01, lr_factor=2, lr_min=1e-05, lr_patience=6, mixup_alpha=20, mixup_weight=0.01, momentum=0.9, n_epochs=5, n_hidden=100, n_outputs=10, n_tasks=10, pc_valid=0.1, savename='./log/DFROGO/', seed=1, weight=1)
+====================================================================================================
+****************************************************************************************************
+Task  0 (pmnist-0)
+****************************************************************************************************
+----------------------------------------
+Task ID :0 | Learning Rate : 0.01
+----------------------------------------
+Model parameters ---
+0	lin1.weight	torch.Size([100, 784])
+1	lin1.scale	torch.Size([784, 784])
+2	lin2.weight	torch.Size([100, 100])
+3	lin2.scale	torch.Size([100, 100])
+4	fc1.weight	torch.Size([10, 100])
+5	fc1.scale	torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.188, acc= 94.5% | time=99963.9ms |
+ Valid: loss=0.179, acc= 94.9% |
+
+
+Epoch   2 | Train: loss=0.124, acc= 96.5% | time=85549.4ms |
+ Valid: loss=0.127, acc= 96.4% |
+
+
+Epoch   3 | Train: loss=0.095, acc= 97.5% | time=86767.7ms |
+ Valid: loss=0.108, acc= 97.0% |
+
+
+Epoch   4 | Train: loss=0.073, acc= 98.1% | time=93206.9ms |
+ Valid: loss=0.088, acc= 97.4% |
+
+
+Epoch   5 | Train: loss=0.062, acc= 98.4% | time=95172.5ms |
+ Valid: loss=0.083, acc= 97.5% |
+
+
+----------------------------------------
+Test: loss=0.083 , acc= 97.7%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 62/784
+Layer 2 : 61/100
+Layer 3 : 52/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  1 (pmnist-1)
+****************************************************************************************************
+----------------------------------------
+Task ID :1 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.136, acc= 96.2% | time=101705.9ms |
+ Valid: loss=0.135, acc= 96.4% |
+
+
+Frozen Space Size : 784, 62
+Compress Representation Size (784, 100) to (784, 9)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 61
+Compress Representation Size (100, 100) to (100, 11)
+Initiate Relaxing Space as (100, 6)
+Frozen Space Size : 100, 52
+Compress Representation Size (100, 10) to (100, 7)
+Initiate Relaxing Space as (100, 5)
+Epoch   2 | Train: loss=0.112, acc= 97.0% | time=153523.3ms |
+ Valid: loss=0.116, acc= 97.0% |
+
+
+Frozen Space Size : 784, 62
+Compress Representation Size (784, 100) to (784, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 55
+Compress Representation Size (100, 100) to (100, 14)
+Keep Relaxing Space as Previous (100, 6)
+Frozen Space Size : 100, 47
+Compress Representation Size (100, 10) to (100, 8)
+Keep Relaxing Space as Previous (100, 5)
+Epoch   3 | Train: loss=0.098, acc= 97.4% | time=138157.7ms |
+ Valid: loss=0.107, acc= 97.2% |
+
+
+Epoch   4 | Train: loss=0.089, acc= 97.7% | time=138865.6ms |
+ Valid: loss=0.101, acc= 97.2% |
+
+
+Epoch   5 | Train: loss=0.081, acc= 97.9% | time=176470.5ms |
+ Valid: loss=0.095, acc= 97.4% |
+
+
+Test: loss=0.097 , acc= 97.2%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 122/784
+Layer 2 : 84/100
+Layer 3 : 71/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  2 (pmnist-2)
+****************************************************************************************************
+----------------------------------------
+Task ID :2 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.154, acc= 95.7% | time=139228.2ms |
+ Valid: loss=0.150, acc= 95.8% |
+
+
+Frozen Space Size : 784, 122
+Compress Representation Size (784, 100) to (784, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 84
+Compress Representation Size (100, 100) to (100, 14)
+Initiate Relaxing Space as (100, 11)
+Frozen Space Size : 100, 71
+Compress Representation Size (100, 10) to (100, 6)
+Initiate Relaxing Space as (100, 6)
+Epoch   2 | Train: loss=0.129, acc= 96.5% | time=151662.2ms |
+ Valid: loss=0.130, acc= 96.6% |
+
+
+Frozen Space Size : 784, 122
+Compress Representation Size (784, 100) to (784, 10)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 73
+Compress Representation Size (100, 100) to (100, 11)
+Keep Relaxing Space as Previous (100, 11)
+Frozen Space Size : 100, 65
+Compress Representation Size (100, 10) to (100, 6)
+Expand Relaxing Space from (100, 6) to (100, 8)
+Epoch   3 | Train: loss=0.119, acc= 96.7% | time=144447.4ms |
+ Valid: loss=0.122, acc= 96.7% |
+
+
+Frozen Space Size : 784, 122
+Compress Representation Size (784, 100) to (784, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 73
+Compress Representation Size (100, 100) to (100, 13)
+Keep Relaxing Space as Previous (100, 11)
+Frozen Space Size : 100, 63
+Compress Representation Size (100, 10) to (100, 8)
+Keep Relaxing Space as Previous (100, 8)
+Epoch   4 | Train: loss=0.112, acc= 96.9% | time=139956.3ms |
+ Valid: loss=0.117, acc= 96.8% |
+
+
+Epoch   5 | Train: loss=0.106, acc= 97.1% | time=110041.6ms |
+ Valid: loss=0.113, acc= 97.1% |
+
+
+Test: loss=0.119 , acc= 96.7%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 180/784
+Layer 2 : 93/100
+Layer 3 : 80/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  96.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  3 (pmnist-3)
+****************************************************************************************************
+----------------------------------------
+Task ID :3 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.173, acc= 95.2% | time=67426.6ms |
+ Valid: loss=0.173, acc= 95.1% |
+
+
+Frozen Space Size : 784, 180
+Compress Representation Size (784, 100) to (784, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 93
+Compress Representation Size (100, 100) to (100, 13)
+Initiate Relaxing Space as (100, 12)
+Frozen Space Size : 100, 80
+Compress Representation Size (100, 10) to (100, 7)
+Initiate Relaxing Space as (100, 7)
+Epoch   2 | Train: loss=0.144, acc= 96.0% | time=95385.2ms |
+ Valid: loss=0.147, acc= 95.8% |
+
+
+Frozen Space Size : 784, 180
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 100) to (100, 14)
+Keep Relaxing Space as Previous (100, 12)
+Frozen Space Size : 100, 73
+Compress Representation Size (100, 10) to (100, 7)
+Expand Relaxing Space from (100, 7) to (100, 9)
+Epoch   3 | Train: loss=0.134, acc= 96.3% | time=108358.2ms |
+ Valid: loss=0.139, acc= 96.0% |
+
+
+Frozen Space Size : 784, 180
+Compress Representation Size (784, 100) to (784, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 100) to (100, 12)
+Expand Relaxing Space from (100, 12) to (100, 15)
+Frozen Space Size : 100, 71
+Compress Representation Size (100, 10) to (100, 7)
+Keep Relaxing Space as Previous (100, 9)
+Epoch   4 | Train: loss=0.129, acc= 96.5% | time=126709.2ms |
+ Valid: loss=0.135, acc= 96.1% |
+
+
+Frozen Space Size : 784, 180
+Compress Representation Size (784, 100) to (784, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 78
+Compress Representation Size (100, 100) to (100, 15)
+Expand Relaxing Space from (100, 15) to (100, 19)
+Frozen Space Size : 100, 71
+Compress Representation Size (100, 10) to (100, 8)
+Expand Relaxing Space from (100, 9) to (100, 12)
+Epoch   5 | Train: loss=0.127, acc= 96.5% | time=128709.7ms |
+ Valid: loss=0.133, acc= 96.2% |
+
+
+Frozen Space Size : 784, 180
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 74
+Compress Representation Size (100, 100) to (100, 13)
+Expand Relaxing Space from (100, 19) to (100, 20)
+Frozen Space Size : 100, 68
+Compress Representation Size (100, 10) to (100, 7)
+Keep Relaxing Space as Previous (100, 12)
+Test: loss=0.136 , acc= 96.1%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 235/784
+Layer 2 : 97/100
+Layer 3 : 84/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  96.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  96.9%  96.5%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  4 (pmnist-4)
+****************************************************************************************************
+----------------------------------------
+Task ID :4 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.179, acc= 94.9% | time=86972.9ms |
+ Valid: loss=0.172, acc= 95.2% |
+
+
+Frozen Space Size : 784, 235
+Compress Representation Size (784, 100) to (784, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 97
+Compress Representation Size (100, 100) to (100, 14)
+Initiate Relaxing Space as (100, 13)
+Frozen Space Size : 100, 84
+Compress Representation Size (100, 10) to (100, 8)
+Initiate Relaxing Space as (100, 8)
+Epoch   2 | Train: loss=0.149, acc= 95.8% | time=125546.0ms |
+ Valid: loss=0.147, acc= 95.9% |
+
+
+Frozen Space Size : 784, 235
+Compress Representation Size (784, 100) to (784, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 84
+Compress Representation Size (100, 100) to (100, 16)
+Expand Relaxing Space from (100, 13) to (100, 19)
+Frozen Space Size : 100, 76
+Compress Representation Size (100, 10) to (100, 8)
+Keep Relaxing Space as Previous (100, 8)
+Epoch   3 | Train: loss=0.141, acc= 96.1% | time=108852.1ms |
+ Valid: loss=0.141, acc= 96.1% |
+
+
+Frozen Space Size : 784, 235
+Compress Representation Size (784, 100) to (784, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 78
+Compress Representation Size (100, 100) to (100, 12)
+Keep Relaxing Space as Previous (100, 19)
+Frozen Space Size : 100, 76
+Compress Representation Size (100, 10) to (100, 6)
+Keep Relaxing Space as Previous (100, 8)
+Epoch   4 | Train: loss=0.131, acc= 96.4% | time=106067.4ms |
+ Valid: loss=0.134, acc= 96.2% |
+
+
+Epoch   5 | Train: loss=0.126, acc= 96.5% | time=103319.2ms |
+ Valid: loss=0.130, acc= 96.2% |
+
+
+Test: loss=0.136 , acc= 96.1%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 283/784
+Layer 2 : 98/100
+Layer 3 : 86/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  96.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  96.9%  96.5%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.9%  96.7%  96.3%  95.7%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  5 (pmnist-5)
+****************************************************************************************************
+----------------------------------------
+Task ID :5 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.190, acc= 94.6% | time=70160.9ms |
+ Valid: loss=0.184, acc= 94.6% |
+
+
+Frozen Space Size : 784, 283
+Compress Representation Size (784, 100) to (784, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 98
+Compress Representation Size (100, 100) to (100, 13)
+Initiate Relaxing Space as (100, 13)
+Frozen Space Size : 100, 86
+Compress Representation Size (100, 10) to (100, 7)
+Initiate Relaxing Space as (100, 7)
+Epoch   2 | Train: loss=0.159, acc= 95.6% | time=121814.1ms |
+ Valid: loss=0.159, acc= 95.4% |
+
+
+Frozen Space Size : 784, 283
+Compress Representation Size (784, 100) to (784, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 85
+Compress Representation Size (100, 100) to (100, 14)
+Keep Relaxing Space as Previous (100, 13)
+Frozen Space Size : 100, 79
+Compress Representation Size (100, 10) to (100, 7)
+Expand Relaxing Space from (100, 7) to (100, 9)
+Epoch   3 | Train: loss=0.150, acc= 95.8% | time=132714.9ms |
+ Valid: loss=0.152, acc= 95.4% |
+
+
+Frozen Space Size : 784, 283
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 85
+Compress Representation Size (100, 100) to (100, 13)
+Expand Relaxing Space from (100, 13) to (100, 16)
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 10) to (100, 7)
+Keep Relaxing Space as Previous (100, 9)
+Epoch   4 | Train: loss=0.144, acc= 96.0% | time=139287.2ms |
+ Valid: loss=0.148, acc= 95.7% |
+
+
+Frozen Space Size : 784, 283
+Compress Representation Size (784, 100) to (784, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 82
+Compress Representation Size (100, 100) to (100, 15)
+Keep Relaxing Space as Previous (100, 16)
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 10) to (100, 8)
+Keep Relaxing Space as Previous (100, 9)
+Epoch   5 | Train: loss=0.140, acc= 96.1% | time=132085.8ms |
+ Valid: loss=0.145, acc= 95.8% |
+
+
+Test: loss=0.147 , acc= 95.8%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 326/784
+Layer 2 : 99/100
+Layer 3 : 87/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  96.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  96.9%  96.5%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.9%  96.7%  96.3%  95.7%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.6%  96.5%  95.9%  95.5%  95.6%  95.8%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  6 (pmnist-6)
+****************************************************************************************************
+----------------------------------------
+Task ID :6 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.202, acc= 94.1% | time=77464.6ms |
+ Valid: loss=0.194, acc= 94.5% |
+
+
+Frozen Space Size : 784, 326
+Compress Representation Size (784, 100) to (784, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 99
+Compress Representation Size (100, 100) to (100, 14)
+Initiate Relaxing Space as (100, 13)
+Frozen Space Size : 100, 87
+Compress Representation Size (100, 10) to (100, 7)
+Initiate Relaxing Space as (100, 7)
+Epoch   2 | Train: loss=0.173, acc= 95.1% | time=106056.1ms |
+ Valid: loss=0.169, acc= 95.3% |
+
+
+Frozen Space Size : 784, 326
+Compress Representation Size (784, 100) to (784, 16)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 86
+Compress Representation Size (100, 100) to (100, 16)
+Expand Relaxing Space from (100, 13) to (100, 18)
+Frozen Space Size : 100, 80
+Compress Representation Size (100, 10) to (100, 8)
+Expand Relaxing Space from (100, 7) to (100, 10)
+Epoch   3 | Train: loss=0.163, acc= 95.4% | time=106455.2ms |
+ Valid: loss=0.160, acc= 95.5% |
+
+
+Frozen Space Size : 784, 326
+Compress Representation Size (784, 100) to (784, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 100) to (100, 15)
+Expand Relaxing Space from (100, 18) to (100, 21)
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 10) to (100, 8)
+Keep Relaxing Space as Previous (100, 10)
+Epoch   4 | Train: loss=0.157, acc= 95.6% | time=106781.4ms |
+ Valid: loss=0.156, acc= 95.6% |
+
+
+Frozen Space Size : 784, 326
+Compress Representation Size (784, 100) to (784, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 78
+Compress Representation Size (100, 100) to (100, 12)
+Keep Relaxing Space as Previous (100, 21)
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 10) to (100, 6)
+Keep Relaxing Space as Previous (100, 10)
+Epoch   5 | Train: loss=0.154, acc= 95.6% | time=127030.5ms |
+ Valid: loss=0.154, acc= 95.7% |
+
+
+Test: loss=0.157 , acc= 95.5%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 367/784
+Layer 2 : 100/100
+Layer 3 : 89/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  96.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  96.9%  96.5%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.9%  96.7%  96.3%  95.7%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.6%  96.5%  95.9%  95.5%  95.6%  95.8%   0.0%   0.0%   0.0%   0.0%
+ 96.4%  96.5%  95.6%  95.2%  95.5%  95.5%  95.5%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  7 (pmnist-7)
+****************************************************************************************************
+----------------------------------------
+Task ID :7 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.218, acc= 93.6% | time=94654.0ms |
+ Valid: loss=0.214, acc= 93.7% |
+
+
+Frozen Space Size : 784, 367
+Compress Representation Size (784, 100) to (784, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 100
+Compress Representation Size (100, 100) to (100, 16)
+Initiate Relaxing Space as (100, 16)
+Frozen Space Size : 100, 89
+Compress Representation Size (100, 10) to (100, 7)
+Initiate Relaxing Space as (100, 7)
+Epoch   2 | Train: loss=0.186, acc= 94.7% | time=136053.2ms |
+ Valid: loss=0.183, acc= 94.9% |
+
+
+Frozen Space Size : 784, 367
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 84
+Compress Representation Size (100, 100) to (100, 14)
+Expand Relaxing Space from (100, 16) to (100, 18)
+Frozen Space Size : 100, 82
+Compress Representation Size (100, 10) to (100, 8)
+Expand Relaxing Space from (100, 7) to (100, 10)
+Epoch   3 | Train: loss=0.174, acc= 95.2% | time=127730.9ms |
+ Valid: loss=0.174, acc= 95.2% |
+
+
+Frozen Space Size : 784, 367
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 82
+Compress Representation Size (100, 100) to (100, 15)
+Keep Relaxing Space as Previous (100, 18)
+Frozen Space Size : 100, 79
+Compress Representation Size (100, 10) to (100, 8)
+Expand Relaxing Space from (100, 10) to (100, 11)
+Epoch   4 | Train: loss=0.169, acc= 95.3% | time=110552.3ms |
+ Valid: loss=0.169, acc= 95.3% |
+
+
+Frozen Space Size : 784, 367
+Compress Representation Size (784, 100) to (784, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 82
+Compress Representation Size (100, 100) to (100, 15)
+Keep Relaxing Space as Previous (100, 18)
+Frozen Space Size : 100, 78
+Compress Representation Size (100, 10) to (100, 8)
+Keep Relaxing Space as Previous (100, 11)
+Epoch   5 | Train: loss=0.164, acc= 95.5% | time=105473.8ms |
+ Valid: loss=0.165, acc= 95.5% |
+
+
+Test: loss=0.170 , acc= 94.9%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+Skip Updating GPM for layer: 2
+Skip Updating GPM for layer: 3
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 402/784
+Layer 2 : 100/100
+Layer 3 : 89/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  96.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  96.9%  96.5%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.9%  96.7%  96.3%  95.7%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.6%  96.5%  95.9%  95.5%  95.6%  95.8%   0.0%   0.0%   0.0%   0.0%
+ 96.4%  96.5%  95.6%  95.2%  95.5%  95.5%  95.5%   0.0%   0.0%   0.0%
+ 96.2%  95.9%  95.2%  94.9%  95.3%  95.2%  95.2%  94.9%   0.0%   0.0%
+****************************************************************************************************
+Task  8 (pmnist-8)
+****************************************************************************************************
+----------------------------------------
+Task ID :8 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.243, acc= 92.9% | time=73354.1ms |
+ Valid: loss=0.237, acc= 93.2% |
+
+
+Frozen Space Size : 784, 402
+Compress Representation Size (784, 100) to (784, 15)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 100
+Compress Representation Size (100, 100) to (100, 18)
+Initiate Relaxing Space as (100, 18)
+Frozen Space Size : 100, 89
+Compress Representation Size (100, 10) to (100, 8)
+Initiate Relaxing Space as (100, 8)
+Epoch   2 | Train: loss=0.210, acc= 94.0% | time=115254.4ms |
+ Valid: loss=0.208, acc= 94.0% |
+
+
+Frozen Space Size : 784, 402
+Compress Representation Size (784, 100) to (784, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 82
+Compress Representation Size (100, 100) to (100, 16)
+Expand Relaxing Space from (100, 18) to (100, 21)
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 10) to (100, 8)
+Expand Relaxing Space from (100, 8) to (100, 11)
+Epoch   3 | Train: loss=0.197, acc= 94.4% | time=129005.6ms |
+ Valid: loss=0.195, acc= 94.5% |
+
+
+Frozen Space Size : 784, 402
+Compress Representation Size (784, 100) to (784, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 79
+Compress Representation Size (100, 100) to (100, 14)
+Expand Relaxing Space from (100, 21) to (100, 22)
+Frozen Space Size : 100, 78
+Compress Representation Size (100, 10) to (100, 7)
+Keep Relaxing Space as Previous (100, 11)
+Epoch   4 | Train: loss=0.191, acc= 94.6% | time=128584.3ms |
+ Valid: loss=0.191, acc= 94.6% |
+
+
+Frozen Space Size : 784, 402
+Compress Representation Size (784, 100) to (784, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 78
+Compress Representation Size (100, 100) to (100, 13)
+Expand Relaxing Space from (100, 22) to (100, 24)
+Frozen Space Size : 100, 78
+Compress Representation Size (100, 10) to (100, 7)
+Keep Relaxing Space as Previous (100, 11)
+Epoch   5 | Train: loss=0.188, acc= 94.7% | time=127305.8ms |
+ Valid: loss=0.188, acc= 94.8% |
+
+
+Frozen Space Size : 784, 402
+Compress Representation Size (784, 100) to (784, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 76
+Compress Representation Size (100, 100) to (100, 15)
+Keep Relaxing Space as Previous (100, 24)
+Frozen Space Size : 100, 78
+Compress Representation Size (100, 10) to (100, 8)
+Expand Relaxing Space from (100, 11) to (100, 13)
+Test: loss=0.187 , acc= 94.4%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+Skip Updating GPM for layer: 2
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 434/784
+Layer 2 : 100/100
+Layer 3 : 90/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  96.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  96.9%  96.5%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.9%  96.7%  96.3%  95.7%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.6%  96.5%  95.9%  95.5%  95.6%  95.8%   0.0%   0.0%   0.0%   0.0%
+ 96.4%  96.5%  95.6%  95.2%  95.5%  95.5%  95.5%   0.0%   0.0%   0.0%
+ 96.2%  95.9%  95.2%  94.9%  95.3%  95.2%  95.2%  94.9%   0.0%   0.0%
+ 95.9%  95.5%  94.8%  94.6%  94.8%  94.8%  94.8%  94.7%  94.4%   0.0%
+****************************************************************************************************
+Task  9 (pmnist-9)
+****************************************************************************************************
+----------------------------------------
+Task ID :9 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.255, acc= 92.5% | time=90261.8ms |
+ Valid: loss=0.247, acc= 93.0% |
+
+
+Frozen Space Size : 784, 434
+Compress Representation Size (784, 100) to (784, 16)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 100
+Compress Representation Size (100, 100) to (100, 19)
+Initiate Relaxing Space as (100, 19)
+Frozen Space Size : 100, 90
+Compress Representation Size (100, 10) to (100, 9)
+Initiate Relaxing Space as (100, 9)
+Epoch   2 | Train: loss=0.216, acc= 93.7% | time=110537.3ms |
+ Valid: loss=0.213, acc= 94.1% |
+
+
+Frozen Space Size : 784, 434
+Compress Representation Size (784, 100) to (784, 15)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 100) to (100, 16)
+Expand Relaxing Space from (100, 19) to (100, 22)
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 10) to (100, 8)
+Expand Relaxing Space from (100, 9) to (100, 12)
+Epoch   3 | Train: loss=0.203, acc= 94.2% | time=105284.3ms |
+ Valid: loss=0.201, acc= 94.4% |
+
+
+Frozen Space Size : 784, 434
+Compress Representation Size (784, 100) to (784, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 78
+Compress Representation Size (100, 100) to (100, 15)
+Keep Relaxing Space as Previous (100, 22)
+Frozen Space Size : 100, 78
+Compress Representation Size (100, 10) to (100, 7)
+Keep Relaxing Space as Previous (100, 12)
+Epoch   4 | Train: loss=0.193, acc= 94.4% | time=110405.1ms |
+ Valid: loss=0.193, acc= 94.5% |
+
+
+Epoch   5 | Train: loss=0.183, acc= 94.8% | time=122567.4ms |
+ Valid: loss=0.184, acc= 94.8% |
+
+
+Test: loss=0.188 , acc= 94.4%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+Skip Updating GPM for layer: 2
+Skip Updating GPM for layer: 3
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 464/784
+Layer 2 : 100/100
+Layer 3 : 90/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  96.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  96.9%  96.5%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.9%  96.7%  96.3%  95.7%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.6%  96.5%  95.9%  95.5%  95.6%  95.8%   0.0%   0.0%   0.0%   0.0%
+ 96.4%  96.5%  95.6%  95.2%  95.5%  95.5%  95.5%   0.0%   0.0%   0.0%
+ 96.2%  95.9%  95.2%  94.9%  95.3%  95.2%  95.2%  94.9%   0.0%   0.0%
+ 95.9%  95.5%  94.8%  94.6%  94.8%  94.8%  94.8%  94.7%  94.4%   0.0%
+ 95.7%  95.2%  94.5%  94.0%  94.3%  94.6%  94.3%  94.1%  94.0%  94.4%
+--------------------------------------------------
+Task Order : [0 1 2 3 4 5 6 7 8 9]
+Final Avg Accuracy: 94.53%
+Backward transfer: -1.48%
+[Elapsed time = 6012056.4 ms]
+--------------------------------------------------
+====================================================================================================
+Arguments =
+Namespace(batch_size_test=64, batch_size_train=10, gpm_thro=0.93, lr=0.01, lr_factor=2, lr_min=1e-05, lr_patience=6, mixup_alpha=20, mixup_weight=0.01, momentum=0.9, n_epochs=5, n_hidden=100, n_outputs=10, n_tasks=10, pc_valid=0.1, savename='./log/DFROGO/', seed=2, weight=1)
+====================================================================================================
+****************************************************************************************************
+Task  0 (pmnist-0)
+****************************************************************************************************
+----------------------------------------
+Task ID :0 | Learning Rate : 0.01
+----------------------------------------
+Model parameters ---
+0	lin1.weight	torch.Size([100, 784])
+1	lin1.scale	torch.Size([784, 784])
+2	lin2.weight	torch.Size([100, 100])
+3	lin2.scale	torch.Size([100, 100])
+4	fc1.weight	torch.Size([10, 100])
+5	fc1.scale	torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.185, acc= 94.9% | time=80060.5ms |
+ Valid: loss=0.177, acc= 95.1% |
+
+
+Epoch   2 | Train: loss=0.124, acc= 96.7% | time=75672.6ms |
+ Valid: loss=0.127, acc= 96.7% |
+
+
+Epoch   3 | Train: loss=0.091, acc= 97.5% | time=76329.4ms |
+ Valid: loss=0.104, acc= 97.1% |
+
+
+Epoch   4 | Train: loss=0.075, acc= 98.0% | time=86207.5ms |
+ Valid: loss=0.091, acc= 97.5% |
+
+
+Epoch   5 | Train: loss=0.062, acc= 98.4% | time=83923.1ms |
+ Valid: loss=0.083, acc= 97.8% |
+
+
+----------------------------------------
+Test: loss=0.082 , acc= 97.6%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 62/784
+Layer 2 : 65/100
+Layer 3 : 51/100
+----------------------------------------
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  1 (pmnist-1)
+****************************************************************************************************
+----------------------------------------
+Task ID :1 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.148, acc= 96.0% | time=77572.2ms |
+ Valid: loss=0.148, acc= 96.0% |
+
+
+Frozen Space Size : 784, 62
+Compress Representation Size (784, 100) to (784, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 65
+Compress Representation Size (100, 100) to (100, 14)
+Initiate Relaxing Space as (100, 7)
+Frozen Space Size : 100, 51
+Compress Representation Size (100, 10) to (100, 7)
+Initiate Relaxing Space as (100, 5)
+Epoch   2 | Train: loss=0.120, acc= 96.8% | time=106744.1ms |
+ Valid: loss=0.126, acc= 96.6% |
+
+
+Frozen Space Size : 784, 62
+Compress Representation Size (784, 100) to (784, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 58
+Compress Representation Size (100, 100) to (100, 16)
+Keep Relaxing Space as Previous (100, 7)
+Frozen Space Size : 100, 46
+Compress Representation Size (100, 10) to (100, 8)
+Keep Relaxing Space as Previous (100, 5)
+Epoch   3 | Train: loss=0.106, acc= 97.2% | time=107501.2ms |
+ Valid: loss=0.114, acc= 97.0% |
+
+
+Epoch   4 | Train: loss=0.095, acc= 97.5% | time=109950.7ms |
+ Valid: loss=0.107, acc= 97.1% |
+
+
+Epoch   5 | Train: loss=0.086, acc= 97.7% | time=125695.3ms |
+ Valid: loss=0.101, acc= 97.1% |
+
+
+Test: loss=0.098 , acc= 97.1%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 121/784
+Layer 2 : 85/100
+Layer 3 : 68/100
+----------------------------------------
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  2 (pmnist-2)
+****************************************************************************************************
+----------------------------------------
+Task ID :2 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.152, acc= 95.8% | time=87313.0ms |
+ Valid: loss=0.147, acc= 96.1% |
+
+
+Frozen Space Size : 784, 121
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 85
+Compress Representation Size (100, 100) to (100, 13)
+Initiate Relaxing Space as (100, 10)
+Frozen Space Size : 100, 68
+Compress Representation Size (100, 10) to (100, 8)
+Initiate Relaxing Space as (100, 7)
+Epoch   2 | Train: loss=0.127, acc= 96.6% | time=132386.2ms |
+ Valid: loss=0.126, acc= 96.7% |
+
+
+Frozen Space Size : 784, 121
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 75
+Compress Representation Size (100, 100) to (100, 13)
+Expand Relaxing Space from (100, 10) to (100, 14)
+Frozen Space Size : 100, 61
+Compress Representation Size (100, 10) to (100, 7)
+Keep Relaxing Space as Previous (100, 7)
+Epoch   3 | Train: loss=0.117, acc= 96.9% | time=130368.3ms |
+ Valid: loss=0.118, acc= 96.9% |
+
+
+Frozen Space Size : 784, 121
+Compress Representation Size (784, 100) to (784, 10)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 71
+Compress Representation Size (100, 100) to (100, 12)
+Keep Relaxing Space as Previous (100, 14)
+Frozen Space Size : 100, 61
+Compress Representation Size (100, 10) to (100, 6)
+Expand Relaxing Space from (100, 7) to (100, 8)
+Epoch   4 | Train: loss=0.113, acc= 97.0% | time=114343.8ms |
+ Valid: loss=0.115, acc= 96.9% |
+
+
+Frozen Space Size : 784, 121
+Compress Representation Size (784, 100) to (784, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 71
+Compress Representation Size (100, 100) to (100, 14)
+Keep Relaxing Space as Previous (100, 14)
+Frozen Space Size : 100, 60
+Compress Representation Size (100, 10) to (100, 8)
+Keep Relaxing Space as Previous (100, 8)
+Epoch   5 | Train: loss=0.110, acc= 97.1% | time=107069.3ms |
+ Valid: loss=0.112, acc= 97.0% |
+
+
+Test: loss=0.117 , acc= 96.8%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 178/784
+Layer 2 : 94/100
+Layer 3 : 77/100
+----------------------------------------
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  96.8%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  3 (pmnist-3)
+****************************************************************************************************
+----------------------------------------
+Task ID :3 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.166, acc= 95.3% | time=67436.9ms |
+ Valid: loss=0.166, acc= 95.4% |
+
+
+Frozen Space Size : 784, 178
+Compress Representation Size (784, 100) to (784, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 94
+Compress Representation Size (100, 100) to (100, 13)
+Initiate Relaxing Space as (100, 12)
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 10) to (100, 7)
+Initiate Relaxing Space as (100, 7)
+Epoch   2 | Train: loss=0.141, acc= 96.2% | time=100466.3ms |
+ Valid: loss=0.144, acc= 96.2% |
+
+
+Frozen Space Size : 784, 178
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 82
+Compress Representation Size (100, 100) to (100, 14)
+Keep Relaxing Space as Previous (100, 12)
+Frozen Space Size : 100, 70
+Compress Representation Size (100, 10) to (100, 7)
+Expand Relaxing Space from (100, 7) to (100, 9)
+Epoch   3 | Train: loss=0.130, acc= 96.5% | time=96150.0ms |
+ Valid: loss=0.135, acc= 96.3% |
+
+
+Frozen Space Size : 784, 178
+Compress Representation Size (784, 100) to (784, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 82
+Compress Representation Size (100, 100) to (100, 12)
+Keep Relaxing Space as Previous (100, 12)
+Frozen Space Size : 100, 68
+Compress Representation Size (100, 10) to (100, 6)
+Keep Relaxing Space as Previous (100, 9)
+Epoch   4 | Train: loss=0.124, acc= 96.6% | time=101059.0ms |
+ Valid: loss=0.130, acc= 96.4% |
+
+
+Epoch   5 | Train: loss=0.117, acc= 96.8% | time=93134.0ms |
+ Valid: loss=0.125, acc= 96.6% |
+
+
+Test: loss=0.125 , acc= 96.3%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 231/784
+Layer 2 : 97/100
+Layer 3 : 81/100
+----------------------------------------
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  96.8%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  96.9%  96.7%  96.3%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  4 (pmnist-4)
+****************************************************************************************************
+----------------------------------------
+Task ID :4 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.167, acc= 95.4% | time=62325.7ms |
+ Valid: loss=0.162, acc= 95.5% |
+
+
+Frozen Space Size : 784, 231
+Compress Representation Size (784, 100) to (784, 9)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 97
+Compress Representation Size (100, 100) to (100, 12)
+Initiate Relaxing Space as (100, 12)
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 10) to (100, 8)
+Initiate Relaxing Space as (100, 8)
+Epoch   2 | Train: loss=0.142, acc= 96.1% | time=100405.9ms |
+ Valid: loss=0.141, acc= 96.3% |
+
+
+Frozen Space Size : 784, 231
+Compress Representation Size (784, 100) to (784, 9)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 85
+Compress Representation Size (100, 100) to (100, 10)
+Expand Relaxing Space from (100, 12) to (100, 14)
+Frozen Space Size : 100, 73
+Compress Representation Size (100, 10) to (100, 7)
+Expand Relaxing Space from (100, 8) to (100, 9)
+Epoch   3 | Train: loss=0.134, acc= 96.4% | time=99982.7ms |
+ Valid: loss=0.134, acc= 96.4% |
+
+
+Frozen Space Size : 784, 231
+Compress Representation Size (784, 100) to (784, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 83
+Compress Representation Size (100, 100) to (100, 14)
+Expand Relaxing Space from (100, 14) to (100, 18)
+Frozen Space Size : 100, 72
+Compress Representation Size (100, 10) to (100, 6)
+Expand Relaxing Space from (100, 9) to (100, 10)
+Epoch   4 | Train: loss=0.129, acc= 96.5% | time=100788.1ms |
+ Valid: loss=0.131, acc= 96.6% |
+
+
+Frozen Space Size : 784, 231
+Compress Representation Size (784, 100) to (784, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 79
+Compress Representation Size (100, 100) to (100, 13)
+Expand Relaxing Space from (100, 18) to (100, 21)
+Frozen Space Size : 100, 71
+Compress Representation Size (100, 10) to (100, 6)
+Keep Relaxing Space as Previous (100, 10)
+Epoch   5 | Train: loss=0.127, acc= 96.6% | time=98380.7ms |
+ Valid: loss=0.130, acc= 96.5% |
+
+
+Frozen Space Size : 784, 231
+Compress Representation Size (784, 100) to (784, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 76
+Compress Representation Size (100, 100) to (100, 14)
+Keep Relaxing Space as Previous (100, 21)
+Frozen Space Size : 100, 71
+Compress Representation Size (100, 10) to (100, 8)
+Keep Relaxing Space as Previous (100, 10)
+Test: loss=0.132 , acc= 96.3%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 278/784
+Layer 2 : 98/100
+Layer 3 : 83/100
+----------------------------------------
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  96.8%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  96.9%  96.7%  96.3%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.0%  96.8%  96.2%  96.2%  96.3%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  5 (pmnist-5)
+****************************************************************************************************
+----------------------------------------
+Task ID :5 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.190, acc= 94.6% | time=69574.6ms |
+ Valid: loss=0.183, acc= 94.9% |
+
+
+Frozen Space Size : 784, 278
+Compress Representation Size (784, 100) to (784, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 98
+Compress Representation Size (100, 100) to (100, 15)
+Initiate Relaxing Space as (100, 15)
+Frozen Space Size : 100, 83
+Compress Representation Size (100, 10) to (100, 6)
+Initiate Relaxing Space as (100, 6)
+Epoch   2 | Train: loss=0.162, acc= 95.5% | time=99111.9ms |
+ Valid: loss=0.161, acc= 95.5% |
+
+
+Frozen Space Size : 784, 278
+Compress Representation Size (784, 100) to (784, 9)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 83
+Compress Representation Size (100, 100) to (100, 11)
+Keep Relaxing Space as Previous (100, 15)
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 10) to (100, 6)
+Expand Relaxing Space from (100, 6) to (100, 8)
+Epoch   3 | Train: loss=0.152, acc= 95.8% | time=89953.2ms |
+ Valid: loss=0.153, acc= 95.8% |
+
+
+Frozen Space Size : 784, 278
+Compress Representation Size (784, 100) to (784, 9)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 83
+Compress Representation Size (100, 100) to (100, 11)
+Expand Relaxing Space from (100, 15) to (100, 17)
+Frozen Space Size : 100, 75
+Compress Representation Size (100, 10) to (100, 6)
+Keep Relaxing Space as Previous (100, 8)
+Epoch   4 | Train: loss=0.147, acc= 96.0% | time=104286.2ms |
+ Valid: loss=0.150, acc= 95.8% |
+
+
+Frozen Space Size : 784, 278
+Compress Representation Size (784, 100) to (784, 16)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 100) to (100, 17)
+Expand Relaxing Space from (100, 17) to (100, 21)
+Frozen Space Size : 100, 75
+Compress Representation Size (100, 10) to (100, 7)
+Keep Relaxing Space as Previous (100, 8)
+Epoch   5 | Train: loss=0.145, acc= 96.0% | time=103493.2ms |
+ Valid: loss=0.148, acc= 95.8% |
+
+
+Frozen Space Size : 784, 278
+Compress Representation Size (784, 100) to (784, 10)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 100) to (100, 12)
+Keep Relaxing Space as Previous (100, 21)
+Frozen Space Size : 100, 75
+Compress Representation Size (100, 10) to (100, 6)
+Keep Relaxing Space as Previous (100, 8)
+Test: loss=0.149 , acc= 95.9%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 322/784
+Layer 2 : 99/100
+Layer 3 : 85/100
+----------------------------------------
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  96.8%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  96.9%  96.7%  96.3%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.0%  96.8%  96.2%  96.2%  96.3%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.9%  96.7%  96.0%  95.9%  95.9%  95.9%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  6 (pmnist-6)
+****************************************************************************************************
+----------------------------------------
+Task ID :6 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.217, acc= 93.9% | time=71459.8ms |
+ Valid: loss=0.203, acc= 94.4% |
+
+
+Frozen Space Size : 784, 322
+Compress Representation Size (784, 100) to (784, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 99
+Compress Representation Size (100, 100) to (100, 15)
+Initiate Relaxing Space as (100, 15)
+Frozen Space Size : 100, 85
+Compress Representation Size (100, 10) to (100, 8)
+Initiate Relaxing Space as (100, 8)
+Epoch   2 | Train: loss=0.182, acc= 94.9% | time=100374.5ms |
+ Valid: loss=0.173, acc= 95.2% |
+
+
+Frozen Space Size : 784, 322
+Compress Representation Size (784, 100) to (784, 15)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 84
+Compress Representation Size (100, 100) to (100, 16)
+Expand Relaxing Space from (100, 15) to (100, 20)
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 10) to (100, 8)
+Keep Relaxing Space as Previous (100, 8)
+Epoch   3 | Train: loss=0.171, acc= 95.3% | time=102391.4ms |
+ Valid: loss=0.164, acc= 95.5% |
+
+
+Frozen Space Size : 784, 322
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 79
+Compress Representation Size (100, 100) to (100, 15)
+Keep Relaxing Space as Previous (100, 20)
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 10) to (100, 8)
+Keep Relaxing Space as Previous (100, 8)
+Epoch   4 | Train: loss=0.161, acc= 95.6% | time=93927.3ms |
+ Valid: loss=0.156, acc= 95.7% |
+
+
+Epoch   5 | Train: loss=0.154, acc= 95.8% | time=89521.0ms |
+ Valid: loss=0.151, acc= 95.8% |
+
+
+Test: loss=0.157 , acc= 95.5%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+Skip Updating GPM for layer: 2
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 360/784
+Layer 2 : 99/100
+Layer 3 : 87/100
+----------------------------------------
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  96.8%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  96.9%  96.7%  96.3%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.0%  96.8%  96.2%  96.2%  96.3%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.9%  96.7%  96.0%  95.9%  95.9%  95.9%   0.0%   0.0%   0.0%   0.0%
+ 96.4%  96.3%  95.8%  95.6%  95.5%  95.5%  95.5%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  7 (pmnist-7)
+****************************************************************************************************
+----------------------------------------
+Task ID :7 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.241, acc= 92.9% | time=62402.1ms |
+ Valid: loss=0.240, acc= 93.0% |
+
+
+Frozen Space Size : 784, 360
+Compress Representation Size (784, 100) to (784, 15)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 99
+Compress Representation Size (100, 100) to (100, 15)
+Initiate Relaxing Space as (100, 15)
+Frozen Space Size : 100, 87
+Compress Representation Size (100, 10) to (100, 8)
+Initiate Relaxing Space as (100, 8)
+Epoch   2 | Train: loss=0.201, acc= 94.3% | time=100509.9ms |
+ Valid: loss=0.204, acc= 94.1% |
+
+
+Frozen Space Size : 784, 360
+Compress Representation Size (784, 100) to (784, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 84
+Compress Representation Size (100, 100) to (100, 14)
+Expand Relaxing Space from (100, 15) to (100, 18)
+Frozen Space Size : 100, 79
+Compress Representation Size (100, 10) to (100, 8)
+Expand Relaxing Space from (100, 8) to (100, 10)
+Epoch   3 | Train: loss=0.186, acc= 94.7% | time=97728.0ms |
+ Valid: loss=0.190, acc= 94.4% |
+
+
+Frozen Space Size : 784, 360
+Compress Representation Size (784, 100) to (784, 15)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 100) to (100, 16)
+Keep Relaxing Space as Previous (100, 18)
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 10) to (100, 8)
+Expand Relaxing Space from (100, 10) to (100, 11)
+Epoch   4 | Train: loss=0.180, acc= 94.9% | time=97728.4ms |
+ Valid: loss=0.185, acc= 94.7% |
+
+
+Frozen Space Size : 784, 360
+Compress Representation Size (784, 100) to (784, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 100) to (100, 12)
+Keep Relaxing Space as Previous (100, 18)
+Frozen Space Size : 100, 76
+Compress Representation Size (100, 10) to (100, 6)
+Keep Relaxing Space as Previous (100, 11)
+Epoch   5 | Train: loss=0.176, acc= 95.1% | time=102471.7ms |
+ Valid: loss=0.181, acc= 94.9% |
+
+
+Test: loss=0.182 , acc= 94.7%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 396/784
+Layer 2 : 100/100
+Layer 3 : 89/100
+----------------------------------------
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  96.8%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  96.9%  96.7%  96.3%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.0%  96.8%  96.2%  96.2%  96.3%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.9%  96.7%  96.0%  95.9%  95.9%  95.9%   0.0%   0.0%   0.0%   0.0%
+ 96.4%  96.3%  95.8%  95.6%  95.5%  95.5%  95.5%   0.0%   0.0%   0.0%
+ 95.9%  95.6%  95.3%  95.0%  95.2%  95.1%  95.0%  94.7%   0.0%   0.0%
+****************************************************************************************************
+Task  8 (pmnist-8)
+****************************************************************************************************
+----------------------------------------
+Task ID :8 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.234, acc= 93.1% | time=70376.7ms |
+ Valid: loss=0.226, acc= 93.4% |
+
+
+Frozen Space Size : 784, 396
+Compress Representation Size (784, 100) to (784, 15)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 100
+Compress Representation Size (100, 100) to (100, 17)
+Initiate Relaxing Space as (100, 17)
+Frozen Space Size : 100, 89
+Compress Representation Size (100, 10) to (100, 9)
+Initiate Relaxing Space as (100, 9)
+Epoch   2 | Train: loss=0.199, acc= 94.3% | time=104842.2ms |
+ Valid: loss=0.197, acc= 94.4% |
+
+
+Frozen Space Size : 784, 396
+Compress Representation Size (784, 100) to (784, 15)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 83
+Compress Representation Size (100, 100) to (100, 15)
+Expand Relaxing Space from (100, 17) to (100, 20)
+Frozen Space Size : 100, 80
+Compress Representation Size (100, 10) to (100, 8)
+Expand Relaxing Space from (100, 9) to (100, 12)
+Epoch   3 | Train: loss=0.186, acc= 94.6% | time=97543.8ms |
+ Valid: loss=0.186, acc= 94.9% |
+
+
+Frozen Space Size : 784, 396
+Compress Representation Size (784, 100) to (784, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 80
+Compress Representation Size (100, 100) to (100, 16)
+Keep Relaxing Space as Previous (100, 20)
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 10) to (100, 8)
+Keep Relaxing Space as Previous (100, 12)
+Epoch   4 | Train: loss=0.176, acc= 95.0% | time=99352.3ms |
+ Valid: loss=0.177, acc= 95.2% |
+
+
+Epoch   5 | Train: loss=0.167, acc= 95.3% | time=94160.1ms |
+ Valid: loss=0.170, acc= 95.4% |
+
+
+Test: loss=0.175 , acc= 94.6%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+Skip Updating GPM for layer: 2
+Skip Updating GPM for layer: 3
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 430/784
+Layer 2 : 100/100
+Layer 3 : 89/100
+----------------------------------------
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  96.8%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  96.9%  96.7%  96.3%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.0%  96.8%  96.2%  96.2%  96.3%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.9%  96.7%  96.0%  95.9%  95.9%  95.9%   0.0%   0.0%   0.0%   0.0%
+ 96.4%  96.3%  95.8%  95.6%  95.5%  95.5%  95.5%   0.0%   0.0%   0.0%
+ 95.9%  95.6%  95.3%  95.0%  95.2%  95.1%  95.0%  94.7%   0.0%   0.0%
+ 95.5%  95.4%  94.8%  94.7%  94.8%  94.9%  94.4%  94.2%  94.6%   0.0%
+****************************************************************************************************
+Task  9 (pmnist-9)
+****************************************************************************************************
+----------------------------------------
+Task ID :9 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.268, acc= 92.2% | time=64848.7ms |
+ Valid: loss=0.264, acc= 92.3% |
+
+
+Frozen Space Size : 784, 430
+Compress Representation Size (784, 100) to (784, 16)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 100
+Compress Representation Size (100, 100) to (100, 16)
+Initiate Relaxing Space as (100, 16)
+Frozen Space Size : 100, 89
+Compress Representation Size (100, 10) to (100, 8)
+Initiate Relaxing Space as (100, 8)
+Epoch   2 | Train: loss=0.229, acc= 93.4% | time=102033.2ms |
+ Valid: loss=0.227, acc= 93.5% |
+
+
+Frozen Space Size : 784, 430
+Compress Representation Size (784, 100) to (784, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 84
+Compress Representation Size (100, 100) to (100, 13)
+Expand Relaxing Space from (100, 16) to (100, 19)
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 10) to (100, 7)
+Expand Relaxing Space from (100, 8) to (100, 10)
+Epoch   3 | Train: loss=0.214, acc= 93.9% | time=93295.8ms |
+ Valid: loss=0.214, acc= 93.9% |
+
+
+Frozen Space Size : 784, 430
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 100) to (100, 13)
+Keep Relaxing Space as Previous (100, 19)
+Frozen Space Size : 100, 79
+Compress Representation Size (100, 10) to (100, 7)
+Keep Relaxing Space as Previous (100, 10)
+Epoch   4 | Train: loss=0.202, acc= 94.2% | time=102072.9ms |
+ Valid: loss=0.203, acc= 94.4% |
+
+
+Epoch   5 | Train: loss=0.194, acc= 94.5% | time=96033.9ms |
+ Valid: loss=0.197, acc= 94.5% |
+
+
+Test: loss=0.192 , acc= 94.4%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+Skip Updating GPM for layer: 2
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 459/784
+Layer 2 : 100/100
+Layer 3 : 90/100
+----------------------------------------
+Accuracies =
+ 97.6%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.5%  97.1%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  97.0%  96.8%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.2%  96.9%  96.7%  96.3%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.0%  96.8%  96.2%  96.2%  96.3%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.9%  96.7%  96.0%  95.9%  95.9%  95.9%   0.0%   0.0%   0.0%   0.0%
+ 96.4%  96.3%  95.8%  95.6%  95.5%  95.5%  95.5%   0.0%   0.0%   0.0%
+ 95.9%  95.6%  95.3%  95.0%  95.2%  95.1%  95.0%  94.7%   0.0%   0.0%
+ 95.5%  95.4%  94.8%  94.7%  94.8%  94.9%  94.4%  94.2%  94.6%   0.0%
+ 95.5%  95.1%  94.5%  94.5%  94.2%  94.2%  93.8%  93.4%  94.2%  94.4%
+--------------------------------------------------
+Task Order : [0 1 2 3 4 5 6 7 8 9]
+Final Avg Accuracy: 94.37%
+Backward transfer: -1.71%
+[Elapsed time = 4936279.5 ms]
+--------------------------------------------------
+====================================================================================================
+Arguments =
+Namespace(batch_size_test=64, batch_size_train=10, gpm_thro=0.93, lr=0.01, lr_factor=2, lr_min=1e-05, lr_patience=6, mixup_alpha=20, mixup_weight=0.01, momentum=0.9, n_epochs=5, n_hidden=100, n_outputs=10, n_tasks=10, pc_valid=0.1, savename='./log/DFROGO/', seed=3, weight=1)
+====================================================================================================
+****************************************************************************************************
+Task  0 (pmnist-0)
+****************************************************************************************************
+----------------------------------------
+Task ID :0 | Learning Rate : 0.01
+----------------------------------------
+Model parameters ---
+0	lin1.weight	torch.Size([100, 784])
+1	lin1.scale	torch.Size([784, 784])
+2	lin2.weight	torch.Size([100, 100])
+3	lin2.scale	torch.Size([100, 100])
+4	fc1.weight	torch.Size([10, 100])
+5	fc1.scale	torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.169, acc= 95.3% | time=61715.0ms |
+ Valid: loss=0.164, acc= 95.6% |
+
+
+Epoch   2 | Train: loss=0.119, acc= 96.8% | time=66582.6ms |
+ Valid: loss=0.123, acc= 96.6% |
+
+
+Epoch   3 | Train: loss=0.090, acc= 97.6% | time=59555.9ms |
+ Valid: loss=0.102, acc= 97.1% |
+
+
+Epoch   4 | Train: loss=0.073, acc= 98.1% | time=58671.1ms |
+ Valid: loss=0.094, acc= 97.3% |
+
+
+Epoch   5 | Train: loss=0.060, acc= 98.4% | time=57051.1ms |
+ Valid: loss=0.082, acc= 97.7% |
+
+
+----------------------------------------
+Test: loss=0.080 , acc= 97.7%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 63/784
+Layer 2 : 64/100
+Layer 3 : 51/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  1 (pmnist-1)
+****************************************************************************************************
+----------------------------------------
+Task ID :1 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.139, acc= 96.2% | time=68077.6ms |
+ Valid: loss=0.140, acc= 96.2% |
+
+
+Frozen Space Size : 784, 63
+Compress Representation Size (784, 100) to (784, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 64
+Compress Representation Size (100, 100) to (100, 12)
+Initiate Relaxing Space as (100, 7)
+Frozen Space Size : 100, 51
+Compress Representation Size (100, 10) to (100, 7)
+Initiate Relaxing Space as (100, 6)
+Epoch   2 | Train: loss=0.113, acc= 97.0% | time=104073.2ms |
+ Valid: loss=0.118, acc= 96.7% |
+
+
+Frozen Space Size : 784, 63
+Compress Representation Size (784, 100) to (784, 10)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 57
+Compress Representation Size (100, 100) to (100, 12)
+Keep Relaxing Space as Previous (100, 7)
+Frozen Space Size : 100, 45
+Compress Representation Size (100, 10) to (100, 8)
+Keep Relaxing Space as Previous (100, 6)
+Epoch   3 | Train: loss=0.097, acc= 97.4% | time=93236.1ms |
+ Valid: loss=0.108, acc= 96.9% |
+
+
+Epoch   4 | Train: loss=0.088, acc= 97.6% | time=100214.6ms |
+ Valid: loss=0.100, acc= 97.2% |
+
+
+Epoch   5 | Train: loss=0.082, acc= 97.8% | time=99003.5ms |
+ Valid: loss=0.096, acc= 97.3% |
+
+
+Test: loss=0.097 , acc= 97.2%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 123/784
+Layer 2 : 86/100
+Layer 3 : 72/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  2 (pmnist-2)
+****************************************************************************************************
+----------------------------------------
+Task ID :2 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.141, acc= 96.1% | time=65198.4ms |
+ Valid: loss=0.143, acc= 95.9% |
+
+
+Frozen Space Size : 784, 123
+Compress Representation Size (784, 100) to (784, 10)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 86
+Compress Representation Size (100, 100) to (100, 10)
+Initiate Relaxing Space as (100, 9)
+Frozen Space Size : 100, 72
+Compress Representation Size (100, 10) to (100, 6)
+Initiate Relaxing Space as (100, 6)
+Epoch   2 | Train: loss=0.119, acc= 96.8% | time=107075.8ms |
+ Valid: loss=0.127, acc= 96.3% |
+
+
+Frozen Space Size : 784, 123
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 100) to (100, 12)
+Keep Relaxing Space as Previous (100, 9)
+Frozen Space Size : 100, 66
+Compress Representation Size (100, 10) to (100, 7)
+Expand Relaxing Space from (100, 6) to (100, 9)
+Epoch   3 | Train: loss=0.109, acc= 97.1% | time=99636.9ms |
+ Valid: loss=0.119, acc= 96.7% |
+
+
+Frozen Space Size : 784, 123
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 100) to (100, 12)
+Keep Relaxing Space as Previous (100, 9)
+Frozen Space Size : 100, 63
+Compress Representation Size (100, 10) to (100, 7)
+Expand Relaxing Space from (100, 9) to (100, 10)
+Epoch   4 | Train: loss=0.105, acc= 97.2% | time=102722.8ms |
+ Valid: loss=0.116, acc= 96.7% |
+
+
+Frozen Space Size : 784, 123
+Compress Representation Size (784, 100) to (784, 10)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 100) to (100, 12)
+Expand Relaxing Space from (100, 9) to (100, 13)
+Frozen Space Size : 100, 62
+Compress Representation Size (100, 10) to (100, 7)
+Expand Relaxing Space from (100, 10) to (100, 11)
+Epoch   5 | Train: loss=0.103, acc= 97.2% | time=98400.1ms |
+ Valid: loss=0.115, acc= 96.7% |
+
+
+Frozen Space Size : 784, 123
+Compress Representation Size (784, 100) to (784, 7)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 73
+Compress Representation Size (100, 100) to (100, 8)
+Keep Relaxing Space as Previous (100, 13)
+Frozen Space Size : 100, 61
+Compress Representation Size (100, 10) to (100, 6)
+Keep Relaxing Space as Previous (100, 11)
+Test: loss=0.110 , acc= 96.9%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 177/784
+Layer 2 : 93/100
+Layer 3 : 78/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  96.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  3 (pmnist-3)
+****************************************************************************************************
+----------------------------------------
+Task ID :3 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.156, acc= 95.6% | time=65496.1ms |
+ Valid: loss=0.157, acc= 95.7% |
+
+
+Frozen Space Size : 784, 177
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 93
+Compress Representation Size (100, 100) to (100, 13)
+Initiate Relaxing Space as (100, 12)
+Frozen Space Size : 100, 78
+Compress Representation Size (100, 10) to (100, 7)
+Initiate Relaxing Space as (100, 7)
+Epoch   2 | Train: loss=0.135, acc= 96.4% | time=101895.4ms |
+ Valid: loss=0.138, acc= 96.2% |
+
+
+Frozen Space Size : 784, 177
+Compress Representation Size (784, 100) to (784, 10)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 100) to (100, 11)
+Expand Relaxing Space from (100, 12) to (100, 15)
+Frozen Space Size : 100, 71
+Compress Representation Size (100, 10) to (100, 7)
+Expand Relaxing Space from (100, 7) to (100, 9)
+Epoch   3 | Train: loss=0.123, acc= 96.7% | time=98674.6ms |
+ Valid: loss=0.129, acc= 96.3% |
+
+
+Frozen Space Size : 784, 177
+Compress Representation Size (784, 100) to (784, 9)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 78
+Compress Representation Size (100, 100) to (100, 13)
+Expand Relaxing Space from (100, 15) to (100, 18)
+Frozen Space Size : 100, 69
+Compress Representation Size (100, 10) to (100, 6)
+Keep Relaxing Space as Previous (100, 9)
+Epoch   4 | Train: loss=0.120, acc= 96.8% | time=91999.7ms |
+ Valid: loss=0.126, acc= 96.5% |
+
+
+Frozen Space Size : 784, 177
+Compress Representation Size (784, 100) to (784, 10)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 75
+Compress Representation Size (100, 100) to (100, 12)
+Expand Relaxing Space from (100, 18) to (100, 20)
+Frozen Space Size : 100, 69
+Compress Representation Size (100, 10) to (100, 7)
+Keep Relaxing Space as Previous (100, 9)
+Epoch   5 | Train: loss=0.118, acc= 96.9% | time=100263.4ms |
+ Valid: loss=0.125, acc= 96.5% |
+
+
+Frozen Space Size : 784, 177
+Compress Representation Size (784, 100) to (784, 10)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 73
+Compress Representation Size (100, 100) to (100, 11)
+Keep Relaxing Space as Previous (100, 20)
+Frozen Space Size : 100, 69
+Compress Representation Size (100, 10) to (100, 6)
+Keep Relaxing Space as Previous (100, 9)
+Test: loss=0.124 , acc= 96.4%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 229/784
+Layer 2 : 97/100
+Layer 3 : 83/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  96.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.1%  96.9%  96.6%  96.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  4 (pmnist-4)
+****************************************************************************************************
+----------------------------------------
+Task ID :4 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.179, acc= 94.9% | time=69732.4ms |
+ Valid: loss=0.174, acc= 95.0% |
+
+
+Frozen Space Size : 784, 229
+Compress Representation Size (784, 100) to (784, 15)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 97
+Compress Representation Size (100, 100) to (100, 16)
+Initiate Relaxing Space as (100, 15)
+Frozen Space Size : 100, 83
+Compress Representation Size (100, 10) to (100, 7)
+Initiate Relaxing Space as (100, 7)
+Epoch   2 | Train: loss=0.151, acc= 95.9% | time=100759.7ms |
+ Valid: loss=0.151, acc= 96.0% |
+
+
+Frozen Space Size : 784, 229
+Compress Representation Size (784, 100) to (784, 10)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 82
+Compress Representation Size (100, 100) to (100, 13)
+Expand Relaxing Space from (100, 15) to (100, 17)
+Frozen Space Size : 100, 76
+Compress Representation Size (100, 10) to (100, 8)
+Expand Relaxing Space from (100, 7) to (100, 9)
+Epoch   3 | Train: loss=0.141, acc= 96.2% | time=98326.3ms |
+ Valid: loss=0.145, acc= 96.1% |
+
+
+Frozen Space Size : 784, 229
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 80
+Compress Representation Size (100, 100) to (100, 13)
+Expand Relaxing Space from (100, 17) to (100, 19)
+Frozen Space Size : 100, 74
+Compress Representation Size (100, 10) to (100, 7)
+Expand Relaxing Space from (100, 9) to (100, 11)
+Epoch   4 | Train: loss=0.136, acc= 96.3% | time=103702.5ms |
+ Valid: loss=0.141, acc= 96.2% |
+
+
+Frozen Space Size : 784, 229
+Compress Representation Size (784, 100) to (784, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 78
+Compress Representation Size (100, 100) to (100, 15)
+Keep Relaxing Space as Previous (100, 19)
+Frozen Space Size : 100, 72
+Compress Representation Size (100, 10) to (100, 9)
+Keep Relaxing Space as Previous (100, 11)
+Epoch   5 | Train: loss=0.133, acc= 96.4% | time=106095.2ms |
+ Valid: loss=0.139, acc= 96.2% |
+
+
+Test: loss=0.140 , acc= 96.1%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 276/784
+Layer 2 : 99/100
+Layer 3 : 86/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  96.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.1%  96.9%  96.6%  96.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.1%  96.7%  96.4%  96.1%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  5 (pmnist-5)
+****************************************************************************************************
+----------------------------------------
+Task ID :5 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.191, acc= 94.6% | time=70355.1ms |
+ Valid: loss=0.189, acc= 94.9% |
+
+
+Frozen Space Size : 784, 276
+Compress Representation Size (784, 100) to (784, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 99
+Compress Representation Size (100, 100) to (100, 14)
+Initiate Relaxing Space as (100, 14)
+Frozen Space Size : 100, 86
+Compress Representation Size (100, 10) to (100, 7)
+Initiate Relaxing Space as (100, 7)
+Epoch   2 | Train: loss=0.164, acc= 95.5% | time=110860.3ms |
+ Valid: loss=0.166, acc= 95.5% |
+
+
+Frozen Space Size : 784, 276
+Compress Representation Size (784, 100) to (784, 15)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 85
+Compress Representation Size (100, 100) to (100, 15)
+Expand Relaxing Space from (100, 14) to (100, 18)
+Frozen Space Size : 100, 79
+Compress Representation Size (100, 10) to (100, 8)
+Expand Relaxing Space from (100, 7) to (100, 10)
+Epoch   3 | Train: loss=0.153, acc= 95.8% | time=105604.2ms |
+ Valid: loss=0.157, acc= 95.8% |
+
+
+Frozen Space Size : 784, 276
+Compress Representation Size (784, 100) to (784, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 100) to (100, 14)
+Expand Relaxing Space from (100, 18) to (100, 22)
+Frozen Space Size : 100, 76
+Compress Representation Size (100, 10) to (100, 7)
+Keep Relaxing Space as Previous (100, 10)
+Epoch   4 | Train: loss=0.149, acc= 96.0% | time=96959.6ms |
+ Valid: loss=0.154, acc= 95.9% |
+
+
+Frozen Space Size : 784, 276
+Compress Representation Size (784, 100) to (784, 11)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 100) to (100, 12)
+Keep Relaxing Space as Previous (100, 22)
+Frozen Space Size : 100, 76
+Compress Representation Size (100, 10) to (100, 7)
+Keep Relaxing Space as Previous (100, 10)
+Epoch   5 | Train: loss=0.144, acc= 96.1% | time=108437.6ms |
+ Valid: loss=0.150, acc= 96.0% |
+
+
+Test: loss=0.150 , acc= 95.8%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 320/784
+Layer 2 : 100/100
+Layer 3 : 88/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  96.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.1%  96.9%  96.6%  96.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.1%  96.7%  96.4%  96.1%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.8%  96.6%  96.1%  96.0%  95.7%  95.8%   0.0%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  6 (pmnist-6)
+****************************************************************************************************
+----------------------------------------
+Task ID :6 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.199, acc= 94.4% | time=68084.2ms |
+ Valid: loss=0.193, acc= 94.6% |
+
+
+Frozen Space Size : 784, 320
+Compress Representation Size (784, 100) to (784, 16)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 100
+Compress Representation Size (100, 100) to (100, 15)
+Initiate Relaxing Space as (100, 15)
+Frozen Space Size : 100, 88
+Compress Representation Size (100, 10) to (100, 7)
+Initiate Relaxing Space as (100, 7)
+Epoch   2 | Train: loss=0.171, acc= 95.2% | time=100169.7ms |
+ Valid: loss=0.168, acc= 95.4% |
+
+
+Frozen Space Size : 784, 320
+Compress Representation Size (784, 100) to (784, 10)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 85
+Compress Representation Size (100, 100) to (100, 13)
+Expand Relaxing Space from (100, 15) to (100, 17)
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 10) to (100, 7)
+Expand Relaxing Space from (100, 7) to (100, 9)
+Epoch   3 | Train: loss=0.159, acc= 95.5% | time=105001.0ms |
+ Valid: loss=0.159, acc= 95.7% |
+
+
+Frozen Space Size : 784, 320
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 83
+Compress Representation Size (100, 100) to (100, 13)
+Expand Relaxing Space from (100, 17) to (100, 19)
+Frozen Space Size : 100, 79
+Compress Representation Size (100, 10) to (100, 7)
+Expand Relaxing Space from (100, 9) to (100, 11)
+Epoch   4 | Train: loss=0.153, acc= 95.7% | time=96346.3ms |
+ Valid: loss=0.155, acc= 95.7% |
+
+
+Frozen Space Size : 784, 320
+Compress Representation Size (784, 100) to (784, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 100) to (100, 13)
+Expand Relaxing Space from (100, 19) to (100, 20)
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 10) to (100, 6)
+Keep Relaxing Space as Previous (100, 11)
+Epoch   5 | Train: loss=0.151, acc= 95.7% | time=95316.7ms |
+ Valid: loss=0.153, acc= 95.8% |
+
+
+Frozen Space Size : 784, 320
+Compress Representation Size (784, 100) to (784, 13)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 80
+Compress Representation Size (100, 100) to (100, 14)
+Expand Relaxing Space from (100, 20) to (100, 23)
+Frozen Space Size : 100, 77
+Compress Representation Size (100, 10) to (100, 8)
+Keep Relaxing Space as Previous (100, 11)
+Test: loss=0.154 , acc= 95.4%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+Skip Updating GPM for layer: 2
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 359/784
+Layer 2 : 100/100
+Layer 3 : 89/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  96.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.1%  96.9%  96.6%  96.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.1%  96.7%  96.4%  96.1%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.8%  96.6%  96.1%  96.0%  95.7%  95.8%   0.0%   0.0%   0.0%   0.0%
+ 96.7%  96.3%  95.8%  95.8%  95.3%  95.3%  95.4%   0.0%   0.0%   0.0%
+****************************************************************************************************
+Task  7 (pmnist-7)
+****************************************************************************************************
+----------------------------------------
+Task ID :7 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.221, acc= 93.7% | time=65640.9ms |
+ Valid: loss=0.208, acc= 94.2% |
+
+
+Frozen Space Size : 784, 359
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 100
+Compress Representation Size (100, 100) to (100, 12)
+Initiate Relaxing Space as (100, 12)
+Frozen Space Size : 100, 89
+Compress Representation Size (100, 10) to (100, 7)
+Initiate Relaxing Space as (100, 7)
+Epoch   2 | Train: loss=0.189, acc= 94.7% | time=99301.5ms |
+ Valid: loss=0.182, acc= 95.0% |
+
+
+Frozen Space Size : 784, 359
+Compress Representation Size (784, 100) to (784, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 88
+Compress Representation Size (100, 100) to (100, 15)
+Expand Relaxing Space from (100, 12) to (100, 19)
+Frozen Space Size : 100, 82
+Compress Representation Size (100, 10) to (100, 8)
+Expand Relaxing Space from (100, 7) to (100, 9)
+Epoch   3 | Train: loss=0.177, acc= 95.1% | time=105601.4ms |
+ Valid: loss=0.171, acc= 95.5% |
+
+
+Frozen Space Size : 784, 359
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 100) to (100, 12)
+Keep Relaxing Space as Previous (100, 19)
+Frozen Space Size : 100, 80
+Compress Representation Size (100, 10) to (100, 6)
+Keep Relaxing Space as Previous (100, 9)
+Epoch   4 | Train: loss=0.169, acc= 95.4% | time=101928.8ms |
+ Valid: loss=0.165, acc= 95.6% |
+
+
+Epoch   5 | Train: loss=0.162, acc= 95.6% | time=102732.8ms |
+ Valid: loss=0.159, acc= 95.7% |
+
+
+Test: loss=0.166 , acc= 95.2%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+Skip Updating GPM for layer: 2
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 395/784
+Layer 2 : 100/100
+Layer 3 : 91/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  96.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.1%  96.9%  96.6%  96.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.1%  96.7%  96.4%  96.1%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.8%  96.6%  96.1%  96.0%  95.7%  95.8%   0.0%   0.0%   0.0%   0.0%
+ 96.7%  96.3%  95.8%  95.8%  95.3%  95.3%  95.4%   0.0%   0.0%   0.0%
+ 96.6%  95.9%  95.4%  95.4%  94.9%  95.1%  95.0%  95.2%   0.0%   0.0%
+****************************************************************************************************
+Task  8 (pmnist-8)
+****************************************************************************************************
+----------------------------------------
+Task ID :8 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.265, acc= 92.5% | time=65545.9ms |
+ Valid: loss=0.253, acc= 92.9% |
+
+
+Frozen Space Size : 784, 395
+Compress Representation Size (784, 100) to (784, 16)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 100
+Compress Representation Size (100, 100) to (100, 15)
+Initiate Relaxing Space as (100, 15)
+Frozen Space Size : 100, 91
+Compress Representation Size (100, 10) to (100, 7)
+Initiate Relaxing Space as (100, 7)
+Epoch   2 | Train: loss=0.228, acc= 93.6% | time=112806.2ms |
+ Valid: loss=0.223, acc= 93.9% |
+
+
+Frozen Space Size : 784, 395
+Compress Representation Size (784, 100) to (784, 16)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 85
+Compress Representation Size (100, 100) to (100, 16)
+Expand Relaxing Space from (100, 15) to (100, 19)
+Frozen Space Size : 100, 84
+Compress Representation Size (100, 10) to (100, 8)
+Expand Relaxing Space from (100, 7) to (100, 10)
+Epoch   3 | Train: loss=0.214, acc= 94.0% | time=105837.3ms |
+ Valid: loss=0.210, acc= 94.2% |
+
+
+Frozen Space Size : 784, 395
+Compress Representation Size (784, 100) to (784, 14)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 100) to (100, 16)
+Expand Relaxing Space from (100, 19) to (100, 22)
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 10) to (100, 8)
+Keep Relaxing Space as Previous (100, 10)
+Epoch   4 | Train: loss=0.208, acc= 94.2% | time=100212.4ms |
+ Valid: loss=0.205, acc= 94.3% |
+
+
+Frozen Space Size : 784, 395
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 78
+Compress Representation Size (100, 100) to (100, 15)
+Expand Relaxing Space from (100, 22) to (100, 25)
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 10) to (100, 8)
+Expand Relaxing Space from (100, 10) to (100, 13)
+Epoch   5 | Train: loss=0.205, acc= 94.2% | time=96924.3ms |
+ Valid: loss=0.202, acc= 94.4% |
+
+
+Frozen Space Size : 784, 395
+Compress Representation Size (784, 100) to (784, 12)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 75
+Compress Representation Size (100, 100) to (100, 14)
+Keep Relaxing Space as Previous (100, 25)
+Frozen Space Size : 100, 78
+Compress Representation Size (100, 10) to (100, 7)
+Keep Relaxing Space as Previous (100, 13)
+Test: loss=0.207 , acc= 94.2%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+Skip Updating GPM for layer: 2
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 428/784
+Layer 2 : 100/100
+Layer 3 : 92/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  96.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.1%  96.9%  96.6%  96.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.1%  96.7%  96.4%  96.1%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.8%  96.6%  96.1%  96.0%  95.7%  95.8%   0.0%   0.0%   0.0%   0.0%
+ 96.7%  96.3%  95.8%  95.8%  95.3%  95.3%  95.4%   0.0%   0.0%   0.0%
+ 96.6%  95.9%  95.4%  95.4%  94.9%  95.1%  95.0%  95.2%   0.0%   0.0%
+ 96.2%  95.7%  94.9%  94.7%  94.6%  94.7%  94.7%  95.1%  94.2%   0.0%
+****************************************************************************************************
+Task  9 (pmnist-9)
+****************************************************************************************************
+----------------------------------------
+Task ID :9 | Learning Rate : 0.01
+----------------------------------------
+Layer 1 - Projection Matrix shape: torch.Size([784, 784])
+Layer 2 - Projection Matrix shape: torch.Size([100, 100])
+Layer 3 - Projection Matrix shape: torch.Size([100, 100])
+----------------------------------------
+Epoch   1 | Train: loss=0.252, acc= 92.7% | time=65346.7ms |
+ Valid: loss=0.240, acc= 93.4% |
+
+
+Frozen Space Size : 784, 428
+Compress Representation Size (784, 100) to (784, 15)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 100
+Compress Representation Size (100, 100) to (100, 16)
+Initiate Relaxing Space as (100, 16)
+Frozen Space Size : 100, 92
+Compress Representation Size (100, 10) to (100, 8)
+Initiate Relaxing Space as (100, 8)
+Epoch   2 | Train: loss=0.214, acc= 93.9% | time=96952.3ms |
+ Valid: loss=0.206, acc= 94.3% |
+
+
+Frozen Space Size : 784, 428
+Compress Representation Size (784, 100) to (784, 15)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 84
+Compress Representation Size (100, 100) to (100, 15)
+Expand Relaxing Space from (100, 16) to (100, 19)
+Frozen Space Size : 100, 84
+Compress Representation Size (100, 10) to (100, 8)
+Expand Relaxing Space from (100, 8) to (100, 11)
+Epoch   3 | Train: loss=0.202, acc= 94.2% | time=95631.3ms |
+ Valid: loss=0.195, acc= 94.6% |
+
+
+Frozen Space Size : 784, 428
+Compress Representation Size (784, 100) to (784, 15)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 100) to (100, 15)
+Expand Relaxing Space from (100, 19) to (100, 22)
+Frozen Space Size : 100, 81
+Compress Representation Size (100, 10) to (100, 7)
+Expand Relaxing Space from (100, 11) to (100, 12)
+Epoch   4 | Train: loss=0.196, acc= 94.4% | time=93995.0ms |
+ Valid: loss=0.189, acc= 94.8% |
+
+
+Frozen Space Size : 784, 428
+Compress Representation Size (784, 100) to (784, 15)
+Keep Relaxing Space as None
+Frozen Space Size : 100, 78
+Compress Representation Size (100, 100) to (100, 14)
+Keep Relaxing Space as Previous (100, 22)
+Frozen Space Size : 100, 80
+Compress Representation Size (100, 10) to (100, 7)
+Keep Relaxing Space as Previous (100, 12)
+Epoch   5 | Train: loss=0.192, acc= 94.6% | time=95008.0ms |
+ Valid: loss=0.185, acc= 94.8% |
+
+
+Test: loss=0.190 , acc= 94.5%
+------------------------------
+Representation Matrix
+------------------------------
+Layer 1 : (784, 300)
+Layer 2 : (100, 300)
+Layer 3 : (100, 300)
+------------------------------
+Skip Updating GPM for layer: 2
+Skip Updating GPM for layer: 3
+----------------------------------------
+Gradient Constraints Summary
+----------------------------------------
+Layer 1 : 457/784
+Layer 2 : 100/100
+Layer 3 : 92/100
+----------------------------------------
+Accuracies =
+ 97.7%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.4%  97.2%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.3%  96.9%  96.9%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.1%  96.9%  96.6%  96.4%   0.0%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 97.1%  96.7%  96.4%  96.1%  96.1%   0.0%   0.0%   0.0%   0.0%   0.0%
+ 96.8%  96.6%  96.1%  96.0%  95.7%  95.8%   0.0%   0.0%   0.0%   0.0%
+ 96.7%  96.3%  95.8%  95.8%  95.3%  95.3%  95.4%   0.0%   0.0%   0.0%
+ 96.6%  95.9%  95.4%  95.4%  94.9%  95.1%  95.0%  95.2%   0.0%   0.0%
+ 96.2%  95.7%  94.9%  94.7%  94.6%  94.7%  94.7%  95.1%  94.2%   0.0%
+ 95.9%  95.6%  94.7%  94.1%  94.2%  94.2%  94.1%  94.6%  94.0%  94.5%
+--------------------------------------------------
+Task Order : [0 1 2 3 4 5 6 7 8 9]
+Final Avg Accuracy: 94.59%
+Backward transfer: -1.50%
+[Elapsed time = 4741273.9 ms]
+--------------------------------------------------
+gpm_thro: 0.93
+Accuracy: [94.53099999999998, 94.37200000000001, 94.58900000000001]
+Backward transfer: [-1.4811111111111142, -1.714444444444445, -1.4977777777777799]
+Final Avg Accuracy: 94.50%, std: 0.09
+Final Avg Backward transfer: -1.56%, std: 0.11
