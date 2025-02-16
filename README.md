@@ -30,7 +30,7 @@ Thanks!
 ## Code
 - Please refer to the  '[data](https://github.com/EnnengYang/Revisiting-Flatness-aware-Optimization-in-Continual-Learning-with-Orthogonal-Gradient-Projection/tree/main/data)' directory to configure the experiment datasets.
 - Please refer to the '[code](https://github.com/EnnengYang/Revisiting-Flatness-aware-Optimization-in-Continual-Learning-with-Orthogonal-Gradient-Projection/tree/main/code)' directory to run the main experiment code.
-- Please refer to the '[log](https://github.com/EnnengYang/Revisiting-Flatness-aware-Optimization-in-Continual-Learning-with-Orthogonal-Gradient-Projection/tree/main/log)' directory for major hyperparameter configurations and experimental results (a few may be incomplete).
+- Please refer to the '[log](https://github.com/EnnengYang/Revisiting-Flatness-aware-Optimization-in-Continual-Learning-with-Orthogonal-Gradient-Projection/tree/main/log)' directory for major hyperparameter configurations and experimental results.
 
 ## Acknowledgement
 Our implementation mainly  references the code below, thanks to them.
